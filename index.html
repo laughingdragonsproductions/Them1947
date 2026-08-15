@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="THEM 1947 — classified transmissions incoming. Coming soon." />
+    <title>THEM 1947 — Coming Soon</title>
+    <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/landing.css" />
+    <link rel="canonical" href="https://them1947.com/" />
+    <meta property="og:title" content="THEM 1947" />
+    <meta property="og:description" content="Classified transmissions incoming. Coming soon." />
+    <meta property="og:url" content="https://them1947.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://them1947.com/assets/video/landing-poster.jpg" />
+  </head>
+  <body>
+    <main class="landing" aria-label="THEM 1947 coming soon">
+      <video
+        id="intro-video"
+        class="landing-video"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+        poster="/assets/video/landing-poster.jpg"
+      >
+        <source src="/assets/video/landing.mp4" type="video/mp4" />
+      </video>
+
+      <img
+        id="landing-poster"
+        class="landing-poster"
+        src="/assets/video/landing-poster.jpg"
+        alt=""
+      />
+
+      <div class="landing-scrim" aria-hidden="true"></div>
+
+      <button
+        id="sound-toggle"
+        class="sound-toggle"
+        type="button"
+        aria-label="Enable sound"
+        aria-pressed="false"
+      >
+        Enable audio
+      </button>
+
+      <img
+        id="landing-logo"
+        class="landing-logo"
+        src="/assets/brand/logo.png"
+        alt="THEM 1947"
+      />
+
+      <div id="landing-ui" class="landing-ui">
+        <button id="classified-folder" class="classified-folder" type="button" aria-label="Open classified folder">
+          <span class="folder-body">
+            <span class="folder-tab"></span>
+            <span class="folder-stamp">Classified</span>
+          </span>
+        </button>
+        <p class="coming-soon">Coming soon</p>
+      </div>
+
+      <footer id="landing-footer" class="landing-footer">
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </footer>
+    </main>
+
+    <div id="brief-overlay" class="brief-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Classified brief">
+      <div class="brief-panel">
+        <button id="brief-close" class="brief-close" type="button">Close</button>
+        <button id="brief-replay" class="brief-replay" type="button">Replay</button>
+        <video id="brief-video" class="brief-video" controls playsinline preload="metadata">
+          <source src="/assets/video/classified-brief.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/landing.js"></script>
+  </body>
+</html>

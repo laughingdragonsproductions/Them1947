@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  color: #d8f5e4;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  overflow: hidden;
+}
+
+.landing {
+  position: fixed;
+  inset: 0;
+  background: #000;
+}
+
+.landing-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+.landing-video.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.landing-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.landing-poster.is-visible {
+  opacity: 1;
+}
+
+.landing-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+}
+
+.landing-logo {
+  position: absolute;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92px, 18vw);
+  height: auto;
+  z-index: 3;
+  filter: drop-shadow(0 0 18px rgba(122, 255, 170, 0.35));
+  opacity: 0;
+  transition: opacity 0.8s ease 0.2s;
+}
+
+.landing-logo.is-visible {
+  opacity: 1;
+}
+
+.landing-ui {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 1.25rem 2.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.landing-ui.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.classified-folder {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  width: min(280px, 72vw);
+  animation: folderPulse 3s ease-in-out infinite;
+}
+
+.classified-folder:focus-visible {
+  outline: 2px solid #7cffa8;
+  outline-offset: 8px;
+}
+
+.folder-body {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 8px 8px 4px 4px;
+  background: linear-gradient(180deg, #d8c089 0%, #b89a5d 55%, #9a7f45 100%);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.folder-tab {
+  position: absolute;
+  top: -18px;
+  left: 18px;
+  width: 42%;
+  height: 28px;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(180deg, #e6d4a0 0%, #c7aa6f 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.folder-stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  padding: 0.55rem 1rem;
+  border: 3px solid #7cffa8;
+  color: #7cffa8;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1.1rem, 4vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 24px rgba(124, 255, 168, 0.25);
+}
+
+.coming-soon {
+  margin: 1.35rem 0 0;
+  font-size: clamp(0.95rem, 2.8vw, 1.1rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(216, 245, 228, 0.82);
+  text-shadow: 0 0 16px rgba(124, 255, 168, 0.25);
+}
+
+.landing-footer {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.78rem;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.4s;
+}
+
+.landing-footer.is-visible {
+  opacity: 0.65;
+}
+
+.landing-footer a {
+  color: rgba(216, 245, 228, 0.75);
+  text-decoration: none;
+}
+
+.landing-footer a:hover {
+  color: #7cffa8;
+}
+
+.sound-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 6;
+  appearance: none;
+  border: 1px solid rgba(124, 255, 168, 0.45);
+  background: rgba(0, 0, 0, 0.55);
+  color: #d8f5e4;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sound-toggle:hover,
+.sound-toggle.is-on {
+  border-color: #7cffa8;
+  color: #7cffa8;
+}
+
+.sound-toggle.is-on {
+  background: rgba(124, 255, 168, 0.12);
+}
+
+.brief-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.brief-overlay.is-open {
+  display: flex;
+}
+
+.brief-panel {
+  position: relative;
+  width: min(1100px, 96vw);
+}
+
+.brief-video {
+  width: 100%;
+  max-height: 86vh;
+  border-radius: 8px;
+  background: #000;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+}
+
+.brief-close,
+.brief-replay {
+  position: absolute;
+  top: -2.75rem;
+  appearance: none;
+  border: 1px solid rgba(124, 255, 168, 0.45);
+  background: rgba(0, 0, 0, 0.55);
+  color: #d8f5e4;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brief-close {
+  right: 0;
+}
+
+.brief-replay {
+  right: 5.5rem;
+}
+
+.brief-close:hover,
+.brief-replay:hover {
+  border-color: #7cffa8;
+  color: #7cffa8;
+}
+
+@keyframes folderPulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .classified-folder {
+    animation: none;
+  }
+
+  .landing-logo,
+  .landing-ui,
+  .landing-footer,
+  .landing-poster {
+    transition: none;
+  }
+}

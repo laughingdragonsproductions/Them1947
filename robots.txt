@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://them1947.com/sitemap.xml
