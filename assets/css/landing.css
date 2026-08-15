@@ -105,6 +105,10 @@ body {
   pointer-events: auto;
 }
 
+.landing-ui.is-visible.is-unlocked .classified-folder:not(:disabled) {
+  cursor: pointer;
+}
+
 .classified-folder {
   appearance: none;
   border: 0;
@@ -114,6 +118,16 @@ body {
   position: relative;
   width: min(280px, 72vw);
   animation: folderPulse 3s ease-in-out infinite;
+}
+
+.classified-folder:not(:disabled) {
+  animation: folderPulse 3s ease-in-out infinite;
+}
+
+.classified-folder:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  animation: none;
 }
 
 .classified-folder:focus-visible {

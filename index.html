@@ -40,7 +40,7 @@
         <button id="start-btn" class="start-btn" type="button">
           <img class="start-logo" src="/assets/brand/logo.png" alt="" />
           <span class="start-label">Tap to begin</span>
-          <span class="start-hint">Transmission with audio</span>
+          <span class="start-hint">Landing transmission plays first</span>
         </button>
       </div>
 
@@ -52,7 +52,14 @@
       />
 
       <div id="landing-ui" class="landing-ui">
-        <button id="classified-folder" class="classified-folder" type="button" aria-label="Open classified folder">
+        <button
+          id="classified-folder"
+          class="classified-folder"
+          type="button"
+          disabled
+          aria-disabled="true"
+          aria-label="Open classified folder"
+        >
           <span class="folder-body">
             <span class="folder-tab"></span>
             <span class="folder-stamp">Classified</span>

@@ -12,7 +12,6 @@
   const startOverlay = document.getElementById("start-overlay");
   const startBtn = document.getElementById("start-btn");
 
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isMobile =
     window.matchMedia("(max-width: 768px)").matches ||
     window.matchMedia("(pointer: coarse)").matches ||
@@ -22,21 +21,17 @@
   let introFinished = false;
   let introPlaying = false;
 
+  if (isMobile) {
+    document.documentElement.classList.add("is-mobile");
+  }
+
+  folderBtn.disabled = true;
+  folderBtn.setAttribute("aria-disabled", "true");
+
   function hideStartOverlay() {
     if (!startOverlay) return;
     startOverlay.classList.add("is-hidden");
     startOverlay.setAttribute("aria-hidden", "true");
-  }
-
-  function showStartOverlay() {
-    if (!startOverlay) return;
-    startOverlay.classList.remove("is-hidden");
-    startOverlay.setAttribute("aria-hidden", "false");
-  }
-
-  function setBriefAudio(on) {
-    briefVideo.muted = !on;
-    briefVideo.volume = on ? 1 : 0;
   }
 
   function hideIntroVideo() {
@@ -46,14 +41,21 @@
     introVideo.classList.add("is-dormant", "is-hidden");
   }
 
-  function showIdleState() {
+  function setBriefAudio(on) {
+    briefVideo.muted = !on;
+    briefVideo.volume = on ? 1 : 0;
+  }
+
+  function unlockClassifiedAccess() {
     if (introFinished) return;
     introFinished = true;
     hideIntroVideo();
     poster.classList.add("is-visible");
     logo.classList.add("is-visible");
-    ui.classList.add("is-visible");
+    ui.classList.add("is-visible", "is-unlocked");
     footer.classList.add("is-visible");
+    folderBtn.disabled = false;
+    folderBtn.removeAttribute("aria-disabled");
   }
 
   function checkIntroComplete() {
@@ -62,15 +64,15 @@
     }
 
     if (introVideo.ended) {
-      showIdleState();
+      unlockClassifiedAccess();
       return;
     }
 
     const duration = introVideo.duration;
     if (!Number.isFinite(duration) || duration <= 0) return;
 
-    if (introVideo.currentTime >= duration - 0.2) {
-      showIdleState();
+    if (introVideo.currentTime >= duration - 0.15) {
+      unlockClassifiedAccess();
     }
   }
 
@@ -79,8 +81,10 @@
     introPlaying = true;
     poster.classList.remove("is-visible");
     logo.classList.remove("is-visible");
-    ui.classList.remove("is-visible");
+    ui.classList.remove("is-visible", "is-unlocked");
     footer.classList.remove("is-visible");
+    folderBtn.disabled = true;
+    folderBtn.setAttribute("aria-disabled", "true");
     introVideo.classList.remove("is-dormant", "is-hidden");
     introVideo.classList.add("is-active");
     introVideo.currentTime = 0;
@@ -98,14 +102,14 @@
     if (experienceStarted) return;
     experienceStarted = true;
     hideStartOverlay();
-
-    if (prefersReducedMotion) {
-      showIdleState();
-      return;
-    }
-
     playIntroWithAudio().catch(function () {
-      showIdleState();
+      hideStartOverlay();
+      if (startOverlay) {
+        startOverlay.classList.remove("is-hidden");
+        startOverlay.setAttribute("aria-hidden", "false");
+      }
+      experienceStarted = false;
+      introPlaying = false;
     });
   }
 
@@ -120,9 +124,7 @@
   }
 
   function openBrief() {
-    if (!experienceStarted) {
-      startExperience();
-    }
+    if (!introFinished) return;
 
     briefOverlay.classList.add("is-open");
     briefOverlay.setAttribute("aria-hidden", "false");
@@ -134,17 +136,13 @@
     briefOverlay.setAttribute("aria-hidden", "true");
     briefVideo.pause();
     briefVideo.currentTime = 0;
-
-    if (experienceStarted && !introFinished) {
-      checkIntroComplete();
-    }
   }
 
   if (startBtn) {
     startBtn.addEventListener("click", startExperience);
   }
 
-  introVideo.addEventListener("ended", showIdleState);
+  introVideo.addEventListener("ended", unlockClassifiedAccess);
   introVideo.addEventListener("timeupdate", checkIntroComplete);
 
   document.addEventListener("visibilitychange", function () {
@@ -172,29 +170,4 @@
   });
 
   setBriefAudio(true);
-
-  if (isMobile) {
-    document.documentElement.classList.add("is-mobile");
-    showStartOverlay();
-    return;
-  }
-
-  if (!prefersReducedMotion) {
-    hideStartOverlay();
-    experienceStarted = true;
-    introVideo.classList.remove("is-dormant");
-    introVideo.classList.add("is-active");
-    introPlaying = true;
-    introVideo.muted = true;
-    introVideo.play().then(function () {
-      introVideo.muted = false;
-      introVideo.volume = 1;
-    }).catch(function () {
-      introPlaying = false;
-      experienceStarted = false;
-      hideIntroVideo();
-      poster.classList.add("is-visible");
-      showStartOverlay();
-    });
-  }
 })();
