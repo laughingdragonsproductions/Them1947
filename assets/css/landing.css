@@ -7,6 +7,8 @@
 html,
 body {
   margin: 0;
+  min-height: 100%;
+  min-height: 100dvh;
   height: 100%;
   background: #000;
   color: #d8f5e4;
@@ -17,6 +19,7 @@ body {
 .landing {
   position: fixed;
   inset: 0;
+  min-height: 100dvh;
   background: #000;
 }
 
@@ -28,6 +31,14 @@ body {
   object-fit: cover;
   background: #000;
   z-index: 1;
+}
+
+.landing-video.is-dormant {
+  display: none !important;
+}
+
+.landing-video.is-active {
+  display: block;
 }
 
 .landing-video.is-hidden {
@@ -186,14 +197,19 @@ body {
 }
 
 .start-overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  z-index: 8;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.72);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.55);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.is-mobile .start-overlay {
+  backdrop-filter: none;
 }
 
 .start-overlay.is-hidden {
@@ -253,6 +269,10 @@ body {
     transform: scale(1.03);
     opacity: 0.92;
   }
+}
+
+.brief-overlay:not(.is-open) .brief-video {
+  display: none;
 }
 
 .brief-overlay {
