@@ -19,9 +19,8 @@
       <video
         id="intro-video"
         class="landing-video"
-        autoplay
-        muted
         playsinline
+        webkit-playsinline
         preload="auto"
         poster="/assets/video/landing-poster.jpg"
       >
@@ -37,15 +36,13 @@
 
       <div class="landing-scrim" aria-hidden="true"></div>
 
-      <button
-        id="sound-toggle"
-        class="sound-toggle"
-        type="button"
-        aria-label="Enable sound"
-        aria-pressed="false"
-      >
-        Enable audio
-      </button>
+      <div id="start-overlay" class="start-overlay">
+        <button id="start-btn" class="start-btn" type="button">
+          <img class="start-logo" src="/assets/brand/logo.png" alt="" />
+          <span class="start-label">Tap to begin</span>
+          <span class="start-hint">Transmission with audio</span>
+        </button>
+      </div>
 
       <img
         id="landing-logo"

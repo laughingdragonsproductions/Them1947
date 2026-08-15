@@ -5,54 +5,31 @@
   const ui = document.getElementById("landing-ui");
   const footer = document.getElementById("landing-footer");
   const folderBtn = document.getElementById("classified-folder");
-  const overlay = document.getElementById("brief-overlay");
+  const briefOverlay = document.getElementById("brief-overlay");
   const briefVideo = document.getElementById("brief-video");
   const closeBtn = document.getElementById("brief-close");
   const replayBtn = document.getElementById("brief-replay");
-  const soundToggle = document.getElementById("sound-toggle");
+  const startOverlay = document.getElementById("start-overlay");
+  const startBtn = document.getElementById("start-btn");
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let audioUnlocked = false;
+  const isTouchDevice =
+    window.matchMedia("(pointer: coarse)").matches ||
+    /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  let experienceStarted = false;
   let introFinished = false;
+
+  function hideStartOverlay() {
+    if (startOverlay) {
+      startOverlay.classList.add("is-hidden");
+      startOverlay.setAttribute("aria-hidden", "true");
+    }
+  }
 
   function setBriefAudio(on) {
     briefVideo.muted = !on;
     briefVideo.volume = on ? 1 : 0;
-  }
-
-  function updateSoundToggle() {
-    if (!soundToggle) return;
-    soundToggle.textContent = audioUnlocked ? "Sound on" : "Enable audio";
-    soundToggle.setAttribute("aria-label", audioUnlocked ? "Sound enabled" : "Enable sound");
-    soundToggle.setAttribute("aria-pressed", audioUnlocked ? "true" : "false");
-    soundToggle.classList.toggle("is-on", audioUnlocked);
-  }
-
-  function enableAudio() {
-    audioUnlocked = true;
-    updateSoundToggle();
-
-    if (!introFinished) {
-      introVideo.muted = false;
-      introVideo.volume = 1;
-      introVideo.play().catch(function () {});
-      return;
-    }
-
-    introVideo.pause();
-    introVideo.currentTime = 0;
-    introVideo.muted = false;
-    introVideo.volume = 1;
-    introVideo.classList.remove("is-hidden");
-    poster.classList.remove("is-visible");
-    logo.classList.remove("is-visible");
-    ui.classList.remove("is-visible");
-    footer.classList.remove("is-visible");
-    introFinished = false;
-
-    introVideo.play().catch(function () {
-      showIdleState();
-    });
   }
 
   function showIdleState() {
@@ -65,9 +42,39 @@
     footer.classList.add("is-visible");
   }
 
+  function playIntroWithAudio() {
+    introVideo.classList.remove("is-hidden");
+    poster.classList.remove("is-visible");
+    introVideo.currentTime = 0;
+    introVideo.muted = false;
+    introVideo.volume = 1;
+    introVideo.playsInline = true;
+
+    return introVideo.play().catch(function () {
+      introVideo.muted = true;
+      return introVideo.play();
+    });
+  }
+
+  function startExperience() {
+    if (experienceStarted) return;
+    experienceStarted = true;
+    hideStartOverlay();
+
+    if (prefersReducedMotion) {
+      showIdleState();
+      return;
+    }
+
+    playIntroWithAudio().catch(function () {
+      showIdleState();
+    });
+  }
+
   function playBriefWithAudio() {
     setBriefAudio(true);
     briefVideo.currentTime = 0;
+    briefVideo.playsInline = true;
     return briefVideo.play().catch(function () {
       setBriefAudio(false);
       return briefVideo.play();
@@ -75,49 +82,38 @@
   }
 
   function openBrief() {
-    if (!audioUnlocked) {
-      audioUnlocked = true;
-      updateSoundToggle();
+    if (!experienceStarted) {
+      startExperience();
     }
 
-    overlay.classList.add("is-open");
-    overlay.setAttribute("aria-hidden", "false");
+    briefOverlay.classList.add("is-open");
+    briefOverlay.setAttribute("aria-hidden", "false");
     playBriefWithAudio();
   }
 
   function closeBrief() {
-    overlay.classList.remove("is-open");
-    overlay.setAttribute("aria-hidden", "true");
+    briefOverlay.classList.remove("is-open");
+    briefOverlay.setAttribute("aria-hidden", "true");
     briefVideo.pause();
     briefVideo.currentTime = 0;
   }
 
-  if (soundToggle) {
-    soundToggle.addEventListener("click", enableAudio);
+  if (startBtn) {
+    startBtn.addEventListener("click", startExperience);
   }
 
-  if (prefersReducedMotion) {
-    introVideo.pause();
-    showIdleState();
-  } else {
-    introVideo.addEventListener("ended", showIdleState);
-    introVideo.play().catch(function () {
-      showIdleState();
-    });
-  }
+  introVideo.addEventListener("ended", showIdleState);
 
   folderBtn.addEventListener("click", openBrief);
   closeBtn.addEventListener("click", closeBrief);
-  replayBtn.addEventListener("click", function () {
-    playBriefWithAudio();
-  });
+  replayBtn.addEventListener("click", playBriefWithAudio);
 
-  overlay.addEventListener("click", function (event) {
-    if (event.target === overlay) closeBrief();
+  briefOverlay.addEventListener("click", function (event) {
+    if (event.target === briefOverlay) closeBrief();
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && overlay.classList.contains("is-open")) {
+    if (event.key === "Escape" && briefOverlay.classList.contains("is-open")) {
       closeBrief();
     }
   });
@@ -126,6 +122,21 @@
     replayBtn.focus();
   });
 
-  setBriefAudio(false);
-  updateSoundToggle();
+  setBriefAudio(true);
+
+  if (!isTouchDevice && !prefersReducedMotion) {
+    hideStartOverlay();
+    experienceStarted = true;
+    introVideo.muted = true;
+    introVideo.play().then(function () {
+      introVideo.muted = false;
+      introVideo.volume = 1;
+    }).catch(function () {
+      experienceStarted = false;
+      if (startOverlay) {
+        startOverlay.classList.remove("is-hidden");
+        startOverlay.setAttribute("aria-hidden", "false");
+      }
+    });
+  }
 })();

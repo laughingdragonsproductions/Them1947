@@ -182,31 +182,73 @@ body {
   color: #7cffa8;
 }
 
-.sound-toggle {
+.start-overlay {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 6;
-  appearance: none;
-  border: 1px solid rgba(124, 255, 168, 0.45);
-  background: rgba(0, 0, 0, 0.55);
-  color: #d8f5e4;
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  inset: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
 }
 
-.sound-toggle:hover,
-.sound-toggle.is-on {
-  border-color: #7cffa8;
+.start-overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.start-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  color: #d8f5e4;
+  animation: startPulse 2.4s ease-in-out infinite;
+}
+
+.start-btn:focus-visible {
+  outline: 2px solid #7cffa8;
+  outline-offset: 8px;
+  border-radius: 12px;
+}
+
+.start-logo {
+  width: min(120px, 28vw);
+  height: auto;
+  filter: drop-shadow(0 0 24px rgba(124, 255, 168, 0.4));
+}
+
+.start-label {
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
   color: #7cffa8;
 }
 
-.sound-toggle.is-on {
-  background: rgba(124, 255, 168, 0.12);
+.start-hint {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(216, 245, 228, 0.55);
+}
+
+@keyframes startPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.92;
+  }
 }
 
 .brief-overlay {
@@ -277,7 +319,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .classified-folder {
+  .classified-folder,
+  .start-btn {
     animation: none;
   }
 
