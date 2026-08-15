@@ -33,8 +33,18 @@
   }
 
   function showIdleState() {
+    if (introFinished) return;
     introFinished = true;
+
     introVideo.pause();
+    if (Number.isFinite(introVideo.duration) && introVideo.duration > 0) {
+      try {
+        introVideo.currentTime = Math.max(0, introVideo.duration - 0.05);
+      } catch (err) {
+        /* iOS may reject seek while transitioning */
+      }
+    }
+
     introVideo.classList.add("is-hidden");
     poster.classList.add("is-visible");
     logo.classList.add("is-visible");
@@ -42,9 +52,31 @@
     footer.classList.add("is-visible");
   }
 
+  function checkIntroComplete() {
+    if (introFinished || !experienceStarted || briefOverlay.classList.contains("is-open")) {
+      return;
+    }
+
+    if (introVideo.ended) {
+      showIdleState();
+      return;
+    }
+
+    const duration = introVideo.duration;
+    if (!Number.isFinite(duration) || duration <= 0) return;
+
+    if (introVideo.currentTime >= duration - 0.2) {
+      showIdleState();
+    }
+  }
+
   function playIntroWithAudio() {
+    introFinished = false;
     introVideo.classList.remove("is-hidden");
     poster.classList.remove("is-visible");
+    logo.classList.remove("is-visible");
+    ui.classList.remove("is-visible");
+    footer.classList.remove("is-visible");
     introVideo.currentTime = 0;
     introVideo.muted = false;
     introVideo.volume = 1;
@@ -96,6 +128,10 @@
     briefOverlay.setAttribute("aria-hidden", "true");
     briefVideo.pause();
     briefVideo.currentTime = 0;
+
+    if (experienceStarted && !introFinished) {
+      checkIntroComplete();
+    }
   }
 
   if (startBtn) {
@@ -103,6 +139,14 @@
   }
 
   introVideo.addEventListener("ended", showIdleState);
+  introVideo.addEventListener("timeupdate", checkIntroComplete);
+  introVideo.addEventListener("pause", checkIntroComplete);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      checkIntroComplete();
+    }
+  });
 
   folderBtn.addEventListener("click", openBrief);
   closeBtn.addEventListener("click", closeBrief);
