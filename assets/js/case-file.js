@@ -210,7 +210,7 @@ function renderBom(detail, mwUrl) {
         .map((entry) => {
           const price = entry.priceFrom ? `From ${escapeHtml(entry.priceFrom)}` : "REDACTED";
           const color = entry.colorOptions?.[0] || "Standard";
-          return `<article class="case-bom-card">
+          const card = `<article class="case-bom-card">
             <img src="${entry.image || "/assets/brand/classified-placeholder.png"}" alt="" class="case-bom-swatch" loading="lazy" />
             <div class="case-bom-copy">
               <h3>${escapeHtml(entry.name)}</h3>
@@ -218,6 +218,10 @@ function renderBom(detail, mwUrl) {
               <p class="case-bom-price">${price}</p>
             </div>
           </article>`;
+          if (entry.url) {
+            return `<a class="case-bom-card-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener sponsored">${card}</a>`;
+          }
+          return card;
         })
         .join("")}
     </div>

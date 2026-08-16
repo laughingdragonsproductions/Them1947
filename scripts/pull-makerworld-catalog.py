@@ -538,29 +538,91 @@ def lowest_price(entry: dict) -> tuple[str | None, float | None]:
     return best_label, best_price
 
 
-def extract_bom(detail: dict) -> list[dict]:
+SUMMARY_MAX = 3500
+BAMBU_STORE_BASE = "https://us.store.bambulab.com"
+
+
+def match_bom_sku(entry: dict) -> dict | None:
+    target = entry.get("sku")
+    if not target:
+        return None
+    for sku in entry.get("productSkuList") or []:
+        if sku.get("sku") == target:
+            return sku
+    return None
+
+
+def sku_price_label(sku: dict) -> str | None:
+    promo = sku.get("promotionInfo") or {}
+    if promo.get("lowestPriceStr"):
+        return promo.get("lowestPriceStr")
+    if sku.get("priceStr"):
+        return sku.get("priceStr")
+    price = sku.get("price")
+    if price:
+        return f"${price:.2f} USD"
+    return None
+
+
+def sku_color(sku: dict, entry: dict) -> str:
+    for prop in sku.get("productProperties") or []:
+        if prop.get("key") == "Color" and prop.get("value"):
+            return prop.get("value")
+    name = sku.get("skuName") or ""
+    if " / " in name:
+        return name.split(" / ", 1)[0].strip()
+    colors = []
+    for prop in entry.get("productProperyList") or []:
+        if prop.get("key") == "Color":
+            colors = [v.get("value", "") for v in prop.get("values") or [] if v.get("value")]
+    return colors[0] if colors else "Standard"
+
+
+def bambu_store_url(handle: str, sku_id: str | int, model_id: int) -> str:
+    params = urllib.parse.urlencode({"skr": "yes", "id": str(sku_id), "modelId": str(model_id)})
+    slug = (handle or "").strip().strip("/")
+    return f"{BAMBU_STORE_BASE}/products/{slug}?{params}"
+
+
+def extract_bom(detail: dict, model_id: int | None = None) -> list[dict]:
     ext = detail.get("designExtension") or {}
     entries = ext.get("boms_of_filaments_v2") or ext.get("boms_of_filaments") or []
     bom: list[dict] = []
+    maker_id = model_id or detail.get("id") or 0
     for entry in entries[:12]:
-        price_label, _ = lowest_price(entry)
-        image = entry.get("image") or ""
+        matched = match_bom_sku(entry)
+        price_label = sku_price_label(matched) if matched else None
+        if not price_label:
+            price_label, _ = lowest_price(entry)
+        image = ""
+        color = "Standard"
+        url = entry.get("url") or ""
+        if matched:
+            image = matched.get("image") or ""
+            color = sku_color(matched, entry)
+            handle = entry.get("handle") or ""
+            sku_id = matched.get("skuId")
+            if handle and sku_id and maker_id:
+                url = bambu_store_url(handle, sku_id, maker_id)
         if not image:
             skus = entry.get("productSkuList") or []
             if skus:
                 image = skus[0].get("image") or ""
-        color_values = []
-        for prop in entry.get("productProperyList") or []:
-            if prop.get("key") == "Color":
-                color_values = [v.get("value", "") for v in prop.get("values") or [] if v.get("value")]
+        if not color or color == "Standard":
+            color_values = []
+            for prop in entry.get("productProperyList") or []:
+                if prop.get("key") == "Color":
+                    color_values = [v.get("value", "") for v in prop.get("values") or [] if v.get("value")]
+            if color_values:
+                color = color_values[0]
         bom.append(
             {
                 "name": entry.get("spuName") or entry.get("handle") or entry.get("sku") or "Filament",
                 "quantity": entry.get("quantity") or 1,
                 "image": image,
-                "colorOptions": color_values[:8],
+                "colorOptions": [color] if color else [],
                 "priceFrom": price_label,
-                "url": entry.get("url") or "",
+                "url": url,
             }
         )
     return bom
@@ -649,7 +711,7 @@ def enrich_classified_item(item: dict, detail: dict) -> None:
         "gallery": gallery or [item["image"]],
         "printProfile": profiles[0] if profiles else None,
         "printProfiles": profiles,
-        "bom": extract_bom(detail),
+        "bom": extract_bom(detail, item.get("makerWorldId")),
         "attachments": extract_attachments(detail),
         "shareCount": detail.get("shareCount") or 0,
         "commentCount": detail.get("commentCount") or 0,
@@ -883,9 +945,32 @@ def refresh_case_notes() -> None:
     print(f"Updated case notes in {OUT_JS}")
 
 
+def refresh_bom() -> None:
+    payload = load_catalog_payload()
+    items = payload.get("items") or []
+    classified = [item for item in items if item.get("vault") == "classified"]
+    print(f"Refreshing BOM links for {len(classified)} classified models…")
+    for item in classified:
+        detail = fetch_design(item["makerWorldId"])
+        if not detail:
+            continue
+        bom = extract_bom(detail, item.get("makerWorldId"))
+        if not item.get("detail"):
+            item["detail"] = {}
+        item["detail"]["bom"] = bom
+        linked = sum(1 for entry in bom if entry.get("url"))
+        print(f"  {item.get('name')}: {len(bom)} material(s), {linked} store link(s)")
+    payload["pulledAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    write_catalog_payload(payload)
+    print(f"Updated BOM data in {OUT_JS}")
+
+
 def main() -> None:
     if "--profiles-only" in sys.argv:
         refresh_print_profiles()
+        return
+    if "--bom-only" in sys.argv:
+        refresh_bom()
         return
     if "--notes-only" in sys.argv:
         refresh_case_notes()

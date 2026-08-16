@@ -1,7 +1,7 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-08-16T23:18:53Z",
+  "pulledAt": "2026-08-16T23:36:58Z",
   "summary": {
     "total": 21,
     "classified": 18,
@@ -204,175 +204,112 @@ window.CATALOG_DATA = {
           {
             "name": "PETG Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/9c0843dc40074977a1243d7d9bb9099f/GRAY.png",
             "colorOptions": [
-              "Orange(30301)",
-              "Red(30201)",
-              "Yellow(30402)",
-              "Green(30502)",
-              "Navy Blue(30604)",
-              "Reflex Blue(30603)",
-              "Black(30105)",
-              "White(30106)"
+              "Gray(30107)"
             ],
-            "priceFrom": "$11.69",
-            "url": ""
+            "priceFrom": "$13.64",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=2991422"
           },
           {
             "name": "PETG Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/9c0843dc40074977a1243d7d9bb9099f/GRAY.png",
             "colorOptions": [
-              "Orange(30301)",
-              "Red(30201)",
-              "Yellow(30402)",
-              "Green(30502)",
-              "Navy Blue(30604)",
-              "Reflex Blue(30603)",
-              "Black(30105)",
-              "White(30106)"
+              "Gray(30107)"
             ],
             "priceFrom": "$11.69",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864293&modelId=2991422"
           },
           {
             "name": "PLA Matte",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/502359426c1c4e9687a7f921f741b623/Matte-Ash-Grey.png",
             "colorOptions": [
-              "Ivory White (11100)",
-              "Bone White (11103)",
-              "Lemon Yellow (11400)",
-              "Mandarin Orange (11300)",
-              "Sakura Pink (11201)",
-              "Lilac purple (11700)",
-              "Plum (11204)",
-              "Scarlet Red (11200)"
+              "Ash Gray (11102)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=40489681813640&modelId=2991422"
           },
           {
             "name": "ASA",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/596088848a2b4665853f66fdaec41da1/black.png",
             "colorOptions": [
-              "White (45100)",
-              "Green (45500)",
-              "Black (45101)",
-              "Gray (45102)",
-              "Red (45200)",
-              "Blue (45600)"
+              "Black (45101)"
             ],
             "priceFrom": "$29.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/asa-filament?skr=yes&id=41227780817032&modelId=2991422"
           },
           {
             "name": "ASA",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/969e2bd5b33c47fd9aeba00f7d81fd32/gray.png",
             "colorOptions": [
-              "White (45100)",
-              "Green (45500)",
-              "Black (45101)",
-              "Gray (45102)",
-              "Red (45200)",
-              "Blue (45600)"
+              "Gray (45102)"
             ],
             "priceFrom": "$29.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/asa-filament?skr=yes&id=41227780882568&modelId=2991422"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=2991422"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
               "Glow Blue (15600)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=2991422"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
             "priceFrom": "$20.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=2991422"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
             "priceFrom": "$20.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=2991422"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2991422"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2991422"
           }
         ],
         "attachments": [
@@ -619,34 +556,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2995237"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2995237"
           }
         ],
         "attachments": [
@@ -1164,36 +1089,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3004535"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3004535"
           }
         ],
         "attachments": [],
@@ -1751,34 +1662,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3004633"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3004633"
           }
         ],
         "attachments": [],
@@ -2057,34 +1956,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3009502"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3009502"
           }
         ],
         "attachments": [
@@ -2550,36 +2437,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3012967"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3012967"
           }
         ],
         "attachments": [
@@ -3090,36 +2963,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3015809"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3015809"
           }
         ],
         "attachments": [
@@ -4408,187 +4267,122 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3021877"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3021877"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3021877"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Yellow (15400)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3021877"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/8ea96321809b43e18d06d1b13dba3371/5d4ad98b7e6fd7642323ef49163d8697_dc0d9844-1668-4026-b430-b3be661988d3.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Pink (15200)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487892104&modelId=3021877"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/b852ee64945540208e55b588ee6e8e26/e40cbbf6e7fed96557d8e2be99e4b9cf_874f9392-3fe3-4c65-87cc-91b158674eb3.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Orange (15300)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487793800&modelId=3021877"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
               "Glow Blue (15600)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3021877"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3021877"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
             "priceFrom": "$20.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=3021877"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
             "priceFrom": "$20.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=3021877"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Black (12104)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3021877"
           },
           {
             "name": "PLA Tough+",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
             "colorOptions": [
-              "Black (12104)",
-              "White (12107)",
-              "Yellow (12401)",
-              "Orange (12301)",
-              "Gray (12105)",
-              "Silver (12106)",
-              "Cyan (12601)"
+              "Gray (12105)"
             ],
-            "priceFrom": "$20.99 USD",
-            "url": ""
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3021877"
           }
         ],
         "attachments": [
@@ -5067,87 +4861,52 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3043821"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3043821"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3043821"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3043821"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3043821"
           }
         ],
         "attachments": [
@@ -6039,146 +5798,92 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3067591"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3067591"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/f19847c3b512400588d34b27434a01ad/pla_basic_dark_gray.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Dark Gray (10105)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3067591"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3067591"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3067591"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3067591"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
               "Glow Blue (15600)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3067591"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Yellow (15400)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3067591"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3067591"
           }
         ],
         "attachments": [
@@ -6514,67 +6219,42 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3073830"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3073830"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3073830"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3073830"
           }
         ],
         "attachments": [],
@@ -6988,50 +6668,32 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3090735"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3090735"
           },
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3090735"
           }
         ],
         "attachments": [
@@ -7459,67 +7121,42 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3126566"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3126566"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Gray (10103)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3126566"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3126566"
           }
         ],
         "attachments": [
@@ -7850,36 +7487,22 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3149588"
           },
           {
             "name": "PLA Basic",
             "quantity": 4,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Light Gray (10104)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3149588"
           }
         ],
         "attachments": [
@@ -8526,50 +8149,32 @@ window.CATALOG_DATA = {
           {
             "name": "PLA Glow",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
             "colorOptions": [
-              "Glow Green (15500)",
-              "Glow Pink (15200)",
-              "Glow Orange (15300)",
-              "Glow Yellow (15400)",
-              "Glow Blue (15600)"
+              "Glow Green (15500)"
             ],
             "priceFrom": "$24.99 USD",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3166617"
           },
           {
             "name": "PLA Basic",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
             "colorOptions": [
-              "Jade White (10100)",
-              "Beige (10201)",
-              "Light Gray (10104)",
-              "Yellow (10400)",
-              "Sunflower Yellow (10402)",
-              "Pumpkin Orange (10301)",
-              "Orange (10300)",
-              "Gold (10401)"
+              "Black (10101)"
             ],
-            "priceFrom": "$12.99",
-            "url": ""
+            "priceFrom": "$14.94",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3166617"
           },
           {
             "name": "PLA Matte",
             "quantity": 1,
-            "image": "",
+            "image": "https://store.bblcdn.com/s7/default/1f628abee56742aba4d870cad67a1110/7_fea42c37-c6dc-4588-8778-162cf2ee8ab4.jpg",
             "colorOptions": [
-              "Ivory White (11100)",
-              "Bone White (11103)",
-              "Lemon Yellow (11400)",
-              "Mandarin Orange (11300)",
-              "Sakura Pink (11201)",
-              "Lilac purple (11700)",
-              "Plum (11204)",
-              "Scarlet Red (11200)"
+              "Bone White (11103)"
             ],
             "priceFrom": "$12.99",
-            "url": ""
+            "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=43292383936648&modelId=3166617"
           }
         ],
         "attachments": [],
