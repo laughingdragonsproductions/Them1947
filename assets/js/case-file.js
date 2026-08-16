@@ -76,25 +76,79 @@ function renderEngagement(item, detail) {
   </div>`;
 }
 
-function renderPrintProfile(item, detail) {
-  const profile = detail.printProfile || {};
-  const printers = profile.printers || [];
-  const pills = printers.length
-    ? `<div class="case-profile-pills">${printers
-        .slice(0, 8)
-        .map((name, index) => `<span class="case-pill${index === 0 ? " is-active" : ""}">${escapeHtml(name)}</span>`)
-        .join("")}</div>`
-    : `<p class="case-redacted-block">Print profiles: REDACTED — view on MakerWorld</p>`;
+function getPrintProfiles(detail) {
+  if (detail.printProfiles?.length) return detail.printProfiles;
+  return detail.printProfile ? [detail.printProfile] : [];
+}
 
+function mergePrinterSpecs(profile, printerName) {
+  const override = (profile.byPrinter && printerName && profile.byPrinter[printerName]) || {};
+  return { ...profile, ...override };
+}
+
+function formatPlateCount(count) {
+  if (count == null || count === "") return null;
+  const num = Number(count);
+  if (!Number.isFinite(num)) return String(count);
+  return `${num} plate${num === 1 ? "" : "s"}`;
+}
+
+function formatLayerHeight(value) {
+  if (!value) return null;
+  const text = String(value);
+  return /mm/i.test(text) ? text : `${text} mm`;
+}
+
+function renderSettingRows(profile) {
   const rows = [
-    ["Build plate", profile.buildPlates != null ? `${profile.buildPlates} plate${profile.buildPlates === 1 ? "" : "s"}` : null],
-    ["Layer height", profile.layerHeight ? `${profile.layerHeight} mm` : null],
+    ["Build plate", formatPlateCount(profile.buildPlates)],
+    ["Layer height", formatLayerHeight(profile.layerHeight)],
     ["Walls", profile.walls || null],
     ["Infill", profile.infill || null],
     ["Supports", profile.supports || null],
     ["Print time (est.)", profile.printTime || null],
+    ["Filament", profile.weight || null],
     ["Difficulty", profile.difficulty || null],
   ];
+  return rows
+    .map(
+      ([label, value]) => `<div class="case-setting-row">
+            <dt>${label}</dt>
+            <dd>${redacted(value)}</dd>
+          </div>`
+    )
+    .join("");
+}
+
+function renderPrinterPills(printers, activeName) {
+  if (!printers.length) {
+    return `<p class="case-redacted-block">Print profiles: REDACTED — view on MakerWorld</p>`;
+  }
+  return `<div class="case-profile-pills" role="tablist" aria-label="Printer models">${printers
+    .map((name) => {
+      const active = name === activeName;
+      return `<button type="button" class="case-pill${active ? " is-active" : ""}" role="tab" aria-selected="${active ? "true" : "false"}" data-printer="${escapeHtml(name)}">${escapeHtml(name)}</button>`;
+    })
+    .join("")}</div>`;
+}
+
+function renderProfileChoices(profiles, activeIndex) {
+  if (profiles.length < 2) return "";
+  return `<div class="case-profile-choices" role="tablist" aria-label="Print profiles">${profiles
+    .map((profile, index) => {
+      const active = index === activeIndex;
+      const label = profile.title || `Profile ${index + 1}`;
+      return `<button type="button" class="case-profile-choice${active ? " is-active" : ""}" role="tab" aria-selected="${active ? "true" : "false"}" data-profile-index="${index}">${escapeHtml(label)}</button>`;
+    })
+    .join("")}</div>`;
+}
+
+function renderPrintProfile(item, detail) {
+  const profiles = getPrintProfiles(detail);
+  const profile = profiles[0] || detail.printProfile || {};
+  const printers = profile.printers || [];
+  const activePrinter = printers[0] || "";
+  const specs = mergePrinterSpecs(profile, activePrinter);
 
   const settings = profile.title
     ? `<p class="case-profile-title">${escapeHtml(profile.title)}</p>`
@@ -110,18 +164,12 @@ function renderPrintProfile(item, detail) {
     </div>
     <p class="case-label">Category</p>
     <p class="case-category">${redacted(detail.category)}</p>
-    <p class="case-label">Print profile</p>
+    <p class="case-label">Print profile${profiles.length > 1 ? ` (${profiles.length})` : ""}</p>
+    ${renderProfileChoices(profiles, 0)}
     ${settings}
-    ${pills}
+    ${renderPrinterPills(printers, activePrinter)}
     <dl class="case-settings">
-      ${rows
-        .map(
-          ([label, value]) => `<div class="case-setting-row">
-            <dt>${label}</dt>
-            <dd>${redacted(value)}</dd>
-          </div>`
-        )
-        .join("")}
+      ${renderSettingRows(specs)}
     </dl>
     <a class="case-mw-btn" href="${item.makerWorldUrl}" target="_blank" rel="noopener">View on MakerWorld</a>
     <div class="case-action-stats">
@@ -261,6 +309,62 @@ function renderCaseFile(item) {
   </article>`;
 }
 
+function initCaseFilePrinters(item) {
+  const dossier = document.querySelector(".case-dossier");
+  if (!dossier) return;
+  const profiles = getPrintProfiles(item.detail || {});
+  if (!profiles.length) return;
+
+  let profileIndex = 0;
+  let printerName = profiles[0].printers?.[0] || "";
+
+  const titleEl = dossier.querySelector(".case-profile-title");
+  const settingsEl = dossier.querySelector(".case-settings");
+
+  function currentProfile() {
+    return profiles[profileIndex] || profiles[0];
+  }
+
+  function renderPills() {
+    const profile = currentProfile();
+    const printers = profile.printers || [];
+    if (!printers.includes(printerName)) printerName = printers[0] || "";
+    const existing = dossier.querySelector(".case-profile-pills");
+    const markup = renderPrinterPills(printers, printerName);
+    if (existing) existing.outerHTML = markup;
+  }
+
+  function applySpecs() {
+    const profile = currentProfile();
+    if (titleEl) titleEl.textContent = profile.title || "";
+    if (settingsEl) settingsEl.innerHTML = renderSettingRows(mergePrinterSpecs(profile, printerName));
+    dossier.querySelectorAll("[data-printer]").forEach((button) => {
+      const active = button.getAttribute("data-printer") === printerName;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    dossier.querySelectorAll("[data-profile-index]").forEach((button) => {
+      const active = Number(button.getAttribute("data-profile-index")) === profileIndex;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", active ? "true" : "false");
+    });
+  }
+
+  dossier.addEventListener("click", (event) => {
+    const profileBtn = event.target.closest("[data-profile-index]");
+    if (profileBtn) {
+      profileIndex = Number(profileBtn.getAttribute("data-profile-index")) || 0;
+      renderPills();
+      applySpecs();
+      return;
+    }
+    const printerBtn = event.target.closest("[data-printer]");
+    if (!printerBtn) return;
+    printerName = printerBtn.getAttribute("data-printer") || "";
+    applySpecs();
+  });
+}
+
 function initCaseFileGallery() {
   const hero = document.querySelector(".case-gallery-hero");
   document.querySelectorAll(".case-thumb").forEach((button) => {
@@ -298,4 +402,5 @@ function initCaseFilePage() {
     node.classList.add("is-visible");
   });
   initCaseFileGallery();
+  initCaseFilePrinters(item);
 }

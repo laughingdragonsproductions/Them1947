@@ -53,7 +53,7 @@ function renderFooter() {
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; ${year} ${cfg.legalName || "THEM 1947"}. All rights reserved. Files remain classified until declassification.</p>
+      <p>&copy; ${year} ${cfg.legalName || "THEM 1947"}. All rights reserved.</p>
     </div>
   </footer>`;
 }

@@ -11,6 +11,7 @@ import ssl
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -215,6 +216,53 @@ def category_path(categories: list[dict] | None) -> str | None:
     return " > ".join(reversed(names))
 
 
+PRINTER_ORDER = [
+    "P2S",
+    "A2L",
+    "A1",
+    "H2S",
+    "H2C",
+    "H2D",
+    "X2D",
+    "H2D Pro",
+    "P1S",
+    "P1P",
+    "X1 Carbon",
+    "X1",
+    "X1E",
+    "A1 mini",
+]
+
+
+def sort_printers(names: list[str]) -> list[str]:
+    rank = {name: index for index, name in enumerate(PRINTER_ORDER)}
+    return sorted(dict.fromkeys(names), key=lambda name: (rank.get(name, 100), name.lower()))
+
+
+def setting_value(settings: dict, key: str):
+    value = settings.get(key)
+    if value is None or value == "":
+        return None
+    return value
+
+
+def format_infill(value) -> str | None:
+    if value is None or value == "":
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    if text.endswith("%"):
+        return text
+    return f"{text}%"
+
+
+def format_weight(grams) -> str | None:
+    if grams is None or grams == "":
+        return None
+    return f"{grams} g"
+
+
 def printer_names(instance: dict) -> list[str]:
     names: list[str] = []
     ext = instance.get("extention") or {}
@@ -227,7 +275,25 @@ def printer_names(instance: dict) -> list[str]:
         name = entry.get("devProductName")
         if name and name not in names:
             names.append(name)
-    return names
+    for entry in ext.get("otherCompatibilityModelInfo") or []:
+        name = entry.get("devProductName")
+        if name and name not in names:
+            names.append(name)
+    return sort_printers(names)
+
+
+def variant_from_compat_entry(entry: dict, fallback: dict) -> dict:
+    model_info = entry.get("modelInfo") or {}
+    settings = model_info.get("projectSettings") or {}
+    plates = model_info.get("plates") or []
+    return {
+        "buildPlates": len(plates) if plates else fallback.get("buildPlates"),
+        "layerHeight": setting_value(settings, "layerHeight") or fallback.get("layerHeight"),
+        "walls": setting_value(settings, "wallLoops") or fallback.get("walls"),
+        "infill": format_infill(setting_value(settings, "sparseInfillDensity")) or fallback.get("infill"),
+        "printTime": format_hours(entry.get("prediction")) or fallback.get("printTime"),
+        "weight": format_weight(entry.get("weight")) or fallback.get("weight"),
+    }
 
 
 def pick_instance(detail: dict) -> dict | None:
@@ -246,20 +312,57 @@ def extract_print_profile(instance: dict) -> dict:
     settings = model_info.get("projectSettings") or {}
     plates = model_info.get("plates") or []
     supports = parse_supports(instance.get("summary") or "")
-    return {
+    infill = format_infill(setting_value(settings, "sparseInfillDensity"))
+    profile = {
         "title": (instance.get("title") or "").strip(),
         "printers": printer_names(instance),
         "buildPlates": len(plates) if plates else None,
-        "layerHeight": settings.get("layerHeight") or None,
-        "walls": settings.get("wallLoops") or None,
-        "infill": settings.get("sparseInfillDensity") or None,
+        "layerHeight": setting_value(settings, "layerHeight"),
+        "walls": setting_value(settings, "wallLoops"),
+        "infill": infill,
         "supports": supports,
         "printTime": format_hours(instance.get("prediction")),
+        "weight": format_weight(instance.get("weight")),
         "difficulty": format_difficulty(instance.get("score")),
         "downloadCount": instance.get("downloadCount"),
         "printCount": instance.get("printCount"),
         "ratingCount": instance.get("ratingCount"),
     }
+    fallback = {
+        "buildPlates": profile["buildPlates"],
+        "layerHeight": profile["layerHeight"],
+        "walls": profile["walls"],
+        "infill": profile["infill"],
+        "printTime": profile["printTime"],
+        "weight": profile["weight"],
+    }
+    by_printer: dict[str, dict] = {}
+    primary = (model_info.get("compatibility") or {}).get("devProductName")
+    if primary:
+        by_printer[primary] = dict(fallback)
+    for entry in ext.get("otherCompatibilityModelInfo") or []:
+        name = entry.get("devProductName")
+        if name:
+            by_printer[name] = variant_from_compat_entry(entry, fallback)
+    for name in profile["printers"]:
+        if name not in by_printer:
+            by_printer[name] = dict(fallback)
+    profile["printers"] = sort_printers(list(by_printer.keys()))
+    profile["byPrinter"] = {name: by_printer[name] for name in profile["printers"]}
+    return profile
+
+
+def extract_print_profiles(detail: dict) -> list[dict]:
+    instances = detail.get("instances") or []
+    default_id = detail.get("defaultInstanceId")
+    ordered = sorted(
+        instances,
+        key=lambda inst: (
+            0 if inst.get("isDefault") or inst.get("id") == default_id else 1,
+            inst.get("id") or 0,
+        ),
+    )
+    return [extract_print_profile(inst) for inst in ordered]
 
 
 def lowest_price(entry: dict) -> tuple[str | None, float | None]:
@@ -372,6 +475,7 @@ def enrich_classified_item(item: dict, detail: dict) -> None:
     gallery = download_gallery(gallery_urls, slug_dir, item.get("image"))
     if gallery:
         item["image"] = gallery[0]
+    profiles = extract_print_profiles(detail)
     item["detail"] = {
         "caseFile": item.get("caseFile"),
         "specimenLabel": item.get("specimenLabel"),
@@ -382,7 +486,8 @@ def enrich_classified_item(item: dict, detail: dict) -> None:
         "designerAvatar": (detail.get("designCreator") or {}).get("avatar") or "",
         "publishedAt": (detail.get("createTime") or "")[:10] or None,
         "gallery": gallery or [item["image"]],
-        "printProfile": extract_print_profile(instance) if instance else None,
+        "printProfile": profiles[0] if profiles else None,
+        "printProfiles": profiles,
         "bom": extract_bom(detail),
         "attachments": extract_attachments(detail),
         "shareCount": detail.get("shareCount") or 0,
@@ -414,9 +519,9 @@ def build_item(hit: dict, path_slug: str | None = None) -> dict:
         "pathSlug": path_slug or filename,
         "blurb": f"MakerWorld listing: {title}. "
         + (
-            "Classified case file — checkout stays closed until declassification."
+            "Grey-series 3D print. Download the files on MakerWorld."
             if vault == "classified"
-            else "Public release cleared for MakerWorld download."
+            else "Public MakerWorld download."
         ),
         "image": web_path,
         "status": vault,
@@ -556,7 +661,46 @@ def emit_js(items: list[dict]) -> None:
     OUT_JS.write_text(js, encoding="utf-8")
 
 
+def load_catalog_payload() -> dict:
+    src = OUT_JS.read_text(encoding="utf-8")
+    json_part = src.split("window.CATALOG_DATA = ", 1)[1].strip()
+    if json_part.endswith(";"):
+        json_part = json_part[:-1]
+    return json.loads(json_part)
+
+
+def refresh_print_profiles() -> None:
+    payload = load_catalog_payload()
+    items = payload.get("items") or []
+    classified = [item for item in items if item.get("vault") == "classified"]
+    print(f"Refreshing printer profiles for {len(classified)} classified models…")
+    for item in classified:
+        detail = fetch_design(item["makerWorldId"])
+        if not detail:
+            continue
+        profiles = extract_print_profiles(detail)
+        if not item.get("detail"):
+            item["detail"] = {}
+        item["detail"]["printProfiles"] = profiles
+        item["detail"]["printProfile"] = profiles[0] if profiles else None
+        names = profiles[0]["printers"] if profiles else []
+        print(f"  {item.get('name')}: {len(profiles)} profile(s), {len(names)} printers")
+    payload["pulledAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    js = (
+        "/** Auto-generated by scripts/pull-makerworld-catalog.py — do not edit by hand. */\n"
+        "window.CATALOG_DATA = "
+        + json.dumps(payload, indent=2, ensure_ascii=False)
+        + ";\n"
+    )
+    OUT_JS.write_text(js, encoding="utf-8")
+    print(f"Updated print profiles in {OUT_JS}")
+
+
 def main() -> None:
+    if "--profiles-only" in sys.argv:
+        refresh_print_profiles()
+        return
+
     CLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)
     DECLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)
     PRINTS_DIR.mkdir(parents=True, exist_ok=True)

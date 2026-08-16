@@ -2,7 +2,7 @@
 window.SITE_CONFIG = {
   name: "THEM 1947",
   legalName: "THEM 1947",
-  tagline: "Classified 3D prints and digital files. Declassification pending.",
+  tagline: "Grey-series 3D prints and digital files.",
   domain: "https://them1947.com",
   web3formsAccessKey: "",
   videos: {
