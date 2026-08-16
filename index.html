@@ -23,8 +23,22 @@
         webkit-playsinline
         preload="metadata"
         poster="/assets/video/landing-poster.jpg"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
       >
         <source src="/assets/video/landing.mp4" type="video/mp4" />
+      </video>
+
+      <video
+        id="brief-video"
+        class="landing-video is-dormant"
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
+        <source src="/assets/video/classified-brief.mp4" type="video/mp4" />
       </video>
 
       <img
@@ -34,13 +48,24 @@
         alt=""
       />
 
-      <div class="landing-scrim" aria-hidden="true"></div>
+      <div id="dossier-stage" class="dossier-stage" hidden aria-hidden="true">
+        <div class="dossier-table" aria-hidden="true"></div>
+        <img
+          id="dossier-clue"
+          class="dossier-clue"
+          src="/assets/brand/mainfile-dossier.png"
+          alt=""
+          draggable="false"
+        />
+      </div>
+
+      <div id="landing-scrim" class="landing-scrim" aria-hidden="true"></div>
 
       <div id="start-overlay" class="start-overlay">
         <button id="start-btn" class="start-btn" type="button">
           <img class="start-logo" src="/assets/brand/logo.png" alt="" />
           <span class="start-label">Tap to begin</span>
-          <span class="start-hint">Landing transmission plays first</span>
+          <span class="start-hint">Two transmissions play first</span>
         </button>
       </div>
 
@@ -58,14 +83,46 @@
           type="button"
           disabled
           aria-disabled="true"
-          aria-label="Open classified folder"
+          aria-label="Open classified archive"
         >
           <span class="folder-body">
             <span class="folder-tab"></span>
             <span class="folder-stamp">Classified</span>
           </span>
         </button>
-        <p class="coming-soon">Coming soon</p>
+        <div class="landing-banner-row">
+          <p class="coming-soon">Coming soon</p>
+          <button
+            id="bypass-btn"
+            class="bypass-btn"
+            type="button"
+            hidden
+            aria-hidden="true"
+          >
+            Terminal access
+          </button>
+        </div>
+        <div id="bypass-bar" class="bypass-bar" hidden aria-hidden="true">
+          <form id="bypass-form" class="bypass-form" autocomplete="off">
+            <label class="bypass-label" for="bypass-input">Clearance code · read the dossier</label>
+            <div class="bypass-input-row">
+              <input
+                id="bypass-input"
+                class="bypass-input"
+                type="text"
+                name="clearance"
+                autocomplete="off"
+                spellcheck="false"
+                maxlength="32"
+                disabled
+              />
+              <button id="bypass-submit" class="bypass-submit" type="submit" disabled>
+                Access
+              </button>
+            </div>
+          </form>
+          <p id="bypass-status" class="bypass-status" aria-live="polite"></p>
+        </div>
       </div>
 
       <footer id="landing-footer" class="landing-footer">
@@ -75,17 +132,8 @@
       </footer>
     </main>
 
-    <div id="brief-overlay" class="brief-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Classified brief">
-      <div class="brief-panel">
-        <button id="brief-close" class="brief-close" type="button">Close</button>
-        <button id="brief-replay" class="brief-replay" type="button">Replay</button>
-        <video id="brief-video" class="brief-video" controls playsinline preload="metadata">
-          <source src="/assets/video/classified-brief.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-
     <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/site-gate.js"></script>
     <script src="/assets/js/landing.js"></script>
   </body>
 </html>

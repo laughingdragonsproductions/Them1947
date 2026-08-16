@@ -4,47 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contact THEM 1947 — questions, press, and site inquiries." />
-    <title>Contact — THEM 1947</title>
+    <title>Contact</title>
     <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
     <link rel="stylesheet" href="/assets/css/site.css" />
     <link rel="canonical" href="https://them1947.com/contact/" />
   </head>
   <body>
-    <header class="legal-header">
-      <a href="/"><img src="/assets/brand/logo.png" alt="THEM 1947" /></a>
-      <h1>Contact</h1>
-      <p>Reach the THEM 1947 team</p>
-    </header>
-    <main class="legal-main">
-      <p>Questions about the site, press, or collaborations — send a message below.</p>
-      <form class="contact-form" id="contact-form" novalidate>
-        <input type="checkbox" name="botcheck" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="form-field">
-          <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" name="name" required autocomplete="name" maxlength="80" />
-        </div>
-        <div class="form-field">
-          <label for="contact-email">Email</label>
-          <input type="email" id="contact-email" name="email" required autocomplete="email" />
-        </div>
-        <div class="form-field">
-          <label for="contact-subject">Subject <span class="optional">(optional)</span></label>
-          <input type="text" id="contact-subject" name="subject" maxlength="120" />
-        </div>
-        <div class="form-field">
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" required rows="6" maxlength="5000"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
-      </form>
-    </main>
-    <footer class="legal-footer">
-      <a href="/">Home</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-    </footer>
+    <div id="app"></div>
     <script src="/assets/js/config.js"></script>
-    <script src="/assets/js/contact.js"></script>
+    <script src="/assets/js/site-gate.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script>
+      if (SiteGate.requireAccess()) {
+        initPage({
+          title: "Contact",
+          description: "Contact THEM 1947 — questions, press, and site inquiries.",
+          activePath: "/contact/",
+          adSlots: false,
+          content: `
+          <header class="page-header reveal">
+            <p class="pillar-eyebrow">Transmission</p>
+            <h1>Contact</h1>
+            <p>Questions about the archive, press, or collaborations — send a message. Do not use this form to pay for classified files.</p>
+          </header>
+          ${renderContactForm()}
+        `,
+        });
+      }
+    </script>
   </body>
 </html>

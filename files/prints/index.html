@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="THEM 1947 classified case files — Grey-series 3D prints pending declassification." />
+    <title>Classified Case Files</title>
+    <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="canonical" href="https://them1947.com/files/prints/" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/site-gate.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/catalog-data.js"></script>
+    <script src="/assets/js/catalog.js"></script>
+    <script>
+      if (SiteGate.requireAccess()) {
+        initCatalogPage({
+          title: "Classified Case Files",
+          description: "THEM 1947 classified case files — Grey-series 3D prints pending declassification.",
+          activePath: "/files/prints/",
+          content: renderCategoryPage({
+            vault: "classified",
+            title: "Classified case files",
+          lede: "Alien and THEM 1947 listings from MakerWorld — code names on file, stamp on every preview, each card opens its case-file dossier.",
+          extra: `<div class="prose reveal"><h2>The vault</h2><p>Every title here matches a live MakerWorld listing. Click a card to open the full case file — evidence photos, print profile, bill of materials, and stats — then follow through to MakerWorld. The classified stamp stays on thumbnails until the batch drop replaces overlays with studio photography and enables checkout on this domain.</p></div>`,
+          }),
+        });
+      }
+    </script>
+  </body>
+</html>

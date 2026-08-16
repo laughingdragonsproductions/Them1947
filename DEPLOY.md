@@ -1,5 +1,7 @@
 # Deploy THEM 1947 to Cloudflare Pages
 
+**Stop:** do not push or deploy the Phase 2 hub until you get an explicit launch instruction. Use local `python -m http.server` only.
+
 Static site — no build step. Cloudflare serves files from the repo root.
 
 ## 1. Push this repo to GitHub
@@ -28,6 +30,35 @@ Repo: `laughingdragonsproductions/Them1947`
 | Build output directory | `/` (root) |
 
 Preview URL: `https://them1947.pages.dev`
+
+## Owner preview deploy (password gate)
+
+Use this when the owner needs to review the full site on the live domain before everyone else sees it.
+
+1. In `assets/js/config.js`, confirm:
+   ```javascript
+   previewGate: { enabled: true, passwordHash: "…", maxFails: 3 }
+   ```
+   Generate `passwordHash` with `.\scripts\hash-preview-password.ps1` — do **not** commit the plaintext clearance code.
+2. Push to `main` — Cloudflare redeploys.
+3. Tell the owner (plain language):
+   - Open **https://them1947.com**
+   - Tap **Tap to begin**, watch the intro (or let it finish)
+   - Click **Terminal access**
+   - Enter the clearance code you give them by phone or text
+   - Browse the archive; bookmark `/files/` if helpful
+   - **Closing the browser ends access** — they enter the code again on the next visit
+
+Direct links (`/files/prints/`, `/about/`, etc.) show a clearance screen until the code is entered once in that browser session.
+
+**Security note:** Only a SHA-256 hash of the clearance code is in `config.js` (not the code itself). Verification runs in the browser — zero Cloudflare Function requests. Determined users can still brute-force short codes from the hash; this keeps casual Inspect/view-source from showing the plaintext.
+
+### Public launch checklist
+
+1. Set `previewGate.enabled: false` in `assets/js/config.js`
+2. Commit and push to `main`
+3. Verify `/`, `/files/`, and `/about/` load with no gate
+4. Proceed with AdSense, Search Console, etc. (sections below)
 
 ## 3. Custom domain — them1947.com
 

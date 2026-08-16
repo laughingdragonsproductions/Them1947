@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="THEM 1947 declassified files — public MakerWorld releases cleared for download." />
+    <title>Declassified</title>
+    <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="canonical" href="https://them1947.com/files/declassified/" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/site-gate.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/catalog-data.js"></script>
+    <script src="/assets/js/catalog.js"></script>
+    <script>
+      if (SiteGate.requireAccess()) {
+        initCatalogPage({
+          title: "Declassified",
+          description: "THEM 1947 declassified files — public MakerWorld releases cleared for download.",
+          activePath: "/files/declassified/",
+          content: renderCategoryPage({
+            vault: "declassified",
+            title: "Declassified files",
+            lede: "Civilian prints cleared for public release — oldest uploads from the bench, live on MakerWorld with real photos.",
+            extra: `<div class="prose reveal"><h2>Public release room</h2><p>These listings are not part of the Grey-series vault. They are practical shop and home prints — remote holders, storage cases, replacement handles — that shipped before the classified drop. Each card links to the live MakerWorld page.</p></div>`,
+          }),
+        });
+      }
+    </script>
+  </body>
+</html>
