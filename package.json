@@ -2,6 +2,10 @@
   "name": "them1947",
   "private": true,
   "scripts": {
-    "deploy": "node scripts/prepare-worker-deploy.js && wrangler deploy"
+    "build": "node scripts/prepare-worker-deploy.js",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.123.0"
   }
 }

@@ -4,7 +4,7 @@ Static site — no build step. Cloudflare serves files from the repo root.
 
 ## Quick deploy (when Git push does not update the live site)
 
-**them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. Cloudflare Builds runs `npx wrangler deploy` — the repo must include `wrangler.jsonc` with an `assets.directory`.
+**them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. The repo includes `wrangler.jsonc`, which runs `prepare-worker-deploy.js` before upload and serves from `.worker-dist` (without `.git`).
 
 Confirm Phase 2 is live: view source on `/` — you should see `dossier-stage`, `bypass-bar`, and **Two transmissions play first**.
 
@@ -27,15 +27,17 @@ npx wrangler login
 
 This runs `node scripts/prepare-worker-deploy.js` then `wrangler deploy` (copies site files to `.worker-dist` without `.git`).
 
-**Cloudflare Builds deploy command** (Workers → them1947 → Settings → Builds):
+**Cloudflare Builds** (Workers → them1947 → Settings → Builds):
 
-```
-npm run deploy
-```
+| Setting | Value |
+|--------|--------|
+| **Build command** | *(leave empty)* or `npm run build` |
+| **Deploy command** | `npx wrangler deploy` or `npm run deploy` |
+| **Branch** | `main` (must include `wrangler.jsonc` — commit `d99c148` or later) |
 
-Or: `node scripts/prepare-worker-deploy.js && npx wrangler deploy`
+`wrangler.jsonc` runs `node scripts/prepare-worker-deploy.js` automatically before deploy, so bare `npx wrangler deploy` is safe on current `main`. **Do not manually redeploy old commits** (e.g. `79f85c6`) — they lack `wrangler.jsonc` and Wrangler will try to upload the repo root including `.git` (25 MB limit failure).
 
-Do **not** use bare `npx wrangler deploy` — it will try to upload `.git/objects/pack/` and fail the 25 MB asset limit.
+If a build still fails, set **Deploy command** to `npm run deploy` and retry from the latest `main` commit.
 
 **Option C — Cloudflare dashboard**
 

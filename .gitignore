@@ -4,4 +4,5 @@ desktop.ini
 *.bak
 .wrangler/
 .worker-dist/
+node_modules/
 _mw_detail_sample.json
