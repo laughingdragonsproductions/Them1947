@@ -143,6 +143,12 @@ function renderProfileChoices(profiles, activeIndex) {
     .join("")}</div>`;
 }
 
+function renderCoffeeLink() {
+  const url = window.SITE_CONFIG?.links?.buyMeACoffee;
+  if (!url) return "";
+  return `<p class="case-coffee-link"><a href="${escapeHtml(url)}" target="_blank" rel="noopener">Buy me a coffee</a></p>`;
+}
+
 function renderPrintProfile(item, detail) {
   const profiles = getPrintProfiles(detail);
   const profile = profiles[0] || detail.printProfile || {};
@@ -172,6 +178,7 @@ function renderPrintProfile(item, detail) {
       ${renderSettingRows(specs)}
     </dl>
     <a class="case-mw-btn" href="${item.makerWorldUrl}" target="_blank" rel="noopener">View on MakerWorld</a>
+    ${renderCoffeeLink()}
     <div class="case-action-stats">
       <span title="Boosts">&#128640; ${formatStat(item.stats?.boosts)}</span>
       <span title="Likes">&#128077; ${formatStat(item.stats?.likes)}</span>

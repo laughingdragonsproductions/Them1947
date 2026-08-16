@@ -29,6 +29,23 @@ function renderHeader(activePath) {
   </header>`;
 }
 
+function renderSupportLinks() {
+  const links = window.SITE_CONFIG?.links || {};
+  const parts = [];
+  if (links.makerWorld) {
+    parts.push(
+      `<a href="${links.makerWorld}" target="_blank" rel="noopener">MakerWorld</a>`
+    );
+  }
+  if (links.buyMeACoffee) {
+    parts.push(
+      `<a href="${links.buyMeACoffee}" target="_blank" rel="noopener">Buy me a coffee</a>`
+    );
+  }
+  if (!parts.length) return "";
+  return `<p class="footer-support">${parts.join(" · ")}</p>`;
+}
+
 function renderFooter() {
   const cfg = window.SITE_CONFIG || {};
   const year = new Date().getFullYear();
@@ -37,6 +54,7 @@ function renderFooter() {
       <div class="footer-brand">
         <img src="/assets/brand/logo.png" alt="" class="footer-logo" width="120" height="120" loading="lazy" />
         <p class="footer-tagline">${cfg.tagline || ""}</p>
+        ${renderSupportLinks()}
       </div>
       <nav class="footer-nav" aria-label="Explore">
         <strong>Archive</strong>

@@ -556,6 +556,21 @@ body.print-lightbox-open {
   color: var(--silver);
 }
 
+.footer-support {
+  margin: 0.75rem 0 0;
+  max-width: 22rem;
+  font-size: 0.88rem;
+}
+
+.footer-support a {
+  color: var(--silver);
+  text-decoration: none;
+}
+
+.footer-support a:hover {
+  color: var(--neon);
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -1263,6 +1278,24 @@ html.preview-pending #app {
 .case-mw-btn:hover {
   background: #185636;
   text-decoration: none;
+}
+
+.case-coffee-link {
+  margin: -0.35rem 0 0.85rem;
+  text-align: center;
+  font: 600 0.72rem var(--font-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-coffee-link a {
+  color: #5a4a2f;
+  text-decoration: none;
+}
+
+.case-coffee-link a:hover {
+  color: #6b4d1f;
+  text-decoration: underline;
 }
 
 .case-action-stats {
