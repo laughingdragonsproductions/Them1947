@@ -4,7 +4,8 @@
   "scripts": {
     "build": "node scripts/prepare-worker-deploy.js",
     "check": "node scripts/check-site.js",
-    "deploy": "npm run check && npm run build && wrangler deploy"
+    "check:dist": "node scripts/check-site.js --dist",
+    "deploy": "npm run check && npm run build && npm run check:dist && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.123.0"

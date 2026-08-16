@@ -80,6 +80,42 @@ META_PREFIX_RE = re.compile(
     r"^Here['\u2019]?s a MakerWorld description written in the same style, with extra emphasis on boosting the model:\s*",
     re.I,
 )
+AI_META_RES = [
+    re.compile(
+        r"^Here['\u2019]?s a MakerWorld description written in the same style.*?model:\s*",
+        re.I | re.S,
+    ),
+    re.compile(r"^written in the same style.*?model:\s*", re.I | re.S),
+    re.compile(r"with extra emphasis on boosting\s*", re.I),
+]
+COLLECTION_FOOTER_RE = re.compile(
+    r"\s*👽\s*Complete Your THEM 1947 Disclosure Alien Greys Collection.*$",
+    re.I | re.S,
+)
+COLLECTION_BLOCK_RE = re.compile(
+    r"^THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+Collection\s+Explore.*?(?=(?:Support My Work|THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[-–—]|Disclosure\s+Alien\s+Grey\b|$))",
+    re.I | re.S,
+)
+PATREON_FOOTER_RE = re.compile(
+    r"\s*Support My Work If you['\u2019]?d like to sell physical prints.*$",
+    re.I | re.S,
+)
+RATING_FOOTER_RE = re.compile(
+    r"\s*If you enjoy my work, please consider:.*$",
+    re.I | re.S,
+)
+P1S_PREAMBLE_RE = re.compile(
+    r"^This has been scaled down to 248mm fit the P1S\..*?(?=👽\s*Complete Your|THEM\s+1947|$)",
+    re.I | re.S,
+)
+PAGING_PREAMBLE_RE = re.compile(
+    r"^PAGING DR\. STEVEN GREER, PAGING DR\. STEVEN GREER.*?\.?\s*",
+    re.I | re.S,
+)
+DOWNLOAD_PREAMBLE_RE = re.compile(
+    r"^It is recommended to download the 3MF file over the STL file.*?\.?\s*",
+    re.I | re.S,
+)
 PROMO_BULLET_RE = re.compile(
     r"boost\s*me|buy\s*me\s*a\s*coffee|commercial\s*membership|make\s*money,\s*sell",
     re.I,
@@ -213,11 +249,80 @@ def sanitize_listing_html(html_text: str) -> str:
     return text.strip()
 
 
-def listing_body_text(summary_html: str, fallback: str = "") -> str:
-    cleaned = sanitize_listing_html(summary_html)
-    plain = strip_html(cleaned)
+def normalize_markdown(text: str) -> str:
+    return re.sub(r"\*\*", "", text or "")
+
+
+def trim_to_model_title(text: str) -> str:
+    title_match = re.search(
+        r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[-–—]\s*",
+        text,
+        re.I,
+    )
+    if title_match:
+        return text[title_match.start() :].strip()
+    roswell_match = re.search(r"Disclosure\s+Alien\s+Grey\b", text, re.I)
+    if roswell_match:
+        return text[roswell_match.start() :].strip()
+    if re.match(r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+Collection\b", text, re.I):
+        return text.strip()
+    match = re.search(r"THEM\s+1947", text, re.I)
+    if match:
+        return text[match.start() :].strip()
+    return text.strip()
+
+
+def title_only_fallback(item_title: str = "", detail_title: str = "") -> str:
+    raw = re.sub(r"\s+", " ", (detail_title or item_title or "")).strip()
+    if not raw:
+        return ""
+    if re.search(r"THEM\s+1947", raw, re.I):
+        return raw
+    p1s_match = re.search(r"P1S\s+Version\s+(.+)", raw, re.I)
+    if p1s_match:
+        return f"THEM 1947 Disclosure Alien Greys – {p1s_match.group(1).strip()} (P1S Version)"
+    return raw
+
+
+def trim_case_note_body(text: str, item_title: str = "", detail_title: str = "") -> str:
+    plain = text or ""
+    for pattern in AI_META_RES:
+        plain = pattern.sub("", plain)
     plain = PROMO_PLAIN_RE.sub("", plain).strip()
     plain = META_PREFIX_RE.sub("", plain).strip()
+    plain = P1S_PREAMBLE_RE.sub("", plain).strip()
+    plain = PAGING_PREAMBLE_RE.sub("", plain).strip()
+    plain = DOWNLOAD_PREAMBLE_RE.sub("", plain).strip()
+    plain = COLLECTION_BLOCK_RE.sub("", plain).strip()
+    plain = trim_to_model_title(plain)
+    plain = COLLECTION_FOOTER_RE.sub("", plain).strip()
+    plain = COLLECTION_BLOCK_RE.sub("", plain).strip()
+    plain = PATREON_FOOTER_RE.sub("", plain).strip()
+    plain = RATING_FOOTER_RE.sub("", plain).strip()
+    plain = normalize_markdown(plain)
+    plain = re.sub(r"\s{2,}", " ", plain).strip()
+
+    if (
+        not plain
+        or plain.startswith("This has been scaled")
+        or re.match(r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+Collection\b", plain, re.I)
+        or "Complete Your THEM 1947" in plain[:120]
+    ):
+        fallback = title_only_fallback(item_title, detail_title)
+        if fallback:
+            if plain and plain != fallback:
+                plain = f"{fallback}. {plain}".strip()
+            else:
+                plain = fallback
+    return plain
+
+
+def listing_body_text(
+    summary_html: str, fallback: str = "", item_title: str = "", detail_title: str = ""
+) -> str:
+    cleaned = sanitize_listing_html(summary_html)
+    plain = strip_html(cleaned)
+    plain = trim_case_note_body(plain, item_title, detail_title)
     if not plain:
         return fallback
     return plain[:SUMMARY_MAX]
@@ -530,7 +635,12 @@ def enrich_classified_item(item: dict, detail: dict) -> None:
     item["detail"] = {
         "caseFile": item.get("caseFile"),
         "specimenLabel": item.get("specimenLabel"),
-        "summaryText": listing_body_text(summary_html, item.get("blurb", "")),
+        "summaryText": listing_body_text(
+            summary_html,
+            item.get("blurb", ""),
+            item.get("name") or detail.get("title") or "",
+            detail.get("title") or "",
+        ),
         "features": extract_bullets(summary_html),
         "category": category_path(detail.get("categories")),
         "designer": (detail.get("designCreator") or {}).get("name") or "Raceit17",
@@ -740,19 +850,30 @@ def refresh_print_profiles() -> None:
     print(f"Updated print profiles in {OUT_JS}")
 
 
+LEADER_CANONICAL_ID = 3009502
+
+
 def refresh_case_notes() -> None:
     payload = load_catalog_payload()
     items = payload.get("items") or []
     classified = [item for item in items if item.get("vault") == "classified"]
     print(f"Refreshing case notes for {len(classified)} classified models…")
+    leader_detail = fetch_design(LEADER_CANONICAL_ID)
     for item in classified:
         detail = fetch_design(item["makerWorldId"])
         if not detail:
             continue
         summary_html = detail.get("summary") or ""
+        if item.get("makerWorldId") == 3004535 and leader_detail:
+            summary_html = leader_detail.get("summary") or summary_html
         if not item.get("detail"):
             item["detail"] = {}
-        item["detail"]["summaryText"] = listing_body_text(summary_html, item.get("blurb", ""))
+        item["detail"]["summaryText"] = listing_body_text(
+            summary_html,
+            item.get("blurb", ""),
+            item.get("name") or detail.get("title") or "",
+            detail.get("title") or "",
+        )
         item["detail"]["features"] = extract_bullets(summary_html)
         preview = item["detail"]["summaryText"][:72].replace("\n", " ")
         preview = preview.encode("ascii", "replace").decode("ascii")

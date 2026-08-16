@@ -28,6 +28,9 @@ jobs:
       - name: Prepare Worker assets
         run: npm run build
 
+      - name: Verify deploy bundle
+        run: npm run check:dist
+
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
