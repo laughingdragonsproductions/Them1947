@@ -29,7 +29,7 @@
     fd.append("access_key", accessKey);
     fd.append("from_name", subjectPrefix);
     const subject = fd.get("subject");
-    fd.set("subject", subject ? subjectPrefix + ": " + subject : subjectPrefix + " — Contact form");
+    fd.set("subject", subject ? subjectPrefix + ": " + subject : subjectPrefix + " - Contact form");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {

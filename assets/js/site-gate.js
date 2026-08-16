@@ -1,4 +1,4 @@
-/** THEM 1947 — site-wide owner preview gate (sessionStorage, client-side). */
+/** THEM 1947 - site-wide owner preview gate (sessionStorage, client-side). */
 (function () {
   const STORAGE_GRANTED = "them1947.access.granted";
   const STORAGE_FAILS = "them1947.bypass.fails";
@@ -202,8 +202,8 @@
   function deniedMessage() {
     const remaining = getRemainingAttempts();
     if (remaining <= 0) return "Access denied";
-    if (remaining === 1) return "Access denied — 1 attempt remaining";
-    return "Access denied — " + remaining + " attempts remaining";
+    if (remaining === 1) return "Access denied - 1 attempt remaining";
+    return "Access denied - " + remaining + " attempts remaining";
   }
 
   function handlePasswordResult(result, onGranted, onDenied) {
@@ -234,7 +234,7 @@
       '<img class="preview-gate-logo" src="/assets/brand/logo.png" alt="THEM 1947" width="120" height="120" />' +
       '<p class="preview-gate-eyebrow">Restricted access</p>' +
       '<h1 class="preview-gate-title">Clearance required</h1>' +
-      '<p class="preview-gate-lede">This archive is in owner preview. The dossier is on the table — read the code phrase, then enter it below.</p>' +
+      '<p class="preview-gate-lede">This archive is in owner preview. The dossier is on the table - read the code phrase, then enter it below.</p>' +
       '<form id="preview-gate-form" class="preview-gate-form" autocomplete="off">' +
       '<label class="preview-gate-label" for="preview-gate-input">Clearance code</label>' +
       '<div class="preview-gate-input-row">' +
@@ -257,7 +257,7 @@
     if (state.lockoutActive) {
       setStatusEl(
         status,
-        "Clearance revoked — enter the short cyan code from the dossier",
+        "Clearance revoked - enter the short cyan code from the dossier",
         "lockout"
       );
     }
@@ -305,7 +305,7 @@
             handlePasswordResult(result, onSuccess, onDenied);
           })
           .catch(function () {
-            setStatusEl(status, "Terminal error — try again", "denied");
+            setStatusEl(status, "Terminal error - try again", "denied");
             if (input) input.focus();
           })
           .finally(function () {

@@ -53,9 +53,22 @@ KEYWORDS = [
     "3019267",
     "2991422",
     "Roswell Grey Disclosure",
+    "Bullet Buddy",
+    "A.C. PETE",
+    "Slugo",
+    "Bucky",
+    "shotgun slugo",
+    "shotgon bucky",
 ]
 
-DECLASSIFIED_IDS = {2498466, 2913433, 2964630}
+DECLASSIFIED_IDS = {
+    2498466,
+    2913433,
+    2964630,
+    3103043,
+    3105620,
+    3109917,
+}
 
 CLASSIFIED_RE = re.compile(
     r"them\s*1947|alien|grey|greys|roswell|ufo|disclosure|3 foot|3-foot|"
@@ -93,7 +106,7 @@ COLLECTION_FOOTER_RE = re.compile(
     re.I | re.S,
 )
 COLLECTION_BLOCK_RE = re.compile(
-    r"^THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+Collection\s+Explore.*?(?=(?:Support My Work|THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[-–—]|Disclosure\s+Alien\s+Grey\b|$))",
+    r"^THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+Collection\s+Explore.*?(?=(?:Support My Work|THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[---]|Disclosure\s+Alien\s+Grey\b|$))",
     re.I | re.S,
 )
 PATREON_FOOTER_RE = re.compile(
@@ -164,21 +177,49 @@ def collect_models() -> dict[int, dict]:
                 if creator.get("name") != "Raceit17":
                     continue
                 seen[hit["id"]] = hit
+    for model_id in sorted(DECLASSIFIED_IDS):
+        if model_id in seen:
+            continue
+        detail = fetch_design(model_id)
+        if not detail:
+            print(f"warn: declassified design {model_id} unavailable")
+            continue
+        creator = detail.get("designCreator") or {}
+        if creator.get("name") != "Raceit17":
+            print(f"warn: declassified design {model_id} is not Raceit17")
+            continue
+        seen[model_id] = design_to_hit(detail)
     return seen
+
+
+def design_to_hit(detail: dict) -> dict:
+    creator = detail.get("designCreator") or {}
+    return {
+        "id": detail["id"],
+        "title": detail.get("title") or "",
+        "slug": detail.get("slug") or f"model-{detail['id']}",
+        "cover": detail.get("coverUrl") or "",
+        "coverUrl": detail.get("coverUrl") or "",
+        "likeCount": detail.get("likeCount") or 0,
+        "collectionCount": detail.get("collectionCount") or 0,
+        "downloadCount": detail.get("downloadCount") or 0,
+        "printCount": detail.get("printCount") or 0,
+        "designCreator": creator,
+    }
 
 
 def clean_case_name(title: str) -> str:
     """Remove redundant THEM 1947 from display titles."""
     s = re.sub(r"\s+", " ", (title or "").strip())
     s = re.sub(
-        r"(?:^|\s|[-–—])\s*THEM\s+1947(?:\s+Series)?\s*(?:[-–—]\s*)?",
+        r"(?:^|\s|[---])\s*THEM\s+1947(?:\s+Series)?\s*(?:[---]\s*)?",
         " ",
         s,
         flags=re.I,
     )
     s = re.sub(r"\s{2,}", " ", s).strip()
-    s = re.sub(r"^[-–—]\s*", "", s)
-    s = re.sub(r"\s*[-–—]$", "", s)
+    s = re.sub(r"^[---]\s*", "", s)
+    s = re.sub(r"\s*[---]$", "", s)
     return re.sub(r"\s{2,}", " ", s).strip()
 
 
@@ -253,9 +294,13 @@ def normalize_markdown(text: str) -> str:
     return re.sub(r"\*\*", "", text or "")
 
 
+def normalize_dashes(text: str) -> str:
+    return text.translate(str.maketrans({"—": "-", "–": "-"}))
+
+
 def trim_to_model_title(text: str) -> str:
     title_match = re.search(
-        r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[-–—]\s*",
+        r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[---]\s*",
         text,
         re.I,
     )
@@ -280,7 +325,7 @@ def title_only_fallback(item_title: str = "", detail_title: str = "") -> str:
         return raw
     p1s_match = re.search(r"P1S\s+Version\s+(.+)", raw, re.I)
     if p1s_match:
-        return f"THEM 1947 Disclosure Alien Greys – {p1s_match.group(1).strip()} (P1S Version)"
+        return f"THEM 1947 Disclosure Alien Greys - {p1s_match.group(1).strip()} (P1S Version)"
     return raw
 
 
@@ -314,7 +359,7 @@ def trim_case_note_body(text: str, item_title: str = "", detail_title: str = "")
                 plain = f"{fallback}. {plain}".strip()
             else:
                 plain = fallback
-    return plain
+    return normalize_dashes(plain)
 
 
 def listing_body_text(
@@ -815,7 +860,7 @@ def generate_case_pages(items: list[dict]) -> set[str]:
         active_slugs.add(slug)
         page_dir = PRINTS_DIR / slug
         page_dir.mkdir(parents=True, exist_ok=True)
-        description = f"CASE FILE {item.get('caseFile', '000')} — {item['name']}. Classified THEM 1947 specimen file."
+        description = f"CASE FILE {item.get('caseFile', '000')} - {item['name']}. Classified THEM 1947 specimen file."
         html_doc = CASE_FILE_HTML.format(
             description=html.escape(description),
             title=html.escape(item["name"]),
@@ -965,12 +1010,42 @@ def refresh_bom() -> None:
     print(f"Updated BOM data in {OUT_JS}")
 
 
+def refresh_declassified() -> None:
+    payload = load_catalog_payload()
+    classified_items = [item for item in payload.get("items") or [] if item.get("vault") == "classified"]
+    used_slugs = {item["pathSlug"] for item in payload.get("items") or []}
+    print(f"Refreshing {len(DECLASSIFIED_IDS)} declassified models…")
+    declassified_items: list[dict] = []
+    for model_id in sorted(DECLASSIFIED_IDS):
+        detail = fetch_design(model_id)
+        if not detail:
+            print(f"  warn: missing design {model_id}")
+            continue
+        creator = detail.get("designCreator") or {}
+        if creator.get("name") != "Raceit17":
+            print(f"  warn: design {model_id} is not Raceit17")
+            continue
+        hit = design_to_hit(detail)
+        slug = hit.get("slug") or f"model-{model_id}"
+        path_slug = unique_path_slug(slug, model_id, used_slugs)
+        item = build_item(hit, path_slug)
+        declassified_items.append(item)
+        print(f"  {item['name']}")
+    items = sorted(declassified_items + classified_items, key=lambda entry: entry["makerWorldId"])
+    assign_case_files(items)
+    emit_js(items)
+    print(f"Updated declassified listings in {OUT_JS}")
+
+
 def main() -> None:
     if "--profiles-only" in sys.argv:
         refresh_print_profiles()
         return
     if "--bom-only" in sys.argv:
         refresh_bom()
+        return
+    if "--declassified-only" in sys.argv:
+        refresh_declassified()
         return
     if "--notes-only" in sys.argv:
         refresh_case_notes()
@@ -1004,7 +1079,7 @@ def main() -> None:
     for item in items:
         summary[item["vault"]] += 1
     print(
-        f"Wrote {OUT_JS} — {summary['total']} models "
+        f"Wrote {OUT_JS} - {summary['total']} models "
         f"({summary['classified']} classified, {summary['declassified']} declassified); "
         f"{summary['classified']} case-file pages"
     )

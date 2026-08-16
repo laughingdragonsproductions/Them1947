@@ -23,7 +23,7 @@ function escapeHtml(text) {
 
 function formatBytes(bytes) {
   const num = Number(bytes) || 0;
-  if (!num) return "—";
+  if (!num) return "-";
   if (num >= 1048576) return `${(num / 1048576).toFixed(1)} MB`;
   if (num >= 1024) return `${(num / 1024).toFixed(1)} KB`;
   return `${num} B`;
@@ -122,7 +122,7 @@ function renderSettingRows(profile) {
 
 function renderPrinterPills(printers, activeName) {
   if (!printers.length) {
-    return `<p class="case-redacted-block">Print profiles: REDACTED — view on MakerWorld</p>`;
+    return `<p class="case-redacted-block">Print profiles: REDACTED - view on MakerWorld</p>`;
   }
   return `<div class="case-profile-pills" role="tablist" aria-label="Printer models">${printers
     .map((name) => {
@@ -196,7 +196,7 @@ function renderBom(detail, mwUrl) {
         <h2>Bill of materials</h2>
         <span class="case-stamp case-stamp-green">Authorized personnel only</span>
       </div>
-      <p class="case-redacted-block">Material manifest REDACTED — <a href="${mwUrl}" target="_blank" rel="noopener">View materials on MakerWorld</a></p>
+      <p class="case-redacted-block">Material manifest REDACTED - <a href="${mwUrl}" target="_blank" rel="noopener">View materials on MakerWorld</a></p>
     </section>`;
   }
 
@@ -403,7 +403,7 @@ function initCaseFilePage() {
 
   const displayName = cleanCaseName(item.name);
   initPage({
-    title: `Case File ${item.caseFile || ""} — ${displayName}`,
+    title: `Case File ${item.caseFile || ""} - ${displayName}`,
     description: `CASE FILE ${item.caseFile || ""}: ${displayName}. Classified THEM 1947 specimen dossier with MakerWorld print data.`,
     activePath: `/files/prints/${item.pathSlug}/`,
     content: renderCaseFile(item),

@@ -1,4 +1,4 @@
-/** THEM 1947 — site config */
+/** THEM 1947 - site config */
 window.SITE_CONFIG = {
   name: "THEM 1947",
   legalName: "THEM 1947",
@@ -22,7 +22,7 @@ window.SITE_CONFIG = {
       inContent: "",
     },
   },
-  /** Owner preview gate — set enabled: true to require clearance on inner pages. */
+  /** Owner preview gate - set enabled: true to require clearance on inner pages. */
   previewGate: {
     enabled: false,
     passwordHash: "",

@@ -72,7 +72,7 @@ function scanTree(baseRel, patterns, filter) {
 console.log(DIST_ONLY ? "THEM 1947 deploy bundle check\n" : "THEM 1947 site check\n");
 
 if (DIST_ONLY) {
-  if (!fileExists(".worker-dist")) fail("Missing .worker-dist — run npm run build first");
+  if (!fileExists(".worker-dist")) fail("Missing .worker-dist - run npm run build first");
   scanTree(
     ".worker-dist/assets/js",
     FORBIDDEN_PATTERNS,
@@ -121,7 +121,7 @@ if (DIST_ONLY) {
   }
   if (/password:\s*["']/.test(configSrc)) fail("config.js must not store plaintext preview password");
   if (/web3formsAccessKey:\s*""/.test(configSrc)) {
-    warn("web3formsAccessKey is empty — contact form will not send until configured");
+    warn("web3formsAccessKey is empty - contact form will not send until configured");
   }
 
   // Public asset guards

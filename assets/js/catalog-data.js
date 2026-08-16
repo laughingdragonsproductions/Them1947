@@ -1,11 +1,11 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-08-16T23:36:58Z",
+  "pulledAt": "2026-08-16T23:44:00Z",
   "summary": {
-    "total": 21,
+    "total": 24,
     "classified": 18,
-    "declassified": 3
+    "declassified": 6
   },
   "items": [
     {
@@ -13,7 +13,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2498466,
       "name": "3 Place remote control holder for head board",
       "slug": "3-place-remote-control-holder-for-head-board",
-      "pathSlug": "3-place-remote-control-holder-for-head-board",
+      "pathSlug": "3-place-remote-control-holder-for-head-board-2498466",
       "blurb": "MakerWorld listing: 3 Place remote control holder for head board. Public MakerWorld download.",
       "image": "/assets/catalog/declassified/3-place-remote-control-holder-for-head-board.jpg",
       "status": "declassified",
@@ -32,7 +32,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2913433,
       "name": "BOBCAT Portable Tire Inflator Storage Case",
       "slug": "bobcat-portable-tire-inflator-storage-case",
-      "pathSlug": "bobcat-portable-tire-inflator-storage-case",
+      "pathSlug": "bobcat-portable-tire-inflator-storage-case-2913433",
       "blurb": "MakerWorld listing: BOBCAT Portable Tire Inflator Storage Case. Public MakerWorld download.",
       "image": "/assets/catalog/declassified/bobcat-portable-tire-inflator-storage-case.jpg",
       "status": "declassified",
@@ -51,7 +51,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2964630,
       "name": "Wood Splitter Replacement Handle",
       "slug": "wood-splitter-replacement-handle",
-      "pathSlug": "wood-splitter-replacement-handle",
+      "pathSlug": "wood-splitter-replacement-handle-2964630",
       "blurb": "MakerWorld listing: Wood Splitter Replacement Handle. Public MakerWorld download.",
       "image": "/assets/catalog/declassified/wood-splitter-replacement-handle.jpg",
       "status": "declassified",
@@ -87,7 +87,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "001",
         "specimenLabel": "ROSWELL GREY DISCLOSURE DAY ALIEN",
-        "summaryText": "Disclosure Alien Grey 👽 Bring one of the most iconic extraterrestrial designs to your collection with this highly detailed Disclosure Alien Grey . Inspired by the classic \"Grey\" alien reported in countless UFO encounters, this model features a realistic anatomical design with an oversized cranium, large almond-shaped eyes, elongated limbs, and subtle muscle definition throughout the body. This version has been optimized for 3D printing with a neutral standing pose, making it ideal for: 👽 Display pieces 🎨 Painting and weathering 🛸 UFO and sci-fi dioramas 📸 Photography props 🖨️ Resin or FDM printing Print Recommendations Supports: Recommended (especially under the chin, hands, and feet) Layer Height: 0.12–0.20 mm Infill: 10–15% Walls: 3 Orientation: Print standing upright for the best detail. Scalable Design This model can be resized to virtually any scale to fit your needs. Whether you want a small desktop collectible or a large display piece, the model scales well while maintaining its proportions and detail. The neutral standing pose also makes it an excellent starting point for custom paint jobs, remixes, or creating your own alien encounter scenes. If you enjoy this model, your support is greatly appreciated! ⭐ Rate the model 🚀 Boost this design to help it reach more makers on MakerWorld. Your Boosts help creators continue designing and sharing free models! 📸 Upload a photo of your finished print—I love seeing everyone's creations! Happy printing, and thanks for your support! 👽🛸",
+        "summaryText": "Disclosure Alien Grey 👽 Bring one of the most iconic extraterrestrial designs to your collection with this highly detailed Disclosure Alien Grey . Inspired by the classic \"Grey\" alien reported in countless UFO encounters, this model features a realistic anatomical design with an oversized cranium, large almond-shaped eyes, elongated limbs, and subtle muscle definition throughout the body. This version has been optimized for 3D printing with a neutral standing pose, making it ideal for: 👽 Display pieces 🎨 Painting and weathering 🛸 UFO and sci-fi dioramas 📸 Photography props 🖨️ Resin or FDM printing Print Recommendations Supports: Recommended (especially under the chin, hands, and feet) Layer Height: 0.12-0.20 mm Infill: 10-15% Walls: 3 Orientation: Print standing upright for the best detail. Scalable Design This model can be resized to virtually any scale to fit your needs. Whether you want a small desktop collectible or a large display piece, the model scales well while maintaining its proportions and detail. The neutral standing pose also makes it an excellent starting point for custom paint jobs, remixes, or creating your own alien encounter scenes. If you enjoy this model, your support is greatly appreciated! ⭐ Rate the model 🚀 Boost this design to help it reach more makers on MakerWorld. Your Boosts help creators continue designing and sharing free models! 📸 Upload a photo of your finished print-I love seeing everyone's creations! Happy printing, and thanks for your support! 👽🛸",
         "features": [
           "👽 Display pieces",
           "🎨 Painting and weathering",
@@ -421,10 +421,10 @@ window.CATALOG_DATA = {
     {
       "id": "mw-2995237",
       "makerWorldId": 2995237,
-      "name": "Disclosure Alien Grey – THE AGGRESSOR",
+      "name": "Disclosure Alien Grey - THE AGGRESSOR",
       "slug": "them-1947-disclosure-alien-grey-the-aggressor",
       "pathSlug": "them-1947-disclosure-alien-grey-the-aggressor",
-      "blurb": "MakerWorld listing: Disclosure Alien Grey – THE AGGRESSOR. Grey-series 3D print. Download the files on MakerWorld.",
+      "blurb": "MakerWorld listing: Disclosure Alien Grey - THE AGGRESSOR. Grey-series 3D print. Download the files on MakerWorld.",
       "image": "/assets/catalog/classified/them-1947-disclosure-alien-grey-the-aggressor/gallery-01.jpg",
       "status": "classified",
       "vault": "classified",
@@ -439,12 +439,12 @@ window.CATALOG_DATA = {
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
       "detail": {
         "caseFile": "002",
-        "specimenLabel": "DISCLOSURE ALIEN GREY – THE AGGRESSOR",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE AGGRESSOR 👽 Meet The Aggressor , one of the newest additions to my THEM 1947 Disclosure Alien Greys collection. Captured in a dynamic attack pose, this model depicts a Grey alien lunging toward its target with an intimidating expression and aggressive body language. From its oversized cranium and piercing black eyes to its elongated fingers and predatory stance, every detail has been designed to create a striking display piece. This model has been optimized for 3D printing and looks fantastic at a variety of scales, making it perfect for sci-fi collections, dioramas, Halloween displays, or anyone fascinated by the classic Grey alien phenomenon. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Strong Tree Supports are highly recommended. Important: During testing, standard tree supports were prone to falling over due to the aggressive pose and extended limbs. For the most reliable print, use Strong Tree Supports (or increase your tree support strength/settings) to ensure the supports remain stable throughout the print. This model scales well, but if you print it smaller, consider using a finer layer height to preserve the facial details, fingers, and toes.",
+        "specimenLabel": "DISCLOSURE ALIEN GREY - THE AGGRESSOR",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE AGGRESSOR 👽 Meet The Aggressor , one of the newest additions to my THEM 1947 Disclosure Alien Greys collection. Captured in a dynamic attack pose, this model depicts a Grey alien lunging toward its target with an intimidating expression and aggressive body language. From its oversized cranium and piercing black eyes to its elongated fingers and predatory stance, every detail has been designed to create a striking display piece. This model has been optimized for 3D printing and looks fantastic at a variety of scales, making it perfect for sci-fi collections, dioramas, Halloween displays, or anyone fascinated by the classic Grey alien phenomenon. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Strong Tree Supports are highly recommended. Important: During testing, standard tree supports were prone to falling over due to the aggressive pose and extended limbs. For the most reliable print, use Strong Tree Supports (or increase your tree support strength/settings) to ensure the supports remain stable throughout the print. This model scales well, but if you print it smaller, consider using a finer layer height to preserve the facial details, fingers, and toes.",
         "features": [
           "🖨️ Material: PLA, PLA+, PETG, or Resin",
-          "📏 Layer Height: 0.16–0.20 mm",
-          "📦 Infill: 10–15%",
+          "📏 Layer Height: 0.16-0.20 mm",
+          "📦 Infill: 10-15%",
           "🧱 Walls: 3",
           "🌳 Supports: Strong Tree Supports are highly recommended."
         ],
@@ -957,15 +957,15 @@ window.CATALOG_DATA = {
         ]
       },
       "caseFile": "002",
-      "specimenLabel": "DISCLOSURE ALIEN GREY – THE AGGRESSOR"
+      "specimenLabel": "DISCLOSURE ALIEN GREY - THE AGGRESSOR"
     },
     {
       "id": "mw-3004535",
       "makerWorldId": 3004535,
-      "name": "Disclosure Alien Greys – THEIR LEADER",
+      "name": "Disclosure Alien Greys - THEIR LEADER",
       "slug": "them-1947-disclosure-alien-greys-their-leader",
       "pathSlug": "them-1947-disclosure-alien-greys-their-leader",
-      "blurb": "MakerWorld listing: Disclosure Alien Greys – THEIR LEADER. Grey-series 3D print. Download the files on MakerWorld.",
+      "blurb": "MakerWorld listing: Disclosure Alien Greys - THEIR LEADER. Grey-series 3D print. Download the files on MakerWorld.",
       "image": "/assets/catalog/classified/them-1947-disclosure-alien-greys-their-leader/gallery-01.jpg",
       "status": "classified",
       "vault": "classified",
@@ -980,8 +980,8 @@ window.CATALOG_DATA = {
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
       "detail": {
         "caseFile": "003",
-        "specimenLabel": "DISCLOSURE ALIEN GREYS – THEIR LEADER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THEIR LEADER 👽 Meet Their Leader , the commanding figure in my THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low and alert, almost as if he has just noticed something above him and is preparing to move. With his oversized cranium, deep black eyes, long slender limbs, and tense crouched body position, this model gives off a powerful “caught in the moment” alien encounter feel. The head is tilted slightly upward to give the model more personality and presence, making it look like he is observing, studying, or preparing to communicate. The detailed body sculpt includes lean muscle definition, stretched alien skin textures, long fingers, and a classic Grey alien appearance that fits perfectly into sci-fi collections, UFO displays, Halloween scenes, dioramas, or alien-themed shelf pieces. This file was designed with 3D printing in mind and makes a great display model at different scales. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Tree supports are necessary! 🛠️ Orientation: Print upright or at a slight angle depending on your printer and support preference Because of the crouched pose, thin limbs, fingers, toes, and head details, supports are highly recommended. Take your time removing supports around the hands, feet, and face for the best final result. Boosts Help Keep the Collection Going 🚀 If you enjoy this model, please consider giving it a Boost . Boosts help me continue creating and releasing more models in the THEM 1947 Disclosure Alien Greys series. Every boost helps keep new aliens, poses, and characters coming for the collection. Thanks for checking it out, and I hope Their Leader makes a creepy and awesome addition to your 3D printed alien display!",
+        "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THEIR LEADER 👽 Meet Their Leader , the commanding figure in my THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low and alert, almost as if he has just noticed something above him and is preparing to move. With his oversized cranium, deep black eyes, long slender limbs, and tense crouched body position, this model gives off a powerful “caught in the moment” alien encounter feel. The head is tilted slightly upward to give the model more personality and presence, making it look like he is observing, studying, or preparing to communicate. The detailed body sculpt includes lean muscle definition, stretched alien skin textures, long fingers, and a classic Grey alien appearance that fits perfectly into sci-fi collections, UFO displays, Halloween scenes, dioramas, or alien-themed shelf pieces. This file was designed with 3D printing in mind and makes a great display model at different scales. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Tree supports are necessary! 🛠️ Orientation: Print upright or at a slight angle depending on your printer and support preference Because of the crouched pose, thin limbs, fingers, toes, and head details, supports are highly recommended. Take your time removing supports around the hands, feet, and face for the best final result. Boosts Help Keep the Collection Going 🚀 If you enjoy this model, please consider giving it a Boost . Boosts help me continue creating and releasing more models in the THEM 1947 Disclosure Alien Greys series. Every boost helps keep new aliens, poses, and characters coming for the collection. Thanks for checking it out, and I hope Their Leader makes a creepy and awesome addition to your 3D printed alien display!",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -1483,15 +1483,15 @@ window.CATALOG_DATA = {
         ]
       },
       "caseFile": "003",
-      "specimenLabel": "DISCLOSURE ALIEN GREYS – THEIR LEADER"
+      "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
     },
     {
       "id": "mw-3004633",
       "makerWorldId": 3004633,
-      "name": "Disclosure Alien Greys – THE STALKER",
+      "name": "Disclosure Alien Greys - THE STALKER",
       "slug": "them-1947-disclosure-alien-greys-the-stalker",
       "pathSlug": "them-1947-disclosure-alien-greys-the-stalker",
-      "blurb": "MakerWorld listing: Disclosure Alien Greys – THE STALKER. Grey-series 3D print. Download the files on MakerWorld.",
+      "blurb": "MakerWorld listing: Disclosure Alien Greys - THE STALKER. Grey-series 3D print. Download the files on MakerWorld.",
       "image": "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-stalker/gallery-01.jpg",
       "status": "classified",
       "vault": "classified",
@@ -1506,8 +1506,8 @@ window.CATALOG_DATA = {
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-stalker/",
       "detail": {
         "caseFile": "004",
-        "specimenLabel": "DISCLOSURE ALIEN GREYS – THE STALKER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE NIGHT STALKER 👽 Meet The Night Stalker , another chilling addition to my THEM 1947 Disclosure Alien Greys collection. Designed with an eerie, creeping presence, this model captures the look of a Grey alien moving through the darkness, watching, hunting, and closing in on its target. With its oversized cranium, dark alien eyes, long limbs, and unsettling stance, The Night Stalker was made to stand out as a creepy sci-fi display piece. Whether placed on a shelf, used in a UFO-themed setup, added to a Halloween display, or included in an alien invasion diorama, this model brings a strong mysterious and intimidating presence to any collection. This model has been optimized for 3D printing and should look great at a variety of scales. It is perfect for fans of UFO lore, alien disclosure, Roswell-style stories, sci-fi collectibles, horror displays, and classic Grey alien designs. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Strong Tree Supports are highly recommended ⚙️ Adaptive Layer Height: Recommended for better detail Important: Because of the alien’s pose, limbs, fingers, toes, and overhangs, strong supports are recommended for the most reliable print. Standard tree supports may work, but if printing larger or with extended limbs, consider using Strong Tree Supports or increasing your support strength/settings to help prevent support failure during printing. This model scales well, but if you print it smaller, consider using a finer layer height to preserve the facial details, fingers, toes, and body features. Part of the THEM 1947 Collection",
+        "specimenLabel": "DISCLOSURE ALIEN GREYS - THE STALKER",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE NIGHT STALKER 👽 Meet The Night Stalker , another chilling addition to my THEM 1947 Disclosure Alien Greys collection. Designed with an eerie, creeping presence, this model captures the look of a Grey alien moving through the darkness, watching, hunting, and closing in on its target. With its oversized cranium, dark alien eyes, long limbs, and unsettling stance, The Night Stalker was made to stand out as a creepy sci-fi display piece. Whether placed on a shelf, used in a UFO-themed setup, added to a Halloween display, or included in an alien invasion diorama, this model brings a strong mysterious and intimidating presence to any collection. This model has been optimized for 3D printing and should look great at a variety of scales. It is perfect for fans of UFO lore, alien disclosure, Roswell-style stories, sci-fi collectibles, horror displays, and classic Grey alien designs. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Strong Tree Supports are highly recommended ⚙️ Adaptive Layer Height: Recommended for better detail Important: Because of the alien’s pose, limbs, fingers, toes, and overhangs, strong supports are recommended for the most reliable print. Standard tree supports may work, but if printing larger or with extended limbs, consider using Strong Tree Supports or increasing your support strength/settings to help prevent support failure during printing. This model scales well, but if you print it smaller, consider using a finer layer height to preserve the facial details, fingers, toes, and body features. Part of the THEM 1947 Collection",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -1822,7 +1822,7 @@ window.CATALOG_DATA = {
         ]
       },
       "caseFile": "004",
-      "specimenLabel": "DISCLOSURE ALIEN GREYS – THE STALKER"
+      "specimenLabel": "DISCLOSURE ALIEN GREYS - THE STALKER"
     },
     {
       "id": "mw-3009502",
@@ -1846,7 +1846,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "005",
         "specimenLabel": "DISCLOSURE ALIEN GREYS THEIR LEADER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THEIR LEADER 👽 Meet Their Leader , the commanding figure in my THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low and alert, almost as if he has just noticed something above him and is preparing to move. With his oversized cranium, deep black eyes, long slender limbs, and tense crouched body position, this model gives off a powerful “caught in the moment” alien encounter feel. The head is tilted slightly upward to give the model more personality and presence, making it look like he is observing, studying, or preparing to communicate. The detailed body sculpt includes lean muscle definition, stretched alien skin textures, long fingers, and a classic Grey alien appearance that fits perfectly into sci-fi collections, UFO displays, Halloween scenes, dioramas, or alien-themed shelf pieces. This file was designed with 3D printing in mind and makes a great display model at different scales. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Tree supports are necessary! 🛠️ Orientation: Print upright or at a slight angle depending on your printer and support preference Because of the crouched pose, thin limbs, fingers, toes, and head details, supports are highly recommended. Take your time removing supports around the hands, feet, and face for the best final result. Boosts Help Keep the Collection Going 🚀 If you enjoy this model, please consider giving it a Boost . Boosts help me continue creating and releasing more models in the THEM 1947 Disclosure Alien Greys series. Every boost helps keep new aliens, poses, and characters coming for the collection. Thanks for checking it out, and I hope Their Leader makes a creepy and awesome addition to your 3D printed alien display!",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THEIR LEADER 👽 Meet Their Leader , the commanding figure in my THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low and alert, almost as if he has just noticed something above him and is preparing to move. With his oversized cranium, deep black eyes, long slender limbs, and tense crouched body position, this model gives off a powerful “caught in the moment” alien encounter feel. The head is tilted slightly upward to give the model more personality and presence, making it look like he is observing, studying, or preparing to communicate. The detailed body sculpt includes lean muscle definition, stretched alien skin textures, long fingers, and a classic Grey alien appearance that fits perfectly into sci-fi collections, UFO displays, Halloween scenes, dioramas, or alien-themed shelf pieces. This file was designed with 3D printing in mind and makes a great display model at different scales. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Tree supports are necessary! 🛠️ Orientation: Print upright or at a slight angle depending on your printer and support preference Because of the crouched pose, thin limbs, fingers, toes, and head details, supports are highly recommended. Take your time removing supports around the hands, feet, and face for the best final result. Boosts Help Keep the Collection Going 🚀 If you enjoy this model, please consider giving it a Boost . Boosts help me continue creating and releasing more models in the THEM 1947 Disclosure Alien Greys series. Every boost helps keep new aliens, poses, and characters coming for the collection. Thanks for checking it out, and I hope Their Leader makes a creepy and awesome addition to your 3D printed alien display!",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -2327,7 +2327,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "006",
         "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE WATCHER 👽 Meet The Watcher , another eerie addition to my THEM 1947 Disclosure Alien Greys collection. This Grey alien is designed with a mysterious, unsettling presence — the kind of creature that looks like it has been standing in the shadows, observing everything in silence. With its oversized cranium, dark alien eyes, long limbs, and classic Grey alien features, The Watcher makes a perfect sci-fi display piece for alien collectors, UFO enthusiasts, Halloween setups, dioramas, or anyone who enjoys creepy extraterrestrial models. This model was created to capture that quiet but chilling “being watched” feeling — not attacking, not running, just standing there with an ominous presence that makes you wonder what it knows. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Tree supports are recommended, especially around the arms, hands, chin, and any overhanging details. 🛠️ Brim: Optional, but helpful depending on your printer and scale.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE WATCHER 👽 Meet The Watcher , another eerie addition to my THEM 1947 Disclosure Alien Greys collection. This Grey alien is designed with a mysterious, unsettling presence - the kind of creature that looks like it has been standing in the shadows, observing everything in silence. With its oversized cranium, dark alien eyes, long limbs, and classic Grey alien features, The Watcher makes a perfect sci-fi display piece for alien collectors, UFO enthusiasts, Halloween setups, dioramas, or anyone who enjoys creepy extraterrestrial models. This model was created to capture that quiet but chilling “being watched” feeling - not attacking, not running, just standing there with an ominous presence that makes you wonder what it knows. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Tree supports are recommended, especially around the arms, hands, chin, and any overhanging details. 🛠️ Brim: Optional, but helpful depending on your printer and scale.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -2808,7 +2808,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "007",
         "specimenLabel": "DISCLOSURE ALIEN GREYS THE NIGHT CRAWLER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE NIGHT CRAWLER 👽 Something is moving in the dark… The Night Crawler is one of the most unsettling additions to the THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low to the ground, creeping forward with long unnatural limbs, a haunting oversized head, and cold black eyes that make it look like it has just spotted you. This model gives off the feeling of something crawling out from under a crashed UFO, moving through the shadows, and closing in before you even realize it is there. Its low predator-like stance makes it perfect for horror displays, alien dioramas, Halloween setups, UFO collections, or anyone who wants a truly creepy sci-fi print. The Night Crawler is not just another alien figure — it is a display piece made to make people stop, stare, and feel like they are being watched. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 3 🌳 Supports: Required due to the low crawling pose and extended limbs.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE NIGHT CRAWLER 👽 Something is moving in the dark… The Night Crawler is one of the most unsettling additions to the THEM 1947 Disclosure Alien Greys collection. This Grey alien is posed low to the ground, creeping forward with long unnatural limbs, a haunting oversized head, and cold black eyes that make it look like it has just spotted you. This model gives off the feeling of something crawling out from under a crashed UFO, moving through the shadows, and closing in before you even realize it is there. Its low predator-like stance makes it perfect for horror displays, alien dioramas, Halloween setups, UFO collections, or anyone who wants a truly creepy sci-fi print. The Night Crawler is not just another alien figure - it is a display piece made to make people stop, stare, and feel like they are being watched. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 3 🌳 Supports: Required due to the low crawling pose and extended limbs.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -3154,7 +3154,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "008",
         "specimenLabel": "P1S VERSION THEIR LEADER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THEIR LEADER (P1S Version)",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THEIR LEADER (P1S Version)",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -3474,7 +3474,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "009",
         "specimenLabel": "P1S VERSION THE OBSERVER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE OBSERVER (P1S Version)",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE OBSERVER (P1S Version)",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -3787,7 +3787,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "010",
         "specimenLabel": "DISCLOSURE ALIEN GREYS K.A.R.L.",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – K.A.R.L. 👽 Meet K.A.R.L. , another strange and creepy addition to the THEM 1947 Disclosure Alien Greys collection. K.A.R.L. has a hunched-over stance, awkward body posture, and blank alien stare that gives him a weirdly familiar personality — almost like a Grey alien version of Billy Bob Thornton’s character from Sling Blade wandered out of a UFO crash site. He has that quiet, unsettling “something isn’t quite right” look that makes this model stand out from the rest of the collection. With his oversized Grey alien head, thin body, long arms, detailed hands, and wide alien feet, K.A.R.L. brings a mix of creepy, odd, and slightly humorous energy to any alien display. This figure is perfect for UFO collections, sci-fi dioramas, Halloween setups, alien-themed shelves, or anyone who enjoys the strange and awkward side of classic Grey alien designs. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 2 🌳 Supports: Required due to the arms, hands, head position, and body overhangs. Be very patient when cutting away the supports, and ensure that all supports used are truly necessary to avoid damaging the model. Karl looks great as a standalone display piece or paired with the rest of the THEM 1947 Disclosure Alien Greys collection.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - K.A.R.L. 👽 Meet K.A.R.L. , another strange and creepy addition to the THEM 1947 Disclosure Alien Greys collection. K.A.R.L. has a hunched-over stance, awkward body posture, and blank alien stare that gives him a weirdly familiar personality - almost like a Grey alien version of Billy Bob Thornton’s character from Sling Blade wandered out of a UFO crash site. He has that quiet, unsettling “something isn’t quite right” look that makes this model stand out from the rest of the collection. With his oversized Grey alien head, thin body, long arms, detailed hands, and wide alien feet, K.A.R.L. brings a mix of creepy, odd, and slightly humorous energy to any alien display. This figure is perfect for UFO collections, sci-fi dioramas, Halloween setups, alien-themed shelves, or anyone who enjoys the strange and awkward side of classic Grey alien designs. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 2 🌳 Supports: Required due to the arms, hands, head position, and body overhangs. Be very patient when cutting away the supports, and ensure that all supports used are truly necessary to avoid damaging the model. Karl looks great as a standalone display piece or paired with the rest of the THEM 1947 Disclosure Alien Greys collection.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -4112,7 +4112,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "011",
         "specimenLabel": "DISCLOSURE ALIEN GREYS THE EXPERIMENTER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE EXPERIMENTER 👽 Deep inside the craft, under cold lights and surrounded by strange instruments, stands The Experimenter . This eerie addition to the THEM 1947 Disclosure Alien Greys collection captures the Grey alien that isn’t just watching from the shadows — he is studying, testing, and trying to understand what makes humans tick. Inspired by the creepy alien hospital room scene, The Experimenter is posed with one arm raised as if controlling the room, activating unknown technology, or preparing for the next step in the examination. With his oversized Grey alien head, black almond-shaped eyes, lean detailed body, long limbs, and unsettling raised-hand pose, this model gives off a cold, intelligent, and disturbing presence. He looks like the one running the experiments after the abduction — calm, focused, and completely in control. This model is perfect for UFO displays, sci-fi horror collections, alien abduction dioramas, Halloween setups, or anyone building out a full THEM 1947 Disclosure Alien Greys lineup. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 2 🌳 Supports: Required due to the raised arm, fingers, head, and body overhangs. Take your time removing supports around the fingers, arms, and smaller details. The raised-hand pose is what gives this model its creepy “alien doctor” personality, so careful cleanup is recommended. The Experimenter looks great as a standalone display piece or as part of an alien abduction scene with the rest of the THEM 1947 Disclosure Alien Greys collection. Boosts Are Greatly Appreciated! A lot of time, test prints, filament, and failed attempts go into bringing these strange creatures to life. If you enjoy this file, please consider giving it a boost. Your support helps keep the experiments going and lets me know you want more additions to the THEM 1947 Disclosure Alien Greys series.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE EXPERIMENTER 👽 Deep inside the craft, under cold lights and surrounded by strange instruments, stands The Experimenter . This eerie addition to the THEM 1947 Disclosure Alien Greys collection captures the Grey alien that isn’t just watching from the shadows - he is studying, testing, and trying to understand what makes humans tick. Inspired by the creepy alien hospital room scene, The Experimenter is posed with one arm raised as if controlling the room, activating unknown technology, or preparing for the next step in the examination. With his oversized Grey alien head, black almond-shaped eyes, lean detailed body, long limbs, and unsettling raised-hand pose, this model gives off a cold, intelligent, and disturbing presence. He looks like the one running the experiments after the abduction - calm, focused, and completely in control. This model is perfect for UFO displays, sci-fi horror collections, alien abduction dioramas, Halloween setups, or anyone building out a full THEM 1947 Disclosure Alien Greys lineup. Print Recommendations 🖨️ Material: PLA, PLA+, PETG, or Resin 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 2 🌳 Supports: Required due to the raised arm, fingers, head, and body overhangs. Take your time removing supports around the fingers, arms, and smaller details. The raised-hand pose is what gives this model its creepy “alien doctor” personality, so careful cleanup is recommended. The Experimenter looks great as a standalone display piece or as part of an alien abduction scene with the rest of the THEM 1947 Disclosure Alien Greys collection. Boosts Are Greatly Appreciated! A lot of time, test prints, filament, and failed attempts go into bringing these strange creatures to life. If you enjoy this file, please consider giving it a boost. Your support helps keep the experiments going and lets me know you want more additions to the THEM 1947 Disclosure Alien Greys series.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -4699,7 +4699,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "012",
         "specimenLabel": "3 FOOT ALIEN OBSERVER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE OBSERVER (3 Foot Edition) Some things are better left unseen... unfortunately, THE OBSERVER didn't get that memo. Standing an impressive 3 feet tall , THE OBSERVER is the largest member of the THEM 1947 Disclosure Alien Greys collection. Towering over the rest of the series, this life-sized display piece is guaranteed to turn heads, start conversations, and make your neighbors question whether they should be checking the skies a little more often. Designed with the classic Grey alien appearance in mind, THE OBSERVER features an oversized cranium, deep black eyes, an unnaturally slender body, and a slow, unsettling stance that makes it feel like it's quietly studying everyone around it. Whether displayed indoors, on your porch for Halloween, in a haunted house, or standing watch over your yard, this alien has an uncanny ability to make people stop and stare. Now... before anyone points it out... yes, he only has three toes on one foot. That's because aliens can get diabetes too. We don't judge around here. 😄 There is also another file for the right foot having four toes if OCD has kicked in but it makes the base plate obsolete unless you remove the tabs from the postion for the right foot. 🛸 Model Information Approximately 3 feet (36\") tall when assembled 7 build plates for the complete alien Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high-traffic areas 1122.29g of Grey Filament for the Alien 29.83g of Black Filament for the Alien 420.91g of Black Filament for the Base 🖨️ Print Recommendations (MAKE SURE SUPPORTS ARE TURNED ON) While the prototype was successfully tested using KINGROON filament , I strongly recommend printing this model with Bambu Lab filament on a Bambu Grey Cool Plate . During testing, the Bambu filament consistently produced: Cleaner surface finish Better dimensional accuracy Less noticeable seams on glued joints More forgiving connector tolerances during assembly During testing, PLA KINGROON filament was printed using the standard textured build plate , while PLA Bambu filament was printed on the Bambu Grey Cool Plate . The Bambu combination consistently produced better print quality, smoother mating surfaces, and less noticeable seams after assembly. I also found that the Bambu parts were much more forgiving during test fitting. With the KINGROON prints, the connector tolerances were noticeably tighter, making assembly more difficult. If a part needed to be disassembled for adjustment, the connectors were much more susceptible to breaking. In many cases, you only had one chance to get the fit right before risking damage to the connector. The Bambu filament provided a better balance of strength and fit, making assembly considerably easier and more reliable. I also printed these with a Bambu P2S and the heads using a H2C and X2D 🔧 Assembly Assembly is straightforward using the keyed connectors. Dry-fitting each section before gluing is highly recommended to ensure proper alignment. Taking your time during assembly will reward you with an impressive display piece that looks like it walked straight out of a 1947 government file.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE OBSERVER (3 Foot Edition) Some things are better left unseen... unfortunately, THE OBSERVER didn't get that memo. Standing an impressive 3 feet tall , THE OBSERVER is the largest member of the THEM 1947 Disclosure Alien Greys collection. Towering over the rest of the series, this life-sized display piece is guaranteed to turn heads, start conversations, and make your neighbors question whether they should be checking the skies a little more often. Designed with the classic Grey alien appearance in mind, THE OBSERVER features an oversized cranium, deep black eyes, an unnaturally slender body, and a slow, unsettling stance that makes it feel like it's quietly studying everyone around it. Whether displayed indoors, on your porch for Halloween, in a haunted house, or standing watch over your yard, this alien has an uncanny ability to make people stop and stare. Now... before anyone points it out... yes, he only has three toes on one foot. That's because aliens can get diabetes too. We don't judge around here. 😄 There is also another file for the right foot having four toes if OCD has kicked in but it makes the base plate obsolete unless you remove the tabs from the postion for the right foot. 🛸 Model Information Approximately 3 feet (36\") tall when assembled 7 build plates for the complete alien Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high-traffic areas 1122.29g of Grey Filament for the Alien 29.83g of Black Filament for the Alien 420.91g of Black Filament for the Base 🖨️ Print Recommendations (MAKE SURE SUPPORTS ARE TURNED ON) While the prototype was successfully tested using KINGROON filament , I strongly recommend printing this model with Bambu Lab filament on a Bambu Grey Cool Plate . During testing, the Bambu filament consistently produced: Cleaner surface finish Better dimensional accuracy Less noticeable seams on glued joints More forgiving connector tolerances during assembly During testing, PLA KINGROON filament was printed using the standard textured build plate , while PLA Bambu filament was printed on the Bambu Grey Cool Plate . The Bambu combination consistently produced better print quality, smoother mating surfaces, and less noticeable seams after assembly. I also found that the Bambu parts were much more forgiving during test fitting. With the KINGROON prints, the connector tolerances were noticeably tighter, making assembly more difficult. If a part needed to be disassembled for adjustment, the connectors were much more susceptible to breaking. In many cases, you only had one chance to get the fit right before risking damage to the connector. The Bambu filament provided a better balance of strength and fit, making assembly considerably easier and more reliable. I also printed these with a Bambu P2S and the heads using a H2C and X2D 🔧 Assembly Assembly is straightforward using the keyed connectors. Dry-fitting each section before gluing is highly recommended to ensure proper alignment. Taking your time during assembly will reward you with an impressive display piece that looks like it walked straight out of a 1947 government file.",
         "features": [
           "Approximately 3 feet (36\") tall when assembled",
           "7 build plates for the complete alien",
@@ -5643,7 +5643,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "013",
         "specimenLabel": "DISCLOSURE ALIEN GREYS THE ABDUCTOR",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE ABDUCTOR 👽 Meet The Abductor , another terrifying addition to the THEM 1947 Disclosure Alien Greys collection. This model captures the classic nightmare scenario — a Grey alien closing in with one arm reaching forward, long fingers stretched out as if it is seconds away from snatching its next victim. The body has an aggressive forward lean, the stance feels tense and predatory, and the closed-mouth scowl gives it that cold, emotionless look that makes the model feel even more unsettling. Designed with the same eerie Grey alien style as the rest of the THEM 1947 lineup, The Abductor makes a perfect display piece for sci-fi fans, alien collectors, Halloween setups, UFO dioramas, or anyone who enjoys creepy 3D prints with character and story. This model was created to look like it belongs in an abduction scene — silent, focused, and ready to take someone who never saw it coming. This version also includes a base to help keep the model balanced and stable , especially with the forward-reaching pose. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16–0.20 mm Infill: 10–15% Walls: 2 Adaptive Layer Height: Recommended for smoother detail For best results, take your time removing supports around the fingers, toes, arms, and face. These areas contain the most detail and really help bring the model to life. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time goes into creating, testing, adjusting, and printing these models. Filament, failed test prints, and design time add up quickly. If you enjoy this type of model and want to see more added to the THEM 1947 Disclosure Alien Greys collection, a boost is greatly appreciated and helps keep future models coming.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE ABDUCTOR 👽 Meet The Abductor , another terrifying addition to the THEM 1947 Disclosure Alien Greys collection. This model captures the classic nightmare scenario - a Grey alien closing in with one arm reaching forward, long fingers stretched out as if it is seconds away from snatching its next victim. The body has an aggressive forward lean, the stance feels tense and predatory, and the closed-mouth scowl gives it that cold, emotionless look that makes the model feel even more unsettling. Designed with the same eerie Grey alien style as the rest of the THEM 1947 lineup, The Abductor makes a perfect display piece for sci-fi fans, alien collectors, Halloween setups, UFO dioramas, or anyone who enjoys creepy 3D prints with character and story. This model was created to look like it belongs in an abduction scene - silent, focused, and ready to take someone who never saw it coming. This version also includes a base to help keep the model balanced and stable , especially with the forward-reaching pose. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16-0.20 mm Infill: 10-15% Walls: 2 Adaptive Layer Height: Recommended for smoother detail For best results, take your time removing supports around the fingers, toes, arms, and face. These areas contain the most detail and really help bring the model to life. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time goes into creating, testing, adjusting, and printing these models. Filament, failed test prints, and design time add up quickly. If you enjoy this type of model and want to see more added to the THEM 1947 Disclosure Alien Greys collection, a boost is greatly appreciated and helps keep future models coming.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -6059,14 +6059,14 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "014",
         "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE INTIMIDATOR 👽 Meet The Intimidator (thank you Thomas H.), a menacing new addition to the THEM 1947 Disclosure Alien Greys collection. Crouched low with its long arms planted firmly on the ground, The Intimidator looks ready to crawl forward and strike without warning. Its oversized head, unsettling expression, exposed back structure, and stretched fingers create an aggressive display piece that appears to be watching—and waiting—for someone to make the wrong move. This model is perfect for alien collections, sci-fi displays, creepy dioramas, Halloween decorations, or anyone fascinated by the mystery surrounding the classic Grey alien phenomenon. There is an Easter Egg with this alien. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16–0.20 mm 📦 Infill: 10–15% 🧱 Walls: 2 🌳 Supports: Hybrid tree supports are required ✨ Brim: Recommended for additional bed adhesion Because of the low crawling pose, extended fingers, arms, and detailed body structure, carefully removing the supports is recommended. Every download, print, rating, and Boost helps support the time, filament, and test prints required to keep expanding the THEM 1947 Disclosure Alien Greys collection. Boost the model to let me know you want to see more of THEM ! This file is for personal use only. Anyone interested in selling physical prints can join my Commercial License Membership here on MakerWorld. 3 FOOT INTIMIDATOR Assembly Sequence Each number represents the corresponding part/file number . When a range is shown, such as 8–9 , it means those parts have already been joined together in the previous step. Join Part 8 + Part 9 Join Part 2 + Part 3 Join Part 5 + Part 6 Join Part 7 + assembled Parts 8–9 Join Part 1 + assembled Parts 2–3 + Part 4 Join assembled Parts 5–6 + assembled Parts 7–9 Final Assembly: Join assembled Parts 1–4 + assembled Parts 5–9 This leaves you with two main assembled sections before the final step: Parts 1–4 + Parts 5–9 = Complete Model",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE INTIMIDATOR 👽 Meet The Intimidator (thank you Thomas H.), a menacing new addition to the THEM 1947 Disclosure Alien Greys collection. Crouched low with its long arms planted firmly on the ground, The Intimidator looks ready to crawl forward and strike without warning. Its oversized head, unsettling expression, exposed back structure, and stretched fingers create an aggressive display piece that appears to be watching-and waiting-for someone to make the wrong move. This model is perfect for alien collections, sci-fi displays, creepy dioramas, Halloween decorations, or anyone fascinated by the mystery surrounding the classic Grey alien phenomenon. There is an Easter Egg with this alien. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 2 🌳 Supports: Hybrid tree supports are required ✨ Brim: Recommended for additional bed adhesion Because of the low crawling pose, extended fingers, arms, and detailed body structure, carefully removing the supports is recommended. Every download, print, rating, and Boost helps support the time, filament, and test prints required to keep expanding the THEM 1947 Disclosure Alien Greys collection. Boost the model to let me know you want to see more of THEM ! This file is for personal use only. Anyone interested in selling physical prints can join my Commercial License Membership here on MakerWorld. 3 FOOT INTIMIDATOR Assembly Sequence Each number represents the corresponding part/file number . When a range is shown, such as 8-9 , it means those parts have already been joined together in the previous step. Join Part 8 + Part 9 Join Part 2 + Part 3 Join Part 5 + Part 6 Join Part 7 + assembled Parts 8-9 Join Part 1 + assembled Parts 2-3 + Part 4 Join assembled Parts 5-6 + assembled Parts 7-9 Final Assembly: Join assembled Parts 1-4 + assembled Parts 5-9 This leaves you with two main assembled sections before the final step: Parts 1-4 + Parts 5-9 = Complete Model",
         "features": [
           "Join Part 8 + Part 9",
           "Join Part 2 + Part 3",
           "Join Part 5 + Part 6",
-          "Join Part 7 + assembled Parts 8–9",
-          "Join Part 1 + assembled Parts 2–3 + Part 4",
-          "Join assembled Parts 5–6 + assembled Parts 7–9"
+          "Join Part 7 + assembled Parts 8-9",
+          "Join Part 1 + assembled Parts 2-3 + Part 4",
+          "Join assembled Parts 5-6 + assembled Parts 7-9"
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -6558,7 +6558,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "015",
         "specimenLabel": "3 FOOT ALIEN LEADER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – 3 Foot Alien Leader 👽 Meet the 3 Foot Alien Leader , a large-scale display piece from the THEM 1947 Disclosure Alien Greys collection. This model brings the classic Grey alien look to a much larger and more intimidating size. With its oversized head, long limbs, eerie eyes, and commanding presence, this alien looks like the one giving the orders. Whether displayed in a room, shop, Halloween setup, UFO scene, or sci-fi collection, the Alien Leader is designed to stand out and grab attention. The larger size gives the model a stronger presence than a standard tabletop print, making it perfect for anyone who wants a serious alien display piece. It has that silent, unsettling look that makes it feel like it is watching, waiting, and fully in control. This file is great for alien collectors, sci-fi fans, Halloween props, UFO displays, MakerWorld collections, or anyone building out the THEM 1947 Disclosure Alien Greys lineup. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16–0.20 mm Infill: 10–15% Walls: 2 Supports: Tree Supports required for some of the plates, make sure they are on. Adaptive Layer Height: Recommended for smoother detail Because this is a large model, make sure your printer is dialed in before starting. Take your time removing supports around the face, fingers, toes, arms, and any thin detailed areas. Test fit the parts before adding glue. IMPORTANT: When adding the hands to the arms, there are two (2) special size dowel pins marked “19” and “47”. Place those pins in the corresponding holes on the hands first. The hands have 19 & 47 next to the hole that they go in. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time, filament, testing, and failed prints go into creating these models. If you enjoy the THEM 1947 Disclosure Alien Greys collection and want to see more aliens added, a boost is greatly appreciated and helps keep future models coming. Another way you can support me is to order the filament through the BOM. Every little bit of help goes a long way. If you have an adaption you'd like to share, send me a PM.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - 3 Foot Alien Leader 👽 Meet the 3 Foot Alien Leader , a large-scale display piece from the THEM 1947 Disclosure Alien Greys collection. This model brings the classic Grey alien look to a much larger and more intimidating size. With its oversized head, long limbs, eerie eyes, and commanding presence, this alien looks like the one giving the orders. Whether displayed in a room, shop, Halloween setup, UFO scene, or sci-fi collection, the Alien Leader is designed to stand out and grab attention. The larger size gives the model a stronger presence than a standard tabletop print, making it perfect for anyone who wants a serious alien display piece. It has that silent, unsettling look that makes it feel like it is watching, waiting, and fully in control. This file is great for alien collectors, sci-fi fans, Halloween props, UFO displays, MakerWorld collections, or anyone building out the THEM 1947 Disclosure Alien Greys lineup. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16-0.20 mm Infill: 10-15% Walls: 2 Supports: Tree Supports required for some of the plates, make sure they are on. Adaptive Layer Height: Recommended for smoother detail Because this is a large model, make sure your printer is dialed in before starting. Take your time removing supports around the face, fingers, toes, arms, and any thin detailed areas. Test fit the parts before adding glue. IMPORTANT: When adding the hands to the arms, there are two (2) special size dowel pins marked “19” and “47”. Place those pins in the corresponding holes on the hands first. The hands have 19 & 47 next to the hole that they go in. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time, filament, testing, and failed prints go into creating these models. If you enjoy the THEM 1947 Disclosure Alien Greys collection and want to see more aliens added, a boost is greatly appreciated and helps keep future models coming. Another way you can support me is to order the filament through the BOM. Every little bit of help goes a long way. If you have an adaption you'd like to share, send me a PM.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -6938,6 +6938,63 @@ window.CATALOG_DATA = {
       "specimenLabel": "3 FOOT ALIEN LEADER"
     },
     {
+      "id": "mw-3103043",
+      "makerWorldId": 3103043,
+      "name": "Shotgun Slugo Bullet Buddy",
+      "slug": "shotgun-slugo-bullet-buddy",
+      "pathSlug": "shotgun-slugo-bullet-buddy",
+      "blurb": "MakerWorld listing: Shotgun Slugo Bullet Buddy. Public MakerWorld download.",
+      "image": "/assets/catalog/declassified/shotgun-slugo-bullet-buddy.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
+      "stats": {
+        "likes": 29,
+        "boosts": 52,
+        "downloads": 11,
+        "prints": 2
+      },
+      "buyHref": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy"
+    },
+    {
+      "id": "mw-3105620",
+      "makerWorldId": 3105620,
+      "name": "Shotgon Bucky Bullet Buddy",
+      "slug": "shotgon-bucky-bullet-buddy",
+      "pathSlug": "shotgon-bucky-bullet-buddy",
+      "blurb": "MakerWorld listing: Shotgon Bucky Bullet Buddy. Public MakerWorld download.",
+      "image": "/assets/catalog/declassified/shotgon-bucky-bullet-buddy.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy",
+      "stats": {
+        "likes": 22,
+        "boosts": 46,
+        "downloads": 13,
+        "prints": 14
+      },
+      "buyHref": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy"
+    },
+    {
+      "id": "mw-3109917",
+      "makerWorldId": 3109917,
+      "name": "A.C. PETE Bullet Buddy FMJ",
+      "slug": "a-c-pete-bullet-buddy-fmj",
+      "pathSlug": "a-c-pete-bullet-buddy-fmj",
+      "blurb": "MakerWorld listing: A.C. PETE Bullet Buddy FMJ. Public MakerWorld download.",
+      "image": "/assets/catalog/declassified/a-c-pete-bullet-buddy-fmj.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
+      "stats": {
+        "likes": 7,
+        "boosts": 14,
+        "downloads": 3,
+        "prints": 1
+      },
+      "buyHref": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj"
+    },
+    {
       "id": "mw-3126566",
       "makerWorldId": 3126566,
       "name": "Medical Scientist 3 FOOT Experimenting Alien Grey",
@@ -6959,7 +7016,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "016",
         "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY",
-        "summaryText": "THEM 1947 Disclosure Alien Greys – THE MEDICAL SCIENTIST 👽 The Hospital intercom goes off… PAGING DR. STEVEN GREER, PAGING DR. STEVEN GREER….. Meet The Medical Scientist , a towering 3-foot alien Grey and one of the newest additions to the THEM 1947 Disclosure Alien Greys 3 FOOT series. With one arm extended and his long fingers reaching toward his next subject, The Medical Scientist appears ready to begin another unexplained procedure. His oversized head, piercing black eyes, detailed anatomy, and intimidating stance make him look as though he has stepped directly out of a hidden extraterrestrial laboratory. This large display model is perfect for alien collectors, sci-fi rooms, Halloween displays, themed events, or anyone wanting a conversation piece that is impossible to ignore. He’s not here to heal… he’s here to experiment. Model Features Approximately 3 feet tall when fully assembled Detailed alien anatomy and facial features Dramatic experimenting and reaching pose Designed as a large multi-part display model Part of the THEM 1947 Disclosure Alien Greys collection Excellent for custom lighting, painting, and themed displays Use with or without the base Follow the THEM 1947 FACEBOOK Page for more upcoming models on MAKERWOLD This is another character in the growing THEM 1947 Alien collection , with more unique personalities and poses still to come. Printing and testing models of this size requires a significant amount of time and filament. If you enjoy the series, please consider leaving a rating, sharing photos of your finished print, and giving the model a Boost . Your support helps make future THEM 1947 aliens possible.",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE MEDICAL SCIENTIST 👽 The Hospital intercom goes off… PAGING DR. STEVEN GREER, PAGING DR. STEVEN GREER….. Meet The Medical Scientist , a towering 3-foot alien Grey and one of the newest additions to the THEM 1947 Disclosure Alien Greys 3 FOOT series. With one arm extended and his long fingers reaching toward his next subject, The Medical Scientist appears ready to begin another unexplained procedure. His oversized head, piercing black eyes, detailed anatomy, and intimidating stance make him look as though he has stepped directly out of a hidden extraterrestrial laboratory. This large display model is perfect for alien collectors, sci-fi rooms, Halloween displays, themed events, or anyone wanting a conversation piece that is impossible to ignore. He’s not here to heal… he’s here to experiment. Model Features Approximately 3 feet tall when fully assembled Detailed alien anatomy and facial features Dramatic experimenting and reaching pose Designed as a large multi-part display model Part of the THEM 1947 Disclosure Alien Greys collection Excellent for custom lighting, painting, and themed displays Use with or without the base Follow the THEM 1947 FACEBOOK Page for more upcoming models on MAKERWOLD This is another character in the growing THEM 1947 Alien collection , with more unique personalities and poses still to come. Printing and testing models of this size requires a significant amount of time and filament. If you enjoy the series, please consider leaving a rating, sharing photos of your finished print, and giving the model a Boost . Your support helps make future THEM 1947 aliens possible.",
         "features": [
           "Approximately 3 feet tall when fully assembled",
           "Detailed alien anatomy and facial features",
@@ -7332,7 +7389,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "017",
         "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES",
-        "summaryText": "THEM 1947 Alien Greys Series Meet THE TRAVELER , the newest member of the THEM 1947 Alien Greys Series . Unlike some of the others in the series, THE TRAVELER isn’t lurking in the woods or sneaking around in the dark. This Grey is ready to go wherever you do. Designed in a natural seated position , THE TRAVELER is perfect for sitting on chairs, benches, shelves, porches, vehicles, campers, or anywhere else you can think to put him. Place him in the passenger seat for a road trip, have him waiting on the porch for your guests, or give him his own chair in the house. The possibilities for photos and displays are endless. Available in THREE sizes Desktop Series — Approx. 10 Inches Perfect for desks, shelves, displays, and smaller setups. Take your time with the supports around the fingers as they are tight between the hand and leg. 3 Foot Series - COMING SOON A large display version that makes an awesome conversation piece without taking over the entire room. 5 Foot Series (there will be 2 FILES for this due to the FILE SIZE) The ultimate version of THE TRAVELER . At approximately five feet tall, he is designed to create a nearly life-size alien display that looks incredible sitting in a chair, on a bench, or riding along in your vehicle. All three versions are part of the growing THEM 1947 Alien Greys Series . THE TRAVELER was created with one thing in mind — have fun with him . Move him around, create different scenes, take him on trips, and photograph him in places people would never expect to see a Grey Alien casually sitting and waiting. I found if you put it together in the order of the numbers it will go together easier. Test fit all the pieces first, try not to move the print while slicing it asd you may accidentally loose the orientation of the negative modifiers. And as always, thank you for for the BOOSTS, Pictures and ratings. Probably the easiest way to assemble THE TRAVELER 5 foot version: 1.) 2.) 3.) 4.) 5.) 6.)",
+        "summaryText": "THEM 1947 Alien Greys Series Meet THE TRAVELER , the newest member of the THEM 1947 Alien Greys Series . Unlike some of the others in the series, THE TRAVELER isn’t lurking in the woods or sneaking around in the dark. This Grey is ready to go wherever you do. Designed in a natural seated position , THE TRAVELER is perfect for sitting on chairs, benches, shelves, porches, vehicles, campers, or anywhere else you can think to put him. Place him in the passenger seat for a road trip, have him waiting on the porch for your guests, or give him his own chair in the house. The possibilities for photos and displays are endless. Available in THREE sizes Desktop Series - Approx. 10 Inches Perfect for desks, shelves, displays, and smaller setups. Take your time with the supports around the fingers as they are tight between the hand and leg. 3 Foot Series - COMING SOON A large display version that makes an awesome conversation piece without taking over the entire room. 5 Foot Series (there will be 2 FILES for this due to the FILE SIZE) The ultimate version of THE TRAVELER . At approximately five feet tall, he is designed to create a nearly life-size alien display that looks incredible sitting in a chair, on a bench, or riding along in your vehicle. All three versions are part of the growing THEM 1947 Alien Greys Series . THE TRAVELER was created with one thing in mind - have fun with him . Move him around, create different scenes, take him on trips, and photograph him in places people would never expect to see a Grey Alien casually sitting and waiting. I found if you put it together in the order of the numbers it will go together easier. Test fit all the pieces first, try not to move the print while slicing it asd you may accidentally loose the orientation of the negative modifiers. And as always, thank you for for the BOOSTS, Pictures and ratings. Probably the easiest way to assemble THE TRAVELER 5 foot version: 1.) 2.) 3.) 4.) 5.) 6.)",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -7993,7 +8050,7 @@ window.CATALOG_DATA = {
       "detail": {
         "caseFile": "018",
         "specimenLabel": "ALIEN GREYS SIGN",
-        "summaryText": "THEM 1947 – Glow-in-the-Dark Hanging Alien Sign Bring a little Roswell mystery to your wall with the THEM 1947 Hanging Sign ! This round UFO-themed sign features the THEM 1947 design with flying saucer, stars, and bold lettering. The green portions were printed using Bambu Lab Glow Green filament , giving the sign an awesome radioactive-style glow when the lights go out. The model includes 1.5 mm pre-designed holes at the top for adding screw eyelets , making it easy to attach a chain, cord, or other hanger and display it in your workshop, game room, 3D printing area, garage, alien collection, or UFO-themed room. Colors used in the example: Bambu Lab Glow-in-the-Dark Green Bambu Lab Black Bambu Lab Matte Bone White Charge the glow filament under a bright light and watch THEM come alive in the dark! 👽 THEM 1947 – They were never supposed to be seen.",
+        "summaryText": "THEM 1947 - Glow-in-the-Dark Hanging Alien Sign Bring a little Roswell mystery to your wall with the THEM 1947 Hanging Sign ! This round UFO-themed sign features the THEM 1947 design with flying saucer, stars, and bold lettering. The green portions were printed using Bambu Lab Glow Green filament , giving the sign an awesome radioactive-style glow when the lights go out. The model includes 1.5 mm pre-designed holes at the top for adding screw eyelets , making it easy to attach a chain, cord, or other hanger and display it in your workshop, game room, 3D printing area, garage, alien collection, or UFO-themed room. Colors used in the example: Bambu Lab Glow-in-the-Dark Green Bambu Lab Black Bambu Lab Matte Bone White Charge the glow filament under a bright light and watch THEM come alive in the dark! 👽 THEM 1947 - They were never supposed to be seen.",
         "features": [
           "Bambu Lab Glow-in-the-Dark Green",
           "Bambu Lab Black",

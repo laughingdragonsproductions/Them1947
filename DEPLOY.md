@@ -1,23 +1,23 @@
 # Deploy THEM 1947 to Cloudflare Pages
 
-Static site — no build step. Cloudflare serves files from the repo root.
+Static site - no build step. Cloudflare serves files from the repo root.
 
 ## Quick deploy (when Git push does not update the live site)
 
 **them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. Deploy copies the site into `.worker-dist` (excluding `.git`) then uploads via `wrangler.jsonc`.
 
-Confirm Phase 2 is live: view source on `/` — you should see `dossier-stage`, `bypass-bar`, and **Two transmissions play first**.
+Confirm Phase 2 is live: view source on `/` - you should see `dossier-stage`, `bypass-bar`, and **Two transmissions play first**.
 
-**Option A — GitHub Actions (recommended after one-time setup)**
+**Option A - GitHub Actions (recommended after one-time setup)**
 
-1. Cloudflare dashboard → **My Profile** → **API Tokens** → Create token with **Cloudflare Pages — Edit**
+1. Cloudflare dashboard → **My Profile** → **API Tokens** → Create token with **Cloudflare Pages - Edit**
 2. Copy your **Account ID** from the Pages project overview
 3. GitHub repo → **Settings** → **Secrets and variables** → **Actions** → add:
    - `CLOUDFLARE_API_TOKEN`
    - `CLOUDFLARE_ACCOUNT_ID`
 4. Push to `main` or run the **Deploy Cloudflare Pages** workflow manually (**Actions** tab)
 
-**Option B — deploy from this machine**
+**Option B - deploy from this machine**
 
 ```powershell
 cd G:\LocalAIagent\Them1947
@@ -37,9 +37,9 @@ Run `npm run check` anytime to validate JS syntax, catalog pages, asset paths, a
 | **Deploy command** | `npx wrangler deploy` |
 | **Branch** | `main` |
 
-**Required:** Build command must run before deploy — `.worker-dist` is generated locally and is not committed to git. Without the build step, deploy fails because the assets directory does not exist.
+**Required:** Build command must run before deploy - `.worker-dist` is generated locally and is not committed to git. Without the build step, deploy fails because the assets directory does not exist.
 
-Single-line alternative — set **Build command** empty and **Deploy command** to:
+Single-line alternative - set **Build command** empty and **Deploy command** to:
 
 ```
 npm ci && npm run deploy
@@ -47,7 +47,7 @@ npm ci && npm run deploy
 
 **Do not manually redeploy old commits** (e.g. `79f85c6`) that lack `wrangler.jsonc`.
 
-**Option C — Cloudflare dashboard**
+**Option C - Cloudflare dashboard**
 
 Pages → **them1947** → **Deployments** → **Retry deployment** or reconnect the GitHub integration to `main`.
 
@@ -86,19 +86,19 @@ Use this when the owner needs to review the full site on the live domain before 
    ```javascript
    previewGate: { enabled: true, passwordHash: "…", maxFails: 3 }
    ```
-   Generate `passwordHash` with `.\scripts\hash-preview-password.ps1` — do **not** commit the plaintext clearance code.
-2. Push to `main` — Cloudflare redeploys.
+   Generate `passwordHash` with `.\scripts\hash-preview-password.ps1` - do **not** commit the plaintext clearance code.
+2. Push to `main` - Cloudflare redeploys.
 3. Tell the owner (plain language):
    - Open **https://them1947.com**
    - Tap **Tap to begin**, watch the intro (or let it finish)
    - Click **Terminal access**
    - Enter the clearance code you give them by phone or text
    - Browse the archive; bookmark `/files/` if helpful
-   - **Closing the browser ends access** — they enter the code again on the next visit
+   - **Closing the browser ends access** - they enter the code again on the next visit
 
 Direct links (`/files/prints/`, `/about/`, etc.) show a clearance screen until the code is entered once in that browser session.
 
-**Security note:** Only a SHA-256 hash of the clearance code is in `config.js` (not the code itself). Verification runs in the browser — zero Cloudflare Function requests. Determined users can still brute-force short codes from the hash; this keeps casual Inspect/view-source from showing the plaintext.
+**Security note:** Only a SHA-256 hash of the clearance code is in `config.js` (not the code itself). Verification runs in the browser - zero Cloudflare Function requests. Determined users can still brute-force short codes from the hash; this keeps casual Inspect/view-source from showing the plaintext.
 
 ### Public launch checklist
 
@@ -107,7 +107,7 @@ Direct links (`/files/prints/`, `/about/`, etc.) show a clearance screen until t
 3. Verify `/`, `/files/`, and `/about/` load with no gate
 4. Proceed with AdSense, Search Console, etc. (sections below)
 
-## 3. Custom domain — them1947.com
+## 3. Custom domain - them1947.com
 
 1. Pages project → **Custom domains** → **Set up a custom domain**
 2. Add `them1947.com` and `www.them1947.com`
@@ -121,7 +121,7 @@ Do **not** publish the base Gmail on the site. Use a plus-filter inbox configure
 2. Destination email: **`laughingdragonsproductions+them1947@gmail.com`**
 3. Gmail → create filter `to:laughingdragonsproductions+them1947@gmail.com` → label **Them1947**
 4. Paste access key into `assets/js/config.js` → `web3formsAccessKey`
-5. Commit and push — `/contact/` form goes live
+5. Commit and push - `/contact/` form goes live
 
 Full network standard: [CONTACT-STANDARD.md](CONTACT-STANDARD.md)
 
@@ -155,8 +155,8 @@ Push to `main`, then confirm the live site updated (see **Quick deploy** above i
 
 | Issue | Fix |
 |-------|-----|
-| Push to GitHub but live site unchanged | Git integration may be stale — run `.\scripts\deploy-cloudflare.ps1` or set up GitHub Actions secrets (see **Quick deploy**) |
-| Terminal / dossier missing on landing | Live deploy is still Phase 1 — redeploy; page source should include `bypass-bar` and `dossier-stage` |
+| Push to GitHub but live site unchanged | Git integration may be stale - run `.\scripts\deploy-cloudflare.ps1` or set up GitHub Actions secrets (see **Quick deploy**) |
+| Terminal / dossier missing on landing | Live deploy is still Phase 1 - redeploy; page source should include `bypass-bar` and `dossier-stage` |
 | Intro video not playing | Browsers require `muted` + `playsinline`; reduced-motion shows poster + folder immediately |
 | Brief has no sound | Click the folder first (user gesture); unmute in video controls if needed |
 | 404 on `/privacy/` | Ensure `privacy/index.html` exists |

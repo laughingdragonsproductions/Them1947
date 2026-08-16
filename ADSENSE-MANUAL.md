@@ -1,4 +1,4 @@
-# AdSense — manual steps for them1947.com
+# AdSense - manual steps for them1947.com
 
 **Do not add the site or request review until launch is explicitly approved.** Slot IDs stay empty in the local hub.
 
@@ -17,8 +17,8 @@ Ads may load **only** when all of the following are true:
 
 - No Auto ads on thin pages (that caused the prior LD policy flag)
 - Unique written copy on archive pages; classified placeholder images are OK if SKU blurbs are not duplicates
-- No fake checkout — classified listings use a disabled CTA
-- Shared publisher `ca-pub-7048606415692002` — add `them1947.com` as its own site in AdSense when launching
+- No fake checkout - classified listings use a disabled CTA
+- Shared publisher `ca-pub-7048606415692002` - add `them1947.com` as its own site in AdSense when launching
 
 ## When launching (later instruction)
 

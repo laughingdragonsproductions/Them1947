@@ -91,7 +91,7 @@ function renderFilesHub() {
     <header class="page-header reveal">
       <p class="pillar-eyebrow">THEM 1947 vault</p>
       <h1>Classified files</h1>
-      <p>Browse the archive. ${classified} Grey-series case files — each card opens a full dossier with photos, print settings, and materials. ${declassified} everyday prints sit alongside them without the classified stamp. Download files on MakerWorld.</p>
+      <p>Browse the archive. ${classified} Grey-series case files - each card opens a full dossier with photos, print settings, and materials. ${declassified} everyday prints sit alongside them without the classified stamp. Download files on MakerWorld.</p>
     </header>
     <section class="archive-hero reveal" aria-hidden="true">
       <img src="/assets/brand/ufo-night.png" alt="" class="archive-hero-img" />
@@ -105,7 +105,7 @@ function renderFilesHub() {
         </div>
         <div class="prints-category-copy">
           <h2>Classified case files</h2>
-          <p>${classified} Grey-series 3D prints — open a card for the full case file.</p>
+          <p>${classified} Grey-series 3D prints - open a card for the full case file.</p>
         </div>
       </a>
       <a class="prints-category-card" href="/files/declassified/">
@@ -114,20 +114,20 @@ function renderFilesHub() {
         </div>
         <div class="prints-category-copy">
           <h2>Declassified</h2>
-          <p>${declassified} public releases — live on MakerWorld today.</p>
+          <p>${declassified} public releases - live on MakerWorld today.</p>
         </div>
       </a>
       <a class="prints-category-card" href="/files/all/">
         <div class="prints-category-cover prints-category-cover-all" aria-hidden="true"><span>All</span></div>
         <div class="prints-category-copy">
           <h2>All classified</h2>
-          <p>Every Grey-series case file in one place — ${classified} listings.</p>
+          <p>Every Grey-series case file in one place - ${classified} listings.</p>
         </div>
       </a>
     </section>
     <div class="prose reveal">
       <h2>Vault access</h2>
-      <p>This vault collects THEM 1947 models from MakerWorld (${total} listings). Classified cards are the Grey-series figures — open one for gallery photos, print settings, materials, and a link to download. Practical prints — remote holders, shop tools, storage cases — live on the <a href="/files/declassified/">Declassified</a> page.</p>
+      <p>This vault collects THEM 1947 models from MakerWorld (${total} listings). Classified cards are the Grey-series figures - open one for gallery photos, print settings, materials, and a link to download. Practical prints - remote holders, shop tools, storage cases - live on the <a href="/files/declassified/">Declassified</a> page.</p>
     </div>`;
 }
 
