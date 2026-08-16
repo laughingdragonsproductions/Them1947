@@ -1,8 +1,31 @@
 # Deploy THEM 1947 to Cloudflare Pages
 
-**Stop:** do not push or deploy the Phase 2 hub until you get an explicit launch instruction. Use local `python -m http.server` only.
-
 Static site — no build step. Cloudflare serves files from the repo root.
+
+## Quick deploy (when Git push does not update the live site)
+
+GitHub may have the latest code while **them1947.com** still serves an older upload. Confirm by viewing page source on `/` — Phase 2 includes `dossier-stage`, `bypass-bar`, and the hint **Two transmissions play first**.
+
+**Option A — GitHub Actions (recommended after one-time setup)**
+
+1. Cloudflare dashboard → **My Profile** → **API Tokens** → Create token with **Cloudflare Pages — Edit**
+2. Copy your **Account ID** from the Pages project overview
+3. GitHub repo → **Settings** → **Secrets and variables** → **Actions** → add:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+4. Push to `main` or run the **Deploy Cloudflare Pages** workflow manually (**Actions** tab)
+
+**Option B — deploy from this machine**
+
+```powershell
+cd G:\LocalAIagent\Them1947
+npx wrangler login
+.\scripts\deploy-cloudflare.ps1
+```
+
+**Option C — Cloudflare dashboard**
+
+Pages → **them1947** → **Deployments** → **Retry deployment** or reconnect the GitHub integration to `main`.
 
 ## 1. Push this repo to GitHub
 
@@ -102,12 +125,14 @@ See [ADSENSE-MANUAL.md](ADSENSE-MANUAL.md) for full steps.
 
 ## 7. Ongoing updates
 
-Push to `main` — Cloudflare redeploys automatically.
+Push to `main`, then confirm the live site updated (see **Quick deploy** above if it did not).
 
 ## Troubleshooting
 
 | Issue | Fix |
 |-------|-----|
+| Push to GitHub but live site unchanged | Git integration may be stale — run `.\scripts\deploy-cloudflare.ps1` or set up GitHub Actions secrets (see **Quick deploy**) |
+| Terminal / dossier missing on landing | Live deploy is still Phase 1 — redeploy; page source should include `bypass-bar` and `dossier-stage` |
 | Intro video not playing | Browsers require `muted` + `playsinline`; reduced-motion shows poster + folder immediately |
 | Brief has no sound | Click the folder first (user gesture); unmute in video controls if needed |
 | 404 on `/privacy/` | Ensure `privacy/index.html` exists |
