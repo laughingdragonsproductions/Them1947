@@ -1,10 +1,11 @@
 {
+  // Cloudflare Workers Builds (dashboard → Settings → Builds):
+  //   Build command:  npm run build
+  //   Deploy command: npx wrangler deploy
+  // Or single deploy command: npm ci && npm run deploy
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "them1947",
   "compatibility_date": "2026-08-16",
-  "build": {
-    "command": "node scripts/prepare-worker-deploy.js"
-  },
   "assets": {
     "directory": ".worker-dist"
   }

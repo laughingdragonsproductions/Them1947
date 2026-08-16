@@ -4,7 +4,7 @@ Static site — no build step. Cloudflare serves files from the repo root.
 
 ## Quick deploy (when Git push does not update the live site)
 
-**them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. The repo includes `wrangler.jsonc`, which runs `prepare-worker-deploy.js` before upload and serves from `.worker-dist` (without `.git`).
+**them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. Deploy copies the site into `.worker-dist` (excluding `.git`) then uploads via `wrangler.jsonc`.
 
 Confirm Phase 2 is live: view source on `/` — you should see `dossier-stage`, `bypass-bar`, and **Two transmissions play first**.
 
@@ -22,10 +22,10 @@ Confirm Phase 2 is live: view source on `/` — you should see `dossier-stage`, 
 ```powershell
 cd G:\LocalAIagent\Them1947
 npx wrangler login
-.\scripts\deploy-cloudflare.ps1
+npm run deploy
 ```
 
-This runs `node scripts/prepare-worker-deploy.js` then `wrangler deploy` (copies site files to `.worker-dist` without `.git`).
+`npm run deploy` runs site checks then `wrangler deploy`. Optional legacy path: `npm run deploy:worker-dist` (copies to `.worker-dist` first).
 
 Run `npm run check` anytime to validate JS syntax, catalog pages, asset paths, and script order before deploy.
 
@@ -33,13 +33,19 @@ Run `npm run check` anytime to validate JS syntax, catalog pages, asset paths, a
 
 | Setting | Value |
 |--------|--------|
-| **Build command** | *(leave empty)* or `npm run build` |
-| **Deploy command** | `npx wrangler deploy` or `npm run deploy` |
-| **Branch** | `main` (must include `wrangler.jsonc` — commit `d99c148` or later) |
+| **Build command** | `npm run build` |
+| **Deploy command** | `npx wrangler deploy` |
+| **Branch** | `main` |
 
-`wrangler.jsonc` runs `node scripts/prepare-worker-deploy.js` automatically before deploy, so bare `npx wrangler deploy` is safe on current `main`. **Do not manually redeploy old commits** (e.g. `79f85c6`) — they lack `wrangler.jsonc` and Wrangler will try to upload the repo root including `.git` (25 MB limit failure).
+**Required:** Build command must run before deploy — `.worker-dist` is generated locally and is not committed to git. Without the build step, deploy fails because the assets directory does not exist.
 
-If a build still fails, set **Deploy command** to `npm run deploy` and retry from the latest `main` commit.
+Single-line alternative — set **Build command** empty and **Deploy command** to:
+
+```
+npm ci && npm run deploy
+```
+
+**Do not manually redeploy old commits** (e.g. `79f85c6`) that lack `wrangler.jsonc`.
 
 **Option C — Cloudflare dashboard**
 
