@@ -113,6 +113,21 @@ def collect_models() -> dict[int, dict]:
     return seen
 
 
+def clean_case_name(title: str) -> str:
+    """Remove redundant THEM 1947 from display titles."""
+    s = re.sub(r"\s+", " ", (title or "").strip())
+    s = re.sub(
+        r"(?:^|\s|[-–—])\s*THEM\s+1947(?:\s+Series)?\s*(?:[-–—]\s*)?",
+        " ",
+        s,
+        flags=re.I,
+    )
+    s = re.sub(r"\s{2,}", " ", s).strip()
+    s = re.sub(r"^[-–—]\s*", "", s)
+    s = re.sub(r"\s*[-–—]$", "", s)
+    return re.sub(r"\s{2,}", " ", s).strip()
+
+
 def classify(hit: dict) -> str:
     model_id = hit["id"]
     if model_id in DECLASSIFIED_IDS:
@@ -390,7 +405,7 @@ def build_item(hit: dict, path_slug: str | None = None) -> dict:
         web_path = "/assets/brand/classified-placeholder.png"
 
     model_url = f"https://makerworld.com/en/models/{hit['id']}-{slug}"
-    title = hit.get("title", "").strip()
+    title = clean_case_name(hit.get("title", "").strip())
     item = {
         "id": f"mw-{hit['id']}",
         "makerWorldId": hit["id"],

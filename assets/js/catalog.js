@@ -31,6 +31,7 @@ function classifiedFrame(src, alt, showStamp) {
 
 function renderMwCard(item) {
   const isClassified = item.vault === "classified";
+  const displayName = cleanCaseName(item.name);
   const stats = item.stats || {};
   const mwUrl = itemMakerWorldUrl(item);
   const showMwLink = mwUrl && (!isClassified || isVaultUnlocked());
@@ -40,12 +41,12 @@ function renderMwCard(item) {
 
   if (isClassified && item.href) {
     return `<article class="mw-card mw-card-link" data-print-id="${item.id}">
-      <a class="mw-card-hit" href="${item.href}" aria-label="Open case file: ${item.name}">
+      <a class="mw-card-hit" href="${item.href}" aria-label="Open case file: ${displayName}">
         ${classifiedFrame(item.image, "", true)}
       </a>
       <div class="mw-card-body">
         <p class="mw-card-case-id">${item.caseFile ? `Case file ${item.caseFile}` : "Classified file"}</p>
-        <h2 class="mw-card-title"><a href="${item.href}">${item.name}</a></h2>
+        <h2 class="mw-card-title"><a href="${item.href}">${displayName}</a></h2>
         <div class="mw-card-stats" aria-label="MakerWorld stats">
           <span title="Likes">&#128077; ${formatStat(stats.likes)}</span>
           <span title="Collections">&#128640; ${formatStat(stats.boosts)}</span>
@@ -58,11 +59,11 @@ function renderMwCard(item) {
   }
 
   return `<article class="mw-card" data-print-id="${item.id}">
-    <button type="button" class="mw-card-hit" aria-label="View ${item.name}">
+    <button type="button" class="mw-card-hit" aria-label="View ${displayName}">
       ${classifiedFrame(item.image, "", isClassified)}
     </button>
     <div class="mw-card-body">
-      <h2 class="mw-card-title">${item.name}</h2>
+      <h2 class="mw-card-title">${displayName}</h2>
       <div class="mw-card-stats" aria-label="MakerWorld stats">
         <span title="Likes">&#128077; ${formatStat(stats.likes)}</span>
         <span title="Collections">&#128640; ${formatStat(stats.boosts)}</span>
@@ -189,9 +190,10 @@ function openPrintLightbox(item) {
   const mwUrl = itemMakerWorldUrl(item);
   const showMwLink = mwUrl && (!isClassified || isVaultUnlocked());
 
+  const displayName = cleanCaseName(item.name);
   img.src = item.image;
-  img.alt = item.name;
-  title.textContent = item.name;
+  img.alt = displayName;
+  title.textContent = displayName;
   blurb.textContent = item.blurb || "";
   if (stamp) stamp.hidden = !isClassified;
 

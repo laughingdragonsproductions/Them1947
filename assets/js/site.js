@@ -113,6 +113,15 @@ function loadAdSenseScript() {
   document.head.appendChild(s);
 }
 
+/** Strip redundant "THEM 1947" from case titles — brand already appears in site chrome. */
+function cleanCaseName(name) {
+  let s = String(name || "").trim().replace(/\s+/g, " ");
+  s = s.replace(/(?:^|\s|[-–—])\s*THEM\s+1947(?:\s+Series)?\s*(?:[-–—]\s*)?/gi, " ");
+  s = s.replace(/\s{2,}/g, " ").trim();
+  s = s.replace(/^[-–—]\s*/, "").replace(/\s*[-–—]$/, "").trim();
+  return s;
+}
+
 function resolveAdSlots(adSlots, activePath) {
   const path = window.location.pathname || activePath || "";
   if (!isMonetizablePath(path)) return false;

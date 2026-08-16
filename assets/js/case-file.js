@@ -49,7 +49,7 @@ function renderGallery(item, detail) {
     <p class="case-label">Evidence photo 001</p>
     <div class="case-gallery-main">
       <span class="case-paperclip" aria-hidden="true"></span>
-      <img class="case-gallery-hero" src="${main}" alt="${escapeHtml(item.name)}" width="640" height="480" />
+      <img class="case-gallery-hero" src="${main}" alt="${escapeHtml(cleanCaseName(item.name))}" width="640" height="480" />
       ${stamp}
     </div>
     <div class="case-gallery-thumbs">
@@ -212,7 +212,8 @@ function renderAttachments(item, detail) {
 function renderCaseFile(item) {
   const detail = item.detail || {};
   const caseFile = item.caseFile || detail.caseFile || "000";
-  const specimen = item.specimenLabel || detail.specimenLabel || item.name.toUpperCase();
+  const displayName = cleanCaseName(item.name);
+  const specimen = cleanCaseName(item.specimenLabel || detail.specimenLabel || item.name).toUpperCase();
   const mwUrl = itemMakerWorldUrl(item);
 
   return `<article class="case-file reveal">
@@ -232,7 +233,7 @@ function renderCaseFile(item) {
         </div>
         <div class="case-header-title">
           <p class="case-case-id">CASE FILE ${caseFile}</p>
-          <h1>${escapeHtml(item.name)}</h1>
+          <h1>${escapeHtml(displayName)}</h1>
         </div>
         <div class="case-header-stamps">
           <span class="case-stamp case-stamp-green">Disclosure day</span>
@@ -285,9 +286,10 @@ function initCaseFilePage() {
     return;
   }
 
+  const displayName = cleanCaseName(item.name);
   initPage({
-    title: `Case File ${item.caseFile || ""} — ${item.name}`,
-    description: `CASE FILE ${item.caseFile || ""}: ${item.name}. Classified THEM 1947 specimen dossier with MakerWorld print data.`,
+    title: `Case File ${item.caseFile || ""} — ${displayName}`,
+    description: `CASE FILE ${item.caseFile || ""}: ${displayName}. Classified THEM 1947 specimen dossier with MakerWorld print data.`,
     activePath: `/files/prints/${item.pathSlug}/`,
     content: renderCaseFile(item),
   });
