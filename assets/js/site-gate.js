@@ -4,6 +4,25 @@
   const STORAGE_FAILS = "them1947.bypass.fails";
   const STORAGE_LOCKOUT = "them1947.bypass.lockout";
 
+  const PUBLIC_ROUTE_PREFIXES = ["/privacy/", "/terms/", "/contact/", "/lockout/"];
+
+  function normalizePath(pathname) {
+    const raw = pathname || window.location.pathname || "/";
+    if (raw === "/index.html") return "/";
+    if (raw.endsWith("/")) return raw;
+    const last = raw.slice(raw.lastIndexOf("/") + 1);
+    if (last.includes(".")) return raw;
+    return raw + "/";
+  }
+
+  function isPublicRoute(pathname) {
+    const path = normalizePath(pathname);
+    if (path === "/") return false;
+    return PUBLIC_ROUTE_PREFIXES.some(function (prefix) {
+      return path === prefix || path.startsWith(prefix);
+    });
+  }
+
   function getGateConfig() {
     const cfg = (window.SITE_CONFIG && window.SITE_CONFIG.previewGate) || {};
     return {
@@ -80,6 +99,7 @@
   }
 
   function applyBodyLock() {
+    if (isPublicRoute()) return;
     if (isPreviewActive() && !isAccessGranted()) {
       document.documentElement.classList.add("preview-pending");
     }
@@ -173,8 +193,8 @@
   function enforceLockoutOrGate() {
     if (!isPreviewActive() || isAccessGranted()) return false;
     if (!readState().lockoutActive) return false;
-    const path = window.location.pathname || "";
-    if (path === "/" || path === "/index.html") return false;
+    const path = normalizePath(window.location.pathname);
+    if (path === "/" || isPublicRoute(path)) return false;
     redirectToLockout();
     return true;
   }
@@ -297,6 +317,11 @@
   }
 
   function requireAccess() {
+    if (isPublicRoute()) {
+      document.documentElement.classList.remove("preview-pending");
+      document.body.style.overflow = "";
+      return true;
+    }
     if (enforceLockoutOrGate()) return false;
 
     if (!isPreviewActive() || isAccessGranted()) {
@@ -323,6 +348,7 @@
     checkPassword: checkPassword,
     verifyPassword: verifyPassword,
     isLockoutActive: isLockoutActive,
+    isPublicRoute: isPublicRoute,
     getRemainingAttempts: getRemainingAttempts,
     redirectToLockout: redirectToLockout,
     enforceLockoutOrGate: enforceLockoutOrGate,

@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build": "node scripts/prepare-worker-deploy.js",
-    "deploy": "npm run build && wrangler deploy"
+    "check": "node scripts/check-site.js",
+    "deploy": "npm run check && npm run build && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.123.0"

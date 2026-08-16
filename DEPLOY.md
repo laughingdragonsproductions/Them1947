@@ -27,6 +27,8 @@ npx wrangler login
 
 This runs `node scripts/prepare-worker-deploy.js` then `wrangler deploy` (copies site files to `.worker-dist` without `.git`).
 
+Run `npm run check` anytime to validate JS syntax, catalog pages, asset paths, and script order before deploy.
+
 **Cloudflare Builds** (Workers → them1947 → Settings → Builds):
 
 | Setting | Value |

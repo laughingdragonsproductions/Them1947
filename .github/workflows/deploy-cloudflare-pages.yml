@@ -19,8 +19,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Site checks
+        run: npm run check
+
       - name: Prepare Worker assets
-        run: node scripts/prepare-worker-deploy.js
+        run: npm run build
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
