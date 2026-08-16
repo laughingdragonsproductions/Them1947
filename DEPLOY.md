@@ -25,7 +25,17 @@ npx wrangler login
 .\scripts\deploy-cloudflare.ps1
 ```
 
-This runs `npx wrangler deploy` (Worker static assets — same command Cloudflare Builds uses).
+This runs `node scripts/prepare-worker-deploy.js` then `wrangler deploy` (copies site files to `.worker-dist` without `.git`).
+
+**Cloudflare Builds deploy command** (Workers → them1947 → Settings → Builds):
+
+```
+npm run deploy
+```
+
+Or: `node scripts/prepare-worker-deploy.js && npx wrangler deploy`
+
+Do **not** use bare `npx wrangler deploy` — it will try to upload `.git/objects/pack/` and fail the 25 MB asset limit.
 
 **Option C — Cloudflare dashboard**
 
