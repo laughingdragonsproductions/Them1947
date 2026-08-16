@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="THEM 1947 — classified transmissions incoming. Coming soon." />
-    <title>THEM 1947 — Coming Soon</title>
+    <meta name="description" content="THEM 1947 — Grey-series 3D prints and classified case files." />
+    <title>THEM 1947</title>
     <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
     <link rel="stylesheet" href="/assets/css/landing.css" />
     <link rel="canonical" href="https://them1947.com/" />
     <meta property="og:title" content="THEM 1947" />
-    <meta property="og:description" content="Classified transmissions incoming. Coming soon." />
+    <meta property="og:description" content="Grey-series 3D prints and classified case files." />
     <meta property="og:url" content="https://them1947.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://them1947.com/assets/video/landing-poster.jpg" />
   </head>
   <body>
-    <main class="landing" aria-label="THEM 1947 coming soon">
+    <main class="landing" aria-label="THEM 1947">
       <video
         id="intro-video"
         class="landing-video is-dormant"
@@ -47,17 +47,6 @@
         src="/assets/video/landing-poster.jpg"
         alt=""
       />
-
-      <div id="dossier-stage" class="dossier-stage" hidden aria-hidden="true">
-        <div class="dossier-table" aria-hidden="true"></div>
-        <img
-          id="dossier-clue"
-          class="dossier-clue"
-          src="/assets/brand/mainfile-dossier.png"
-          alt=""
-          draggable="false"
-        />
-      </div>
 
       <div id="landing-scrim" class="landing-scrim" aria-hidden="true"></div>
 
@@ -91,37 +80,16 @@
           </span>
         </button>
         <div class="landing-banner-row">
-          <p class="coming-soon">Coming soon</p>
           <button
-            id="bypass-btn"
-            class="bypass-btn"
+            id="terminal-access-btn"
+            class="terminal-access-btn"
             type="button"
             hidden
             aria-hidden="true"
+            disabled
           >
             Terminal access
           </button>
-        </div>
-        <div id="bypass-bar" class="bypass-bar" hidden aria-hidden="true">
-          <form id="bypass-form" class="bypass-form" autocomplete="off">
-            <label class="bypass-label" for="bypass-input">Clearance code · read the dossier</label>
-            <div class="bypass-input-row">
-              <input
-                id="bypass-input"
-                class="bypass-input"
-                type="text"
-                name="clearance"
-                autocomplete="off"
-                spellcheck="false"
-                maxlength="32"
-                disabled
-              />
-              <button id="bypass-submit" class="bypass-submit" type="submit" disabled>
-                Access
-              </button>
-            </div>
-          </form>
-          <p id="bypass-status" class="bypass-status" aria-live="polite"></p>
         </div>
       </div>
 
@@ -133,7 +101,6 @@
     </main>
 
     <script src="/assets/js/config.js"></script>
-    <script src="/assets/js/site-gate.js"></script>
     <script src="/assets/js/landing.js"></script>
   </body>
 </html>

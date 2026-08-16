@@ -22,10 +22,10 @@ window.SITE_CONFIG = {
       inContent: "",
     },
   },
-  /** Set enabled: false before public launch. Store passwordHash only — see scripts/hash-preview-password.ps1 */
+  /** Owner preview gate — set enabled: true to require clearance on inner pages. */
   previewGate: {
-    enabled: true,
-    passwordHash: "9e5f51e664e86a14de29e6385637fe8b2cb101b90cc93c3eaeba51a014665289",
+    enabled: false,
+    passwordHash: "",
     maxFails: 3,
   },
 };

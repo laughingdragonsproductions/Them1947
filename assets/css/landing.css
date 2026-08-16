@@ -265,6 +265,7 @@ body {
   flex-wrap: wrap;
 }
 
+.terminal-access-btn,
 .bypass-btn {
   appearance: none;
   border: 1px solid #7eb8d4;
@@ -282,16 +283,19 @@ body {
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
+.terminal-access-btn:hover:not(:disabled),
 .bypass-btn:hover:not(:disabled) {
   background: rgba(126, 184, 212, 0.12);
   box-shadow: 0 0 18px rgba(126, 184, 212, 0.35);
 }
 
+.terminal-access-btn:focus-visible,
 .bypass-btn:focus-visible {
   outline: 2px solid #7eb8d4;
   outline-offset: 4px;
 }
 
+.terminal-access-btn:disabled,
 .bypass-btn:disabled {
   cursor: not-allowed;
   opacity: 0.45;

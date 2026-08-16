@@ -2,23 +2,14 @@
   const introVideo = document.getElementById("intro-video");
   const briefVideo = document.getElementById("brief-video");
   const poster = document.getElementById("landing-poster");
-  const dossierStage = document.getElementById("dossier-stage");
   const scrim = document.getElementById("landing-scrim");
   const logo = document.getElementById("landing-logo");
   const ui = document.getElementById("landing-ui");
   const footer = document.getElementById("landing-footer");
   const folderBtn = document.getElementById("classified-folder");
+  const terminalBtn = document.getElementById("terminal-access-btn");
   const startOverlay = document.getElementById("start-overlay");
   const startBtn = document.getElementById("start-btn");
-  const bypassBtn = document.getElementById("bypass-btn");
-  const bypassBar = document.getElementById("bypass-bar");
-  const bypassForm = document.getElementById("bypass-form");
-  const bypassInput = document.getElementById("bypass-input");
-  const bypassSubmit = document.getElementById("bypass-submit");
-  const bypassStatus = document.getElementById("bypass-status");
-
-  const gate = window.SiteGate;
-  const previewActive = gate && gate.isPreviewActive();
 
   const isMobile =
     window.matchMedia("(max-width: 768px)").matches ||
@@ -29,14 +20,15 @@
   let transmissionsComplete = false;
   let introPlaying = false;
   let briefPlaying = false;
-  let siteAccessGranted = gate ? gate.isAccessGranted() : true;
-  let bypassBarOpen = false;
-  let lockoutActive = gate ? gate.isLockoutActive() : false;
 
   const SKIP_INPUT_COUNT = 5;
   const SKIP_INPUT_WINDOW_MS = 2500;
   let skipInputCount = 0;
   let skipInputTimer = null;
+
+  if (isMobile) {
+    document.documentElement.classList.add("is-mobile");
+  }
 
   function resetSkipInputCount() {
     skipInputCount = 0;
@@ -60,7 +52,6 @@
 
   function registerSkipInput() {
     if (transmissionsComplete) return false;
-    if (bypassInput && document.activeElement === bypassInput) return false;
 
     skipInputCount += 1;
     if (skipInputTimer) {
@@ -85,164 +76,42 @@
   function isInteractiveSkipTarget(target) {
     if (!target || !target.closest) return false;
     return !!target.closest(
-      "a, button, input, textarea, select, label, .bypass-bar, .classified-folder, .landing-footer"
+      "a, button, .classified-folder, .landing-footer"
     );
   }
 
   function handlePointerSkip(event) {
     if (transmissionsComplete) return;
-    if (bypassInput && document.activeElement === bypassInput) return;
     if (isInteractiveSkipTarget(event.target)) return;
     if (registerSkipInput()) {
       event.preventDefault();
     }
   }
 
-  if (isMobile) {
-    document.documentElement.classList.add("is-mobile");
+  function enableArchiveControls() {
+    if (folderBtn) {
+      folderBtn.disabled = false;
+      folderBtn.removeAttribute("aria-disabled");
+    }
+    if (terminalBtn) {
+      terminalBtn.hidden = false;
+      terminalBtn.removeAttribute("aria-hidden");
+      terminalBtn.disabled = false;
+    }
+    if (ui) ui.classList.add("is-unlocked");
   }
 
-  function enableFolder() {
-    if (!folderBtn) return;
-    folderBtn.disabled = false;
-    folderBtn.removeAttribute("aria-disabled");
-    ui.classList.add("is-unlocked");
-  }
-
-  function disableFolder() {
-    if (!folderBtn) return;
-    folderBtn.disabled = true;
-    folderBtn.setAttribute("aria-disabled", "true");
-    ui.classList.remove("is-unlocked");
-  }
-
-  if (siteAccessGranted) {
-    enableFolder();
-  } else {
-    disableFolder();
-  }
-
-  function setBypassStatus(message, tone) {
-    if (!bypassStatus) return;
-    bypassStatus.textContent = message;
-    bypassStatus.classList.remove("is-denied", "is-granted", "is-lockout");
-    if (tone) {
-      bypassStatus.classList.add("is-" + tone);
+  function disableArchiveControls() {
+    if (folderBtn) {
+      folderBtn.disabled = true;
+      folderBtn.setAttribute("aria-disabled", "true");
     }
-  }
-
-  function hideBypassButton() {
-    if (!bypassBtn) return;
-    bypassBtn.hidden = true;
-    bypassBtn.setAttribute("aria-hidden", "true");
-    bypassBtn.disabled = true;
-  }
-
-  function hideBypassControls() {
-    bypassBarOpen = false;
-    hideBypassButton();
-    if (bypassBar) {
-      bypassBar.hidden = true;
-      bypassBar.setAttribute("aria-hidden", "true");
-      bypassBar.classList.remove("is-open");
+    if (terminalBtn) {
+      terminalBtn.hidden = true;
+      terminalBtn.setAttribute("aria-hidden", "true");
+      terminalBtn.disabled = true;
     }
-    if (bypassInput) {
-      bypassInput.value = "";
-      bypassInput.disabled = true;
-    }
-    if (bypassSubmit) {
-      bypassSubmit.disabled = true;
-    }
-    setBypassStatus("", null);
-  }
-
-  function openBypassBar() {
-    if (!previewActive || siteAccessGranted) return;
-    bypassBarOpen = true;
-    hideBypassButton();
-    if (bypassBar) {
-      bypassBar.hidden = false;
-      bypassBar.removeAttribute("aria-hidden");
-      bypassBar.classList.add("is-open");
-    }
-    if (bypassInput) {
-      bypassInput.disabled = false;
-      bypassInput.focus();
-    }
-    if (bypassSubmit) {
-      bypassSubmit.disabled = false;
-    }
-    setBypassStatus("", null);
-  }
-
-  function activateLockout() {
-    if (gate) gate.redirectToLockout();
-  }
-
-  function showDeniedStatus(message) {
-    setBypassStatus(message, "denied");
-    if (bypassInput) {
-      bypassInput.value = "";
-      bypassInput.focus();
-    }
-    if (bypassBar) {
-      bypassBar.classList.add("is-shake");
-      window.setTimeout(function () {
-        if (bypassBar) bypassBar.classList.remove("is-shake");
-      }, 480);
-    }
-  }
-
-  async function handleBypassSubmit(event) {
-    event.preventDefault();
-    if (!previewActive || siteAccessGranted || !gate) return;
-
-    const attempt = bypassInput ? bypassInput.value.trim() : "";
-    if (!attempt) {
-      showDeniedStatus("Enter clearance code");
-      return;
-    }
-
-    if (bypassSubmit) bypassSubmit.disabled = true;
-
-    try {
-      const result = await gate.checkPassword(attempt);
-      lockoutActive = gate.isLockoutActive();
-
-      if (result === "granted") {
-        grantSiteAccess();
-        return;
-      }
-      if (result === "lockout") {
-        activateLockout();
-        return;
-      }
-
-      const remaining = gate.getRemainingAttempts();
-      const message =
-        remaining === 1
-          ? "Access denied — 1 attempt remaining"
-          : "Access denied — " + remaining + " attempts remaining";
-      showDeniedStatus(message);
-    } catch (error) {
-      showDeniedStatus("Terminal error — try again");
-    } finally {
-      lockoutActive = gate.isLockoutActive();
-      if (bypassSubmit && !lockoutActive) {
-        bypassSubmit.disabled = false;
-      }
-    }
-  }
-  function grantSiteAccess() {
-    if (siteAccessGranted) return;
-    siteAccessGranted = true;
-    if (gate) gate.grantAccess();
-    enableFolder();
-    hideBypassControls();
-    setBypassStatus("Access granted", "granted");
-    window.setTimeout(function () {
-      window.location.href = "/files/";
-    }, 650);
+    if (ui) ui.classList.remove("is-unlocked");
   }
 
   function hideStartOverlay() {
@@ -290,72 +159,21 @@
     hideBriefVideo();
   }
 
-  function showDossierStage() {
-    if (poster) {
-      poster.classList.remove("is-visible");
-    }
-    if (dossierStage) {
-      dossierStage.hidden = false;
-      dossierStage.removeAttribute("aria-hidden");
-      dossierStage.classList.add("is-visible");
-    }
-    if (scrim) {
-      scrim.classList.add("is-terminal");
-    }
-  }
-
-  function hideDossierStage() {
-    if (dossierStage) {
-      dossierStage.hidden = true;
-      dossierStage.setAttribute("aria-hidden", "true");
-      dossierStage.classList.remove("is-visible");
-    }
-    if (scrim) {
-      scrim.classList.remove("is-terminal");
-    }
-  }
-
   function showPosterBackground() {
-    hideDossierStage();
-    if (poster) {
-      poster.classList.add("is-visible");
-    }
+    if (poster) poster.classList.add("is-visible");
+    if (scrim) scrim.classList.remove("is-terminal");
   }
 
   function showPostVideoUi() {
     if (transmissionsComplete) return;
     transmissionsComplete = true;
     hideAllVideos();
-
-    if (previewActive && !siteAccessGranted) {
-      showDossierStage();
-      ui.classList.add("is-dossier-mode");
-    } else {
-      showPosterBackground();
-      ui.classList.remove("is-dossier-mode");
-    }
+    showPosterBackground();
 
     logo.classList.add("is-visible");
     ui.classList.add("is-visible");
     footer.classList.add("is-visible");
-
-    lockoutActive = gate ? gate.isLockoutActive() : false;
-
-    if (siteAccessGranted || !previewActive) {
-      enableFolder();
-      hideBypassControls();
-      return;
-    }
-
-    disableFolder();
-
-    openBypassBar();
-    if (lockoutActive) {
-      setBypassStatus(
-        "Clearance revoked — enter the short cyan code from the dossier",
-        "lockout"
-      );
-    }
+    enableArchiveControls();
   }
 
   function onIntroEnded() {
@@ -421,16 +239,11 @@
     introPlaying = true;
     briefPlaying = false;
 
-    disableFolder();
+    disableArchiveControls();
     poster.classList.remove("is-visible");
     logo.classList.remove("is-visible");
-    ui.classList.remove("is-visible", "is-unlocked", "is-dossier-mode");
+    ui.classList.remove("is-visible", "is-unlocked");
     footer.classList.remove("is-visible");
-    hideDossierStage();
-    hideBypassControls();
-    if (bypassBar) {
-      bypassBar.classList.remove("is-locked");
-    }
 
     hideBriefVideo();
     showVideoElement(introVideo);
@@ -455,22 +268,11 @@
   }
 
   function openArchive() {
-    if (previewActive && !siteAccessGranted) return;
     window.location.href = "/files/";
-  }
-
-  if (previewActive && siteAccessGranted) {
-    hideBypassControls();
-  } else if (previewActive) {
-    hideBypassButton();
   }
 
   if (startBtn) {
     startBtn.addEventListener("click", startExperience);
-  }
-
-  if (bypassForm) {
-    bypassForm.addEventListener("submit", handleBypassSubmit);
   }
 
   if (introVideo) {
@@ -500,5 +302,9 @@
 
   if (folderBtn) {
     folderBtn.addEventListener("click", openArchive);
+  }
+
+  if (terminalBtn) {
+    terminalBtn.addEventListener("click", openArchive);
   }
 })();

@@ -4,7 +4,7 @@ function getCatalogItems(vault) {
   return items.filter((item) => item.vault === vault);
 }
 
-/** Classified listings unlock for viewing once the owner clearance gate is passed. */
+/** Classified listings link to case files when the site is public. */
 function isVaultUnlocked() {
   const gate = window.SiteGate;
   if (!gate || !gate.isPreviewActive()) return true;
@@ -37,7 +37,7 @@ function renderMwCard(item) {
   const showMwLink = mwUrl && (!isClassified || isVaultUnlocked());
   const cta = showMwLink
     ? `<a class="mw-card-cta" href="${mwUrl}" target="_blank" rel="noopener">View on MakerWorld</a>`
-    : `<span class="mw-card-cta mw-card-cta-disabled" aria-disabled="true">Classified — clearance required</span>`;
+    : `<span class="mw-card-cta mw-card-cta-disabled" aria-disabled="true">Open case file</span>`;
 
   if (isClassified && item.href) {
     return `<article class="mw-card mw-card-link" data-print-id="${item.id}">
@@ -207,8 +207,7 @@ function openPrintLightbox(item) {
   buttons.innerHTML = showMwLink
     ? `<a class="btn btn-primary" href="${mwUrl}" target="_blank" rel="noopener">Open on MakerWorld</a>
        <button type="button" class="btn btn-ghost print-lightbox-dismiss">Close</button>`
-    : `<span class="btn btn-disabled" aria-disabled="true">Classified — clearance required</span>
-       <a class="btn btn-ghost" href="/">Return to landing</a>
+    : `<a class="btn btn-ghost" href="/">Return to landing</a>
        <button type="button" class="btn btn-ghost print-lightbox-dismiss">Close</button>`;
 
   overlay.hidden = false;
