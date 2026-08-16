@@ -4,7 +4,9 @@ Static site — no build step. Cloudflare serves files from the repo root.
 
 ## Quick deploy (when Git push does not update the live site)
 
-GitHub may have the latest code while **them1947.com** still serves an older upload. Confirm by viewing page source on `/` — Phase 2 includes `dossier-stage`, `bypass-bar`, and the hint **Two transmissions play first**.
+**them1947.com** is served by the Cloudflare **Worker** `them1947` (static assets), not Pages. Cloudflare Builds runs `npx wrangler deploy` — the repo must include `wrangler.jsonc` with an `assets.directory`.
+
+Confirm Phase 2 is live: view source on `/` — you should see `dossier-stage`, `bypass-bar`, and **Two transmissions play first**.
 
 **Option A — GitHub Actions (recommended after one-time setup)**
 
@@ -22,6 +24,8 @@ cd G:\LocalAIagent\Them1947
 npx wrangler login
 .\scripts\deploy-cloudflare.ps1
 ```
+
+This runs `npx wrangler deploy` (Worker static assets — same command Cloudflare Builds uses).
 
 **Option C — Cloudflare dashboard**
 

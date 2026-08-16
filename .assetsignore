@@ -1,0 +1,6 @@
+.git/
+.wrangler/
+node_modules/
+_mw_detail_sample.json
+*.md
+!README.md
