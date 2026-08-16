@@ -865,6 +865,29 @@ html.preview-pending #app {
   color: #c9a227;
 }
 
+.preview-gate.is-shake .preview-gate-form {
+  animation: previewGateShake 0.45s ease;
+}
+
+@keyframes previewGateShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+}
+
 .preview-gate-hint {
   margin: 1.25rem 0 0;
   font-size: 0.85rem;

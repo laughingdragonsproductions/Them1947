@@ -20,6 +20,10 @@
   const gate = window.SiteGate;
   const previewActive = gate && gate.isPreviewActive();
 
+  if (previewActive && gate && gate.enforceLockoutOrGate()) {
+    return;
+  }
+
   const isMobile =
     window.matchMedia("(max-width: 768px)").matches ||
     window.matchMedia("(pointer: coarse)").matches ||
@@ -153,24 +157,63 @@
   }
 
   function activateLockout() {
-    lockoutActive = true;
-    bypassBarOpen = true;
-    hideBypassButton();
-    if (bypassBar) {
-      bypassBar.hidden = false;
-      bypassBar.removeAttribute("aria-hidden");
-      bypassBar.classList.add("is-open", "is-locked");
-    }
-    if (bypassInput) {
-      bypassInput.value = "";
-      bypassInput.disabled = true;
-    }
-    if (bypassSubmit) {
-      bypassSubmit.disabled = true;
-    }
-    setBypassStatus("Lockout protocol initiated", "lockout");
+    if (gate) gate.redirectToLockout();
   }
 
+  function showDeniedStatus(message) {
+    setBypassStatus(message, "denied");
+    if (bypassInput) {
+      bypassInput.value = "";
+      bypassInput.focus();
+    }
+    if (bypassBar) {
+      bypassBar.classList.add("is-shake");
+      window.setTimeout(function () {
+        if (bypassBar) bypassBar.classList.remove("is-shake");
+      }, 480);
+    }
+  }
+
+  async function handleBypassSubmit(event) {
+    event.preventDefault();
+    if (!previewActive || lockoutActive || siteAccessGranted || !gate) return;
+
+    const attempt = bypassInput ? bypassInput.value.trim() : "";
+    if (!attempt) {
+      showDeniedStatus("Enter clearance code");
+      return;
+    }
+
+    if (bypassSubmit) bypassSubmit.disabled = true;
+
+    try {
+      const result = await gate.checkPassword(attempt);
+      lockoutActive = gate.isLockoutActive();
+
+      if (result === "granted") {
+        grantSiteAccess();
+        return;
+      }
+      if (result === "lockout") {
+        activateLockout();
+        return;
+      }
+
+      const remaining = gate.getRemainingAttempts();
+      const message =
+        remaining === 1
+          ? "Access denied — 1 attempt remaining"
+          : "Access denied — " + remaining + " attempts remaining";
+      showDeniedStatus(message);
+    } catch (error) {
+      showDeniedStatus("Terminal error — try again");
+    } finally {
+      lockoutActive = gate.isLockoutActive();
+      if (bypassSubmit && !lockoutActive) {
+        bypassSubmit.disabled = false;
+      }
+    }
+  }
   function grantSiteAccess() {
     if (siteAccessGranted) return;
     siteAccessGranted = true;
@@ -181,32 +224,6 @@
     window.setTimeout(function () {
       window.location.href = "/files/";
     }, 650);
-  }
-
-  async function handleBypassSubmit(event) {
-    event.preventDefault();
-    if (!previewActive || lockoutActive || siteAccessGranted || !gate) return;
-
-    if (bypassSubmit) bypassSubmit.disabled = true;
-
-    const result = await gate.checkPassword(bypassInput ? bypassInput.value : "");
-
-    if (result === "granted") {
-      grantSiteAccess();
-      return;
-    }
-    if (result === "lockout") {
-      activateLockout();
-      return;
-    }
-    setBypassStatus("Access denied", "denied");
-    if (bypassInput) {
-      bypassInput.value = "";
-      bypassInput.focus();
-    }
-    if (bypassSubmit && !lockoutActive) {
-      bypassSubmit.disabled = false;
-    }
   }
 
   function hideStartOverlay() {

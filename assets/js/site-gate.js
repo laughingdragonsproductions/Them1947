@@ -141,7 +141,51 @@
     });
   }
 
+  function isLockoutActive() {
+    return readState().lockoutActive;
+  }
+
+  function getRemainingAttempts() {
+    const state = readState();
+    const maxFails = getGateConfig().maxFails;
+    if (state.lockoutActive) return 0;
+    return Math.max(0, maxFails - state.failCount);
+  }
+
+  function redirectToLockout() {
+    const path = window.location.pathname || "";
+    if (path.startsWith("/lockout")) return;
+    window.location.replace("/lockout/");
+  }
+
+  function enforceLockoutOrGate() {
+    if (!isPreviewActive() || isAccessGranted()) return false;
+    if (!readState().lockoutActive) return false;
+    redirectToLockout();
+    return true;
+  }
+
+  function deniedMessage() {
+    const remaining = getRemainingAttempts();
+    if (remaining <= 0) return "Access denied";
+    if (remaining === 1) return "Access denied — 1 attempt remaining";
+    return "Access denied — " + remaining + " attempts remaining";
+  }
+
+  function handlePasswordResult(result, onGranted, onDenied) {
+    if (result === "granted") {
+      onGranted();
+      return;
+    }
+    if (result === "lockout") {
+      redirectToLockout();
+      return;
+    }
+    onDenied(deniedMessage());
+  }
+
   function mountGateOverlay() {
+    if (enforceLockoutOrGate()) return;
     if (document.getElementById("preview-gate")) return;
 
     const gate = document.createElement("div");
@@ -174,21 +218,15 @@
     const input = document.getElementById("preview-gate-input");
     const submit = document.getElementById("preview-gate-submit");
     const status = document.getElementById("preview-gate-status");
-    const gateCfg = getGateConfig();
     let state = readState();
 
     function applyLockoutUi() {
-      gate.classList.add("is-locked");
-      if (input) {
-        input.value = "";
-        input.disabled = true;
-      }
-      if (submit) submit.disabled = true;
-      setStatusEl(status, "Lockout protocol initiated", "lockout");
+      redirectToLockout();
     }
 
     if (state.lockoutActive) {
       applyLockoutUi();
+      return;
     } else if (input) {
       input.focus();
     }
@@ -201,17 +239,16 @@
       }, 450);
     }
 
-    function onFail(result) {
-      if (result === "lockout") {
-        state.lockoutActive = true;
-        applyLockoutUi();
-        return;
-      }
-      setStatusEl(status, "Access denied", "denied");
+    function onDenied(message) {
+      setStatusEl(status, message, "denied");
       if (input) {
         input.value = "";
         input.focus();
       }
+      gate.classList.add("is-shake");
+      window.setTimeout(function () {
+        gate.classList.remove("is-shake");
+      }, 480);
     }
 
     if (form) {
@@ -219,30 +256,34 @@
         event.preventDefault();
         if (state.lockoutActive || isAccessGranted()) return;
 
-        const attempt = input ? input.value : "";
+        const attempt = input ? input.value.trim() : "";
+        if (!attempt) {
+          setStatusEl(status, "Enter clearance code", "denied");
+          if (input) input.focus();
+          return;
+        }
         if (submit) submit.disabled = true;
 
         checkPassword(attempt)
           .then(function (result) {
-            if (result === "granted") {
-              onSuccess();
-              return;
-            }
             state = readState();
-            onFail(result);
+            handlePasswordResult(result, onSuccess, onDenied);
+          })
+          .catch(function () {
+            setStatusEl(status, "Terminal error — try again", "denied");
+            if (input) input.focus();
           })
           .finally(function () {
+            state = readState();
             if (submit && !state.lockoutActive) submit.disabled = false;
           });
       });
     }
   }
 
-  function isLockoutActive() {
-    return readState().lockoutActive;
-  }
-
   function requireAccess() {
+    if (enforceLockoutOrGate()) return false;
+
     if (!isPreviewActive() || isAccessGranted()) {
       document.documentElement.classList.remove("preview-pending");
       document.body.style.overflow = "";
@@ -257,6 +298,7 @@
 
   if (document.documentElement) {
     applyBodyLock();
+    enforceLockoutOrGate();
   }
 
   window.SiteGate = {
@@ -266,6 +308,9 @@
     checkPassword: checkPassword,
     verifyPassword: verifyPassword,
     isLockoutActive: isLockoutActive,
+    getRemainingAttempts: getRemainingAttempts,
+    redirectToLockout: redirectToLockout,
+    enforceLockoutOrGate: enforceLockoutOrGate,
     requireAccess: requireAccess,
     applyBodyLock: applyBodyLock,
     mountGateOverlay: mountGateOverlay,

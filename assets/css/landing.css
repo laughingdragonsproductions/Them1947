@@ -412,6 +412,29 @@ body {
   color: rgba(224, 122, 122, 0.9);
 }
 
+.bypass-bar.is-shake {
+  animation: terminalShake 0.45s ease;
+}
+
+@keyframes terminalShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
 .landing-footer {
   position: absolute;
   bottom: 0.75rem;
