@@ -39,7 +39,7 @@ function renderSupportLinks() {
   }
   if (links.buyMeACoffee) {
     parts.push(
-      `<a href="${links.buyMeACoffee}" target="_blank" rel="noopener">Buy me a coffee</a>`
+      `<a href="${links.buyMeACoffee}" target="_blank" rel="noopener">Buy Me a Coffee</a>`
     );
   }
   if (!parts.length) return "";
@@ -59,7 +59,6 @@ function renderFooter() {
       <nav class="footer-nav" aria-label="Explore">
         <strong>Archive</strong>
         ${NAV.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
-        <a href="/files/declassified/">Declassified</a>
         <a href="/files/all/">All classified</a>
       </nav>
       <nav class="footer-nav" aria-label="Legal">

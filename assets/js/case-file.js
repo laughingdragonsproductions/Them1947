@@ -146,7 +146,7 @@ function renderProfileChoices(profiles, activeIndex) {
 function renderCoffeeLink() {
   const url = window.SITE_CONFIG?.links?.buyMeACoffee;
   if (!url) return "";
-  return `<p class="case-coffee-link"><a href="${escapeHtml(url)}" target="_blank" rel="noopener">Buy me a coffee</a></p>`;
+  return `<p class="case-coffee-link"><a href="${escapeHtml(url)}" target="_blank" rel="noopener">Buy Me a Coffee</a></p>`;
 }
 
 function renderPrintProfile(item, detail) {
@@ -313,7 +313,7 @@ function renderCaseFile(item) {
         ${renderAttachments(item, detail)}
       </div>
       <footer class="case-folder-footer">
-        <span>&#9733; Truth is out there &#9733;</span>
+        <span>&#9733; The truth is out there &#9733;</span>
         <span>THEM1947.COM</span>
       </footer>
     </div>

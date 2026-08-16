@@ -70,6 +70,11 @@ DECLASSIFIED_IDS = {
     3109917,
 }
 
+DISPLAY_TITLE_OVERRIDES = {
+    2498466: "3 Place remote control holder for headboard",
+    3105620: "Shotgun Bucky Bullet Buddy",
+}
+
 CLASSIFIED_RE = re.compile(
     r"them\s*1947|alien|grey|greys|roswell|ufo|disclosure|3 foot|3-foot|"
     r"p1s version|intimidator|watcher|stalker|abductor|experimenter|"
@@ -298,6 +303,47 @@ def normalize_dashes(text: str) -> str:
     return text.translate(str.maketrans({"—": "-", "–": "-"}))
 
 
+def polish_public_text(text: str) -> str:
+    plain = normalize_dashes(text or "")
+    plain = plain.replace("\u201c", '"').replace("\u201d", '"')
+    plain = plain.replace("\u2018", "'").replace("\u2019", "'")
+    plain = re.sub(r"\s+,", ",", plain)
+    plain = re.sub(r"(?<=[a-z])-(?=[a-z])", " ", plain)
+    plain = re.sub(r"\.{2,}", ".", plain)
+    plain = re.sub(r"\s{2,}", " ", plain).strip()
+    return plain
+
+
+def display_title(model_id: int, title: str) -> str:
+    return DISPLAY_TITLE_OVERRIDES.get(model_id, clean_case_name(title))
+
+
+def item_blurb(title: str, vault: str) -> str:
+    clean_title = re.sub(r"\.+$", "", (title or "").strip())
+    if vault == "classified":
+        return f"{clean_title}. Grey-series 3D print. Download the files on MakerWorld."
+    return f"{clean_title}. Everyday 3D print. Download free on MakerWorld."
+
+
+def polish_catalog_item(item: dict) -> None:
+    model_id = item.get("makerWorldId") or 0
+    title = display_title(model_id, item.get("name") or "")
+    item["name"] = title
+    item["blurb"] = item_blurb(title, item.get("vault") or "declassified")
+    detail = item.get("detail")
+    if not isinstance(detail, dict):
+        return
+    if detail.get("summaryText"):
+        detail["summaryText"] = polish_public_text(detail["summaryText"])
+    if detail.get("features"):
+        detail["features"] = [polish_public_text(line) for line in detail["features"]]
+
+
+def polish_catalog_items(items: list[dict]) -> None:
+    for item in items:
+        polish_catalog_item(item)
+
+
 def trim_to_model_title(text: str) -> str:
     title_match = re.search(
         r"THEM\s+1947\s+Disclosure\s+Alien\s+Greys\s+[---]\s*",
@@ -359,7 +405,7 @@ def trim_case_note_body(text: str, item_title: str = "", detail_title: str = "")
                 plain = f"{fallback}. {plain}".strip()
             else:
                 plain = fallback
-    return normalize_dashes(plain)
+    return polish_public_text(plain)
 
 
 def listing_body_text(
@@ -778,19 +824,14 @@ def build_item(hit: dict, path_slug: str | None = None) -> dict:
         web_path = "/assets/brand/classified-placeholder.png"
 
     model_url = f"https://makerworld.com/en/models/{hit['id']}-{slug}"
-    title = clean_case_name(hit.get("title", "").strip())
+    title = display_title(hit["id"], hit.get("title", "").strip())
     item = {
         "id": f"mw-{hit['id']}",
         "makerWorldId": hit["id"],
         "name": title,
         "slug": slug,
         "pathSlug": path_slug or filename,
-        "blurb": f"MakerWorld listing: {title}. "
-        + (
-            "Grey-series 3D print. Download the files on MakerWorld."
-            if vault == "classified"
-            else "Public MakerWorld download."
-        ),
+        "blurb": item_blurb(title, vault),
         "image": web_path,
         "status": vault,
         "vault": vault,
@@ -1010,6 +1051,17 @@ def refresh_bom() -> None:
     print(f"Updated BOM data in {OUT_JS}")
 
 
+def refresh_polish_catalog() -> None:
+    payload = load_catalog_payload()
+    items = payload.get("items") or []
+    print(f"Polishing copy for {len(items)} catalog items…")
+    polish_catalog_items(items)
+    payload["items"] = items
+    payload["pulledAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    write_catalog_payload(payload)
+    print(f"Updated copy in {OUT_JS}")
+
+
 def refresh_declassified() -> None:
     payload = load_catalog_payload()
     classified_items = [item for item in payload.get("items") or [] if item.get("vault") == "classified"]
@@ -1032,6 +1084,7 @@ def refresh_declassified() -> None:
         declassified_items.append(item)
         print(f"  {item['name']}")
     items = sorted(declassified_items + classified_items, key=lambda entry: entry["makerWorldId"])
+    polish_catalog_items(items)
     assign_case_files(items)
     emit_js(items)
     print(f"Updated declassified listings in {OUT_JS}")
@@ -1046,6 +1099,9 @@ def main() -> None:
         return
     if "--declassified-only" in sys.argv:
         refresh_declassified()
+        return
+    if "--polish-only" in sys.argv:
+        refresh_polish_catalog()
         return
     if "--notes-only" in sys.argv:
         refresh_case_notes()

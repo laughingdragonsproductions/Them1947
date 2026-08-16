@@ -45,11 +45,16 @@ const SUMMARY_FORBIDDEN = [
   { label: "P1S scale preamble", re: /This has been scaled down to 248mm fit the P1S/i },
   { label: "collection promo header", re: /^THEM 1947 Disclosure Alien Greys Collection Explore/i },
 ];
+const UNICODE_DASH_RE = /[\u2013\u2014]/;
 
 function scanText(rel, text, patterns) {
   for (const { label, re } of patterns) {
     if (re.test(text)) fail(`${rel}: forbidden ${label}`);
   }
+}
+
+function scanNoUnicodeDashes(rel, text) {
+  if (UNICODE_DASH_RE.test(text)) fail(`${rel}: em/en dash found`);
 }
 
 function scanTree(baseRel, patterns, filter) {
@@ -132,6 +137,11 @@ if (DIST_ONLY) {
     fail("case-file.js must expose clickable printer pills (data-printer + initCaseFilePrinters)");
   }
 
+  scanNoUnicodeDashes("assets/js/catalog.js", readText("assets/js/catalog.js"));
+  scanNoUnicodeDashes("assets/js/site.js", readText("assets/js/site.js"));
+  scanNoUnicodeDashes("assets/js/case-file.js", caseFileSrc);
+  scanNoUnicodeDashes("assets/js/catalog-data.js", readText("assets/js/catalog-data.js"));
+
   // Catalog vs print pages
   let catalog;
   try {
@@ -142,6 +152,11 @@ if (DIST_ONLY) {
   }
 
   const classified = (catalog.items || []).filter((item) => item.vault === "classified");
+  for (const item of catalog.items || []) {
+    if (/MakerWorld listing:/i.test(item.blurb || "")) {
+      fail(`Catalog blurb (${item.id}): admin-style MakerWorld listing prefix`);
+    }
+  }
   for (const item of classified) {
     if (!item.href) {
       fail(`Classified item missing href: ${item.id || item.name}`);
@@ -177,8 +192,9 @@ if (DIST_ONLY) {
 
   for (const full of htmlFiles) {
     const rel = path.relative(ROOT, full).replace(/\\/g, "/");
-    if (rel === "lockout/index.html") continue;
     const html = fs.readFileSync(full, "utf8");
+    scanNoUnicodeDashes(rel, html);
+    if (rel === "lockout/index.html") continue;
     if (!html.includes("site-gate.js")) continue;
     const configIdx = html.indexOf("config.js");
     const gateIdx = html.indexOf("site-gate.js");
