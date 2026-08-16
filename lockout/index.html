@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta http-equiv="refresh" content="5;url=https://www.google.com/" />
     <title>404 — Signal lost</title>
     <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
     <style>
@@ -54,6 +53,21 @@
         text-transform: uppercase;
         color: rgba(224, 122, 122, 0.9);
       }
+      .retry {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.65rem 1.1rem;
+        border: 1px solid rgba(126, 184, 212, 0.55);
+        border-radius: 4px;
+        color: #7eb8d4;
+        font: 0.75rem "Courier New", Courier, monospace;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .retry:hover {
+        background: rgba(126, 184, 212, 0.12);
+      }
     </style>
   </head>
   <body>
@@ -61,7 +75,20 @@
       <p class="code">404</p>
       <h1>Clearance revoked</h1>
       <p>Too many failed attempts. This transmission has been terminated and your session flagged.</p>
-      <p class="hint">Redirecting…</p>
+      <p class="hint">Use the short cyan code from the dossier — not the full CodePhrase line.</p>
+      <a class="retry" id="lockout-retry" href="/">Return to landing transmission</a>
     </div>
+    <script>
+      document.getElementById("lockout-retry").addEventListener("click", function (event) {
+        event.preventDefault();
+        try {
+          sessionStorage.removeItem("them1947.bypass.lockout");
+          sessionStorage.removeItem("them1947.bypass.fails");
+        } catch (error) {
+          /* ignore */
+        }
+        window.location.href = "/";
+      });
+    </script>
   </body>
 </html>

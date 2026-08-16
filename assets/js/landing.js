@@ -20,10 +20,6 @@
   const gate = window.SiteGate;
   const previewActive = gate && gate.isPreviewActive();
 
-  if (previewActive && gate && gate.enforceLockoutOrGate()) {
-    return;
-  }
-
   const isMobile =
     window.matchMedia("(max-width: 768px)").matches ||
     window.matchMedia("(pointer: coarse)").matches ||
@@ -37,16 +33,16 @@
   let bypassBarOpen = false;
   let lockoutActive = gate ? gate.isLockoutActive() : false;
 
-  const SKIP_ENTER_COUNT = 5;
-  const SKIP_ENTER_WINDOW_MS = 2500;
-  let enterSkipCount = 0;
-  let enterSkipTimer = null;
+  const SKIP_INPUT_COUNT = 5;
+  const SKIP_INPUT_WINDOW_MS = 2500;
+  let skipInputCount = 0;
+  let skipInputTimer = null;
 
-  function resetEnterSkipCount() {
-    enterSkipCount = 0;
-    if (enterSkipTimer) {
-      window.clearTimeout(enterSkipTimer);
-      enterSkipTimer = null;
+  function resetSkipInputCount() {
+    skipInputCount = 0;
+    if (skipInputTimer) {
+      window.clearTimeout(skipInputTimer);
+      skipInputTimer = null;
     }
   }
 
@@ -59,23 +55,46 @@
     introPlaying = false;
     briefPlaying = false;
     showPostVideoUi();
-    resetEnterSkipCount();
+    resetSkipInputCount();
+  }
+
+  function registerSkipInput() {
+    if (transmissionsComplete) return false;
+    if (bypassInput && document.activeElement === bypassInput) return false;
+
+    skipInputCount += 1;
+    if (skipInputTimer) {
+      window.clearTimeout(skipInputTimer);
+    }
+    skipInputTimer = window.setTimeout(resetSkipInputCount, SKIP_INPUT_WINDOW_MS);
+
+    if (skipInputCount >= SKIP_INPUT_COUNT) {
+      skipToTerminalUi();
+      return true;
+    }
+    return false;
   }
 
   function handleEnterSkip(event) {
     if (event.key !== "Enter") return;
+    if (registerSkipInput()) {
+      event.preventDefault();
+    }
+  }
+
+  function isInteractiveSkipTarget(target) {
+    if (!target || !target.closest) return false;
+    return !!target.closest(
+      "a, button, input, textarea, select, label, .bypass-bar, .classified-folder, .landing-footer"
+    );
+  }
+
+  function handlePointerSkip(event) {
     if (transmissionsComplete) return;
     if (bypassInput && document.activeElement === bypassInput) return;
-
-    enterSkipCount += 1;
-    if (enterSkipTimer) {
-      window.clearTimeout(enterSkipTimer);
-    }
-    enterSkipTimer = window.setTimeout(resetEnterSkipCount, SKIP_ENTER_WINDOW_MS);
-
-    if (enterSkipCount >= SKIP_ENTER_COUNT) {
+    if (isInteractiveSkipTarget(event.target)) return;
+    if (registerSkipInput()) {
       event.preventDefault();
-      skipToTerminalUi();
     }
   }
 
@@ -138,7 +157,7 @@
   }
 
   function openBypassBar() {
-    if (!previewActive || lockoutActive || siteAccessGranted) return;
+    if (!previewActive || siteAccessGranted) return;
     bypassBarOpen = true;
     hideBypassButton();
     if (bypassBar) {
@@ -176,7 +195,7 @@
 
   async function handleBypassSubmit(event) {
     event.preventDefault();
-    if (!previewActive || lockoutActive || siteAccessGranted || !gate) return;
+    if (!previewActive || siteAccessGranted || !gate) return;
 
     const attempt = bypassInput ? bypassInput.value.trim() : "";
     if (!attempt) {
@@ -330,12 +349,13 @@
 
     disableFolder();
 
-    if (lockoutActive) {
-      activateLockout();
-      return;
-    }
-
     openBypassBar();
+    if (lockoutActive) {
+      setBypassStatus(
+        "Clearance revoked — enter the short cyan code from the dossier",
+        "lockout"
+      );
+    }
   }
 
   function onIntroEnded() {
@@ -476,6 +496,7 @@
   });
 
   document.addEventListener("keydown", handleEnterSkip);
+  document.addEventListener("pointerdown", handlePointerSkip);
 
   if (folderBtn) {
     folderBtn.addEventListener("click", openArchive);

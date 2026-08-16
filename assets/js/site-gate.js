@@ -109,14 +109,27 @@
     return { lockoutActive: false, failCount: state.failCount, result: "denied" };
   }
 
+  function clearanceCandidates(input) {
+    const trimmed = (input || "").trim();
+    const candidates = [trimmed];
+    if (trimmed.length > 0) {
+      const normalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+      if (normalized !== trimmed) candidates.push(normalized);
+    }
+    return candidates;
+  }
+
   /**
    * @returns {Promise<boolean>}
    */
   function verifyPassword(input) {
     const gateCfg = getGateConfig();
     if (!gateCfg.passwordHash) return Promise.resolve(false);
-    return sha256Hex(input).then(function (digest) {
-      return hashesMatch(digest, gateCfg.passwordHash);
+    const candidates = clearanceCandidates(input);
+    return Promise.all(candidates.map(sha256Hex)).then(function (digests) {
+      return digests.some(function (digest) {
+        return hashesMatch(digest, gateCfg.passwordHash);
+      });
     });
   }
 
@@ -130,13 +143,12 @@
     const gateCfg = getGateConfig();
     const state = readState();
 
-    if (state.lockoutActive) return Promise.resolve("lockout");
-
     return verifyPassword(input).then(function (ok) {
       if (ok) {
         grantAccess();
         return "granted";
       }
+      if (state.lockoutActive) return "lockout";
       return recordFailedAttempt(state, gateCfg.maxFails).result;
     });
   }
@@ -161,6 +173,8 @@
   function enforceLockoutOrGate() {
     if (!isPreviewActive() || isAccessGranted()) return false;
     if (!readState().lockoutActive) return false;
+    const path = window.location.pathname || "";
+    if (path === "/" || path === "/index.html") return false;
     redirectToLockout();
     return true;
   }
@@ -220,14 +234,15 @@
     const status = document.getElementById("preview-gate-status");
     let state = readState();
 
-    function applyLockoutUi() {
-      redirectToLockout();
+    if (state.lockoutActive) {
+      setStatusEl(
+        status,
+        "Clearance revoked — enter the short cyan code from the dossier",
+        "lockout"
+      );
     }
 
-    if (state.lockoutActive) {
-      applyLockoutUi();
-      return;
-    } else if (input) {
+    if (input) {
       input.focus();
     }
 
