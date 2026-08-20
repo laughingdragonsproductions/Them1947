@@ -8,6 +8,10 @@
   const footer = document.getElementById("landing-footer");
   const folderBtn = document.getElementById("classified-folder");
   const terminalBtn = document.getElementById("terminal-access-btn");
+  const commercialBtn = document.getElementById("landing-commercial-btn");
+  const commercialUrl =
+    window.SITE_CONFIG?.links?.commercialMembership ||
+    "https://makerworld.com/en/@user_935464230#commercial-membership-open";
   const startOverlay = document.getElementById("start-overlay");
   const startBtn = document.getElementById("start-btn");
 
@@ -76,7 +80,7 @@
   function isInteractiveSkipTarget(target) {
     if (!target || !target.closest) return false;
     return !!target.closest(
-      "a, button, .classified-folder, .landing-footer"
+      "a, button, .classified-folder, .landing-footer, .commercial-membership-landing-btn"
     );
   }
 
@@ -98,6 +102,11 @@
       terminalBtn.removeAttribute("aria-hidden");
       terminalBtn.disabled = false;
     }
+    if (commercialBtn) {
+      commercialBtn.href = commercialUrl;
+      commercialBtn.hidden = false;
+      commercialBtn.removeAttribute("aria-hidden");
+    }
     if (ui) ui.classList.add("is-unlocked");
   }
 
@@ -110,6 +119,10 @@
       terminalBtn.hidden = true;
       terminalBtn.setAttribute("aria-hidden", "true");
       terminalBtn.disabled = true;
+    }
+    if (commercialBtn) {
+      commercialBtn.hidden = true;
+      commercialBtn.setAttribute("aria-hidden", "true");
     }
     if (ui) ui.classList.remove("is-unlocked");
   }
@@ -309,11 +322,8 @@
   }
 
   const commercialLink = document.getElementById("landing-commercial-link");
-  const commercialUrl = window.SITE_CONFIG?.links?.commercialMembership;
-  if (commercialLink && commercialUrl) {
+  if (commercialLink) {
     commercialLink.href = commercialUrl;
     commercialLink.classList.add("commercial-membership-link");
-  } else if (commercialLink && !commercialUrl) {
-    commercialLink.remove();
   }
 })();

@@ -265,6 +265,34 @@ body {
   flex-wrap: wrap;
 }
 
+.commercial-membership-landing-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.5rem 0.95rem;
+  border: 1px solid rgba(212, 168, 67, 0.55);
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(40, 38, 34, 0.92) 0%, rgba(22, 22, 22, 0.88) 55%, rgba(36, 33, 28, 0.92) 100%);
+  color: #d4a843;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: 0 0 14px rgba(212, 168, 67, 0.18);
+}
+
+.commercial-membership-landing-btn:hover {
+  background: rgba(212, 168, 67, 0.14);
+  color: #e8bc55;
+}
+
+.commercial-membership-landing-btn[hidden] {
+  display: none;
+}
+
 .terminal-access-btn,
 .bypass-btn {
   appearance: none;
