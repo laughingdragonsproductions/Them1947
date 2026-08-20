@@ -307,4 +307,13 @@
   if (terminalBtn) {
     terminalBtn.addEventListener("click", openArchive);
   }
+
+  const commercialLink = document.getElementById("landing-commercial-link");
+  const commercialUrl = window.SITE_CONFIG?.links?.commercialMembership;
+  if (commercialLink && commercialUrl) {
+    commercialLink.href = commercialUrl;
+    commercialLink.classList.add("commercial-membership-link");
+  } else if (commercialLink && !commercialUrl) {
+    commercialLink.remove();
+  }
 })();

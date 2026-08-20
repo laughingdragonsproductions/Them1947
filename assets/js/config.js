@@ -12,6 +12,8 @@ window.SITE_CONFIG = {
   },
   links: {
     makerWorld: "https://makerworld.com/en/@user_935464230",
+    commercialMembership:
+      "https://makerworld.com/en/@user_935464230#commercial-membership-open",
     buyMeACoffee: "https://buymeacoffee.com/brewer177j",
   },
   adsense: {

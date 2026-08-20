@@ -29,12 +29,33 @@ function renderHeader(activePath) {
   </header>`;
 }
 
+function commercialMembershipUrl() {
+  return window.SITE_CONFIG?.links?.commercialMembership || "";
+}
+
+function renderCommercialMembershipCta(note) {
+  const url = commercialMembershipUrl();
+  if (!url) return "";
+  const blurb =
+    note ||
+    "Sell prints of these models with a MakerWorld commercial license.";
+  return `<aside class="commercial-membership-cta reveal">
+    <a class="commercial-membership-btn" href="${url}" target="_blank" rel="noopener">Join Commercial Membership</a>
+    <p class="commercial-membership-note">${blurb}</p>
+  </aside>`;
+}
+
 function renderSupportLinks() {
   const links = window.SITE_CONFIG?.links || {};
   const parts = [];
   if (links.makerWorld) {
     parts.push(
       `<a href="${links.makerWorld}" target="_blank" rel="noopener">MakerWorld</a>`
+    );
+  }
+  if (links.commercialMembership) {
+    parts.push(
+      `<a class="commercial-membership-link" href="${links.commercialMembership}" target="_blank" rel="noopener">Commercial Membership</a>`
     );
   }
   if (links.buyMeACoffee) {

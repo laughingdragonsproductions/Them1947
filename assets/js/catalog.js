@@ -97,6 +97,7 @@ function renderFilesHub() {
       <img src="/assets/brand/ufo-night.png" alt="" class="archive-hero-img" />
       <span class="classified-stamp classified-stamp-lg">Classified</span>
     </section>
+    ${renderCommercialMembershipCta()}
     <section class="prints-category-grid reveal">
       <a class="prints-category-card" href="/files/prints/">
         <div class="classified-frame classified-frame-cover">
@@ -141,6 +142,7 @@ function renderCategoryPage({ vault, title, lede, extra = "" }) {
       <h1>${title}</h1>
       <p>${lede} ${countLabel}.</p>
     </header>
+    ${renderCommercialMembershipCta()}
     ${renderCatalogGrid(vault)}
     ${extra}`;
 }

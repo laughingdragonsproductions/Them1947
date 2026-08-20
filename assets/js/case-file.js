@@ -21,6 +21,83 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;");
 }
 
+const REDACTION_WORDS = [
+  "SUBJECT",
+  "SPECIMEN",
+  "MATERIAL",
+  "FILAMENT",
+  "CLEARANCE",
+  "UNKNOWN",
+  "AGENT",
+  "BRIEFING",
+  "MANIFEST",
+  "EVIDENCE",
+  "CORRIDOR",
+  "CONTACT",
+  "OBJECT",
+  "SECURE",
+  "LEVEL",
+  "FIELD",
+  "SCAN",
+  "ROSWELL",
+  "CRAFT",
+  "NIGHT",
+  "GREY",
+  "UNIT",
+  "DATA",
+  "FILE",
+  "PRINT",
+  "BASE",
+];
+
+function seededRandom(seed) {
+  let hash = 2166136261;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash ^= seed.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return () => {
+    hash += 0x6d2b79f5;
+    let t = hash;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function renderRedactionLine(rng, barCount, inline = false) {
+  const parts = [];
+  for (let i = 0; i < barCount; i += 1) {
+    const width = 1.8 + rng() * 5.5;
+    parts.push(`<span class="r-block" style="width:${width.toFixed(2)}em"></span>`);
+    if (rng() > 0.58 && i < barCount - 1) {
+      const word = REDACTION_WORDS[Math.floor(rng() * REDACTION_WORDS.length)];
+      parts.push(`<span class="r-peek">${word}</span>`);
+    }
+  }
+  const tag = inline ? "span" : "div";
+  return `<${tag} class="redaction-line">${parts.join("")}</${tag}>`;
+}
+
+function renderRedactionBars(seed, lines = 3, variant = "block") {
+  const rng = seededRandom(String(seed || "redacted"));
+  const inline = variant === "inline";
+  const markup = Array.from({ length: lines }, () =>
+    renderRedactionLine(rng, inline ? 4 + Math.floor(rng() * 3) : 5 + Math.floor(rng() * 5), inline)
+  ).join("");
+  const tag = inline ? "span" : "div";
+  return `<${tag} class="redaction-bars redaction-bars--${variant}" role="img" aria-label="Redacted content">${markup}</${tag}>`;
+}
+
+function redacted(value, seed = "field") {
+  if (value) return escapeHtml(value);
+  return renderRedactionBars(seed, 1, "inline");
+}
+
+function redactedBlock(seed, lines = 3, suffixHtml = "") {
+  return `<div class="case-redacted-block">${renderRedactionBars(seed, lines, "block")}${suffixHtml}</div>`;
+}
+
 function formatBytes(bytes) {
   const num = Number(bytes) || 0;
   if (!num) return "-";
@@ -29,15 +106,11 @@ function formatBytes(bytes) {
   return `${num} B`;
 }
 
-function formatDate(iso) {
-  if (!iso) return "REDACTED";
+function formatDate(iso, seed = "released-date") {
+  if (!iso) return renderRedactionBars(seed, 1, "inline");
   const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return iso;
+  if (Number.isNaN(date.getTime())) return escapeHtml(iso);
   return date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
-}
-
-function redacted(value, fallback = "REDACTED") {
-  return value ? escapeHtml(value) : `<span class="case-redacted">${fallback}</span>`;
 }
 
 function renderGallery(item, detail) {
@@ -72,7 +145,7 @@ function renderEngagement(item, detail) {
     <span><strong>${formatStat(stats.likes)}</strong> Likes</span>
     <span><strong>${formatStat(stats.downloads)}</strong> Downloads</span>
     <span><strong>${formatStat(stats.prints)}</strong> Prints</span>
-    <span class="case-engagement-date">Released ${formatDate(detail.publishedAt)}</span>
+    <span class="case-engagement-date">Released ${formatDate(detail.publishedAt, `released-${item.id}`)}</span>
   </div>`;
 }
 
@@ -114,15 +187,19 @@ function renderSettingRows(profile) {
     .map(
       ([label, value]) => `<div class="case-setting-row">
             <dt>${label}</dt>
-            <dd>${redacted(value)}</dd>
+            <dd>${redacted(value, `setting-${label}`)}</dd>
           </div>`
     )
     .join("");
 }
 
-function renderPrinterPills(printers, activeName) {
+function renderPrinterPills(printers, activeName, options = {}) {
   if (!printers.length) {
-    return `<p class="case-redacted-block">Print profiles: REDACTED - view on MakerWorld</p>`;
+    const seed = options.seed || "printer-pills";
+    const link = options.mwUrl
+      ? `<p class="case-redacted-note"><a href="${escapeHtml(options.mwUrl)}" target="_blank" rel="noopener">View print profiles on MakerWorld</a></p>`
+      : "";
+    return `${renderRedactionBars(seed, 2, "block")}${link}`;
   }
   return `<div class="case-profile-pills" role="tablist" aria-label="Printer models">${printers
     .map((name) => {
@@ -149,6 +226,12 @@ function renderCoffeeLink() {
   return `<p class="case-coffee-link"><a href="${escapeHtml(url)}" target="_blank" rel="noopener">Buy Me a Coffee</a></p>`;
 }
 
+function renderCommercialMembershipLink() {
+  const url = window.SITE_CONFIG?.links?.commercialMembership;
+  if (!url) return "";
+  return `<a class="case-commercial-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener">Join Commercial Membership</a>`;
+}
+
 function renderPrintProfile(item, detail) {
   const profiles = getPrintProfiles(detail);
   const profile = profiles[0] || detail.printProfile || {};
@@ -158,25 +241,26 @@ function renderPrintProfile(item, detail) {
 
   const settings = profile.title
     ? `<p class="case-profile-title">${escapeHtml(profile.title)}</p>`
-    : `<p class="case-redacted-block">Profile title: REDACTED</p>`;
+    : redactedBlock(`profile-title-${item.id}`, 2);
 
   return `<section class="case-dossier" aria-label="Print dossier">
     <div class="case-designer">
       ${detail.designerAvatar ? `<img src="${detail.designerAvatar}" alt="" class="case-designer-avatar" width="40" height="40" />` : ""}
       <div>
         <p class="case-label">Designer</p>
-        <p class="case-designer-name">${redacted(detail.designer)}</p>
+        <div class="case-designer-name">${redacted(detail.designer, `designer-${item.id}`)}</div>
       </div>
     </div>
     <p class="case-label">Category</p>
-    <p class="case-category">${redacted(detail.category)}</p>
+    <div class="case-category">${redacted(detail.category, `category-${item.id}`)}</div>
     <p class="case-label">Print profile${profiles.length > 1 ? ` (${profiles.length})` : ""}</p>
     ${renderProfileChoices(profiles, 0)}
     ${settings}
-    ${renderPrinterPills(printers, activePrinter)}
+    ${renderPrinterPills(printers, activePrinter, { seed: `printers-${item.id}`, mwUrl: item.makerWorldUrl })}
     <dl class="case-settings">
       ${renderSettingRows(specs)}
     </dl>
+    ${renderCommercialMembershipLink()}
     <a class="case-mw-btn" href="${item.makerWorldUrl}" target="_blank" rel="noopener">View on MakerWorld</a>
     ${renderCoffeeLink()}
     <div class="case-action-stats">
@@ -188,15 +272,16 @@ function renderPrintProfile(item, detail) {
   </section>`;
 }
 
-function renderBom(detail, mwUrl) {
+function renderBom(detail, mwUrl, itemId = "bom") {
   const bom = detail.bom || [];
   if (!bom.length) {
+    const suffix = `<p class="case-redacted-note"><a href="${escapeHtml(mwUrl)}" target="_blank" rel="noopener">View materials on MakerWorld</a></p>`;
     return `<section class="case-bom case-bom-empty">
       <div class="case-section-head">
         <h2>Bill of materials</h2>
         <span class="case-stamp case-stamp-green">Authorized personnel only</span>
       </div>
-      <p class="case-redacted-block">Material manifest REDACTED - <a href="${mwUrl}" target="_blank" rel="noopener">View materials on MakerWorld</a></p>
+      ${redactedBlock(`bom-${itemId}`, 4, suffix)}
     </section>`;
   }
 
@@ -208,7 +293,9 @@ function renderBom(detail, mwUrl) {
     <div class="case-bom-grid">
       ${bom
         .map((entry) => {
-          const price = entry.priceFrom ? `From ${escapeHtml(entry.priceFrom)}` : "REDACTED";
+          const price = entry.priceFrom
+            ? `From ${escapeHtml(entry.priceFrom)}`
+            : renderRedactionBars(`bom-price-${entry.name}-${itemId}`, 1, "inline");
           const color = entry.colorOptions?.[0] || "Standard";
           const card = `<article class="case-bom-card">
             <img src="${entry.image || "/assets/brand/classified-placeholder.png"}" alt="" class="case-bom-swatch" loading="lazy" />
@@ -231,7 +318,7 @@ function renderBom(detail, mwUrl) {
 function renderCaseNotes(item, detail) {
   const features = detail.features?.length
     ? `<ul class="case-features">${detail.features.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>`
-    : `<p class="case-redacted-block">Feature list REDACTED</p>`;
+    : redactedBlock(`features-${item.id}`, 3);
 
   return `<section class="case-notes">
     <h2>Case notes</h2>
@@ -307,7 +394,7 @@ function renderCaseFile(item) {
         </div>
         ${renderPrintProfile(item, detail)}
       </div>
-      ${renderBom(detail, mwUrl)}
+      ${renderBom(detail, mwUrl, item.id)}
       <div class="case-bottom-grid">
         ${renderCaseNotes(item, detail)}
         ${renderAttachments(item, detail)}
@@ -341,7 +428,10 @@ function initCaseFilePrinters(item) {
     const printers = profile.printers || [];
     if (!printers.includes(printerName)) printerName = printers[0] || "";
     const existing = dossier.querySelector(".case-profile-pills");
-    const markup = renderPrinterPills(printers, printerName);
+    const markup = renderPrinterPills(printers, printerName, {
+      seed: `printers-${item.id}`,
+      mwUrl: item.makerWorldUrl,
+    });
     if (existing) existing.outerHTML = markup;
   }
 

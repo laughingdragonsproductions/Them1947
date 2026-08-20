@@ -466,6 +466,14 @@ body {
   color: #7eb8d4;
 }
 
+.landing-footer a.commercial-membership-link {
+  color: rgba(212, 168, 67, 0.85);
+}
+
+.landing-footer a.commercial-membership-link:hover {
+  color: #e8bc55;
+}
+
 .start-overlay {
   position: fixed;
   inset: 0;
