@@ -1108,6 +1108,7 @@ html.preview-pending #app {
   box-shadow:
     0 18px 40px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  overflow-x: hidden;
 }
 
 .case-tab {
@@ -1228,6 +1229,11 @@ html.preview-pending #app {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.case-main-grid > *,
+.case-bottom-grid > * {
+  min-width: 0;
+}
+
 .case-gallery-main {
   position: relative;
   padding: 0.75rem;
@@ -1320,6 +1326,7 @@ html.preview-pending #app {
   padding: 1rem;
   background: rgba(255, 252, 244, 0.72);
   border: 1px solid rgba(70, 52, 24, 0.22);
+  overflow-x: hidden;
 }
 
 .case-designer {
@@ -1402,7 +1409,7 @@ html.preview-pending #app {
 
 .case-setting-row {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
+  grid-template-columns: minmax(5.5rem, 8.5rem) minmax(0, 1fr);
   gap: 0.75rem;
   align-items: baseline;
 }
@@ -1417,6 +1424,8 @@ html.preview-pending #app {
 
 .case-setting-row dd {
   margin: 0;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .case-mw-btn {
@@ -1662,10 +1671,12 @@ html.preview-pending #app {
 }
 
 .redaction-bars--inline {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   vertical-align: middle;
-  width: auto;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
   gap: 0.15rem;
 }
 
@@ -1682,9 +1693,10 @@ html.preview-pending #app {
 }
 
 span.redaction-line {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -1741,7 +1753,8 @@ span.redaction-line {
 }
 
 .case-setting-row dd .redaction-bars--inline {
-  min-width: 4.5rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .case-engagement-date .redaction-bars--inline {

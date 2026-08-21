@@ -580,7 +580,6 @@ function renderRedactedCoozieNotes() {
   return `<section class="case-notes case-notes--redacted">
     <h2>Case notes</h2>
     ${renderRedactionBars("coozie-notes", 8, "block")}
-    <p class="case-stamp case-stamp-red case-stamp-care">Handle with care: non-human biological specimen</p>
   </section>`;
 }
 
