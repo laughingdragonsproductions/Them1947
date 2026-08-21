@@ -29,6 +29,22 @@ window.SITE_CONFIG = {
     eyebrow: "New release",
     tagline: "THEM 1947 × LitPrintz - THE ONE HIT WONDER has landed.",
   },
+  /** Fully redacted Lit Printz coozie case file (purchase link only). */
+  featuredCoozie: {
+    pathSlug: "them-1947-alien-coozie",
+    href: "/files/prints/them-1947-alien-coozie/",
+    title: "THEM 1947 Alien Coozie",
+    caseFile: "022-R",
+    poster: "/assets/catalog/classified/them-1947-alien-coozie/featured-release.png",
+    eyebrow: "Redacted file",
+    tagline: "Lit Printz collaboration companion. Clearance withheld - purchase link only.",
+    gallery: [
+      "/assets/catalog/classified/them-1947-alien-coozie/gallery-01.png",
+      "/assets/catalog/classified/them-1947-alien-coozie/gallery-02.png",
+    ],
+    purchaseUrl:
+      "https://litprintz.com/products/them-1947-alien-coozie-free-stl",
+  },
   adsense: {
     publisherId: "ca-pub-7048606415692002",
     slots: {

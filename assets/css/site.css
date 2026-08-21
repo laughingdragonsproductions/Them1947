@@ -213,18 +213,52 @@ a:hover {
   inset: auto 1rem 1rem auto;
 }
 
+.vault-featured-releases {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .vault-featured-release {
-  margin: 0 0 2rem;
+  margin: 0;
   border: 1px solid rgba(180, 255, 60, 0.35);
   background: linear-gradient(180deg, rgba(180, 255, 60, 0.05), transparent 38%), var(--surface);
   overflow: hidden;
   box-shadow: 0 0 24px rgba(180, 255, 60, 0.08);
 }
 
+.vault-featured-release--coozie {
+  border-color: rgba(126, 184, 212, 0.35);
+  background: linear-gradient(180deg, rgba(126, 184, 212, 0.06), transparent 38%), var(--surface);
+  box-shadow: 0 0 20px rgba(126, 184, 212, 0.08);
+}
+
+.vault-featured-release--coozie .vault-featured-release-badge,
+.vault-featured-release--coozie .vault-featured-release-eyebrow {
+  color: #7eb8d4;
+  border-color: rgba(126, 184, 212, 0.55);
+}
+
 .vault-featured-release-link {
-  position: relative;
   display: block;
+  padding: 0.85rem;
   background: #050708;
+  text-align: center;
+  text-decoration: none;
+}
+
+.vault-featured-release-media {
+  position: relative;
+  display: inline-block;
+  width: 64%;
+  max-width: 512px;
+  vertical-align: top;
+}
+
+.vault-featured-release--coozie .vault-featured-release-media {
+  width: 64%;
+  max-width: 420px;
 }
 
 .vault-featured-release-img {
@@ -287,6 +321,12 @@ a:hover {
   flex-wrap: wrap;
   gap: 0.65rem;
   margin-top: 0.35rem;
+}
+
+@media (max-width: 960px) {
+  .vault-featured-releases {
+    grid-template-columns: 1fr;
+  }
 }
 
 .prints-category-grid {
@@ -1435,6 +1475,35 @@ html.preview-pending #app {
   border-color: rgba(180, 255, 60, 0.85);
   color: #eeffb8;
   text-decoration: none;
+}
+
+.case-litprintz-btn--purchase {
+  margin-top: 0.35rem;
+}
+
+.case-file--redacted .case-designer-avatar--redacted {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    180deg,
+    #111 0,
+    #111 6px,
+    #1a1a1a 6px,
+    #1a1a1a 12px
+  );
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.case-evidence-stamp-redacted {
+  background: rgba(120, 24, 24, 0.88);
+  border-color: rgba(220, 80, 80, 0.65);
+  color: #ffd5d5;
+}
+
+.case-engagement--redacted,
+.case-action-stats--redacted {
+  min-height: 3rem;
 }
 
 .case-mw-btn:hover {

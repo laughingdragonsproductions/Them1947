@@ -91,6 +91,46 @@ function getFeaturedReleaseItem() {
   );
 }
 
+function renderFeaturedReleaseCard({
+  href,
+  poster,
+  posterWidth,
+  posterHeight,
+  eyebrow,
+  caseLabel,
+  title,
+  tagline,
+  primaryLabel = "Open case file",
+  secondaryLink = "",
+  modifier = "",
+}) {
+  const modClass = modifier ? ` vault-featured-release--${modifier}` : "";
+  return `<section class="vault-featured-release reveal${modClass}" aria-label="${title} featured release">
+    <a class="vault-featured-release-link" href="${href}">
+      <div class="vault-featured-release-media">
+        <img
+          class="vault-featured-release-img"
+          src="${poster}"
+          alt="${title} - ${tagline}"
+          width="${posterWidth}"
+          height="${posterHeight}"
+          loading="eager"
+        />
+        <span class="vault-featured-release-badge">${eyebrow}</span>
+      </div>
+    </a>
+    <div class="vault-featured-release-copy">
+      <p class="vault-featured-release-eyebrow">${caseLabel} · ${eyebrow}</p>
+      <h2 class="vault-featured-release-title">${title}</h2>
+      <p class="vault-featured-release-tagline">${tagline}</p>
+      <div class="vault-featured-release-actions">
+        <a class="btn btn-primary" href="${href}">${primaryLabel}</a>
+        ${secondaryLink}
+      </div>
+    </div>
+  </section>`;
+}
+
 function renderFeaturedRelease() {
   const featured = window.SITE_CONFIG?.featuredRelease;
   const item = getFeaturedReleaseItem();
@@ -102,33 +142,53 @@ function renderFeaturedRelease() {
   const tagline = featured.tagline || item.blurb || "";
   const caseLabel = item.caseFile ? `Case file ${item.caseFile}` : "Classified file";
   const mwUrl = itemMakerWorldUrl(item);
+  const secondaryLink = mwUrl
+    ? `<a class="btn btn-ghost" href="${mwUrl}" target="_blank" rel="noopener">View on MakerWorld</a>`
+    : "";
 
-  return `<section class="vault-featured-release reveal" aria-label="${displayName} featured release">
-    <a class="vault-featured-release-link" href="${item.href}">
-      <img
-        class="vault-featured-release-img"
-        src="${poster}"
-        alt="${displayName} - ${tagline}"
-        width="1200"
-        height="675"
-        loading="eager"
-      />
-      <span class="vault-featured-release-badge">${eyebrow}</span>
-    </a>
-    <div class="vault-featured-release-copy">
-      <p class="vault-featured-release-eyebrow">${caseLabel} · ${eyebrow}</p>
-      <h2 class="vault-featured-release-title">${displayName}</h2>
-      <p class="vault-featured-release-tagline">${tagline}</p>
-      <div class="vault-featured-release-actions">
-        <a class="btn btn-primary" href="${item.href}">Open case file</a>
-        ${
-          mwUrl
-            ? `<a class="btn btn-ghost" href="${mwUrl}" target="_blank" rel="noopener">View on MakerWorld</a>`
-            : ""
-        }
-      </div>
-    </div>
-  </section>`;
+  return renderFeaturedReleaseCard({
+    href: item.href,
+    poster,
+    posterWidth: 394,
+    posterHeight: 590,
+    eyebrow,
+    caseLabel,
+    title: displayName,
+    tagline,
+    secondaryLink,
+    modifier: "primary",
+  });
+}
+
+function renderFeaturedCoozieRelease() {
+  const coozie = window.SITE_CONFIG?.featuredCoozie;
+  if (!coozie?.href) return "";
+
+  const purchaseUrl = coozie.purchaseUrl || window.SITE_CONFIG?.links?.litPrintzCoozie || "";
+  const secondaryLink = purchaseUrl
+    ? `<a class="btn btn-ghost" href="${purchaseUrl}" target="_blank" rel="noopener">Get on Lit Printz</a>`
+    : "";
+
+  return renderFeaturedReleaseCard({
+    href: coozie.href,
+    poster: coozie.poster,
+    posterWidth: 800,
+    posterHeight: 800,
+    eyebrow: coozie.eyebrow || "Redacted file",
+    caseLabel: coozie.caseFile ? `Case file ${coozie.caseFile}` : "Redacted file",
+    title: coozie.title || "THEM 1947 Alien Coozie",
+    tagline: coozie.tagline || "",
+    primaryLabel: "Open redacted file",
+    secondaryLink,
+    modifier: "coozie",
+  });
+}
+
+function renderFeaturedReleases() {
+  const primary = renderFeaturedRelease();
+  const coozie = renderFeaturedCoozieRelease();
+  if (!primary && !coozie) return "";
+  return `<div class="vault-featured-releases reveal">${primary}${coozie}</div>`;
 }
 
 function renderFilesHub() {
@@ -148,7 +208,7 @@ function renderFilesHub() {
       <img src="/assets/brand/ufo-night.png" alt="" class="archive-hero-img" />
       <span class="classified-stamp classified-stamp-lg">Classified</span>
     </section>
-    ${renderFeaturedRelease()}
+    ${renderFeaturedReleases()}
     ${renderCommercialMembershipCta()}
     <section class="prints-category-grid reveal">
       <a class="prints-category-card" href="/files/prints/">

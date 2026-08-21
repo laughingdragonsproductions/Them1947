@@ -508,6 +508,176 @@ function initCaseFileGallery() {
   });
 }
 
+function getFeaturedCoozieConfig() {
+  return window.SITE_CONFIG?.featuredCoozie || null;
+}
+
+function renderRedactedCoozieGallery(coozie) {
+  const images = coozie.gallery?.length ? coozie.gallery : [coozie.poster];
+  const main = images[0];
+  const thumbs = images.slice(0, 5);
+  return `<section class="case-gallery" aria-label="Evidence photos">
+    <p class="case-label">${renderRedactionBars("coozie-photo-label", 1, "inline")}</p>
+    <div class="case-gallery-main case-gallery-main--redacted">
+      <span class="case-paperclip" aria-hidden="true"></span>
+      <img class="case-gallery-hero" src="${main}" alt="" width="640" height="480" />
+      <span class="case-evidence-stamp case-evidence-stamp-redacted">Redacted</span>
+    </div>
+    <div class="case-gallery-thumbs">
+      ${thumbs
+        .map(
+          (src, index) =>
+            `<button type="button" class="case-thumb${index === 0 ? " is-active" : ""}" data-gallery-src="${src}" aria-label="View image ${index + 1}">
+              <img src="${src}" alt="" loading="lazy" />
+            </button>`
+        )
+        .join("")}
+    </div>
+  </section>`;
+}
+
+function renderRedactedEngagement() {
+  return `<div class="case-engagement case-engagement--redacted" aria-label="Engagement stats withheld">
+    ${renderRedactionBars("coozie-engagement", 2, "block")}
+  </div>`;
+}
+
+function renderRedactedCoozieDossier(purchaseUrl) {
+  return `<section class="case-dossier case-dossier--redacted" aria-label="Print dossier withheld">
+    <div class="case-designer">
+      <div class="case-designer-avatar case-designer-avatar--redacted" aria-hidden="true"></div>
+      <div>
+        <p class="case-label">Designer</p>
+        ${renderRedactionBars("coozie-designer", 1, "block")}
+      </div>
+    </div>
+    <p class="case-label">Category</p>
+    ${renderRedactionBars("coozie-category", 1, "block")}
+    <p class="case-label">Print profile</p>
+    ${renderRedactionBars("coozie-profile", 2, "block")}
+    ${renderRedactionBars("coozie-printers", 1, "block")}
+    <dl class="case-settings">
+      ${renderSettingRows({})}
+    </dl>
+    <a class="case-litprintz-btn case-litprintz-btn--purchase" href="${escapeHtml(purchaseUrl)}" target="_blank" rel="noopener">Get free STL on Lit Printz</a>
+    <div class="case-action-stats case-action-stats--redacted">
+      ${renderRedactionBars("coozie-stats", 1, "block")}
+    </div>
+  </section>`;
+}
+
+function renderRedactedCoozieBom() {
+  return `<section class="case-bom case-bom-empty case-bom--redacted">
+    <div class="case-section-head">
+      <h2>Bill of materials</h2>
+      <span class="case-stamp case-stamp-red case-stamp-secret">Redacted</span>
+    </div>
+    ${renderRedactionBars("coozie-bom", 5, "block")}
+  </section>`;
+}
+
+function renderRedactedCoozieNotes() {
+  return `<section class="case-notes case-notes--redacted">
+    <h2>Case notes</h2>
+    ${renderRedactionBars("coozie-notes", 8, "block")}
+    <p class="case-stamp case-stamp-red case-stamp-care">Handle with care: non-human biological specimen</p>
+  </section>`;
+}
+
+function renderRedactedCoozieAttachments(purchaseUrl) {
+  return `<section class="case-attachments case-attachments--redacted">
+    <div class="case-section-head">
+      <h2>Evidence &amp; related files</h2>
+      <span class="case-stamp case-stamp-red case-stamp-secret">Top secret</span>
+    </div>
+    <ul class="case-file-list">
+      <li>
+        <a href="${escapeHtml(purchaseUrl)}" target="_blank" rel="noopener">
+          <span class="case-file-name">Lit Printz purchase file</span>
+          <span class="case-file-meta">Lit Printz · free STL</span>
+        </a>
+      </li>
+    </ul>
+  </section>`;
+}
+
+function renderRedactedCoozieCaseFile(coozie) {
+  const caseFile = coozie.caseFile || "022-R";
+  const title = coozie.title || "THEM 1947 Alien Coozie";
+  const purchaseUrl =
+    coozie.purchaseUrl || window.SITE_CONFIG?.links?.litPrintzCoozie || "";
+
+  return `<article class="case-file case-file--redacted reveal">
+    <p class="print-back case-back"><a href="/files/">&larr; Vault</a></p>
+    <div class="case-folder">
+      <aside class="case-tab" aria-hidden="true">
+        <span>CASE FILE ${escapeHtml(caseFile)}</span>
+        <span>${renderRedactionBars("coozie-tab", 1, "inline")}</span>
+      </aside>
+      <header class="case-header">
+        <div class="case-header-brand">
+          <img src="/assets/brand/logo.png" alt="THEM 1947" width="72" height="72" />
+          <div>
+            <p class="case-brand-url">THEM1947.COM</p>
+            <p class="case-label">Archive specimen file</p>
+          </div>
+        </div>
+        <div class="case-header-title">
+          <p class="case-case-id">CASE FILE ${escapeHtml(caseFile)}</p>
+          <h1>${escapeHtml(title)}</h1>
+        </div>
+        <div class="case-header-stamps">
+          <span class="case-stamp case-stamp-red">Status: redacted</span>
+          <span class="case-stamp case-stamp-red">Lit Printz only</span>
+          <span class="classified-stamp classified-stamp-lg">Classified</span>
+        </div>
+      </header>
+      <div class="case-main-grid">
+        <div class="case-main-left">
+          ${renderRedactedCoozieGallery(coozie)}
+          ${renderRedactedEngagement()}
+        </div>
+        ${renderRedactedCoozieDossier(purchaseUrl)}
+      </div>
+      ${renderRedactedCoozieBom()}
+      <div class="case-bottom-grid">
+        ${renderRedactedCoozieNotes()}
+        ${renderRedactedCoozieAttachments(purchaseUrl)}
+      </div>
+      <footer class="case-folder-footer">
+        <span>&#9733; The truth is out there &#9733;</span>
+        <span>THEM1947.COM</span>
+      </footer>
+    </div>
+  </article>`;
+}
+
+function initRedactedCoozieCaseFilePage() {
+  const coozie = getFeaturedCoozieConfig();
+  if (!coozie) {
+    initPage({
+      title: "Case file not found",
+      description: "Requested classified case file was not found in the archive.",
+      activePath: "/files/",
+      content: `<p class="print-back"><a href="/files/">&larr; Vault</a></p><p>Case file not found.</p>`,
+    });
+    return;
+  }
+
+  const title = coozie.title || "THEM 1947 Alien Coozie";
+  initPage({
+    title: `Case File ${coozie.caseFile || ""} - ${title}`,
+    description: `CASE FILE ${coozie.caseFile || ""}: ${title}. Fully redacted Lit Printz companion file.`,
+    activePath: coozie.href || "/files/prints/them-1947-alien-coozie/",
+    content: renderRedactedCoozieCaseFile(coozie),
+  });
+
+  document.querySelectorAll(".page-main .reveal, .case-file").forEach((node) => {
+    node.classList.add("is-visible");
+  });
+  initCaseFileGallery();
+}
+
 function initCaseFilePage() {
   const item = getCaseFileItem();
   if (!item) {
