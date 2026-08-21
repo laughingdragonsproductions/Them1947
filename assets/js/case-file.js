@@ -232,6 +232,22 @@ function renderCommercialMembershipLink() {
   return `<a class="case-commercial-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener">Join Commercial Membership</a>`;
 }
 
+function isFeaturedCollabRelease(item) {
+  const featured = window.SITE_CONFIG?.featuredRelease;
+  if (!featured || !item) return false;
+  return (
+    item.makerWorldId === featured.makerWorldId ||
+    item.pathSlug === featured.pathSlug
+  );
+}
+
+function renderLitPrintzCoozieLink(item) {
+  if (!isFeaturedCollabRelease(item)) return "";
+  const url = window.SITE_CONFIG?.links?.litPrintzCoozie;
+  if (!url) return "";
+  return `<a class="case-litprintz-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener">Custom Alien Can Coozie on Lit Printz</a>`;
+}
+
 function renderPrintProfile(item, detail) {
   const profiles = getPrintProfiles(detail);
   const profile = profiles[0] || detail.printProfile || {};
@@ -261,6 +277,7 @@ function renderPrintProfile(item, detail) {
       ${renderSettingRows(specs)}
     </dl>
     ${renderCommercialMembershipLink()}
+    ${renderLitPrintzCoozieLink(item)}
     <a class="case-mw-btn" href="${item.makerWorldUrl}" target="_blank" rel="noopener">View on MakerWorld</a>
     ${renderCoffeeLink()}
     <div class="case-action-stats">
@@ -330,8 +347,20 @@ function renderCaseNotes(item, detail) {
 
 function renderAttachments(item, detail) {
   const files = detail.attachments?.length
-    ? detail.attachments
+    ? detail.attachments.slice()
     : [{ name: "Live listing dossier", label: "MakerWorld", sizeBytes: 0, url: item.makerWorldUrl }];
+
+  if (isFeaturedCollabRelease(item)) {
+    const coozieUrl = window.SITE_CONFIG?.links?.litPrintzCoozie;
+    if (coozieUrl) {
+      files.push({
+        name: "Custom Alien Can Coozie",
+        label: "Lit Printz · free STL",
+        sizeBytes: 0,
+        url: coozieUrl,
+      });
+    }
+  }
 
   return `<section class="case-attachments">
     <div class="case-section-head">

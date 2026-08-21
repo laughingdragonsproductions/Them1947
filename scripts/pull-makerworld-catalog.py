@@ -59,6 +59,8 @@ KEYWORDS = [
     "Bucky",
     "shotgun slugo",
     "shotgon bucky",
+    "One Hit Wonder",
+    "3200946",
 ]
 
 DECLASSIFIED_IDS = {
@@ -68,6 +70,10 @@ DECLASSIFIED_IDS = {
     3103043,
     3105620,
     3109917,
+}
+
+FEATURED_CLASSIFIED_IDS = {
+    3200946,
 }
 
 DISPLAY_TITLE_OVERRIDES = {
@@ -192,6 +198,18 @@ def collect_models() -> dict[int, dict]:
         creator = detail.get("designCreator") or {}
         if creator.get("name") != "Raceit17":
             print(f"warn: declassified design {model_id} is not Raceit17")
+            continue
+        seen[model_id] = design_to_hit(detail)
+    for model_id in sorted(FEATURED_CLASSIFIED_IDS):
+        if model_id in seen:
+            continue
+        detail = fetch_design(model_id)
+        if not detail or not detail.get("title"):
+            print(f"warn: featured classified design {model_id} unavailable")
+            continue
+        creator = detail.get("designCreator") or {}
+        if creator.get("name") != "Raceit17":
+            print(f"warn: featured classified design {model_id} is not Raceit17")
             continue
         seen[model_id] = design_to_hit(detail)
     return seen

@@ -8,6 +8,7 @@ window.SITE_CONFIG = {
   videos: {
     landing: "/assets/video/landing.mp4",
     brief: "/assets/video/classified-brief.mp4",
+    litprintz: "/assets/video/litprintz.mp4",
     poster: "/assets/video/landing-poster.jpg",
   },
   links: {
@@ -15,6 +16,18 @@ window.SITE_CONFIG = {
     commercialMembership:
       "https://makerworld.com/en/@user_935464230#commercial-membership-open",
     buyMeACoffee: "https://buymeacoffee.com/brewer177j",
+    litPrintzSite: "https://litprintz.com",
+    litPrintzCoozie:
+      "https://litprintz.com/products/them-1947-alien-coozie-free-stl",
+  },
+  /** Vault hub spotlight - full-width release banner on /files/ */
+  featuredRelease: {
+    makerWorldId: 3200946,
+    pathSlug: "one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+    poster:
+      "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/featured-release.png",
+    eyebrow: "New release",
+    tagline: "THEM 1947 × LitPrintz - THE ONE HIT WONDER has landed.",
   },
   adsense: {
     publisherId: "ca-pub-7048606415692002",

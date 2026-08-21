@@ -1,10 +1,10 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-08-16T23:47:36Z",
+  "pulledAt": "2026-08-21T22:19:11Z",
   "summary": {
-    "total": 24,
-    "classified": 18,
+    "total": 27,
+    "classified": 21,
     "declassified": 6
   },
   "items": [
@@ -13,7 +13,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2498466,
       "name": "3 Place remote control holder for headboard",
       "slug": "3-place-remote-control-holder-for-head-board",
-      "pathSlug": "3-place-remote-control-holder-for-head-board-2498466",
+      "pathSlug": "3-place-remote-control-holder-for-head-board",
       "blurb": "3 Place remote control holder for headboard. Everyday 3D print. Download free on MakerWorld.",
       "image": "/assets/catalog/declassified/3-place-remote-control-holder-for-head-board.jpg",
       "status": "declassified",
@@ -32,7 +32,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2913433,
       "name": "BOBCAT Portable Tire Inflator Storage Case",
       "slug": "bobcat-portable-tire-inflator-storage-case",
-      "pathSlug": "bobcat-portable-tire-inflator-storage-case-2913433",
+      "pathSlug": "bobcat-portable-tire-inflator-storage-case",
       "blurb": "BOBCAT Portable Tire Inflator Storage Case. Everyday 3D print. Download free on MakerWorld.",
       "image": "/assets/catalog/declassified/bobcat-portable-tire-inflator-storage-case.jpg",
       "status": "declassified",
@@ -51,7 +51,7 @@ window.CATALOG_DATA = {
       "makerWorldId": 2964630,
       "name": "Wood Splitter Replacement Handle",
       "slug": "wood-splitter-replacement-handle",
-      "pathSlug": "wood-splitter-replacement-handle-2964630",
+      "pathSlug": "wood-splitter-replacement-handle",
       "blurb": "Wood Splitter Replacement Handle. Everyday 3D print. Download free on MakerWorld.",
       "image": "/assets/catalog/declassified/wood-splitter-replacement-handle.jpg",
       "status": "declassified",
@@ -77,10 +77,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2991422-them-1947-roswell-grey-disclosure-day-alien",
       "stats": {
-        "likes": 224,
-        "boosts": 492,
-        "downloads": 305,
-        "prints": 101
+        "likes": 231,
+        "boosts": 512,
+        "downloads": 316,
+        "prints": 108
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-roswell-grey-disclosure-day-alien/",
@@ -91,7 +91,7 @@ window.CATALOG_DATA = {
         "features": [
           "👽 Display pieces",
           "🎨 Painting and weathering",
-          "🛸 UFO and sci fi dioramas",
+          "🛸 UFO and sci-fi dioramas",
           "📸 Photography props",
           "🖨️ Resin or FDM printing",
           "Supports: Recommended (especially under the chin, hands, and feet)"
@@ -130,9 +130,9 @@ window.CATALOG_DATA = {
           "printTime": "7.2 h",
           "weight": "186 g",
           "difficulty": "4.1 / 5",
-          "downloadCount": 332,
-          "printCount": 101,
-          "ratingCount": 7,
+          "downloadCount": 353,
+          "printCount": 108,
+          "ratingCount": 8,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -200,6 +200,98 @@ window.CATALOG_DATA = {
             }
           }
         },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 15% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": "Tree Supports (Auto Recommended)",
+            "printTime": "7.2 h",
+            "weight": "186 g",
+            "difficulty": "4.1 / 5",
+            "downloadCount": 353,
+            "printCount": 108,
+            "ratingCount": 8,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.2 h",
+                "weight": "186 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.2 h",
+                "weight": "175 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.2 h",
+                "weight": "171 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.7 h",
+                "weight": "177 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "144 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "144 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "144 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.2 h",
+                "weight": "145 g"
+              }
+            }
+          }
+        ],
         "bom": [
           {
             "name": "PETG Basic",
@@ -208,7 +300,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray(30107)"
             ],
-            "priceFrom": "$13.64",
+            "priceFrom": "$12.59",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=2991422"
           },
           {
@@ -218,7 +310,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray(30107)"
             ],
-            "priceFrom": "$11.69",
+            "priceFrom": "$10.79",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864293&modelId=2991422"
           },
           {
@@ -228,7 +320,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Ash Gray (11102)"
             ],
-            "priceFrom": "$12.99",
+            "priceFrom": "$11.99",
             "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=40489681813640&modelId=2991422"
           },
           {
@@ -321,99 +413,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 19,
-        "printProfiles": [
-          {
-            "title": "0.2mm layer, 2 walls, 15% infill",
-            "printers": [
-              "P2S",
-              "A2L",
-              "A1",
-              "H2S",
-              "H2C",
-              "H2D",
-              "X2D",
-              "H2D Pro"
-            ],
-            "buildPlates": 1,
-            "layerHeight": "0.2",
-            "walls": "2",
-            "infill": "15%",
-            "supports": "Tree Supports (Auto Recommended)",
-            "printTime": "7.2 h",
-            "weight": "186 g",
-            "difficulty": "4.1 / 5",
-            "downloadCount": 332,
-            "printCount": 101,
-            "ratingCount": 7,
-            "byPrinter": {
-              "P2S": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "7.2 h",
-                "weight": "186 g"
-              },
-              "A2L": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "8.2 h",
-                "weight": "175 g"
-              },
-              "A1": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "8.2 h",
-                "weight": "171 g"
-              },
-              "H2S": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "6.7 h",
-                "weight": "177 g"
-              },
-              "H2C": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "5.1 h",
-                "weight": "144 g"
-              },
-              "H2D": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "5.1 h",
-                "weight": "144 g"
-              },
-              "X2D": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "5.1 h",
-                "weight": "144 g"
-              },
-              "H2D Pro": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "5.2 h",
-                "weight": "145 g"
-              }
-            }
-          }
-        ]
+        "commentCount": 20
       },
       "caseFile": "001",
       "specimenLabel": "ROSWELL GREY DISCLOSURE DAY ALIEN"
@@ -430,10 +430,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2995237-them-1947-disclosure-alien-grey-the-aggressor",
       "stats": {
-        "likes": 396,
-        "boosts": 924,
-        "downloads": 1000,
-        "prints": 462
+        "likes": 412,
+        "boosts": 961,
+        "downloads": 1056,
+        "prints": 486
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -482,9 +482,9 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "254 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 952,
-          "printCount": 313,
-          "ratingCount": 21,
+          "downloadCount": 991,
+          "printCount": 327,
+          "ratingCount": 22,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -552,38 +552,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
-            "colorOptions": [
-              "Black (12104)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2995237"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
-            "colorOptions": [
-              "Gray (12105)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2995237"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "The Aggressor.stl",
-            "label": "Model file",
-            "sizeBytes": 25000084,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 97,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -605,9 +573,9 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "254 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 952,
-            "printCount": 313,
-            "ratingCount": 21,
+            "downloadCount": 991,
+            "printCount": 327,
+            "ratingCount": 22,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -699,10 +667,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "10.8 h",
             "weight": "268 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 104,
-            "printCount": 45,
-            "ratingCount": 4,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 106,
+            "printCount": 48,
+            "ratingCount": 5,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -835,10 +803,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "2.4 h",
             "weight": "41 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 48,
-            "printCount": 27,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 61,
+            "printCount": 30,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -954,7 +922,39 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
+            "colorOptions": [
+              "Black (12104)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2995237"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
+            "colorOptions": [
+              "Gray (12105)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2995237"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "The Aggressor.stl",
+            "label": "Model file",
+            "sizeBytes": 25000084,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 103
       },
       "caseFile": "002",
       "specimenLabel": "DISCLOSURE ALIEN GREY - THE AGGRESSOR"
@@ -971,10 +971,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 1473,
-        "boosts": 3599,
-        "downloads": 2126,
-        "prints": 857
+        "likes": 1574,
+        "boosts": 3810,
+        "downloads": 2267,
+        "prints": 937
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -1015,9 +1015,9 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 3243,
-          "printCount": 640,
-          "ratingCount": 38,
+          "downloadCount": 3476,
+          "printCount": 690,
+          "ratingCount": 42,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1085,31 +1085,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3004535"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3004535"
-          }
-        ],
-        "attachments": [],
-        "shareCount": 0,
-        "commentCount": 166,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -1131,9 +1106,9 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 3243,
-            "printCount": 640,
-            "ratingCount": 38,
+            "downloadCount": 3476,
+            "printCount": 690,
+            "ratingCount": 42,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1225,10 +1200,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.4 h",
             "weight": "165 g",
-            "difficulty": "3.6 / 5",
-            "downloadCount": 608,
-            "printCount": 215,
-            "ratingCount": 11,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 653,
+            "printCount": 240,
+            "ratingCount": 17,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1362,8 +1337,8 @@ window.CATALOG_DATA = {
             "printTime": "0.5 h",
             "weight": "19 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 17,
-            "printCount": 6,
+            "downloadCount": 20,
+            "printCount": 7,
             "ratingCount": 2,
             "byPrinter": {
               "P2S": {
@@ -1480,7 +1455,32 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3004535"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3004535"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 177
       },
       "caseFile": "003",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
@@ -1497,10 +1497,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004633-them-1947-disclosure-alien-greys-the-stalker",
       "stats": {
-        "likes": 324,
-        "boosts": 837,
-        "downloads": 526,
-        "prints": 211
+        "likes": 339,
+        "boosts": 882,
+        "downloads": 548,
+        "prints": 220
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-stalker/",
@@ -1548,8 +1548,8 @@ window.CATALOG_DATA = {
           "printTime": "8.7 h",
           "weight": "201 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 986,
-          "printCount": 212,
+          "downloadCount": 1039,
+          "printCount": 220,
           "ratingCount": 20,
           "byPrinter": {
             "P2S": {
@@ -1658,31 +1658,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
-            "colorOptions": [
-              "Black (12104)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3004633"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
-            "colorOptions": [
-              "Gray (12105)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3004633"
-          }
-        ],
-        "attachments": [],
-        "shareCount": 0,
-        "commentCount": 54,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -1709,8 +1684,8 @@ window.CATALOG_DATA = {
             "printTime": "8.7 h",
             "weight": "201 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 986,
-            "printCount": 212,
+            "downloadCount": 1039,
+            "printCount": 220,
             "ratingCount": 20,
             "byPrinter": {
               "P2S": {
@@ -1819,7 +1794,32 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
+            "colorOptions": [
+              "Black (12104)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3004633"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
+            "colorOptions": [
+              "Gray (12105)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3004633"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 54
       },
       "caseFile": "004",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THE STALKER"
@@ -1836,10 +1836,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 433,
-        "boosts": 1146,
-        "downloads": 561,
-        "prints": 284
+        "likes": 458,
+        "boosts": 1225,
+        "downloads": 590,
+        "prints": 313
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader-3009502/",
@@ -1882,9 +1882,9 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 548,
-          "printCount": 237,
-          "ratingCount": 35,
+          "downloadCount": 580,
+          "printCount": 256,
+          "ratingCount": 36,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1952,38 +1952,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
-            "colorOptions": [
-              "Black (12104)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3009502"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
-            "colorOptions": [
-              "Gray (12105)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3009502"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys THEIR LEADER.3mf",
-            "label": "Model file",
-            "sizeBytes": 7453923,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 89,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -2005,9 +1973,9 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 548,
-            "printCount": 237,
-            "ratingCount": 35,
+            "downloadCount": 580,
+            "printCount": 256,
+            "ratingCount": 36,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2100,8 +2068,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "1.7 / 5",
-            "downloadCount": 130,
-            "printCount": 18,
+            "downloadCount": 138,
+            "printCount": 20,
             "ratingCount": 3,
             "byPrinter": {
               "P2S": {
@@ -2229,10 +2197,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.7 h",
             "weight": "161 g",
-            "difficulty": "3.7 / 5",
-            "downloadCount": 85,
-            "printCount": 35,
-            "ratingCount": 4,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 96,
+            "printCount": 39,
+            "ratingCount": 6,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2300,7 +2268,39 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
+            "colorOptions": [
+              "Black (12104)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3009502"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
+            "colorOptions": [
+              "Gray (12105)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3009502"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys THEIR LEADER.3mf",
+            "label": "Model file",
+            "sizeBytes": 7453923,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 93
       },
       "caseFile": "005",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THEIR LEADER"
@@ -2317,10 +2317,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3012967-them-1947-disclosure-alien-greys-the-watcher",
       "stats": {
-        "likes": 442,
-        "boosts": 1021,
-        "downloads": 998,
-        "prints": 453
+        "likes": 456,
+        "boosts": 1063,
+        "downloads": 1052,
+        "prints": 485
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2363,9 +2363,9 @@ window.CATALOG_DATA = {
           "printTime": "6.7 h",
           "weight": "190 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 884,
-          "printCount": 298,
-          "ratingCount": 21,
+          "downloadCount": 931,
+          "printCount": 312,
+          "ratingCount": 22,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2433,38 +2433,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3012967"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3012967"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys THE WATCHER.stl",
-            "label": "Model file",
-            "sizeBytes": 24199984,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 83,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -2486,9 +2454,9 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "190 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 884,
-            "printCount": 298,
-            "ratingCount": 21,
+            "downloadCount": 931,
+            "printCount": 312,
+            "ratingCount": 22,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2581,8 +2549,8 @@ window.CATALOG_DATA = {
             "printTime": "6.8 h",
             "weight": "157 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 131,
-            "printCount": 92,
+            "downloadCount": 141,
+            "printCount": 99,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -2711,8 +2679,8 @@ window.CATALOG_DATA = {
             "printTime": "7.0 h",
             "weight": "179 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 168,
-            "printCount": 66,
+            "downloadCount": 182,
+            "printCount": 73,
             "ratingCount": 11,
             "byPrinter": {
               "P2S": {
@@ -2781,7 +2749,39 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3012967"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3012967"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys THE WATCHER.stl",
+            "label": "Model file",
+            "sizeBytes": 24199984,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 86
       },
       "caseFile": "006",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER"
@@ -2798,10 +2798,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
-        "likes": 212,
-        "boosts": 502,
-        "downloads": 504,
-        "prints": 206
+        "likes": 224,
+        "boosts": 534,
+        "downloads": 549,
+        "prints": 220
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-night-crawler/",
@@ -2849,9 +2849,9 @@ window.CATALOG_DATA = {
           "printTime": "8.2 h",
           "weight": "195 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 578,
-          "printCount": 200,
-          "ratingCount": 22,
+          "downloadCount": 614,
+          "printCount": 212,
+          "ratingCount": 23,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2959,38 +2959,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3015809"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3015809"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys THE NIGHT CRAWLER stl.stl",
-            "label": "Model file",
-            "sizeBytes": 72196884,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 69,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -3017,9 +2985,9 @@ window.CATALOG_DATA = {
             "printTime": "8.2 h",
             "weight": "195 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 578,
-            "printCount": 200,
-            "ratingCount": 22,
+            "downloadCount": 614,
+            "printCount": 212,
+            "ratingCount": 23,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -3127,7 +3095,39 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3015809"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3015809"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys THE NIGHT CRAWLER stl.stl",
+            "label": "Model file",
+            "sizeBytes": 72196884,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 72
       },
       "caseFile": "007",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE NIGHT CRAWLER"
@@ -3144,10 +3144,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019183-p1s-version-their-leader",
       "stats": {
-        "likes": 82,
-        "boosts": 113,
-        "downloads": 87,
-        "prints": 29
+        "likes": 86,
+        "boosts": 129,
+        "downloads": 96,
+        "prints": 33
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-their-leader/",
@@ -3189,10 +3189,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "5.1 h",
           "weight": "130 g",
-          "difficulty": "2.1 / 5",
-          "downloadCount": 123,
-          "printCount": 29,
-          "ratingCount": 1,
+          "difficulty": "3.0 / 5",
+          "downloadCount": 132,
+          "printCount": 33,
+          "ratingCount": 2,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3300,17 +3300,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys THEIR LEADER P1S Version.3mf",
-            "label": "Model file",
-            "sizeBytes": 7451688,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 14,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -3336,10 +3325,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "5.1 h",
             "weight": "130 g",
-            "difficulty": "2.1 / 5",
-            "downloadCount": 123,
-            "printCount": 29,
-            "ratingCount": 1,
+            "difficulty": "3.0 / 5",
+            "downloadCount": 132,
+            "printCount": 33,
+            "ratingCount": 2,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -3447,7 +3436,18 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys THEIR LEADER P1S Version.3mf",
+            "label": "Model file",
+            "sizeBytes": 7451688,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 15
       },
       "caseFile": "008",
       "specimenLabel": "P1S VERSION THEIR LEADER"
@@ -3464,10 +3464,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019267-p1s-version-the-observer",
       "stats": {
-        "likes": 94,
-        "boosts": 160,
-        "downloads": 125,
-        "prints": 69
+        "likes": 97,
+        "boosts": 174,
+        "downloads": 133,
+        "prints": 72
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-the-observer/",
@@ -3510,8 +3510,8 @@ window.CATALOG_DATA = {
           "printTime": "6.8 h",
           "weight": "157 g",
           "difficulty": "4.1 / 5",
-          "downloadCount": 267,
-          "printCount": 70,
+          "downloadCount": 288,
+          "printCount": 72,
           "ratingCount": 7,
           "byPrinter": {
             "P2S": {
@@ -3620,10 +3620,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [],
-        "attachments": [],
-        "shareCount": 0,
-        "commentCount": 24,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -3650,8 +3646,8 @@ window.CATALOG_DATA = {
             "printTime": "6.8 h",
             "weight": "157 g",
             "difficulty": "4.1 / 5",
-            "downloadCount": 267,
-            "printCount": 70,
+            "downloadCount": 288,
+            "printCount": 72,
             "ratingCount": 7,
             "byPrinter": {
               "P2S": {
@@ -3760,7 +3756,11 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 24
       },
       "caseFile": "009",
       "specimenLabel": "P1S VERSION THE OBSERVER"
@@ -3777,10 +3777,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
-        "likes": 321,
-        "boosts": 759,
-        "downloads": 418,
-        "prints": 109
+        "likes": 359,
+        "boosts": 861,
+        "downloads": 470,
+        "prints": 121
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-k-a-r-l/",
@@ -3828,9 +3828,9 @@ window.CATALOG_DATA = {
           "printTime": "8.3 h",
           "weight": "200 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 488,
-          "printCount": 106,
-          "ratingCount": 12,
+          "downloadCount": 543,
+          "printCount": 118,
+          "ratingCount": 13,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3938,17 +3938,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys KARL stl.stl",
-            "label": "Model file",
-            "sizeBytes": 74690684,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 35,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -3975,9 +3964,9 @@ window.CATALOG_DATA = {
             "printTime": "8.3 h",
             "weight": "200 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 488,
-            "printCount": 106,
-            "ratingCount": 12,
+            "downloadCount": 543,
+            "printCount": 118,
+            "ratingCount": 13,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -4085,7 +4074,18 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys KARL stl.stl",
+            "label": "Model file",
+            "sizeBytes": 74690684,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 46
       },
       "caseFile": "010",
       "specimenLabel": "DISCLOSURE ALIEN GREYS K.A.R.L."
@@ -4102,10 +4102,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 268,
-        "boosts": 610,
-        "downloads": 407,
-        "prints": 112
+        "likes": 295,
+        "boosts": 670,
+        "downloads": 447,
+        "prints": 123
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-experimenter/",
@@ -4153,8 +4153,8 @@ window.CATALOG_DATA = {
           "printTime": "10.1 h",
           "weight": "215 g",
           "difficulty": "4.4 / 5",
-          "downloadCount": 392,
-          "printCount": 103,
+          "downloadCount": 427,
+          "printCount": 112,
           "ratingCount": 9,
           "byPrinter": {
             "P2S": {
@@ -4263,144 +4263,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3021877"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3021877"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3021877"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
-            "colorOptions": [
-              "Glow Yellow (15400)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3021877"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/8ea96321809b43e18d06d1b13dba3371/5d4ad98b7e6fd7642323ef49163d8697_dc0d9844-1668-4026-b430-b3be661988d3.png",
-            "colorOptions": [
-              "Glow Pink (15200)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487892104&modelId=3021877"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/b852ee64945540208e55b588ee6e8e26/e40cbbf6e7fed96557d8e2be99e4b9cf_874f9392-3fe3-4c65-87cc-91b158674eb3.png",
-            "colorOptions": [
-              "Glow Orange (15300)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487793800&modelId=3021877"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
-            "colorOptions": [
-              "Glow Blue (15600)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3021877"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3021877"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
-            "colorOptions": [
-              "Black (12104)"
-            ],
-            "priceFrom": "$20.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=3021877"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
-            "colorOptions": [
-              "Gray (12105)"
-            ],
-            "priceFrom": "$20.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=3021877"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
-            "colorOptions": [
-              "Black (12104)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3021877"
-          },
-          {
-            "name": "PLA Tough+",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
-            "colorOptions": [
-              "Gray (12105)"
-            ],
-            "priceFrom": "$23.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3021877"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "THEM 1947 Disclosure Alien Greys The Experimenter P1S version.3mf",
-            "label": "Model file",
-            "sizeBytes": 7398511,
-            "url": ""
-          },
-          {
-            "name": "THEM 1947 Disclosure Alien Greys The Experimenter ST L.stl",
-            "label": "Model file",
-            "sizeBytes": 25072084,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 36,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -4427,8 +4289,8 @@ window.CATALOG_DATA = {
             "printTime": "10.1 h",
             "weight": "215 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 392,
-            "printCount": 103,
+            "downloadCount": 427,
+            "printCount": 112,
             "ratingCount": 9,
             "byPrinter": {
               "P2S": {
@@ -4562,7 +4424,7 @@ window.CATALOG_DATA = {
             "printTime": "10.1 h",
             "weight": "215 g",
             "difficulty": "3.5 / 5",
-            "downloadCount": 26,
+            "downloadCount": 29,
             "printCount": 8,
             "ratingCount": 3,
             "byPrinter": {
@@ -4672,7 +4534,145 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3021877"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3021877"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3021877"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
+            "colorOptions": [
+              "Glow Yellow (15400)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3021877"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/8ea96321809b43e18d06d1b13dba3371/5d4ad98b7e6fd7642323ef49163d8697_dc0d9844-1668-4026-b430-b3be661988d3.png",
+            "colorOptions": [
+              "Glow Pink (15200)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487892104&modelId=3021877"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/b852ee64945540208e55b588ee6e8e26/e40cbbf6e7fed96557d8e2be99e4b9cf_874f9392-3fe3-4c65-87cc-91b158674eb3.png",
+            "colorOptions": [
+              "Glow Orange (15300)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487793800&modelId=3021877"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
+            "colorOptions": [
+              "Glow Blue (15600)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3021877"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3021877"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
+            "colorOptions": [
+              "Black (12104)"
+            ],
+            "priceFrom": "$20.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=3021877"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
+            "colorOptions": [
+              "Gray (12105)"
+            ],
+            "priceFrom": "$20.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=3021877"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/50dea15e68e94f0da6ccb2bc2e24e299/PLA_Tough_(2).jpg",
+            "colorOptions": [
+              "Black (12104)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3021877"
+          },
+          {
+            "name": "PLA Tough+",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/97120f6c0e31411bad7ebd94a1773531/PLA_Tough_(1).jpg",
+            "colorOptions": [
+              "Gray (12105)"
+            ],
+            "priceFrom": "$23.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3021877"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "THEM 1947 Disclosure Alien Greys The Experimenter P1S version.3mf",
+            "label": "Model file",
+            "sizeBytes": 7398511,
+            "url": ""
+          },
+          {
+            "name": "THEM 1947 Disclosure Alien Greys The Experimenter ST L.stl",
+            "label": "Model file",
+            "sizeBytes": 25072084,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 37
       },
       "caseFile": "011",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE EXPERIMENTER"
@@ -4689,10 +4689,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 1998,
-        "boosts": 4766,
-        "downloads": 2513,
-        "prints": 1708
+        "likes": 2175,
+        "boosts": 5187,
+        "downloads": 2772,
+        "prints": 1928
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -4703,7 +4703,7 @@ window.CATALOG_DATA = {
         "features": [
           "Approximately 3 feet (36\") tall when assembled",
           "7 build plates for the complete alien",
-          "Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high traffic areas",
+          "Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high-traffic areas",
           "1122.29g of Grey Filament for the Alien",
           "29.83g of Black Filament for the Alien",
           "420.91g of Black Filament for the Base"
@@ -4747,8 +4747,8 @@ window.CATALOG_DATA = {
           "printTime": "47.4 h",
           "weight": "1847 g",
           "difficulty": "3.3 / 5",
-          "downloadCount": 111,
-          "printCount": 55,
+          "downloadCount": 117,
+          "printCount": 60,
           "ratingCount": 3,
           "byPrinter": {
             "P2S": {
@@ -4857,80 +4857,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3043821"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3043821"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3043821"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3043821"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3043821"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "3 foot Alien Obeserver v1 STL.stl",
-            "label": "Model file",
-            "sizeBytes": 15627184,
-            "url": ""
-          },
-          {
-            "name": "3 foot Alien Obeserver v1.3mf",
-            "label": "Model file",
-            "sizeBytes": 5461619,
-            "url": ""
-          },
-          {
-            "name": "3 foot Alien Obeserver v2.3mf",
-            "label": "Model file",
-            "sizeBytes": 5477677,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 593,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 4% infill",
@@ -4957,8 +4883,8 @@ window.CATALOG_DATA = {
             "printTime": "47.4 h",
             "weight": "1847 g",
             "difficulty": "3.3 / 5",
-            "downloadCount": 111,
-            "printCount": 55,
+            "downloadCount": 117,
+            "printCount": 60,
             "ratingCount": 3,
             "byPrinter": {
               "P2S": {
@@ -5092,9 +5018,9 @@ window.CATALOG_DATA = {
             "printTime": "49.1 h",
             "weight": "1649 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 3167,
-            "printCount": 1638,
-            "ratingCount": 167,
+            "downloadCount": 3509,
+            "printCount": 1821,
+            "ratingCount": 201,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -5228,7 +5154,7 @@ window.CATALOG_DATA = {
             "printTime": "0.5 h",
             "weight": "8 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 27,
+            "downloadCount": 29,
             "printCount": 2,
             "ratingCount": 0,
             "byPrinter": {
@@ -5347,7 +5273,7 @@ window.CATALOG_DATA = {
             }
           },
           {
-            "title": "0.2mm layer, 2 walls, 15% infill",
+            "title": "4 TOE Right for foot OCD",
             "printers": [
               "P2S",
               "A2L",
@@ -5370,10 +5296,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "3.0 h",
             "weight": "105 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 16,
-            "printCount": 16,
-            "ratingCount": 0,
+            "difficulty": "3.0 / 5",
+            "downloadCount": 20,
+            "printCount": 26,
+            "ratingCount": 2,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -5396,7 +5322,7 @@ window.CATALOG_DATA = {
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "5%",
-                "printTime": "4.1 h",
+                "printTime": "4.0 h",
                 "weight": "105 g"
               },
               "H2S": {
@@ -5505,10 +5431,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "49.8 h",
             "weight": "1666 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 41,
-            "printCount": 14,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 77,
+            "printCount": 32,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -5616,7 +5542,81 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3043821"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3043821"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3043821"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3043821"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3043821"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "3 foot Alien Obeserver v1 STL.stl",
+            "label": "Model file",
+            "sizeBytes": 15627184,
+            "url": ""
+          },
+          {
+            "name": "3 foot Alien Obeserver v1.3mf",
+            "label": "Model file",
+            "sizeBytes": 5461619,
+            "url": ""
+          },
+          {
+            "name": "3 foot Alien Obeserver v2.3mf",
+            "label": "Model file",
+            "sizeBytes": 5477677,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 661
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -5633,10 +5633,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 360,
-        "boosts": 862,
-        "downloads": 419,
-        "prints": 170
+        "likes": 390,
+        "boosts": 923,
+        "downloads": 448,
+        "prints": 187
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-abductor/",
@@ -5684,9 +5684,9 @@ window.CATALOG_DATA = {
           "printTime": "8.9 h",
           "weight": "232 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 494,
-          "printCount": 168,
-          "ratingCount": 14,
+          "downloadCount": 538,
+          "printCount": 183,
+          "ratingCount": 15,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -5794,108 +5794,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3067591"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3067591"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/f19847c3b512400588d34b27434a01ad/pla_basic_dark_gray.jpg",
-            "colorOptions": [
-              "Dark Gray (10105)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3067591"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3067591"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3067591"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3067591"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
-            "colorOptions": [
-              "Glow Blue (15600)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3067591"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
-            "colorOptions": [
-              "Glow Yellow (15400)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3067591"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3067591"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "The BODY SNATCHER.stl",
-            "label": "Model file",
-            "sizeBytes": 738276084,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 23,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -5922,9 +5820,9 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 494,
-            "printCount": 168,
-            "ratingCount": 14,
+            "downloadCount": 538,
+            "printCount": 183,
+            "ratingCount": 15,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -6032,7 +5930,109 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3067591"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3067591"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/f19847c3b512400588d34b27434a01ad/pla_basic_dark_gray.jpg",
+            "colorOptions": [
+              "Dark Gray (10105)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3067591"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3067591"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3067591"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3067591"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
+            "colorOptions": [
+              "Glow Blue (15600)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3067591"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/712a995a9cf94a76b1ec22d5c06378fb/6fdaecdc33b9371fb7c326d4bd52932b.png",
+            "colorOptions": [
+              "Glow Yellow (15400)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487924872&modelId=3067591"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3067591"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "The BODY SNATCHER.stl",
+            "label": "Model file",
+            "sizeBytes": 738276084,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 25
       },
       "caseFile": "013",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE ABDUCTOR"
@@ -6049,10 +6049,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
-        "likes": 200,
-        "boosts": 435,
-        "downloads": 281,
-        "prints": 181
+        "likes": 228,
+        "boosts": 535,
+        "downloads": 378,
+        "prints": 248
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
@@ -6104,10 +6104,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "10.0 h",
           "weight": "207 g",
-          "difficulty": "4.5 / 5",
-          "downloadCount": 512,
-          "printCount": 143,
-          "ratingCount": 13,
+          "difficulty": "4.6 / 5",
+          "downloadCount": 583,
+          "printCount": 154,
+          "ratingCount": 16,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -6215,51 +6215,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3073830"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3073830"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3073830"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3073830"
-          }
-        ],
-        "attachments": [],
-        "shareCount": 0,
-        "commentCount": 57,
         "printProfiles": [
           {
             "title": "10 inch Desktop INTIMIDATOR",
@@ -6285,10 +6240,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "10.0 h",
             "weight": "207 g",
-            "difficulty": "4.5 / 5",
-            "downloadCount": 512,
-            "printCount": 143,
-            "ratingCount": 13,
+            "difficulty": "4.6 / 5",
+            "downloadCount": 583,
+            "printCount": 154,
+            "ratingCount": 16,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -6420,10 +6375,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "52.6 h",
             "weight": "1437 g",
-            "difficulty": "2.1 / 5",
-            "downloadCount": 90,
-            "printCount": 41,
-            "ratingCount": 1,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 199,
+            "printCount": 94,
+            "ratingCount": 6,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -6531,7 +6486,52 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3073830"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3073830"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3073830"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3073830"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 88
       },
       "caseFile": "014",
       "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS"
@@ -6548,10 +6548,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-alien-leader-them-1947-series",
       "stats": {
-        "likes": 1223,
-        "boosts": 2834,
-        "downloads": 1673,
-        "prints": 959
+        "likes": 1504,
+        "boosts": 3437,
+        "downloads": 1949,
+        "prints": 1172
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-leader-them-1947-series/",
@@ -6594,9 +6594,9 @@ window.CATALOG_DATA = {
           "printTime": "36.6 h",
           "weight": "1439 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 1825,
-          "printCount": 643,
-          "ratingCount": 74,
+          "downloadCount": 2141,
+          "printCount": 783,
+          "ratingCount": 87,
           "byPrinter": {
             "P2S": {
               "buildPlates": 12,
@@ -6664,48 +6664,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3090735"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3090735"
-          },
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3090735"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "Their Leader.stl",
-            "label": "Model file",
-            "sizeBytes": 540366284,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 314,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 5% infill",
@@ -6727,9 +6685,9 @@ window.CATALOG_DATA = {
             "printTime": "36.6 h",
             "weight": "1439 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1825,
-            "printCount": 643,
-            "ratingCount": 74,
+            "downloadCount": 2141,
+            "printCount": 783,
+            "ratingCount": 87,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -6822,9 +6780,9 @@ window.CATALOG_DATA = {
             "printTime": "36.1 h",
             "weight": "1410 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 526,
-            "printCount": 317,
-            "ratingCount": 34,
+            "downloadCount": 625,
+            "printCount": 380,
+            "ratingCount": 43,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -6932,7 +6890,49 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3090735"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3090735"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3090735"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "Their Leader.stl",
+            "label": "Model file",
+            "sizeBytes": 540366284,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 357
       },
       "caseFile": "015",
       "specimenLabel": "3 FOOT ALIEN LEADER"
@@ -6949,10 +6949,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
       "stats": {
-        "likes": 29,
-        "boosts": 52,
-        "downloads": 11,
-        "prints": 2
+        "likes": 33,
+        "boosts": 57,
+        "downloads": 15,
+        "prints": 3
       },
       "buyHref": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy"
     },
@@ -6968,9 +6968,9 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy",
       "stats": {
-        "likes": 22,
+        "likes": 23,
         "boosts": 46,
-        "downloads": 13,
+        "downloads": 14,
         "prints": 14
       },
       "buyHref": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy"
@@ -6987,9 +6987,9 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
       "stats": {
-        "likes": 7,
+        "likes": 9,
         "boosts": 14,
-        "downloads": 3,
+        "downloads": 5,
         "prints": 1
       },
       "buyHref": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj"
@@ -7006,10 +7006,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 411,
-        "boosts": 941,
-        "downloads": 590,
-        "prints": 407
+        "likes": 484,
+        "boosts": 1128,
+        "downloads": 722,
+        "prints": 531
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -7021,7 +7021,7 @@ window.CATALOG_DATA = {
           "Approximately 3 feet tall when fully assembled",
           "Detailed alien anatomy and facial features",
           "Dramatic experimenting and reaching pose",
-          "Designed as a large multi part display model",
+          "Designed as a large multi-part display model",
           "Part of the THEM 1947 Disclosure Alien Greys collection",
           "Excellent for custom lighting, painting, and themed displays"
         ],
@@ -7064,9 +7064,9 @@ window.CATALOG_DATA = {
           "printTime": "47.0 h",
           "weight": "1971 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 926,
-          "printCount": 413,
-          "ratingCount": 30,
+          "downloadCount": 1124,
+          "printCount": 531,
+          "ratingCount": 43,
           "byPrinter": {
             "P2S": {
               "buildPlates": 11,
@@ -7174,58 +7174,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3126566"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3126566"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
-            "colorOptions": [
-              "Gray (10103)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3126566"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3126566"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "Dr E.stl",
-            "label": "Model file",
-            "sizeBytes": 799586884,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 124,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 5% infill",
@@ -7252,9 +7200,9 @@ window.CATALOG_DATA = {
             "printTime": "47.0 h",
             "weight": "1971 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 926,
-            "printCount": 413,
-            "ratingCount": 30,
+            "downloadCount": 1124,
+            "printCount": 531,
+            "ratingCount": 43,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 11,
@@ -7362,7 +7310,59 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3126566"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3126566"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3126566"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3126566"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "Dr E.stl",
+            "label": "Model file",
+            "sizeBytes": 799586884,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 155
       },
       "caseFile": "016",
       "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY"
@@ -7379,10 +7379,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 273,
-        "boosts": 568,
-        "downloads": 285,
-        "prints": 157
+        "likes": 332,
+        "boosts": 689,
+        "downloads": 396,
+        "prints": 243
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -7429,10 +7429,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "4.2 h",
           "weight": "112 g",
-          "difficulty": "3.7 / 5",
-          "downloadCount": 78,
-          "printCount": 40,
-          "ratingCount": 5,
+          "difficulty": "3.9 / 5",
+          "downloadCount": 101,
+          "printCount": 50,
+          "ratingCount": 6,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -7540,38 +7540,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3149588"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 4,
-            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
-            "colorOptions": [
-              "Light Gray (10104)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3149588"
-          }
-        ],
-        "attachments": [
-          {
-            "name": "The Traveler DeskTop.3mf",
-            "label": "Model file",
-            "sizeBytes": 191479087,
-            "url": ""
-          }
-        ],
-        "shareCount": 0,
-        "commentCount": 84,
         "printProfiles": [
           {
             "title": "10 inch Traveler Series",
@@ -7597,10 +7565,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "4.2 h",
             "weight": "112 g",
-            "difficulty": "3.7 / 5",
-            "downloadCount": 78,
-            "printCount": 40,
-            "ratingCount": 5,
+            "difficulty": "3.9 / 5",
+            "downloadCount": 101,
+            "printCount": 50,
+            "ratingCount": 6,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -7727,10 +7695,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "38.2 h",
             "weight": "1559 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 283,
-            "printCount": 64,
-            "ratingCount": 3,
+            "difficulty": "3.9 / 5",
+            "downloadCount": 361,
+            "printCount": 92,
+            "ratingCount": 5,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -7817,10 +7785,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "52.1 h",
             "weight": "2251 g",
-            "difficulty": "3.7 / 5",
-            "downloadCount": 19,
-            "printCount": 16,
-            "ratingCount": 4,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 25,
+            "printCount": 35,
+            "ratingCount": 6,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 6,
@@ -7912,10 +7880,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "45.3 h",
             "weight": "1621 g",
-            "difficulty": "3.0 / 5",
-            "downloadCount": 75,
-            "printCount": 39,
-            "ratingCount": 2,
+            "difficulty": "3.5 / 5",
+            "downloadCount": 115,
+            "printCount": 66,
+            "ratingCount": 3,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -8023,7 +7991,39 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3149588"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 4,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3149588"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "The Traveler DeskTop.3mf",
+            "label": "Model file",
+            "sizeBytes": 191479087,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 104
       },
       "caseFile": "017",
       "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES"
@@ -8040,10 +8040,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3166617-them-1947-alien-greys-sign",
       "stats": {
-        "likes": 8,
-        "boosts": 12,
-        "downloads": 0,
-        "prints": 0
+        "likes": 18,
+        "boosts": 30,
+        "downloads": 4,
+        "prints": 1
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-alien-greys-sign/",
@@ -8052,7 +8052,7 @@ window.CATALOG_DATA = {
         "specimenLabel": "ALIEN GREYS SIGN",
         "summaryText": "THEM 1947 - Glow in the-Dark Hanging Alien Sign Bring a little Roswell mystery to your wall with the THEM 1947 Hanging Sign ! This round UFO-themed sign features the THEM 1947 design with flying saucer, stars, and bold lettering. The green portions were printed using Bambu Lab Glow Green filament, giving the sign an awesome radioactive style glow when the lights go out. The model includes 1.5 mm pre designed holes at the top for adding screw eyelets, making it easy to attach a chain, cord, or other hanger and display it in your workshop, game room, 3D printing area, garage, alien collection, or UFO-themed room. Colors used in the example: Bambu Lab Glow in the-Dark Green Bambu Lab Black Bambu Lab Matte Bone White Charge the glow filament under a bright light and watch THEM come alive in the dark! 👽 THEM 1947 - They were never supposed to be seen.",
         "features": [
-          "Bambu Lab Glow in the-Dark Green",
+          "Bambu Lab Glow-in-the-Dark Green",
           "Bambu Lab Black",
           "Bambu Lab Matte Bone White"
         ],
@@ -8092,8 +8092,8 @@ window.CATALOG_DATA = {
           "printTime": "7.4 h",
           "weight": "154 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 2,
-          "printCount": 0,
+          "downloadCount": 9,
+          "printCount": 1,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -8202,41 +8202,6 @@ window.CATALOG_DATA = {
             }
           }
         },
-        "bom": [
-          {
-            "name": "PLA Glow",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
-            "colorOptions": [
-              "Glow Green (15500)"
-            ],
-            "priceFrom": "$24.99 USD",
-            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3166617"
-          },
-          {
-            "name": "PLA Basic",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
-            "colorOptions": [
-              "Black (10101)"
-            ],
-            "priceFrom": "$14.94",
-            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3166617"
-          },
-          {
-            "name": "PLA Matte",
-            "quantity": 1,
-            "image": "https://store.bblcdn.com/s7/default/1f628abee56742aba4d870cad67a1110/7_fea42c37-c6dc-4588-8778-162cf2ee8ab4.jpg",
-            "colorOptions": [
-              "Bone White (11103)"
-            ],
-            "priceFrom": "$12.99",
-            "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=43292383936648&modelId=3166617"
-          }
-        ],
-        "attachments": [],
-        "shareCount": 0,
-        "commentCount": 0,
         "printProfiles": [
           {
             "title": "0.2mm layer, 2 walls, 15% infill",
@@ -8263,8 +8228,8 @@ window.CATALOG_DATA = {
             "printTime": "7.4 h",
             "weight": "154 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 2,
-            "printCount": 0,
+            "downloadCount": 9,
+            "printCount": 1,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -8436,10 +8401,1077 @@ window.CATALOG_DATA = {
               }
             }
           }
-        ]
+        ],
+        "bom": [
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3166617"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3166617"
+          },
+          {
+            "name": "PLA Matte",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/1f628abee56742aba4d870cad67a1110/7_fea42c37-c6dc-4588-8778-162cf2ee8ab4.jpg",
+            "colorOptions": [
+              "Bone White (11103)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=43292383936648&modelId=3166617"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 0
       },
       "caseFile": "018",
       "specimenLabel": "ALIEN GREYS SIGN"
+    },
+    {
+      "id": "mw-3180528",
+      "makerWorldId": 3180528,
+      "name": "5 Foot Leader Alien Greys",
+      "slug": "5-foot-leader-them-1947-alien-greys",
+      "pathSlug": "5-foot-leader-them-1947-alien-greys",
+      "blurb": "5 Foot Leader Alien Greys. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
+      "stats": {
+        "likes": 103,
+        "boosts": 196,
+        "downloads": 126,
+        "prints": 28
+      },
+      "buyHref": null,
+      "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
+      "detail": {
+        "caseFile": "019",
+        "specimenLabel": "5 FOOT LEADER ALIEN GREYS",
+        "summaryText": "THEM 1947 Alien Greys Series THE LEADER has arrived. Standing approximately 5 feet tall, THE LEADER is one of the most commanding members of the THEM 1947 Alien Greys Series . With his oversized Grey Alien head, large dark eyes, long slender body, and composed stance, this model was designed to look like the one the others answer to. His calm posture and hands held together give him a completely different personality from some of the more aggressive members of the series. He doesn't need to chase you. He doesn't need to hide. He simply watches. and the others follow. At five feet tall, THE LEADER makes an incredible life size display for a game room, man cave, garage, shop, convention booth, Halloween setup, UFO display, or anywhere you want people to stop and ask, \"Where did you get that?\" The model is divided into multiple printable sections so it can be produced on standard size 3D printers and assembled into the complete 5-foot figure. 👽 Model Features Approximately 5 feet tall when assembled Large life size Alien Grey display Multi part design for easier printing Designed for straightforward assembly Detailed head, facial features, hands, feet, and body Excellent centerpiece for alien and UFO-themed displays Part of the growing THEM 1947 Alien Greys Series THE LEADER looks especially impressive displayed alongside the other full size THEM 1947 Aliens, creating the appearance of an entire Grey Alien gathering. Print him. Assemble him. Put him somewhere unexpected. Just remember. Where THE LEADER goes, the others may not be far behind. 🛸 THE 5 FOOT LEADER 👽 THEM 1947 Alien Greys Series They were never just visitors.",
+        "features": [
+          "Approximately 5 feet tall when assembled",
+          "Large life-size Alien Grey display",
+          "Multi-part design for easier printing",
+          "Designed for straightforward assembly",
+          "Detailed head, facial features, hands, feet, and body",
+          "Excellent centerpiece for alien and UFO-themed displays"
+        ],
+        "category": "Art > Sculptures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-08-16",
+        "gallery": [
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-01.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-02.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-03.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-04.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-05.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-06.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-07.jpg",
+          "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "24 Plates (250mm) 5 Foot Leader",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro"
+          ],
+          "buildPlates": 24,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "4%",
+          "supports": null,
+          "printTime": "142.5 h",
+          "weight": "4966 g",
+          "difficulty": "2.1 / 5",
+          "downloadCount": 122,
+          "printCount": 20,
+          "ratingCount": 1,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "142.5 h",
+              "weight": "4966 g"
+            },
+            "A2L": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "164.0 h",
+              "weight": "4939 g"
+            },
+            "A1": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "170.0 h",
+              "weight": "4941 g"
+            },
+            "H2S": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "140.0 h",
+              "weight": "4956 g"
+            },
+            "H2C": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "134.4 h",
+              "weight": "4870 g"
+            },
+            "H2D": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "134.5 h",
+              "weight": "4820 g"
+            },
+            "X2D": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "142.5 h",
+              "weight": "4966 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "134.5 h",
+              "weight": "4821 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "24 Plates (250mm) 5 Foot Leader",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro"
+            ],
+            "buildPlates": 24,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "142.5 h",
+            "weight": "4966 g",
+            "difficulty": "2.1 / 5",
+            "downloadCount": 122,
+            "printCount": 20,
+            "ratingCount": 1,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "142.5 h",
+                "weight": "4966 g"
+              },
+              "A2L": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "164.0 h",
+                "weight": "4939 g"
+              },
+              "A1": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "170.0 h",
+                "weight": "4941 g"
+              },
+              "H2S": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "140.0 h",
+                "weight": "4956 g"
+              },
+              "H2C": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "134.4 h",
+                "weight": "4870 g"
+              },
+              "H2D": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "134.5 h",
+                "weight": "4820 g"
+              },
+              "X2D": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "142.5 h",
+                "weight": "4966 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "134.5 h",
+                "weight": "4821 g"
+              }
+            }
+          },
+          {
+            "title": "9 Plates (325mm) 5 Foot Leader 73hrs",
+            "printers": [
+              "A2L",
+              "H2S",
+              "H2C",
+              "H2D",
+              "H2D Pro"
+            ],
+            "buildPlates": 9,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "73.3 h",
+            "weight": "3812 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 51,
+            "printCount": 8,
+            "ratingCount": 0,
+            "byPrinter": {
+              "A2L": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "102.6 h",
+                "weight": "3844 g"
+              },
+              "H2S": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "78.1 h",
+                "weight": "3883 g"
+              },
+              "H2C": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "73.3 h",
+                "weight": "3812 g"
+              },
+              "H2D": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "73.3 h",
+                "weight": "3812 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "73.3 h",
+                "weight": "3812 g"
+              }
+            }
+          }
+        ],
+        "bom": [],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 24
+      },
+      "caseFile": "019",
+      "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
+    },
+    {
+      "id": "mw-3195349",
+      "makerWorldId": 3195349,
+      "name": "3 Foot NIGHT CRAWLER Alien Greys",
+      "slug": "3-foot-night-crawler-them-1947-alien-greys",
+      "pathSlug": "3-foot-night-crawler-them-1947-alien-greys",
+      "blurb": "3 Foot NIGHT CRAWLER Alien Greys. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3195349-3-foot-night-crawler-them-1947-alien-greys",
+      "stats": {
+        "likes": 31,
+        "boosts": 71,
+        "downloads": 34,
+        "prints": 17
+      },
+      "buyHref": null,
+      "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
+      "detail": {
+        "caseFile": "020",
+        "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS",
+        "summaryText": "THEM 1947 Alien Grey Website here @ https://them1947.com/ THE NIGHT CRAWLER - 3 FOOT SERIES VERSION | THEM 1947 Alien Greys Something is moving in the dark. Introducing THE NIGHT CRAWLER, scaled to match the other models in the THEM 1947 Alien Greys 3 Foot Series . THE NIGHT CRAWLER was designed to capture that unsettling moment when you realize something isn't just watching you it's coming toward you . With its low, creeping stance, oversized alien features, and eerie presence, this version is made to display alongside the other large scale THEM 1947 Alien Greys. Because of his crawling pose, THE NIGHT CRAWLER is not 3 feet tall . Instead, he has been scaled proportionally to match the same scale used throughout the THEM 1947 3 Foot Series, making him a perfect companion piece for the rest of the collection. PRINT & ASSEMBLY INFORMATION This large scale version is divided across 8 build plates to make printing and assembly easier. IMPORTANT: There is a special assembly pin for the right arm . The right arm connection is slightly shorter than the others, so be sure to use the correct pin in that location during assembly. Using the wrong pin may prevent the arm from fitting together properly. 👽 Part of the THEM 1947 Alien Greys 3 Foot Series 📏 Scaled to match the other 3 Foot Series Aliens 🖨️ 8 Build Plates 🔩 Includes a special shorter pin for the right arm 🛸 Designed as a large scale display piece 🌌 Great for UFO, alien, sci fi, Halloween, and paranormal displays 🖨️ Created specifically with 3D printing and assembly in mind Whether you place him crawling out of a dark hallway, underneath a display, alongside your other THEM 1947 Aliens, or somewhere completely unexpected, THE NIGHT CRAWLER is definitely going to get attention. Print him. Build him. Then decide where you're brave enough to put him. More members of the THEM 1947 Alien Greys are on the way. THEM 1947 - They were never gone.",
+        "features": [],
+        "category": "Art > Sculptures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-08-20",
+        "gallery": [
+          "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-01.jpg",
+          "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-02.jpg",
+          "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-03.jpg",
+          "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-04.jpg"
+        ],
+        "printProfile": {
+          "title": "0.2mm layer, 2 walls, 4% infill",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 8,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "4%",
+          "supports": null,
+          "printTime": "54.2 h",
+          "weight": "1674 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 68,
+          "printCount": 17,
+          "ratingCount": 0,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "54.1 h",
+              "weight": "1664 g"
+            },
+            "A2L": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "62.0 h",
+              "weight": "1657 g"
+            },
+            "A1": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "67.0 h",
+              "weight": "1658 g"
+            },
+            "H2S": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "52.4 h",
+              "weight": "1665 g"
+            },
+            "H2C": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "50.6 h",
+              "weight": "1616 g"
+            },
+            "H2D": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "50.8 h",
+              "weight": "1600 g"
+            },
+            "X2D": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "54.2 h",
+              "weight": "1674 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "50.8 h",
+              "weight": "1600 g"
+            },
+            "P1S": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "54.2 h",
+              "weight": "1674 g"
+            },
+            "P1P": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "55.7 h",
+              "weight": "1667 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "54.1 h",
+              "weight": "1669 g"
+            },
+            "X1": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "55.9 h",
+              "weight": "1669 g"
+            },
+            "X1E": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "54.0 h",
+              "weight": "1669 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 4% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 8,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "54.2 h",
+            "weight": "1674 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 68,
+            "printCount": 17,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "54.1 h",
+                "weight": "1664 g"
+              },
+              "A2L": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "62.0 h",
+                "weight": "1657 g"
+              },
+              "A1": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "67.0 h",
+                "weight": "1658 g"
+              },
+              "H2S": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "52.4 h",
+                "weight": "1665 g"
+              },
+              "H2C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "50.6 h",
+                "weight": "1616 g"
+              },
+              "H2D": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "50.8 h",
+                "weight": "1600 g"
+              },
+              "X2D": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "54.2 h",
+                "weight": "1674 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "50.8 h",
+                "weight": "1600 g"
+              },
+              "P1S": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "54.2 h",
+                "weight": "1674 g"
+              },
+              "P1P": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "55.7 h",
+                "weight": "1667 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "54.1 h",
+                "weight": "1669 g"
+              },
+              "X1": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "55.9 h",
+                "weight": "1669 g"
+              },
+              "X1E": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "54.0 h",
+                "weight": "1669 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3195349"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3195349"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/f19847c3b512400588d34b27434a01ad/pla_basic_dark_gray.jpg",
+            "colorOptions": [
+              "Dark Gray (10105)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3195349"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.99",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3195349"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.79",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3195349"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 8
+      },
+      "caseFile": "020",
+      "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS"
+    },
+    {
+      "id": "mw-3200946",
+      "makerWorldId": 3200946,
+      "name": "One Hit Wonder Alien Greys 3 FOOT and 10",
+      "slug": "one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+      "pathSlug": "one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+      "blurb": "One Hit Wonder Alien Greys 3 FOOT and 10. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-01.png",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3200946-one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+      "stats": {
+        "likes": 0,
+        "boosts": 0,
+        "downloads": 0,
+        "prints": 0
+      },
+      "buyHref": null,
+      "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
+      "detail": {
+        "caseFile": "021",
+        "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10",
+        "summaryText": "THEM 1947 Alien Grey Meet THE ONE HIT WONDER, the newest character to join the THEM 1947 Alien Greys lineup! 👽💨 This laid back Grey is the result of a special collaboration between THEM 1947 and LitPrintz, bringing together two creators for one seriously out of this world release. With his relaxed seated pose, signature THEM 1947 Alien Grey appearance, and unmistakable attitude, THE ONE HIT WONDER is definitely going to stand out in your collection. Whether displayed alongside the rest of your THEM 1947 crew or sitting on his own, this guy looks like he has already discovered something on Earth that wasn't included in the original mission briefing. 😂 An empty spool gives him a great seat to sit on for the 3 foot version. 👽 THEM 1947 × LitPrintz Collaboration THEM 1947 Alien Coozie - Free STL Drop This model is only part of the collaboration! Be sure to head over to LitPrintz.com and check out the Custom Alien Can Coozie designed to go along with THE ONE HIT WONDER. If you haven't checked out LitPrintz yet, take a look around they have some awesome custom designs and creations. ⚠️ VERY IMPORTANT ASSEMBLY NOTE for 3 Foot Version. DO NOT REMOVE THE CIGARETTE SUPPORT EARLY! When assembling THE ONE HIT WONDER, the small support attached to the cigarette is there to help protect the cigarette during handling and assembly. Glue the Alien's head securely to the rest of the body FIRST. Once the Alien is completely assembled and the head is firmly attached, remove the cigarette support LAST. The cigarette is a small, delicate feature, and removing that support too soon can make it much easier to accidentally damage or break it during assembly. HEAD ON → BODY ASSEMBLED → CIGARETTE SUPPORT REMOVED LAST! Also, there is ONE PIN SMALLER THAN the rest of them. It goes into his upper arm and is marked. 🛸 Stay Connected With THEM 1947 Want to keep up with new Alien Greys, upcoming releases, special collaborations, photos, and everything happening with the THEM 1947 universe? Visit: THEM1947.com And join the THEM 1947 Alien Greys Facebook Group: https://www.facebook.com/groups/1289863179891582 Share your prints, show off your Alien collection, and stay up to date on what's coming next. THE ONE HIT WONDER has landed. and apparently he's already found a way to relax on Earth. 👽💨 THEM 1947 × LitPrintz",
+        "features": [],
+        "category": "Art > Sculptures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-08-21",
+        "gallery": [
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-01.png",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-02.png",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-03.jpg",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-04.jpg",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-05.jpg",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-06.jpg",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-07.jpg",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "0.2mm layer, 2 walls, 5% infill",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 5,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "5%",
+          "supports": null,
+          "printTime": "43.3 h",
+          "weight": "1359 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 0,
+          "printCount": 0,
+          "ratingCount": 0,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "42.7 h",
+              "weight": "1349 g"
+            },
+            "A2L": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "50.2 h",
+              "weight": "1340 g"
+            },
+            "A1": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "51.0 h",
+              "weight": "1340 g"
+            },
+            "H2S": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "41.9 h",
+              "weight": "1351 g"
+            },
+            "H2C": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "39.0 h",
+              "weight": "1287 g"
+            },
+            "H2D": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "39.4 h",
+              "weight": "1286 g"
+            },
+            "X2D": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "38.3 h",
+              "weight": "1285 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "39.3 h",
+              "weight": "1286 g"
+            },
+            "P1S": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.3 h",
+              "weight": "1359 g"
+            },
+            "P1P": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.4 h",
+              "weight": "1352 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.1 h",
+              "weight": "1353 g"
+            },
+            "X1": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.5 h",
+              "weight": "1353 g"
+            },
+            "X1E": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.0 h",
+              "weight": "1353 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 5% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 5,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "5%",
+            "supports": null,
+            "printTime": "43.3 h",
+            "weight": "1359 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 0,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "42.7 h",
+                "weight": "1349 g"
+              },
+              "A2L": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "50.2 h",
+                "weight": "1340 g"
+              },
+              "A1": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "51.0 h",
+                "weight": "1340 g"
+              },
+              "H2S": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "41.9 h",
+                "weight": "1351 g"
+              },
+              "H2C": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "39.0 h",
+                "weight": "1287 g"
+              },
+              "H2D": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "39.4 h",
+                "weight": "1286 g"
+              },
+              "X2D": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "38.3 h",
+                "weight": "1285 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "39.3 h",
+                "weight": "1286 g"
+              },
+              "P1S": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.3 h",
+                "weight": "1359 g"
+              },
+              "P1P": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.4 h",
+                "weight": "1352 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.1 h",
+                "weight": "1353 g"
+              },
+              "X1": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.5 h",
+                "weight": "1353 g"
+              },
+              "X1E": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.0 h",
+                "weight": "1353 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/b852ee64945540208e55b588ee6e8e26/e40cbbf6e7fed96557d8e2be99e4b9cf_874f9392-3fe3-4c65-87cc-91b158674eb3.png",
+            "colorOptions": [
+              "Glow Orange (15300)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487793800&modelId=3200946"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3200946"
+          },
+          {
+            "name": "PETG Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/9c0843dc40074977a1243d7d9bb9099f/GRAY.png",
+            "colorOptions": [
+              "Gray(30107)"
+            ],
+            "priceFrom": "$12.59",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=3200946"
+          },
+          {
+            "name": "PETG Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/9ce3105406e7462e89d0b156807aceb2/WHITE.png",
+            "colorOptions": [
+              "White(30106)"
+            ],
+            "priceFrom": "$12.59",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864287&modelId=3200946"
+          },
+          {
+            "name": "PETG Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/07333e2d8fdc4ffeb69193e6e0d68244/Black.png",
+            "colorOptions": [
+              "Black(30105)"
+            ],
+            "priceFrom": "$12.59",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864275&modelId=3200946"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 0
+      },
+      "caseFile": "021",
+      "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10"
     }
   ]
 };

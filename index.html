@@ -41,6 +41,18 @@
         <source src="/assets/video/classified-brief.mp4" type="video/mp4" />
       </video>
 
+      <video
+        id="litprintz-video"
+        class="landing-video is-dormant"
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
+        <source src="/assets/video/litprintz.mp4" type="video/mp4" />
+      </video>
+
       <img
         id="landing-poster"
         class="landing-poster is-visible"
@@ -51,11 +63,21 @@
       <div id="landing-scrim" class="landing-scrim" aria-hidden="true"></div>
 
       <div id="start-overlay" class="start-overlay">
-        <button id="start-btn" class="start-btn" type="button">
-          <img class="start-logo" src="/assets/brand/logo.png" alt="" />
-          <span class="start-label">Tap to begin</span>
-          <span class="start-hint">Two transmissions play first</span>
-        </button>
+        <div class="start-cta-row">
+          <button id="start-btn" class="start-btn" type="button">
+            <img class="start-logo" src="/assets/brand/logo.png" alt="" />
+            <span class="start-label">Play Transmissions</span>
+            <span class="start-hint">Two transmissions play first</span>
+          </button>
+          <button
+            id="litprintz-cta"
+            class="litprintz-cta"
+            type="button"
+            aria-label="Play Lit Printz transmission"
+          >
+            <img src="/assets/brand/litprintz-logo.png" alt="litprintz.com" />
+          </button>
+        </div>
       </div>
 
       <img
@@ -79,6 +101,19 @@
             <span class="folder-stamp">Classified</span>
           </span>
         </button>
+        <div class="litprintz-site-row">
+          <a
+            id="litprintz-site-btn"
+            class="litprintz-site-btn"
+            href="https://litprintz.com"
+            target="_blank"
+            rel="noopener"
+            hidden
+            aria-hidden="true"
+          >
+            Go to litprintz.com
+          </a>
+        </div>
         <div class="landing-banner-row">
           <a
             id="landing-commercial-btn"

@@ -80,6 +80,57 @@ function renderCatalogGrid(vault) {
   return `<div class="mw-grid" role="list">${items.map(renderMwCard).join("")}</div>`;
 }
 
+function getFeaturedReleaseItem() {
+  const featured = window.SITE_CONFIG?.featuredRelease;
+  if (!featured) return null;
+  const items = window.CATALOG_DATA?.items || [];
+  return (
+    items.find((item) => item.makerWorldId === featured.makerWorldId) ||
+    items.find((item) => item.pathSlug === featured.pathSlug) ||
+    null
+  );
+}
+
+function renderFeaturedRelease() {
+  const featured = window.SITE_CONFIG?.featuredRelease;
+  const item = getFeaturedReleaseItem();
+  if (!featured || !item?.href) return "";
+
+  const displayName = cleanCaseName(item.name);
+  const poster = featured.poster || item.image;
+  const eyebrow = featured.eyebrow || "New release";
+  const tagline = featured.tagline || item.blurb || "";
+  const caseLabel = item.caseFile ? `Case file ${item.caseFile}` : "Classified file";
+  const mwUrl = itemMakerWorldUrl(item);
+
+  return `<section class="vault-featured-release reveal" aria-label="${displayName} featured release">
+    <a class="vault-featured-release-link" href="${item.href}">
+      <img
+        class="vault-featured-release-img"
+        src="${poster}"
+        alt="${displayName} - ${tagline}"
+        width="1200"
+        height="675"
+        loading="eager"
+      />
+      <span class="vault-featured-release-badge">${eyebrow}</span>
+    </a>
+    <div class="vault-featured-release-copy">
+      <p class="vault-featured-release-eyebrow">${caseLabel} · ${eyebrow}</p>
+      <h2 class="vault-featured-release-title">${displayName}</h2>
+      <p class="vault-featured-release-tagline">${tagline}</p>
+      <div class="vault-featured-release-actions">
+        <a class="btn btn-primary" href="${item.href}">Open case file</a>
+        ${
+          mwUrl
+            ? `<a class="btn btn-ghost" href="${mwUrl}" target="_blank" rel="noopener">View on MakerWorld</a>`
+            : ""
+        }
+      </div>
+    </div>
+  </section>`;
+}
+
 function renderFilesHub() {
   const summary = window.CATALOG_DATA?.summary || {};
   const classified = summary.classified || getCatalogItems("classified").length;
@@ -97,6 +148,7 @@ function renderFilesHub() {
       <img src="/assets/brand/ufo-night.png" alt="" class="archive-hero-img" />
       <span class="classified-stamp classified-stamp-lg">Classified</span>
     </section>
+    ${renderFeaturedRelease()}
     ${renderCommercialMembershipCta()}
     <section class="prints-category-grid reveal">
       <a class="prints-category-card" href="/files/prints/">

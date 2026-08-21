@@ -90,7 +90,7 @@ Use this when the owner needs to review the full site on the live domain before 
 2. Push to `main` - Cloudflare redeploys.
 3. Tell the owner (plain language):
    - Open **https://them1947.com**
-   - Tap **Tap to begin**, watch the intro (or let it finish)
+   - Tap **Play Transmissions**, watch the intro (or let it finish)
    - Click **Terminal access**
    - Enter the clearance code you give them by phone or text
    - Browse the archive; bookmark `/files/` if helpful
