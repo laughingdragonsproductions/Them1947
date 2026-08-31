@@ -1080,6 +1080,38 @@ def refresh_polish_catalog() -> None:
     print(f"Updated copy in {OUT_JS}")
 
 
+def refresh_stats() -> None:
+    payload = load_catalog_payload()
+    items = payload.get("items") or []
+    print(f"Refreshing stats for {len(items)} catalog items…")
+    updated = 0
+    for item in items:
+        detail = fetch_design(item["makerWorldId"])
+        if not detail:
+            print(f"  warn: missing design {item.get('makerWorldId')}")
+            continue
+        hit = design_to_hit(detail)
+        item["stats"] = {
+            "likes": hit.get("likeCount") or 0,
+            "boosts": hit.get("collectionCount") or 0,
+            "downloads": hit.get("downloadCount") or 0,
+            "prints": hit.get("printCount") or 0,
+        }
+        if item.get("detail") is not None:
+            item["detail"]["shareCount"] = detail.get("shareCount") or 0
+            item["detail"]["commentCount"] = detail.get("commentCount") or 0
+        updated += 1
+        stats = item["stats"]
+        print(
+            f"  {item.get('name')}: likes={stats['likes']} boosts={stats['boosts']} "
+            f"downloads={stats['downloads']} prints={stats['prints']}"
+        )
+    payload["items"] = items
+    payload["pulledAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    write_catalog_payload(payload)
+    print(f"Updated stats for {updated}/{len(items)} items in {OUT_JS}")
+
+
 def refresh_declassified() -> None:
     payload = load_catalog_payload()
     classified_items = [item for item in payload.get("items") or [] if item.get("vault") == "classified"]
@@ -1123,6 +1155,9 @@ def main() -> None:
         return
     if "--notes-only" in sys.argv:
         refresh_case_notes()
+        return
+    if "--stats-only" in sys.argv:
+        refresh_stats()
         return
 
     CLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)

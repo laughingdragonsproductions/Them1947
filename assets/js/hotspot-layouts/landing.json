@@ -1,0 +1,58 @@
+{
+  "id": "landing",
+  "aspectRatio": [1672, 941],
+  "classMap": {
+    "litprintz-top-cover-btn": "landing-hotspot--litprintz-cover",
+    "terminal-access-btn": "landing-hotspot--terminal",
+    "landing-commercial-btn": "landing-hotspot--commercial",
+    "witness-files-btn": "landing-hotspot--witness",
+    "classified-folder": "landing-hotspot--folder",
+    "reports-btn": "landing-hotspot--reports",
+    "archive-btn": "landing-hotspot--archive",
+    "litprintz-site-btn": "landing-hotspot--litprintz",
+    "observation-btn": "landing-hotspot--observation",
+    "recovery-btn": "landing-hotspot--recovery",
+    "analysis-btn": "landing-hotspot--analysis",
+    "dashboard-btn": "landing-hotspot--dashboard",
+    "intel-feed-btn": "landing-hotspot--intel-feed",
+    "settings-btn": "landing-hotspot--settings",
+    "developer-mode-banner": "landing-overlay--developer-mode"
+  },
+  "hotspots": {
+    "litprintz-top-cover-btn": { "left": 45.17, "top": 8.9, "width": 10.22, "height": 2.62 },
+    "terminal-access-btn": { "left": 39.9, "top": 39.68, "width": 20.15, "height": 5.25 },
+    "landing-commercial-btn": { "left": 38.23, "top": 46.58, "width": 23.54, "height": 4.9 },
+    "witness-files-btn": {
+      "points": [[52.04, 58.18], [56.67, 58.29], [57.14, 64.54], [52.14, 64.54]]
+    },
+    "classified-folder": {
+      "points": [[86.63, 52.69], [90.65, 57.96], [90.28, 99.45], [59.51, 95.39], [67.61, 51.59]]
+    },
+    "reports-btn": { "left": 40.04, "top": 73.21, "width": 5.85, "height": 2.74 },
+    "archive-btn": { "left": 46.77, "top": 73.21, "width": 5.79, "height": 2.96 },
+    "litprintz-site-btn": {
+      "points": [[36.72, 80.46], [58.15, 80.68], [58.46, 86.28], [35.91, 86.06]]
+    },
+    "observation-btn": {
+      "points": [[36.04, 58.29], [40.67, 58.07], [39.99, 64.43], [34.99, 64.76]]
+    },
+    "recovery-btn": {
+      "points": [[41.41, 58.4], [45.98, 58.4], [45.61, 64.54], [40.8, 64.65]]
+    },
+    "analysis-btn": {
+      "points": [[46.73, 58.29], [51.3, 58.4], [51.3, 64.54], [46.54, 64.76]]
+    },
+    "dashboard-btn": {
+      "points": [[33.51, 73.33], [39.19, 73.22], [38.88, 76.07], [33.01, 75.96]]
+    },
+    "intel-feed-btn": {
+      "points": [[41.13, 88.66], [46.29, 88.69], [46.05, 95.94], [40.73, 96.16]]
+    },
+    "settings-btn": {
+      "points": [[53.52, 73.33], [59.08, 73.22], [59.33, 75.96], [53.64, 75.96]]
+    },
+    "developer-mode-banner": {
+      "points": [[3.54, 60.81], [14.23, 57.85], [15.96, 66.19], [5.03, 68.72]]
+    }
+  }
+}

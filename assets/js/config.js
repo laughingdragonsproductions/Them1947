@@ -8,8 +8,9 @@ window.SITE_CONFIG = {
   videos: {
     landing: "/assets/video/landing.mp4",
     brief: "/assets/video/classified-brief.mp4",
-    litprintz: "/assets/video/litprintz.mp4",
-    poster: "/assets/video/landing-poster.jpg",
+    litFlight: "/assets/video/litflight.mp4",
+    litFlightRedirectBeforeEndSec: 1.5,
+    poster: "/assets/brand/landing-dashboard.png",
   },
   links: {
     makerWorld: "https://makerworld.com/en/@user_935464230",
@@ -19,6 +20,8 @@ window.SITE_CONFIG = {
     litPrintzSite: "https://litprintz.com",
     litPrintzCoozie:
       "https://litprintz.com/products/them-1947-alien-coozie-free-stl",
+    witnessFiles: "/files/declassified/",
+    intelFeed: "https://theassociatedguess.com",
   },
   /** Vault hub spotlight - full-width release banner on /files/ */
   featuredRelease: {

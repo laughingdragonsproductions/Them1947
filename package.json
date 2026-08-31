@@ -2,6 +2,9 @@
   "name": "them1947",
   "private": true,
   "scripts": {
+    "dev": "npx --yes serve . --listen 3456 --no-port-switching",
+    "catalog:stats": "python scripts/pull-makerworld-catalog.py --stats-only",
+    "catalog:pull": "python scripts/pull-makerworld-catalog.py",
     "build": "node scripts/prepare-worker-deploy.js",
     "check": "node scripts/check-site.js",
     "check:dist": "node scripts/check-site.js --dist",

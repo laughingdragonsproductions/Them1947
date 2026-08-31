@@ -27,7 +27,13 @@ Open `http://localhost:8080/` then `http://localhost:8080/files/`
 ## Catalog (MakerWorld pull)
 
 ```powershell
-python scripts/pull-makerworld-catalog.py
+# Full pull — new listings, images, case pages, sitemap
+npm run catalog:pull
+# or: python scripts/pull-makerworld-catalog.py
+
+# Stats only — likes, boosts, downloads, prints (fast)
+npm run catalog:stats
+# or: python scripts/pull-makerworld-catalog.py --stats-only
 ```
 
 Generates [`assets/js/catalog-data.js`](assets/js/catalog-data.js), downloads thumbnails to `assets/catalog/classified/` and `assets/catalog/declassified/`, and builds one **case-file page** per classified listing under `files/prints/{slug}/`.
@@ -35,7 +41,23 @@ Generates [`assets/js/catalog-data.js`](assets/js/catalog-data.js), downloads th
 - **Classified** - THEM 1947 / alien models (stamped previews, full dossier pages with MakerWorld stats, print profiles, BOM, and gallery)
 - **Declassified** - non-alien public releases with MakerWorld links
 
-Re-run weekly to refresh titles, stats, gallery images, and regenerate case-file shells. Agent Town or any scheduled runner can invoke the same script on a weekly cadence to keep token use low during manual edits.
+### Catalog automation (GitHub Actions)
+
+Two workflows mirror the Chittinn Chattin RSS refresh pattern (copy-only from that repo — ChC files are never edited):
+
+| Workflow | Schedule | What it updates |
+|----------|----------|-----------------|
+| **Refresh MakerWorld catalog stats** | Bi-weekly (1st & 15th) | Likes, boosts, downloads, prints |
+| **Refresh MakerWorld catalog (full pull)** | Bi-monthly (odd months) | New models, images, galleries, case pages, sitemap |
+
+Manual run: GitHub → **Actions** → pick workflow → **Run workflow**. A push to `main` triggers the existing Cloudflare deploy workflow.
+
+Local push helper (after a manual pull):
+
+```powershell
+.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog stats"
+.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog (full pull)" -Full
+```
 
 ## Owner preview gate
 

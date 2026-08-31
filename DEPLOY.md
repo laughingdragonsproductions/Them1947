@@ -151,6 +151,30 @@ See [ADSENSE-MANUAL.md](ADSENSE-MANUAL.md) for full steps.
 
 Push to `main`, then confirm the live site updated (see **Quick deploy** above if it did not).
 
+### MakerWorld catalog automation
+
+GitHub Actions refresh MakerWorld data on a schedule (pattern copied from Chittinn Chattin RSS — ChC repo is never modified):
+
+| Workflow file | Schedule | Command |
+|---------------|----------|---------|
+| `.github/workflows/refresh-catalog-stats.yml` | Bi-weekly (1st & 15th, 11:00 UTC) | `--stats-only` |
+| `.github/workflows/refresh-catalog-full.yml` | Bi-monthly (odd months, 12:00 UTC) | full pull |
+
+When either workflow commits to `main`, the existing **Deploy Cloudflare Worker** workflow redeploys automatically.
+
+**Manual refresh locally:**
+
+```powershell
+npm run catalog:stats          # stats only
+npm run catalog:pull           # full pull
+.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog stats"
+.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog (full pull)" -Full
+```
+
+**Manual run on GitHub:** Actions → pick workflow → **Run workflow**
+
+Estimated Actions usage: ~20–25 min/month (well within GitHub Free tier for private repos; unlimited on public repos).
+
 ## Troubleshooting
 
 | Issue | Fix |

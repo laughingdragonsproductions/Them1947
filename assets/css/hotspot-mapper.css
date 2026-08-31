@@ -1,0 +1,222 @@
+/* Reusable image-overlay hotspot mapper (see HOTSPOT-MAPPER.md) */
+
+.hotspot-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.hotspot-layer.is-visible {
+  pointer-events: auto;
+}
+
+.hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  text-decoration: none;
+  color: transparent;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.hotspot-debug .hotspot,
+body.hotspot-edit .hotspot {
+  opacity: 1 !important;
+  background: rgba(126, 184, 212, 0.28);
+  border: 2px dashed rgba(126, 184, 212, 0.95);
+  box-shadow:
+    0 0 16px rgba(126, 184, 212, 0.35),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+body.hotspot-debug .hotspot::after,
+body.hotspot-edit .hotspot::after {
+  content: attr(aria-label);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.1rem 0.25rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7eb8d4;
+  background: rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+body.hotspot-edit .hotspot {
+  cursor: move;
+}
+
+body.hotspot-edit .hotspot.is-selected {
+  border-color: #e8bc55;
+  background: rgba(232, 188, 85, 0.18);
+  z-index: 8;
+}
+
+body.hotspot-edit .hotspot-resize {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #e8bc55;
+  border-radius: 2px;
+  background: rgba(232, 188, 85, 0.85);
+  cursor: nwse-resize;
+  pointer-events: auto;
+  z-index: 9;
+}
+
+body.hotspot-edit .hotspot-rotate {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border: 1px solid #e8bc55;
+  border-radius: 50%;
+  background: rgba(232, 188, 85, 0.92);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+  pointer-events: auto;
+  z-index: 9;
+}
+
+body.hotspot-edit .hotspot-rotate::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 1px;
+  height: 10px;
+  margin-left: -0.5px;
+  background: rgba(232, 188, 85, 0.85);
+  pointer-events: none;
+}
+
+body.hotspot-edit .hotspot.is-selected .hotspot-rotate {
+  display: block;
+}
+
+body.hotspot-edit .hotspot-rotate:active {
+  cursor: grabbing;
+}
+
+body.hotspot-edit .hotspot[data-hotspot-mode="polygon"] .hotspot-resize,
+body.hotspot-edit .hotspot[data-hotspot-mode="polygon"] .hotspot-rotate {
+  display: none;
+}
+
+.hotspot-point-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.hotspot-point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  padding: 0;
+  border: 2px solid #e8bc55;
+  border-radius: 50%;
+  background: rgba(232, 188, 85, 0.95);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55);
+  cursor: grab;
+  pointer-events: auto;
+}
+
+.hotspot-point.is-selected {
+  border-color: #7eb8d4;
+  background: rgba(126, 184, 212, 0.95);
+  z-index: 13;
+}
+
+.hotspot-point:active {
+  cursor: grabbing;
+}
+
+body.hotspot-edit .landing-stage.is-add-point {
+  cursor: crosshair;
+}
+
+.hotspot-editor button.is-active {
+  background: rgba(232, 188, 85, 0.28);
+  border-color: #e8bc55;
+  color: #e8bc55;
+}
+
+.hotspot-editor {
+  position: fixed;
+  left: 50%;
+  top: 0.75rem;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  max-width: min(96vw, 640px);
+  padding: 0.65rem 0.85rem;
+  border: 1px solid rgba(126, 184, 212, 0.45);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.88);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: rgba(232, 238, 244, 0.9);
+}
+
+.hotspot-editor strong {
+  color: #7eb8d4;
+  font-weight: 700;
+}
+
+.hotspot-editor button {
+  appearance: none;
+  border: 1px solid rgba(126, 184, 212, 0.5);
+  border-radius: 3px;
+  background: rgba(126, 184, 212, 0.12);
+  color: #7eb8d4;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.35rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.hotspot-editor button:hover {
+  background: rgba(126, 184, 212, 0.24);
+}
+
+.hotspot-editor-output {
+  flex: 1 1 100%;
+  margin: 0;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid rgba(126, 184, 212, 0.25);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(232, 238, 244, 0.75);
+  font: inherit;
+  font-size: 0.6rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 5rem;
+  overflow: auto;
+}
