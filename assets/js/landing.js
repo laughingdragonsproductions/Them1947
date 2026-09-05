@@ -250,9 +250,11 @@
   }
 
   function wireViewAllLogs() {
-    const btn = document.getElementById("view-all-logs-btn");
-    if (!btn) return;
-    btn.addEventListener("click", onViewAllLogsClick);
+    ["view-all-logs-btn", "logs"].forEach(function (id) {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      btn.addEventListener("click", onViewAllLogsClick);
+    });
   }
 
   function wireIntelFeed() {
