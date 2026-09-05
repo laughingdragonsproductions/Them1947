@@ -58,6 +58,18 @@
       : "/files/prints/the-descender-them-1947-alien-greys-spaceship/";
   }
 
+  function isDevModeUnlocked() {
+    return sessionStorage.getItem(DEV_MODE_SESSION_KEY) === "1";
+  }
+
+  function enableIntelFeed() {
+    const intelFeedBtn = document.getElementById("intel-feed-btn");
+    if (!intelFeedBtn) return;
+    intelFeedBtn.classList.remove("is-locked");
+    intelFeedBtn.setAttribute("aria-label", "Intel feed");
+    document.body.classList.add("dev-mode-unlocked");
+  }
+
   function wireExternalLinks() {
     if (commercialBtn) {
       commercialBtn.href = commercialUrl;
@@ -70,10 +82,6 @@
     }
     if (reportsBtn) {
       reportsBtn.href = "/files/prints/";
-    }
-    const intelFeedBtn = document.getElementById("intel-feed-btn");
-    if (intelFeedBtn) {
-      intelFeedBtn.href = intelFeedUrl;
     }
     const observationBtn = document.getElementById("observation-btn");
     if (observationBtn) {
@@ -193,7 +201,23 @@
     }
 
     sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
+    enableIntelFeed();
     showDeveloperModeBanner();
+  }
+
+  function wireIntelFeed() {
+    const intelFeedBtn = document.getElementById("intel-feed-btn");
+    if (!intelFeedBtn) return;
+
+    if (isDevModeUnlocked()) {
+      enableIntelFeed();
+    }
+
+    intelFeedBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (!isDevModeUnlocked()) return;
+      window.open(intelFeedUrl, "_blank", "noopener");
+    });
   }
 
   function wirePlaceholderButtons() {
@@ -264,6 +288,7 @@
 
     if (!isEditMode) {
       wireClickHandlers();
+      wireIntelFeed();
       wirePlaceholderButtons();
     }
   }

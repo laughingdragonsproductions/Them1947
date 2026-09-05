@@ -255,6 +255,22 @@ body {
   clip-path: polygon(41.13% 88.66%, 46.29% 88.69%, 46.05% 95.94%, 40.73% 96.16%);
 }
 
+.landing-hotspot--intel-feed.is-locked {
+  cursor: default;
+  pointer-events: auto;
+}
+
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:hover,
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+body.dev-mode-unlocked .landing-hotspot--intel-feed:not(.is-locked) {
+  cursor: pointer;
+}
+
 .landing-hotspot--settings {
   left: 0;
   top: 0;
