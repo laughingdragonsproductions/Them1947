@@ -17,6 +17,7 @@
     "https://makerworld.com/en/@user_935464230#commercial-membership-open";
   const witnessFilesUrl =
     window.SITE_CONFIG?.links?.witnessFiles || "/files/declassified/";
+  const vaultUrl = "/files/";
   const intelFeedUrl =
     window.SITE_CONFIG?.links?.intelFeed || "https://theassociatedguess.com";
   const litPrintzSiteUrl =
@@ -65,7 +66,7 @@
       witnessBtn.href = witnessFilesUrl;
     }
     if (archiveBtn) {
-      archiveBtn.href = "/files/";
+      archiveBtn.href = vaultUrl;
     }
     if (reportsBtn) {
       reportsBtn.href = "/files/prints/";
@@ -77,6 +78,10 @@
     const observationBtn = document.getElementById("observation-btn");
     if (observationBtn) {
       observationBtn.href = descenderCaseUrl();
+    }
+    const dashboardBtn = document.getElementById("dashboard-btn");
+    if (dashboardBtn) {
+      dashboardBtn.href = vaultUrl;
     }
     const commercialLink = document.getElementById("landing-commercial-link");
     if (commercialLink) {
@@ -90,7 +95,7 @@
   }
 
   function openVault() {
-    window.location.href = "/files/";
+    window.location.href = vaultUrl;
   }
 
   function redirectToLitPrintz() {
@@ -192,7 +197,7 @@
   }
 
   function wirePlaceholderButtons() {
-    ["recovery-btn", "analysis-btn", "dashboard-btn"].forEach(function (id) {
+    ["recovery-btn", "analysis-btn"].forEach(function (id) {
       const btn = document.getElementById(id);
       if (!btn) return;
       btn.addEventListener("click", function (event) {
