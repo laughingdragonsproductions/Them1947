@@ -263,6 +263,78 @@
       return;
     }
     applyBox(el, hotspot.box);
+    if (spec && spec.image) {
+      applyOverlayImage(el, spec.image);
+    }
+  }
+
+  function normalizeImageSpec(spec) {
+    spec = spec || {};
+    return {
+      scale: Math.max(0.15, Math.min(4, Number(spec.scale) || 1)),
+      x: Math.max(0, Math.min(100, Number(spec.x ?? spec.offsetX ?? 50))),
+      y: Math.max(0, Math.min(100, Number(spec.y ?? spec.offsetY ?? 50))),
+      rotateX: Number(spec.rotateX) || 0,
+      rotateY: Number(spec.rotateY) || 0,
+      rotateZ: Number(spec.rotateZ) || 0,
+    };
+  }
+
+  function readOverlayImageFromElement(el, fallbackImage) {
+    const img = el && el.querySelector("img");
+    if (!img) return null;
+
+    const fallback = normalizeImageSpec(fallbackImage);
+    if (img.dataset.overlayScale === undefined && !fallbackImage) {
+      return null;
+    }
+
+    return normalizeImageSpec({
+      scale: img.dataset.overlayScale !== undefined ? Number(img.dataset.overlayScale) : fallback.scale,
+      x: img.dataset.overlayX !== undefined ? Number(img.dataset.overlayX) : fallback.x,
+      y: img.dataset.overlayY !== undefined ? Number(img.dataset.overlayY) : fallback.y,
+      rotateX:
+        img.dataset.overlayRotateX !== undefined
+          ? Number(img.dataset.overlayRotateX)
+          : fallback.rotateX,
+      rotateY:
+        img.dataset.overlayRotateY !== undefined
+          ? Number(img.dataset.overlayRotateY)
+          : fallback.rotateY,
+      rotateZ:
+        img.dataset.overlayRotateZ !== undefined
+          ? Number(img.dataset.overlayRotateZ)
+          : fallback.rotateZ,
+    });
+  }
+
+  function applyOverlayImage(el, imageSpec) {
+    const img = el && el.querySelector("img");
+    if (!img || !imageSpec) return;
+
+    const spec = normalizeImageSpec(imageSpec);
+    img.style.setProperty("--overlay-scale", String(spec.scale));
+    img.style.setProperty("--overlay-x", spec.x.toFixed(2) + "%");
+    img.style.setProperty("--overlay-y", spec.y.toFixed(2) + "%");
+    img.style.setProperty("--overlay-rx", spec.rotateX.toFixed(2) + "deg");
+    img.style.setProperty("--overlay-ry", spec.rotateY.toFixed(2) + "deg");
+    img.style.setProperty("--overlay-rz", spec.rotateZ.toFixed(2) + "deg");
+    img.dataset.overlayScale = String(spec.scale);
+    img.dataset.overlayX = String(spec.x);
+    img.dataset.overlayY = String(spec.y);
+    img.dataset.overlayRotateX = String(spec.rotateX);
+    img.dataset.overlayRotateY = String(spec.rotateY);
+    img.dataset.overlayRotateZ = String(spec.rotateZ);
+  }
+
+  function attachImageSpec(result, el, fallback) {
+    const image =
+      readOverlayImageFromElement(el, fallback && fallback.image) ||
+      (fallback && fallback.image ? normalizeImageSpec(fallback.image) : null);
+    if (image) {
+      result.image = image;
+    }
+    return result;
   }
 
   function mergeHotspotSpec(base, override) {
@@ -276,7 +348,13 @@
       if (isPolygonHotspot(base) || isCircleHotspot(base)) {
         return normalizeBox(override);
       }
-      return normalizeBox(Object.assign({}, base || {}, override));
+      const merged = normalizeBox(Object.assign({}, base || {}, override));
+      const imageBase = base && base.image;
+      const imageOverride = override && override.image;
+      if (imageBase || imageOverride) {
+        merged.image = normalizeImageSpec(Object.assign({}, imageBase, imageOverride));
+      }
+      return merged;
     }
     if (isPolygonHotspot(base)) {
       return { points: clonePoints(base.points) };
@@ -284,7 +362,11 @@
     if (isCircleHotspot(base)) {
       return normalizeCircle(base);
     }
-    return normalizeBox(base || {});
+    const merged = normalizeBox(base || {});
+    if (base && base.image) {
+      merged.image = normalizeImageSpec(base.image);
+    }
+    return merged;
   }
 
   function mergeHotspotMaps(baked, draft) {
@@ -367,12 +449,16 @@
     }
 
     if (el.dataset.hotspotMode === "polygon" || isPolygonHotspot(fallback)) {
-      return {
-        points: readPointsFromElement(
-          el,
-          isPolygonHotspot(fallback) ? fallback.points : boxToPoints(fallback)
-        ),
-      };
+      return attachImageSpec(
+        {
+          points: readPointsFromElement(
+            el,
+            isPolygonHotspot(fallback) ? fallback.points : boxToPoints(fallback)
+          ),
+        },
+        el,
+        fallback
+      );
     }
 
     const box = normalizeBox(fallback);
@@ -381,13 +467,17 @@
         ? parseFloat(el.dataset.hotspotRotate)
         : box.rotate;
 
-    return {
-      left: parseFloat(el.style.left) || box.left,
-      top: parseFloat(el.style.top) || box.top,
-      width: parseFloat(el.style.width) || box.width,
-      height: parseFloat(el.style.height) || box.height,
-      rotate: Number.isFinite(rotateFromDataset) ? rotateFromDataset : box.rotate,
-    };
+    return attachImageSpec(
+      {
+        left: parseFloat(el.style.left) || box.left,
+        top: parseFloat(el.style.top) || box.top,
+        width: parseFloat(el.style.width) || box.width,
+        height: parseFloat(el.style.height) || box.height,
+        rotate: Number.isFinite(rotateFromDataset) ? rotateFromDataset : box.rotate,
+      },
+      el,
+      fallback
+    );
   };
 
   HotspotMapper.prototype.getCurrentLayout = function () {
@@ -496,6 +586,17 @@
       };
       if (box.rotate) {
         normalized[id].rotate = Number(box.rotate.toFixed(2));
+      }
+      if (spec.image) {
+        const image = normalizeImageSpec(spec.image);
+        normalized[id].image = {
+          scale: Number(image.scale.toFixed(3)),
+          x: Number(image.x.toFixed(2)),
+          y: Number(image.y.toFixed(2)),
+          rotateX: Number(image.rotateX.toFixed(2)),
+          rotateY: Number(image.rotateY.toFixed(2)),
+          rotateZ: Number(image.rotateZ.toFixed(2)),
+        };
       }
     });
 
@@ -632,9 +733,10 @@
     editor.className = "hotspot-editor";
     editor.innerHTML =
       '<strong>Hotspot editor</strong>' +
-      '<span>Box · circle · polygon. Add buttons in-editor, then copy JSON + HTML.</span>' +
+      '<span>Box · circle · polygon · overlay image pan/scale. Copy JSON + HTML to deploy.</span>' +
       '<button type="button" data-action="add-hotspot">Add hotspot</button>' +
       '<button type="button" data-action="delete-hotspot">Delete</button>' +
+      '<button type="button" data-action="reset-image">Reset image</button>' +
       '<button type="button" data-action="add-point">Add point</button>' +
       '<button type="button" data-action="delete-point">Delete point</button>' +
       '<button type="button" data-action="to-circle">To circle</button>' +
@@ -753,13 +855,139 @@
       return (
         target.classList.contains("hotspot-resize") ||
         target.classList.contains("hotspot-rotate") ||
+        target.classList.contains("hotspot-img-scale") ||
         target.classList.contains("hotspot-point")
       );
+    }
+
+    function isOverlayElement(el) {
+      return el && el.querySelector("img");
+    }
+
+    function bindOverlayImageEditor(el) {
+      const img = el.querySelector("img");
+      if (!img || el.dataset.overlayEditorBound === "1") return;
+      el.dataset.overlayEditorBound = "1";
+
+      const scaleHandle = document.createElement("span");
+      scaleHandle.className = "hotspot-img-scale";
+      scaleHandle.setAttribute("aria-hidden", "true");
+      el.appendChild(scaleHandle);
+
+      let imgDragState = null;
+      let imgScaleState = null;
+
+      function currentImageSpec() {
+        return (
+          readOverlayImageFromElement(el, self.layout.hotspots[el.id] && self.layout.hotspots[el.id].image) ||
+          normalizeImageSpec(self.layout.hotspots[el.id] && self.layout.hotspots[el.id].image)
+        );
+      }
+
+      function commitImageSpec(spec) {
+        applyOverlayImage(el, spec);
+        self.persistDraft();
+        updateOutput();
+      }
+
+      img.addEventListener("pointerdown", function (event) {
+        if (!el.classList.contains("is-selected")) return;
+        if (event.target === scaleHandle) return;
+        event.preventDefault();
+        event.stopPropagation();
+        imgDragState = {
+          startX: event.clientX,
+          startY: event.clientY,
+          startSpec: currentImageSpec(),
+        };
+        img.setPointerCapture(event.pointerId);
+      });
+
+      img.addEventListener("pointermove", function (event) {
+        if (!imgDragState) return;
+        const rect = el.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+        const dx = ((event.clientX - imgDragState.startX) / rect.width) * 100;
+        const dy = ((event.clientY - imgDragState.startY) / rect.height) * 100;
+        commitImageSpec(
+          normalizeImageSpec({
+            scale: imgDragState.startSpec.scale,
+            x: imgDragState.startSpec.x + dx,
+            y: imgDragState.startSpec.y + dy,
+            rotateX: imgDragState.startSpec.rotateX,
+            rotateY: imgDragState.startSpec.rotateY,
+            rotateZ: imgDragState.startSpec.rotateZ,
+          })
+        );
+      });
+
+      img.addEventListener("pointerup", function () {
+        imgDragState = null;
+      });
+
+      img.addEventListener(
+        "wheel",
+        function (event) {
+          if (!el.classList.contains("is-selected")) return;
+          event.preventDefault();
+          event.stopPropagation();
+          const current = currentImageSpec();
+          const delta = event.deltaY > 0 ? -0.05 : 0.05;
+          commitImageSpec(
+            normalizeImageSpec({
+              scale: current.scale + delta,
+              x: current.x,
+              y: current.y,
+              rotateX: current.rotateX,
+              rotateY: current.rotateY,
+              rotateZ: current.rotateZ,
+            })
+          );
+        },
+        { passive: false }
+      );
+
+      scaleHandle.addEventListener("pointerdown", function (event) {
+        if (!el.classList.contains("is-selected")) return;
+        event.preventDefault();
+        event.stopPropagation();
+        imgScaleState = {
+          startX: event.clientX,
+          startY: event.clientY,
+          startSpec: currentImageSpec(),
+        };
+        scaleHandle.setPointerCapture(event.pointerId);
+      });
+
+      scaleHandle.addEventListener("pointermove", function (event) {
+        if (!imgScaleState) return;
+        const dx = event.clientX - imgScaleState.startX;
+        const dy = event.clientY - imgScaleState.startY;
+        const delta = (dx - dy) / 180;
+        commitImageSpec(
+          normalizeImageSpec({
+            scale: imgScaleState.startSpec.scale + delta,
+            x: imgScaleState.startSpec.x,
+            y: imgScaleState.startSpec.y,
+            rotateX: imgScaleState.startSpec.rotateX,
+            rotateY: imgScaleState.startSpec.rotateY,
+            rotateZ: imgScaleState.startSpec.rotateZ,
+          })
+        );
+      });
+
+      scaleHandle.addEventListener("pointerup", function () {
+        imgScaleState = null;
+      });
     }
 
     function bindHotspotEditor(el) {
       if (el.dataset.hotspotEditorBound === "1") return;
       el.dataset.hotspotEditorBound = "1";
+
+      if (isOverlayElement(el)) {
+        bindOverlayImageEditor(el);
+      }
 
       const resizeHandle = document.createElement("span");
       resizeHandle.className = "hotspot-resize";
@@ -1002,6 +1230,18 @@
           self.toHtmlSnippet(id) +
           "\n\n" +
           self.toJson(self.getCurrentLayout());
+        return;
+      }
+
+      if (action.dataset.action === "reset-image") {
+        if (!selectedEl || !isOverlayElement(selectedEl)) return;
+        const bakedImage =
+          baked[selectedEl.id] && baked[selectedEl.id].image
+            ? normalizeImageSpec(baked[selectedEl.id].image)
+            : normalizeImageSpec();
+        applyOverlayImage(selectedEl, bakedImage);
+        self.persistDraft();
+        updateOutput();
         return;
       }
 

@@ -119,6 +119,34 @@ body.hotspot-edit .hotspot[data-hotspot-mode="circle"] .hotspot-rotate {
   display: none;
 }
 
+body.hotspot-edit .hotspot-img-scale {
+  display: none;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #7eb8d4;
+  border-radius: 2px;
+  background: rgba(126, 184, 212, 0.9);
+  cursor: nwse-resize;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+body.hotspot-edit .hotspot.is-selected .hotspot-img-scale {
+  display: block;
+}
+
+body.hotspot-edit .hotspot.is-selected img {
+  pointer-events: auto;
+  cursor: grab;
+}
+
+body.hotspot-edit .hotspot.is-selected img:active {
+  cursor: grabbing;
+}
+
 .hotspot-point-layer {
   position: absolute;
   inset: 0;

@@ -333,10 +333,20 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center center;
-  opacity: 1;
-  transform: perspective(520px) rotateY(-7deg) rotateX(5deg);
+  object-position: var(--overlay-x, 50%) var(--overlay-y, 50%);
+  --overlay-scale: 1;
+  --overlay-x: 50%;
+  --overlay-y: 50%;
+  --overlay-rx: 5deg;
+  --overlay-ry: -7deg;
+  --overlay-rz: 0deg;
+  transform: perspective(520px)
+    rotateX(var(--overlay-rx))
+    rotateY(var(--overlay-ry))
+    rotateZ(var(--overlay-rz))
+    scale(var(--overlay-scale));
   transform-origin: center center;
+  opacity: 1;
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -349,20 +359,35 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
 @keyframes dev-mode-img-in {
   from {
     opacity: 0;
-    transform: perspective(520px) rotateY(-7deg) rotateX(5deg) scale(0.96);
+    transform: perspective(520px)
+      rotateX(var(--overlay-rx))
+      rotateY(var(--overlay-ry))
+      rotateZ(var(--overlay-rz))
+      scale(calc(var(--overlay-scale) * 0.96));
   }
   to {
     opacity: 1;
-    transform: perspective(520px) rotateY(-7deg) rotateX(5deg) scale(1);
+    transform: perspective(520px)
+      rotateX(var(--overlay-rx))
+      rotateY(var(--overlay-ry))
+      rotateZ(var(--overlay-rz))
+      scale(var(--overlay-scale));
   }
 }
 
 body.hotspot-edit .landing-overlay--developer-mode,
 body.hotspot-debug .landing-overlay--developer-mode {
-  opacity: 0.45 !important;
+  opacity: 0.35 !important;
   visibility: visible !important;
   pointer-events: auto;
-  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.hotspot-edit .landing-overlay--developer-mode.is-selected,
+body.hotspot-debug .landing-overlay--developer-mode.is-selected {
+  opacity: 1 !important;
+  z-index: 10;
 }
 
 .landing-hotspot--litprintz-cover:hover {

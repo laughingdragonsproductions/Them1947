@@ -59,6 +59,7 @@ Reusable image-overlay hotspot system for aligning invisible click targets on da
    - **Box mode:** drag to move; corner handle resize; top handle rotate (Shift = 15° snap).
    - **Circle mode:** click **To circle**; drag to move center; corner handle changes radius.
    - **Polygon mode:** click **To polygon**, then **Add point** and click the art to place vertices. Drag gold dots to refine. **Delete point** or Delete/Backspace removes a selected vertex (minimum 3).
+   - **Overlay image** (elements with an `<img>` child, e.g. `developer-mode-banner`): select the overlay, then **drag the image** to pan, use the **cyan corner handle** or **scroll wheel** to scale, **gold corner** to resize the viewport window, **top handle** to rotate the window. Values save in JSON under `"image": { scale, x, y, rotateX, rotateY, rotateZ }`. **Reset image** restores baked image settings.
    - **Add hotspot:** creates a new button in the overlay (prompts for id + label). Wire behavior in page JS, then **Copy JSON** + **Copy HTML**.
    - **Delete:** removes the selected hotspot from the editor session.
    - **Copy JSON** → paste into your layout file and commit.
