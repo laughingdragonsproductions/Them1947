@@ -168,14 +168,14 @@ function renderFeaturedRelease() {
   return renderFeaturedReleaseCard({
     href: item.href,
     poster,
-    posterWidth: 394,
-    posterHeight: 590,
+    posterWidth: 1200,
+    posterHeight: 675,
     eyebrow,
     caseLabel,
     title: displayName,
     tagline,
     secondaryLink,
-    modifier: "primary",
+    modifier: "arrival",
   });
 }
 
@@ -205,9 +205,8 @@ function renderFeaturedCoozieRelease() {
 
 function renderFeaturedReleases() {
   const primary = renderFeaturedRelease();
-  const coozie = renderFeaturedCoozieRelease();
-  if (!primary && !coozie) return "";
-  return `<div class="vault-featured-releases reveal">${primary}${coozie}</div>`;
+  if (!primary) return "";
+  return `<div class="vault-featured-releases vault-featured-releases--arrival reveal">${primary}</div>`;
 }
 
 function renderFilesHub() {
@@ -267,12 +266,14 @@ function renderCategoryPage({ vault, title, lede, extra = "" }) {
   const items = getCatalogItems(vault);
   const back = `<p class="print-back"><a href="/files/">&larr; Vault</a></p>`;
   const countLabel = `${items.length} listing${items.length === 1 ? "" : "s"}`;
+  const featured = vault === "classified" ? renderFeaturedReleases() : "";
   return `${back}
     <header class="page-header reveal">
       <p class="pillar-eyebrow">THEM 1947</p>
       <h1>${title}</h1>
       <p>${lede} ${countLabel}.</p>
     </header>
+    ${featured}
     ${renderCommercialMembershipCta()}
     ${renderCatalogGrid(vault)}
     ${extra}`;

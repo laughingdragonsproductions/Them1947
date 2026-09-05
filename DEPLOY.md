@@ -153,7 +153,7 @@ Push to `main`, then confirm the live site updated (see **Quick deploy** above i
 
 ### MakerWorld catalog automation
 
-GitHub Actions refresh MakerWorld data on a schedule (pattern copied from Chittinn Chattin RSS — ChC repo is never modified):
+GitHub Actions refresh MakerWorld data on a schedule (pattern copied from Chittinn Chattin RSS - ChC repo is never modified):
 
 | Workflow file | Schedule | Command |
 |---------------|----------|---------|
@@ -173,7 +173,7 @@ npm run catalog:pull           # full pull
 
 **Manual run on GitHub:** Actions → pick workflow → **Run workflow**
 
-Estimated Actions usage: ~20–25 min/month (well within GitHub Free tier for private repos; unlimited on public repos).
+Estimated Actions usage: ~20-25 min/month (well within GitHub Free tier for private repos; unlimited on public repos).
 
 ## Troubleshooting
 

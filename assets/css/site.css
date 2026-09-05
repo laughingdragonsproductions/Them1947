@@ -220,6 +220,10 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.vault-featured-releases--arrival {
+  grid-template-columns: 1fr;
+}
+
 .vault-featured-release {
   margin: 0;
   border: 1px solid rgba(180, 255, 60, 0.35);
@@ -238,6 +242,36 @@ a:hover {
 .vault-featured-release--coozie .vault-featured-release-eyebrow {
   color: #7eb8d4;
   border-color: rgba(126, 184, 212, 0.55);
+}
+
+.vault-featured-release--arrival {
+  border-color: rgba(180, 255, 60, 0.55);
+  box-shadow: 0 0 32px rgba(180, 255, 60, 0.14);
+}
+
+.vault-featured-release--arrival .vault-featured-release-link {
+  padding: 0;
+}
+
+.vault-featured-release--arrival .vault-featured-release-media {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+.vault-featured-release--arrival .vault-featured-release-img {
+  width: 100%;
+  min-height: 360px;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.vault-featured-release--arrival .vault-featured-release-badge {
+  top: 1.25rem;
+  left: 1.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
 }
 
 .vault-featured-release-link {

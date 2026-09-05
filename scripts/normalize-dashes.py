@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {".git", ".worker-dist", "node_modules", ".github", ".cursor", ".wrangler"}
 SKIP_FILES = {"_mw_detail_sample.json"}
 EXTENSIONS = {".html", ".js", ".css", ".md", ".py", ".json", ".jsonc"}
-TRANSLATION = str.maketrans({"-": "-", "-": "-"})
+TRANSLATION = str.maketrans({"\u2013": "-", "\u2014": "-", "\u2212": "-"})
 
 
 def should_process(path: Path) -> bool:

@@ -27,11 +27,11 @@ Open `http://localhost:8080/` then `http://localhost:8080/files/`
 ## Catalog (MakerWorld pull)
 
 ```powershell
-# Full pull — new listings, images, case pages, sitemap
+# Full pull - new listings, images, case pages, sitemap
 npm run catalog:pull
 # or: python scripts/pull-makerworld-catalog.py
 
-# Stats only — likes, boosts, downloads, prints (fast)
+# Stats only - likes, boosts, downloads, prints (fast)
 npm run catalog:stats
 # or: python scripts/pull-makerworld-catalog.py --stats-only
 ```
@@ -43,7 +43,7 @@ Generates [`assets/js/catalog-data.js`](assets/js/catalog-data.js), downloads th
 
 ### Catalog automation (GitHub Actions)
 
-Two workflows mirror the Chittinn Chattin RSS refresh pattern (copy-only from that repo — ChC files are never edited):
+Two workflows mirror the Chittinn Chattin RSS refresh pattern (copy-only from that repo - ChC files are never edited):
 
 | Workflow | Schedule | What it updates |
 |----------|----------|-----------------|

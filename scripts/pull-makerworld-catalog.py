@@ -61,6 +61,9 @@ KEYWORDS = [
     "shotgon bucky",
     "One Hit Wonder",
     "3200946",
+    "Descender",
+    "spaceship",
+    "3259272",
 ]
 
 DECLASSIFIED_IDS = {
@@ -74,6 +77,7 @@ DECLASSIFIED_IDS = {
 
 FEATURED_CLASSIFIED_IDS = {
     3200946,
+    3259272,
 }
 
 DISPLAY_TITLE_OVERRIDES = {
@@ -318,7 +322,7 @@ def normalize_markdown(text: str) -> str:
 
 
 def normalize_dashes(text: str) -> str:
-    return text.translate(str.maketrans({"—": "-", "–": "-"}))
+    return text.translate(str.maketrans({"-": "-", "-": "-"}))
 
 
 def polish_public_text(text: str) -> str:

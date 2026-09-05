@@ -25,12 +25,12 @@ window.SITE_CONFIG = {
   },
   /** Vault hub spotlight - full-width release banner on /files/ */
   featuredRelease: {
-    makerWorldId: 3200946,
-    pathSlug: "one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+    makerWorldId: 3259272,
+    pathSlug: "the-descender-them-1947-alien-greys-spaceship",
     poster:
-      "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/featured-release.png",
-    eyebrow: "New release",
-    tagline: "THEM 1947 × LitPrintz - THE ONE HIT WONDER has landed.",
+      "/assets/catalog/classified/the-descender-them-1947-alien-greys-spaceship/featured-release.png",
+    eyebrow: "New arrival",
+    tagline: "THE DESCENDER has entered the vault - THEM 1947 Alien Greys spaceship.",
   },
   /** Fully redacted Lit Printz coozie case file (purchase link only). */
   featuredCoozie: {
