@@ -278,6 +278,17 @@ body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hot
   opacity: 0;
 }
 
+body.landing-dev-mode-off:not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed:hover,
+body.landing-dev-mode-off:not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed:focus-visible,
+body.landing-dev-mode-off:not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:hover,
+body.landing-dev-mode-off:not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  opacity: 0;
+}
+
 body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
   cursor: pointer;
 }
@@ -299,10 +310,6 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
 }
 
 .landing-overlay--developer-mode {
-  left: 3.54%;
-  top: 57.85%;
-  width: 14.35%;
-  height: 10.84%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

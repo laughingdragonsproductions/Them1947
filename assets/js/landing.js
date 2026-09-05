@@ -28,6 +28,7 @@
     window.SITE_CONFIG?.videos?.litFlightRedirectBeforeEndSec ?? 1.5;
 
   const landingDevMode = window.SITE_CONFIG?.landingDevMode || {};
+  const devModeEnabled = landingDevMode.enabled === true;
   const intelFeedLocked = landingDevMode.intelFeedLocked !== false;
   const DEV_MODE_CLICKS = Math.max(1, Number(landingDevMode.logsClicksRequired) || 5);
   const DEV_MODE_BANNER_MS = 3000;
@@ -276,7 +277,11 @@
   }
 
   function wirePlaceholderButtons() {
-    ["recovery-btn", "analysis-btn", "view-all-logs-btn"].forEach(function (id) {
+    const placeholders = ["recovery-btn", "analysis-btn", "view-all-logs-btn"];
+    if (!devModeEnabled) {
+      placeholders.push("intel-feed-btn", "logs");
+    }
+    placeholders.forEach(function (id) {
       const btn = document.getElementById(id);
       if (!btn) return;
       btn.addEventListener("click", function (event) {
@@ -336,14 +341,20 @@
       footer.classList.add("is-visible");
     }
 
+    if (!devModeEnabled) {
+      document.body.classList.add("landing-dev-mode-off");
+    }
+
     if (!isEditMode) {
       wireClickHandlers();
-      wireLogsUnlock();
-      wireIntelFeed();
       wirePlaceholderButtons();
-      if (!intelFeedLocked) {
-        sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
-        enableIntelFeed();
+      if (devModeEnabled) {
+        wireLogsUnlock();
+        wireIntelFeed();
+        if (!intelFeedLocked) {
+          sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
+          enableIntelFeed();
+        }
       }
     }
   }

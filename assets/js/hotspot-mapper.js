@@ -107,6 +107,70 @@
     return next;
   }
 
+  function parsePercentStyle(value) {
+    if (value === undefined || value === null || value === "") return null;
+    const parsed = parseFloat(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+
+  function readBoxFromElement(el, stage, fallback) {
+    const box = normalizeBox(fallback);
+    const inlineLeft = parsePercentStyle(el.style.left);
+    const inlineTop = parsePercentStyle(el.style.top);
+    const inlineWidth = parsePercentStyle(el.style.width);
+    const inlineHeight = parsePercentStyle(el.style.height);
+
+    if (
+      inlineLeft !== null &&
+      inlineTop !== null &&
+      inlineWidth !== null &&
+      inlineHeight !== null
+    ) {
+      const rotateFromDataset =
+        el.dataset.hotspotRotate !== undefined
+          ? parseFloat(el.dataset.hotspotRotate)
+          : box.rotate;
+      return {
+        left: inlineLeft,
+        top: inlineTop,
+        width: inlineWidth,
+        height: inlineHeight,
+        rotate: Number.isFinite(rotateFromDataset) ? rotateFromDataset : box.rotate,
+      };
+    }
+
+    if (stage) {
+      const stageRect = stage.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+      if (stageRect.width > 0 && stageRect.height > 0) {
+        const rotateFromDataset =
+          el.dataset.hotspotRotate !== undefined
+            ? parseFloat(el.dataset.hotspotRotate)
+            : box.rotate;
+        return {
+          left: ((elRect.left - stageRect.left) / stageRect.width) * 100,
+          top: ((elRect.top - stageRect.top) / stageRect.height) * 100,
+          width: (elRect.width / stageRect.width) * 100,
+          height: (elRect.height / stageRect.height) * 100,
+          rotate: Number.isFinite(rotateFromDataset) ? rotateFromDataset : box.rotate,
+        };
+      }
+    }
+
+    return box;
+  }
+
+  function withOverlayImage(el, spec, fallback) {
+    if (!el || !el.querySelector("img")) return spec;
+    const image =
+      readOverlayImageFromElement(el, fallback && fallback.image) ||
+      (fallback && fallback.image ? normalizeImageSpec(fallback.image) : null);
+    if (!image) return spec;
+    const next = Object.assign({}, spec);
+    next.image = image;
+    return next;
+  }
+
   function rotatePoint(x, y, cx, cy, degrees) {
     const rad = (degrees * Math.PI) / 180;
     const dx = x - cx;
@@ -461,23 +525,8 @@
       );
     }
 
-    const box = normalizeBox(fallback);
-    const rotateFromDataset =
-      el.dataset.hotspotRotate !== undefined
-        ? parseFloat(el.dataset.hotspotRotate)
-        : box.rotate;
-
-    return attachImageSpec(
-      {
-        left: parseFloat(el.style.left) || box.left,
-        top: parseFloat(el.style.top) || box.top,
-        width: parseFloat(el.style.width) || box.width,
-        height: parseFloat(el.style.height) || box.height,
-        rotate: Number.isFinite(rotateFromDataset) ? rotateFromDataset : box.rotate,
-      },
-      el,
-      fallback
-    );
+    const box = readBoxFromElement(el, this.stage, fallback);
+    return attachImageSpec(box, el, fallback);
   };
 
   HotspotMapper.prototype.getCurrentLayout = function () {
@@ -624,11 +673,12 @@
       if (!raw) return null;
       const parsed = JSON.parse(raw);
       if (!parsed || typeof parsed !== "object") return null;
-      if (parsed["settings-btn"] && !parsed["view-all-logs-btn"]) {
-        parsed["view-all-logs-btn"] = parsed["settings-btn"];
-        delete parsed["settings-btn"];
+      const hotspots = parsed.hotspots && typeof parsed.hotspots === "object" ? parsed.hotspots : parsed;
+      if (hotspots["settings-btn"] && !hotspots["view-all-logs-btn"]) {
+        hotspots["view-all-logs-btn"] = hotspots["settings-btn"];
+        delete hotspots["settings-btn"];
       }
-      return parsed;
+      return hotspots;
     } catch (_error) {
       return null;
     }
@@ -1051,13 +1101,17 @@
         const start = normalizeBox(resizeState.startRect);
         applyHotspot(
           el,
-          clampBox({
-            left: start.left,
-            top: start.top,
-            width: start.width + dx,
-            height: start.height + dy,
-            rotate: start.rotate,
-          })
+          withOverlayImage(
+            el,
+            clampBox({
+              left: start.left,
+              top: start.top,
+              width: start.width + dx,
+              height: start.height + dy,
+              rotate: start.rotate,
+            }),
+            self.layout.hotspots[el.id]
+          )
         );
         updateOutput();
       });
@@ -1092,7 +1146,14 @@
         if (event.shiftKey) {
           rotate = Math.round(rotate / 15) * 15;
         }
-        applyHotspot(el, Object.assign({}, rotateState.startRect, { rotate: rotate }));
+        applyHotspot(
+          el,
+          withOverlayImage(
+            el,
+            Object.assign({}, rotateState.startRect, { rotate: rotate }),
+            self.layout.hotspots[el.id]
+          )
+        );
         updateOutput();
       });
 
@@ -1144,13 +1205,17 @@
         }
         applyHotspot(
           el,
-          clampBox({
-            left: dragState.startRect.left + dx,
-            top: dragState.startRect.top + dy,
-            width: dragState.startRect.width,
-            height: dragState.startRect.height,
-            rotate: dragState.startRect.rotate,
-          })
+          withOverlayImage(
+            el,
+            clampBox({
+              left: dragState.startRect.left + dx,
+              top: dragState.startRect.top + dy,
+              width: dragState.startRect.width,
+              height: dragState.startRect.height,
+              rotate: dragState.startRect.rotate,
+            }),
+            self.layout.hotspots[el.id]
+          )
         );
         updateOutput();
       });
@@ -1312,6 +1377,10 @@
 
       if (action.dataset.action === "to-circle") {
         if (!selectedEl) return;
+        if (isOverlayElement(selectedEl)) {
+          output.textContent = "Overlays stay as boxes — use the gold frame to move/resize.";
+          return;
+        }
         const current = self.readHotspot(selectedEl);
         if (isPolygonHotspot(current)) {
           applyHotspot(selectedEl, boxToCircle(pointsToBoundingBox(current.points)));
@@ -1329,6 +1398,10 @@
 
       if (action.dataset.action === "to-polygon") {
         if (!selectedEl) return;
+        if (isOverlayElement(selectedEl)) {
+          output.textContent = "Overlays stay as boxes — use the gold frame to move/resize.";
+          return;
+        }
         const current = self.readHotspot(selectedEl);
         if (isCircleHotspot(current)) {
           const circle = normalizeCircle(current);

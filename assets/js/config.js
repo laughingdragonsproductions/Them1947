@@ -71,6 +71,7 @@ window.SITE_CONFIG = {
   },
   /** Landing logs / intel feed easter egg (5 view-logs clicks unlocks TAG). */
   landingDevMode: {
+    enabled: false,
     intelFeedLocked: true,
     logsClicksRequired: 5,
   },
