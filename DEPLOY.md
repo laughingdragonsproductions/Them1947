@@ -14,8 +14,14 @@ Confirm Phase 2 is live: view source on `/` - you should see `dossier-stage`, `b
 2. Copy your **Account ID** from the Pages project overview
 3. GitHub repo → **Settings** → **Secrets and variables** → **Actions** → add:
    - `CLOUDFLARE_API_TOKEN`
-   - `CLOUDFLARE_ACCOUNT_ID`
-4. Push to `main` or run the **Deploy Cloudflare Pages** workflow manually (**Actions** tab)
+   - `CLOUDFLARE_ACCOUNT_ID` (`d3d0d817a23ee9ca53fc6bbbbf22cc0f`)
+
+   **Quick setup from this machine** (after creating a token with the [Edit Cloudflare Workers template](https://dash.cloudflare.com/profile/api-tokens?permissionGroupKeys=%5B%7B%22key%22%3A%22workers_scripts%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22workers_routes%22%2C%22type%22%3A%22edit%22%7D%5D&accountId=d3d0d817a23ee9ca53fc6bbbbf22cc0f&zoneId=all&name=GitHub%20Actions%20them1947%20deploy)):
+
+   ```powershell
+   .\scripts\set-github-deploy-secrets.ps1 -ApiToken "YOUR_TOKEN"
+   gh workflow run deploy-cloudflare-pages.yml
+   ```
 
 **Option B - deploy from this machine**
 
