@@ -260,14 +260,24 @@ body {
   pointer-events: auto;
 }
 
-body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:hover,
-body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:focus-visible {
+.landing-hotspot--intel-feed.is-unlocking {
+  border: 1px solid rgba(126, 184, 212, 0.75);
+  background: rgba(126, 184, 212, 0.24);
+  box-shadow:
+    0 0 20px rgba(126, 184, 212, 0.55),
+    inset 0 0 28px rgba(126, 184, 212, 0.25);
+  cursor: default;
+  pointer-events: none;
+}
+
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:not(.is-unlocking):hover,
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--intel-feed.is-locked:not(.is-unlocking):focus-visible {
   border-color: transparent;
   background: transparent;
   box-shadow: none;
 }
 
-body.dev-mode-unlocked .landing-hotspot--intel-feed:not(.is-locked) {
+body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
   cursor: pointer;
 }
 

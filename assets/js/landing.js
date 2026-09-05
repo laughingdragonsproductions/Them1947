@@ -25,8 +25,9 @@
   const litFlightRedirectBeforeEndSec =
     window.SITE_CONFIG?.videos?.litFlightRedirectBeforeEndSec ?? 1.5;
 
-  const DEV_MODE_CLICKS = 15;
+  const DEV_MODE_CLICKS = 5;
   const DEV_MODE_BANNER_MS = 3000;
+  const INTEL_FEED_GLOW_MS = 1000;
   const DEV_MODE_SESSION_KEY = "them1947-dev-mode-unlocked";
 
   const params = new URLSearchParams(window.location.search);
@@ -62,12 +63,42 @@
     return sessionStorage.getItem(DEV_MODE_SESSION_KEY) === "1";
   }
 
-  function enableIntelFeed() {
+  function promoteIntelFeedToLink(el) {
+    if (!el || el.tagName === "A") return el;
+
+    const link = document.createElement("a");
+    link.id = el.id;
+    link.className = el.className.replace(/\bis-locked\b|\bis-unlocking\b/g, "").trim();
+    if (!link.classList.contains("is-ready")) {
+      link.classList.add("is-ready");
+    }
+    link.href = intelFeedUrl;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.setAttribute("aria-label", "Intel feed");
+    el.replaceWith(link);
+    return link;
+  }
+
+  function enableIntelFeed({ withGlow = false } = {}) {
     const intelFeedBtn = document.getElementById("intel-feed-btn");
     if (!intelFeedBtn) return;
-    intelFeedBtn.classList.remove("is-locked");
-    intelFeedBtn.setAttribute("aria-label", "Intel feed");
+
     document.body.classList.add("dev-mode-unlocked");
+
+    if (withGlow) {
+      intelFeedBtn.classList.add("is-unlocking");
+      window.setTimeout(function () {
+        const current = document.getElementById("intel-feed-btn");
+        if (!current) return;
+        current.classList.remove("is-unlocking", "is-locked");
+        promoteIntelFeedToLink(current);
+      }, INTEL_FEED_GLOW_MS);
+      return;
+    }
+
+    intelFeedBtn.classList.remove("is-unlocking", "is-locked");
+    promoteIntelFeedToLink(intelFeedBtn);
   }
 
   function wireExternalLinks() {
@@ -201,7 +232,7 @@
     }
 
     sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
-    enableIntelFeed();
+    enableIntelFeed({ withGlow: true });
     showDeveloperModeBanner();
   }
 
@@ -211,12 +242,11 @@
 
     if (isDevModeUnlocked()) {
       enableIntelFeed();
+      return;
     }
 
     intelFeedBtn.addEventListener("click", function (event) {
       event.preventDefault();
-      if (!isDevModeUnlocked()) return;
-      window.open(intelFeedUrl, "_blank", "noopener");
     });
   }
 
