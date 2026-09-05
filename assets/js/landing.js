@@ -32,6 +32,7 @@
   const DEV_MODE_CLICKS = Math.max(1, Number(landingDevMode.logsClicksRequired) || 5);
   const DEV_MODE_BANNER_MS = 3000;
   const INTEL_FEED_GLOW_MS = 1000;
+  const INTEL_FEED_GLOW_DELAY_MS = 400;
   const DEV_MODE_SESSION_KEY = "them1947-dev-mode-unlocked";
 
   const params = new URLSearchParams(window.location.search);
@@ -73,7 +74,7 @@
 
     const link = document.createElement("a");
     link.id = el.id;
-    link.className = el.className.replace(/\bis-locked\b|\bis-unlocking\b/g, "").trim();
+    link.className = el.className.replace(/\bis-locked\b|\bis-hover-lit\b/g, "").trim();
     if (!link.classList.contains("is-ready")) {
       link.classList.add("is-ready");
     }
@@ -92,17 +93,17 @@
     document.body.classList.add("dev-mode-unlocked");
 
     if (withGlow) {
-      intelFeedBtn.classList.add("is-unlocking");
+      intelFeedBtn.classList.add("is-hover-lit");
       window.setTimeout(function () {
         const current = document.getElementById("intel-feed-btn");
         if (!current) return;
-        current.classList.remove("is-unlocking", "is-locked");
+        current.classList.remove("is-hover-lit", "is-locked");
         promoteIntelFeedToLink(current);
       }, INTEL_FEED_GLOW_MS);
       return;
     }
 
-    intelFeedBtn.classList.remove("is-unlocking", "is-locked");
+    intelFeedBtn.classList.remove("is-hover-lit", "is-locked");
     if (intelFeedBtn.tagName === "A") {
       intelFeedBtn.href = intelFeedUrl;
       intelFeedBtn.classList.add("is-ready");
@@ -220,13 +221,8 @@
     const banner = document.getElementById("developer-mode-banner");
     if (!banner) return;
 
-    document.body.classList.add("is-dev-mode-flash");
     banner.classList.add("is-active");
     banner.setAttribute("aria-hidden", "false");
-
-    window.setTimeout(function () {
-      document.body.classList.remove("is-dev-mode-flash");
-    }, 450);
 
     window.setTimeout(function () {
       banner.classList.remove("is-active");
@@ -238,7 +234,9 @@
     if (isDevModeUnlocked()) return;
     sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
     showDeveloperModeBanner();
-    enableIntelFeed({ withGlow: true });
+    window.setTimeout(function () {
+      enableIntelFeed({ withGlow: true });
+    }, INTEL_FEED_GLOW_DELAY_MS);
   }
 
   function onViewAllLogsClick(event) {
