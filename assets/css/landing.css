@@ -215,13 +215,6 @@ body {
   clip-path: polygon(36.72% 80.46%, 58.15% 80.68%, 58.46% 86.28%, 35.91% 86.06%);
 }
 
-.landing-hotspot--descender {
-  left: 8%;
-  top: 12%;
-  width: 14%;
-  height: 10%;
-}
-
 .landing-hotspot--observation {
   left: 0;
   top: 0;
@@ -316,7 +309,6 @@ body.hotspot-debug .landing-overlay--developer-mode {
 
 .landing-hotspot--reports:hover,
 .landing-hotspot--archive:hover,
-.landing-hotspot--descender:hover,
 .landing-hotspot--observation:hover,
 .landing-hotspot--recovery:hover,
 .landing-hotspot--analysis:hover,
@@ -340,7 +332,6 @@ body.hotspot-debug .landing-overlay--developer-mode {
 
 .landing-hotspot--reports:focus-visible,
 .landing-hotspot--archive:focus-visible,
-.landing-hotspot--descender:focus-visible,
 .landing-hotspot--observation:focus-visible,
 .landing-hotspot--recovery:focus-visible,
 .landing-hotspot--analysis:focus-visible,

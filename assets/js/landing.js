@@ -50,6 +50,13 @@
     document.documentElement.classList.add("is-mobile");
   }
 
+  function descenderCaseUrl() {
+    const slug = window.SITE_CONFIG?.featuredRelease?.pathSlug;
+    return slug
+      ? "/files/prints/" + slug + "/"
+      : "/files/prints/the-descender-them-1947-alien-greys-spaceship/";
+  }
+
   function wireExternalLinks() {
     if (commercialBtn) {
       commercialBtn.href = commercialUrl;
@@ -67,12 +74,9 @@
     if (intelFeedBtn) {
       intelFeedBtn.href = intelFeedUrl;
     }
-    const descenderBtn = document.getElementById("descender-btn");
-    if (descenderBtn) {
-      const slug = window.SITE_CONFIG?.featuredRelease?.pathSlug;
-      descenderBtn.href = slug
-        ? "/files/prints/" + slug + "/"
-        : "/files/prints/the-descender-them-1947-alien-greys-spaceship/";
+    const observationBtn = document.getElementById("observation-btn");
+    if (observationBtn) {
+      observationBtn.href = descenderCaseUrl();
     }
     const commercialLink = document.getElementById("landing-commercial-link");
     if (commercialLink) {
@@ -188,7 +192,7 @@
   }
 
   function wirePlaceholderButtons() {
-    ["observation-btn", "recovery-btn", "analysis-btn", "dashboard-btn"].forEach(function (id) {
+    ["recovery-btn", "analysis-btn", "dashboard-btn"].forEach(function (id) {
       const btn = document.getElementById(id);
       if (!btn) return;
       btn.addEventListener("click", function (event) {

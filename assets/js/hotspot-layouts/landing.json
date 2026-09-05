@@ -10,7 +10,6 @@
     "reports-btn": "landing-hotspot--reports",
     "archive-btn": "landing-hotspot--archive",
     "litprintz-site-btn": "landing-hotspot--litprintz",
-    "descender-btn": "landing-hotspot--descender",
     "observation-btn": "landing-hotspot--observation",
     "recovery-btn": "landing-hotspot--recovery",
     "analysis-btn": "landing-hotspot--analysis",
@@ -34,7 +33,6 @@
     "litprintz-site-btn": {
       "points": [[36.72, 80.46], [58.15, 80.68], [58.46, 86.28], [35.91, 86.06]]
     },
-    "descender-btn": { "left": 8, "top": 12, "width": 14, "height": 10 },
     "observation-btn": {
       "points": [[36.04, 58.29], [40.67, 58.07], [39.99, 64.43], [34.99, 64.76]]
     },
