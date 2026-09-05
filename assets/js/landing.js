@@ -27,7 +27,9 @@
   const litFlightRedirectBeforeEndSec =
     window.SITE_CONFIG?.videos?.litFlightRedirectBeforeEndSec ?? 1.5;
 
-  const DEV_MODE_CLICKS = 5;
+  const landingDevMode = window.SITE_CONFIG?.landingDevMode || {};
+  const intelFeedLocked = landingDevMode.intelFeedLocked !== false;
+  const DEV_MODE_CLICKS = Math.max(1, Number(landingDevMode.logsClicksRequired) || 1);
   const DEV_MODE_BANNER_MS = 3000;
   const INTEL_FEED_GLOW_MS = 1000;
   const DEV_MODE_SESSION_KEY = "them1947-dev-mode-unlocked";
@@ -62,6 +64,7 @@
   }
 
   function isDevModeUnlocked() {
+    if (!intelFeedLocked) return true;
     return sessionStorage.getItem(DEV_MODE_SESSION_KEY) === "1";
   }
 
@@ -100,6 +103,11 @@
     }
 
     intelFeedBtn.classList.remove("is-unlocking", "is-locked");
+    if (intelFeedBtn.tagName === "A") {
+      intelFeedBtn.href = intelFeedUrl;
+      intelFeedBtn.classList.add("is-ready");
+      return;
+    }
     promoteIntelFeedToLink(intelFeedBtn);
   }
 
@@ -337,6 +345,10 @@
       wireViewAllLogs();
       wireIntelFeed();
       wirePlaceholderButtons();
+      if (!intelFeedLocked) {
+        sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
+        enableIntelFeed();
+      }
     }
   }
 
