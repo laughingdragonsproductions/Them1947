@@ -330,6 +330,9 @@
         stageSelector: ".landing-stage",
         rootSelector: "#landing-ui",
         hotspotSelector: ".landing-hotspot",
+        hotspotClassPrefix: "landing-hotspot",
+        hotspotBaseClass: "hotspot landing-hotspot",
+        hotspotTag: "button",
         layout: layout,
         classMap: layout.classMap,
       });

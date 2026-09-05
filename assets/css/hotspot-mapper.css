@@ -114,7 +114,8 @@ body.hotspot-edit .hotspot-rotate:active {
 }
 
 body.hotspot-edit .hotspot[data-hotspot-mode="polygon"] .hotspot-resize,
-body.hotspot-edit .hotspot[data-hotspot-mode="polygon"] .hotspot-rotate {
+body.hotspot-edit .hotspot[data-hotspot-mode="polygon"] .hotspot-rotate,
+body.hotspot-edit .hotspot[data-hotspot-mode="circle"] .hotspot-rotate {
   display: none;
 }
 
@@ -170,7 +171,7 @@ body.hotspot-edit .landing-stage.is-add-point {
   align-items: center;
   justify-content: center;
   gap: 0.5rem 0.75rem;
-  max-width: min(96vw, 640px);
+  max-width: min(96vw, 920px);
   padding: 0.65rem 0.85rem;
   border: 1px solid rgba(126, 184, 212, 0.45);
   border-radius: 6px;

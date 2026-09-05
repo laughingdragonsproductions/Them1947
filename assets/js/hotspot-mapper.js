@@ -22,6 +22,71 @@
     return Array.isArray(spec && spec.points) && spec.points.length >= 3;
   }
 
+  function isCircleHotspot(spec) {
+    return (
+      spec &&
+      (spec.shape === "circle" ||
+        (Number.isFinite(Number(spec.cx)) &&
+          Number.isFinite(Number(spec.cy)) &&
+          Number.isFinite(Number(spec.r))))
+    );
+  }
+
+  function normalizeCircle(spec) {
+    return {
+      shape: "circle",
+      cx: clampPercent(Number(spec.cx) || 50),
+      cy: clampPercent(Number(spec.cy) || 50),
+      r: Math.max(1, Math.min(50, Number(spec.r) || 5)),
+    };
+  }
+
+  function boxToCircle(box) {
+    const rect = normalizeBox(box);
+    return normalizeCircle({
+      cx: rect.left + rect.width / 2,
+      cy: rect.top + rect.height / 2,
+      r: Math.min(rect.width, rect.height) / 2,
+    });
+  }
+
+  function circleToClipPath(circle) {
+    const next = normalizeCircle(circle);
+    return (
+      "circle(" +
+      next.r.toFixed(2) +
+      "% at " +
+      next.cx.toFixed(2) +
+      "% " +
+      next.cy.toFixed(2) +
+      "%)"
+    );
+  }
+
+  function readCircleFromElement(el, fallbackCircle) {
+    if (el.dataset.hotspotCircle) {
+      try {
+        const parsed = JSON.parse(el.dataset.hotspotCircle);
+        if (parsed && Number.isFinite(Number(parsed.r))) {
+          return normalizeCircle(parsed);
+        }
+      } catch (_error) {
+        /* use fallback */
+      }
+    }
+    if (isCircleHotspot(fallbackCircle)) {
+      return normalizeCircle(fallbackCircle);
+    }
+    return normalizeCircle({ cx: 50, cy: 50, r: 5 });
+  }
+
+  function slugFromHotspotId(id) {
+    return String(id || "hotspot")
+      .replace(/-btn$/, "")
+      .replace(/[^a-z0-9-]+/gi, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
   function normalizeBox(spec) {
     return {
       left: Number(spec.left) || 0,
@@ -109,6 +174,12 @@
         points: clonePoints(spec.points),
       };
     }
+    if (isCircleHotspot(spec)) {
+      return {
+        type: "circle",
+        circle: normalizeCircle(spec),
+      };
+    }
     return {
       type: "box",
       box: normalizeBox(spec || {}),
@@ -135,6 +206,7 @@
     delete el.dataset.hotspotRotate;
     delete el.dataset.hotspotMode;
     delete el.dataset.hotspotPoints;
+    delete el.dataset.hotspotCircle;
   }
 
   function applyBox(el, box) {
@@ -164,10 +236,30 @@
     el.dataset.hotspotPoints = JSON.stringify(nextPoints);
   }
 
+  function applyCircle(el, circle) {
+    const next = normalizeCircle(circle);
+    clearHotspotStyles(el);
+    el.style.left = "0";
+    el.style.top = "0";
+    el.style.width = "100%";
+    el.style.height = "100%";
+    el.style.clipPath = circleToClipPath(next);
+    el.dataset.hotspotMode = "circle";
+    el.dataset.hotspotCircle = JSON.stringify({
+      cx: Number(next.cx.toFixed(2)),
+      cy: Number(next.cy.toFixed(2)),
+      r: Number(next.r.toFixed(2)),
+    });
+  }
+
   function applyHotspot(el, spec) {
     const hotspot = normalizeHotspot(spec);
     if (hotspot.type === "polygon") {
       applyPolygon(el, hotspot.points);
+      return;
+    }
+    if (hotspot.type === "circle") {
+      applyCircle(el, hotspot.circle);
       return;
     }
     applyBox(el, hotspot.box);
@@ -178,13 +270,19 @@
       if (isPolygonHotspot(override)) {
         return { points: clonePoints(override.points) };
       }
-      if (isPolygonHotspot(base)) {
+      if (isCircleHotspot(override)) {
+        return normalizeCircle(override);
+      }
+      if (isPolygonHotspot(base) || isCircleHotspot(base)) {
         return normalizeBox(override);
       }
       return normalizeBox(Object.assign({}, base || {}, override));
     }
     if (isPolygonHotspot(base)) {
       return { points: clonePoints(base.points) };
+    }
+    if (isCircleHotspot(base)) {
+      return normalizeCircle(base);
     }
     return normalizeBox(base || {});
   }
@@ -226,6 +324,9 @@
     this.hotspotSelector = options.hotspotSelector || ".hotspot";
     this.layout = options.layout || { hotspots: {}, classMap: {} };
     this.classMap = options.classMap || this.layout.classMap || {};
+    this.hotspotClassPrefix = options.hotspotClassPrefix || "hotspot";
+    this.hotspotBaseClass = options.hotspotBaseClass || "hotspot";
+    this.hotspotTag = options.hotspotTag || "button";
     this.hotspotIds = Object.keys(this.layout.hotspots || {});
     this.storageKey = "them1947-hotspot-draft-" + this.pageId;
     this.legacyStorageKey = "them1947-hotspot-layout-v2";
@@ -246,11 +347,10 @@
   }
 
   HotspotMapper.prototype.getElements = function () {
-    return this.hotspotIds
-      .map(function (id) {
-        return document.getElementById(id);
-      })
-      .filter(Boolean);
+    if (!this.root) return [];
+    return Array.from(this.root.querySelectorAll(this.hotspotSelector)).filter(function (el) {
+      return el.id;
+    });
   };
 
   HotspotMapper.prototype.readHotspot = function (el) {
@@ -261,6 +361,10 @@
       height: 10,
       rotate: 0,
     };
+
+    if (el.dataset.hotspotMode === "circle" || isCircleHotspot(fallback)) {
+      return readCircleFromElement(el, isCircleHotspot(fallback) ? fallback : null);
+    }
 
     if (el.dataset.hotspotMode === "polygon" || isPolygonHotspot(fallback)) {
       return {
@@ -325,6 +429,16 @@
           );
         }
 
+        if (isCircleHotspot(spec)) {
+          return (
+            "." +
+            className +
+            " {\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  clip-path: " +
+            circleToClipPath(spec) +
+            ";\n}"
+          );
+        }
+
         const box = normalizeBox(spec);
         let block =
           "." +
@@ -360,6 +474,16 @@
           points: clonePoints(spec.points).map(function (point) {
             return [Number(point[0].toFixed(2)), Number(point[1].toFixed(2))];
           }),
+        };
+        return;
+      }
+      if (isCircleHotspot(spec)) {
+        const circle = normalizeCircle(spec);
+        normalized[id] = {
+          shape: "circle",
+          cx: Number(circle.cx.toFixed(2)),
+          cy: Number(circle.cy.toFixed(2)),
+          r: Number(circle.r.toFixed(2)),
         };
         return;
       }
@@ -422,6 +546,55 @@
     this.saveDraft(this.getCurrentLayout());
   };
 
+  HotspotMapper.prototype.createHotspotElement = function (id, label, spec) {
+    const slug = slugFromHotspotId(id);
+    const modifier = this.hotspotClassPrefix + "--" + slug;
+    this.classMap[id] = modifier;
+    this.layout.hotspots[id] = spec;
+    if (this.hotspotIds.indexOf(id) === -1) {
+      this.hotspotIds.push(id);
+    }
+
+    const el = document.createElement(this.hotspotTag);
+    el.id = id;
+    if (this.hotspotTag === "button") {
+      el.type = "button";
+    }
+    el.className = this.hotspotBaseClass + " " + modifier;
+    el.setAttribute("aria-label", label);
+    this.root.appendChild(el);
+    applyHotspot(el, spec);
+    return el;
+  };
+
+  HotspotMapper.prototype.toHtmlSnippet = function (id) {
+    const el = document.getElementById(id);
+    if (!el) return "";
+    const label = el.getAttribute("aria-label") || id;
+    const classes = el.className;
+    const tag = el.tagName.toLowerCase();
+    if (tag === "a") {
+      return (
+        '<a id="' +
+        id +
+        '" class="' +
+        classes +
+        '" href="#" aria-label="' +
+        label +
+        '"></a>'
+      );
+    }
+    return (
+      '<button id="' +
+      id +
+      '" class="' +
+      classes +
+      '" type="button" aria-label="' +
+      label +
+      '"></button>'
+    );
+  };
+
   HotspotMapper.prototype.initEditor = function () {
     if (!this.isEditMode || !this.stage || !this.root) return;
 
@@ -444,14 +617,18 @@
     editor.className = "hotspot-editor";
     editor.innerHTML =
       '<strong>Hotspot editor</strong>' +
-      '<span>Box: drag · resize · rotate. Polygon: add points, drag vertices.</span>' +
+      '<span>Box · circle · polygon. Add buttons in-editor, then copy JSON + HTML.</span>' +
+      '<button type="button" data-action="add-hotspot">Add hotspot</button>' +
+      '<button type="button" data-action="delete-hotspot">Delete</button>' +
       '<button type="button" data-action="add-point">Add point</button>' +
       '<button type="button" data-action="delete-point">Delete point</button>' +
+      '<button type="button" data-action="to-circle">To circle</button>' +
       '<button type="button" data-action="to-polygon">To polygon</button>' +
       '<button type="button" data-action="to-box">To box</button>' +
       '<button type="button" data-action="save-draft">Save draft</button>' +
       '<button type="button" data-action="copy-json">Copy JSON</button>' +
       '<button type="button" data-action="copy-css">Copy CSS</button>' +
+      '<button type="button" data-action="copy-html">Copy HTML</button>' +
       '<button type="button" data-action="reset">Reset</button>' +
       '<button type="button" data-action="exit">Exit</button>' +
       '<pre class="hotspot-editor-output" aria-live="polite"></pre>';
@@ -465,6 +642,14 @@
 
     function isPolygonElement(el) {
       return el && el.dataset.hotspotMode === "polygon";
+    }
+
+    function isCircleElement(el) {
+      return el && el.dataset.hotspotMode === "circle";
+    }
+
+    function isStageShapeElement(el) {
+      return isPolygonElement(el) || isCircleElement(el);
     }
 
     function clearPointSelection() {
@@ -557,7 +742,10 @@
       );
     }
 
-    this.getElements().forEach(function (el) {
+    function bindHotspotEditor(el) {
+      if (el.dataset.hotspotEditorBound === "1") return;
+      el.dataset.hotspotEditorBound = "1";
+
       const resizeHandle = document.createElement("span");
       resizeHandle.className = "hotspot-resize";
       resizeHandle.setAttribute("aria-hidden", "true");
@@ -579,17 +767,41 @@
         event.preventDefault();
         event.stopPropagation();
         selectHotspot(el);
-        resizeState = {
-          el: el,
-          startX: event.clientX,
-          startY: event.clientY,
-          startRect: self.readHotspot(el),
-        };
+        if (isCircleElement(el)) {
+          resizeState = {
+            el: el,
+            mode: "circle",
+            startCircle: normalizeCircle(self.readHotspot(el)),
+          };
+        } else {
+          resizeState = {
+            el: el,
+            mode: "box",
+            startX: event.clientX,
+            startY: event.clientY,
+            startRect: self.readHotspot(el),
+          };
+        }
         resizeHandle.setPointerCapture(event.pointerId);
       });
 
       resizeHandle.addEventListener("pointermove", function (event) {
-        if (!resizeState || resizeState.el !== el || isPolygonElement(el)) return;
+        if (!resizeState || resizeState.el !== el) return;
+        if (resizeState.mode === "circle") {
+          const point = stagePointFromClient(self.stage, event.clientX, event.clientY);
+          const start = resizeState.startCircle;
+          const dx = point[0] - start.cx;
+          const dy = point[1] - start.cy;
+          applyHotspot(el, {
+            shape: "circle",
+            cx: start.cx,
+            cy: start.cy,
+            r: Math.max(1, Math.sqrt(dx * dx + dy * dy)),
+          });
+          updateOutput();
+          return;
+        }
+        if (isPolygonElement(el)) return;
         const bounds = self.stage.getBoundingClientRect();
         const dx = ((event.clientX - resizeState.startX) / bounds.width) * 100;
         const dy = ((event.clientY - resizeState.startY) / bounds.height) * 100;
@@ -615,7 +827,7 @@
       });
 
       rotateHandle.addEventListener("pointerdown", function (event) {
-        if (isPolygonElement(el)) return;
+        if (isStageShapeElement(el)) return;
         event.preventDefault();
         event.stopPropagation();
         selectHotspot(el);
@@ -629,7 +841,7 @@
       });
 
       rotateHandle.addEventListener("pointermove", function (event) {
-        if (!rotateState || rotateState.el !== el || isPolygonElement(el)) return;
+        if (!rotateState || rotateState.el !== el || isStageShapeElement(el)) return;
         const pointerAngle = getPointerAngle(el, event.clientX, event.clientY);
         let rotate =
           rotateState.startRect.rotate +
@@ -652,12 +864,23 @@
         if (isEditorHandle(event.target) || isPolygonElement(el)) return;
         event.preventDefault();
         selectHotspot(el);
-        dragState = {
-          el: el,
-          startX: event.clientX,
-          startY: event.clientY,
-          startRect: normalizeBox(self.readHotspot(el)),
-        };
+        if (isCircleElement(el)) {
+          dragState = {
+            el: el,
+            mode: "circle",
+            startX: event.clientX,
+            startY: event.clientY,
+            startCircle: normalizeCircle(self.readHotspot(el)),
+          };
+        } else {
+          dragState = {
+            el: el,
+            mode: "box",
+            startX: event.clientX,
+            startY: event.clientY,
+            startRect: normalizeBox(self.readHotspot(el)),
+          };
+        }
         el.setPointerCapture(event.pointerId);
       });
 
@@ -666,6 +889,16 @@
         const bounds = self.stage.getBoundingClientRect();
         const dx = ((event.clientX - dragState.startX) / bounds.width) * 100;
         const dy = ((event.clientY - dragState.startY) / bounds.height) * 100;
+        if (dragState.mode === "circle") {
+          applyHotspot(el, {
+            shape: "circle",
+            cx: dragState.startCircle.cx + dx,
+            cy: dragState.startCircle.cy + dy,
+            r: dragState.startCircle.r,
+          });
+          updateOutput();
+          return;
+        }
         applyHotspot(
           el,
           clampBox({
@@ -685,7 +918,9 @@
         }
         dragState = null;
       });
-    });
+    }
+
+    this.getElements().forEach(bindHotspotEditor);
 
     this.stage.addEventListener("click", function (event) {
       if (!addPointMode || !selectedEl) return;
@@ -725,10 +960,82 @@
       const action = event.target.closest("[data-action]");
       if (!action) return;
 
+      if (action.dataset.action === "add-hotspot") {
+        const id = global.prompt("Hotspot id (e.g. comms-btn):", "new-btn");
+        if (!id || !/^[a-z][a-z0-9-]*$/i.test(id)) {
+          output.textContent = "Hotspot id required (letters, numbers, hyphens).";
+          return;
+        }
+        if (document.getElementById(id)) {
+          output.textContent = "Id already exists: " + id;
+          return;
+        }
+        const label = global.prompt("Aria label:", id.replace(/-/g, " ")) || id;
+        const el = self.createHotspotElement(id, label, {
+          left: 42,
+          top: 42,
+          width: 10,
+          height: 10,
+        });
+        bindHotspotEditor(el);
+        selectHotspot(el);
+        self.persistDraft();
+        output.textContent =
+          "Added " +
+          id +
+          ". Wire click/href in page JS, then Copy JSON + Copy HTML.\n\n" +
+          self.toHtmlSnippet(id) +
+          "\n\n" +
+          self.toJson(self.getCurrentLayout());
+        return;
+      }
+
+      if (action.dataset.action === "delete-hotspot") {
+        if (!selectedEl) return;
+        if (!global.confirm("Delete hotspot " + selectedEl.id + "?")) return;
+        const removeId = selectedEl.id;
+        delete self.classMap[removeId];
+        delete self.layout.hotspots[removeId];
+        self.hotspotIds = self.hotspotIds.filter(function (hotspotId) {
+          return hotspotId !== removeId;
+        });
+        selectedEl.remove();
+        selectHotspot(null);
+        self.persistDraft();
+        updateOutput();
+        return;
+      }
+
       if (action.dataset.action === "add-point") {
         if (!selectedEl) return;
         if (!isPolygonElement(selectedEl)) {
-          applyHotspot(selectedEl, { points: boxToPoints(self.readHotspot(selectedEl)) });
+          const current = self.readHotspot(selectedEl);
+          if (isCircleHotspot(current)) {
+            const circle = normalizeCircle(current);
+            applyHotspot(
+              selectedEl,
+              clampBox({
+                left: circle.cx - circle.r,
+                top: circle.cy - circle.r,
+                width: circle.r * 2,
+                height: circle.r * 2,
+                rotate: 0,
+              })
+            );
+            applyHotspot(selectedEl, {
+              points: boxToPoints(
+                clampBox({
+                  left: circle.cx - circle.r,
+                  top: circle.cy - circle.r,
+                  width: circle.r * 2,
+                  height: circle.r * 2,
+                  rotate: 0,
+                })
+              ),
+            });
+          } else {
+            applyHotspot(selectedEl, { points: boxToPoints(current) });
+          }
           renderPointHandles(selectedEl);
         }
         setAddPointMode(!addPointMode);
@@ -748,9 +1055,42 @@
         return;
       }
 
+      if (action.dataset.action === "to-circle") {
+        if (!selectedEl) return;
+        const current = self.readHotspot(selectedEl);
+        if (isPolygonHotspot(current)) {
+          applyHotspot(selectedEl, boxToCircle(pointsToBoundingBox(current.points)));
+        } else if (isCircleHotspot(current)) {
+          applyHotspot(selectedEl, current);
+        } else {
+          applyHotspot(selectedEl, boxToCircle(current));
+        }
+        renderPointHandles(null);
+        self.persistDraft();
+        updateOutput();
+        setAddPointMode(false);
+        return;
+      }
+
       if (action.dataset.action === "to-polygon") {
         if (!selectedEl) return;
-        applyHotspot(selectedEl, { points: boxToPoints(self.readHotspot(selectedEl)) });
+        const current = self.readHotspot(selectedEl);
+        if (isCircleHotspot(current)) {
+          const circle = normalizeCircle(current);
+          applyHotspot(selectedEl, {
+            points: boxToPoints(
+              clampBox({
+                left: circle.cx - circle.r,
+                top: circle.cy - circle.r,
+                width: circle.r * 2,
+                height: circle.r * 2,
+                rotate: 0,
+              })
+            ),
+          });
+        } else {
+          applyHotspot(selectedEl, { points: boxToPoints(current) });
+        }
         renderPointHandles(selectedEl);
         self.persistDraft();
         updateOutput();
@@ -763,6 +1103,18 @@
         const current = self.readHotspot(selectedEl);
         if (isPolygonHotspot(current)) {
           applyHotspot(selectedEl, pointsToBoundingBox(current.points));
+        } else if (isCircleHotspot(current)) {
+          const circle = normalizeCircle(current);
+          applyHotspot(
+            selectedEl,
+            clampBox({
+              left: circle.cx - circle.r,
+              top: circle.cy - circle.r,
+              width: circle.r * 2,
+              height: circle.r * 2,
+              rotate: 0,
+            })
+          );
         }
         renderPointHandles(null);
         self.persistDraft();
@@ -787,7 +1139,7 @@
         const json = self.toJson(self.getCurrentLayout());
         navigator.clipboard.writeText(json).then(
           function () {
-            output.textContent = "JSON copied — commit to hotspot-layouts/.\n\n" + json;
+            output.textContent = "JSON copied - commit to hotspot-layouts/.\n\n" + json;
           },
           function () {
             output.textContent = json;
@@ -804,6 +1156,25 @@
           },
           function () {
             output.textContent = css;
+          }
+        );
+        return;
+      }
+
+      if (action.dataset.action === "copy-html") {
+        const snippets = self
+          .getElements()
+          .map(function (el) {
+            return self.toHtmlSnippet(el.id);
+          })
+          .filter(Boolean)
+          .join("\n");
+        navigator.clipboard.writeText(snippets).then(
+          function () {
+            output.textContent = "HTML copied - paste new lines into your page shell.\n\n" + snippets;
+          },
+          function () {
+            output.textContent = snippets;
           }
         );
         return;
