@@ -257,14 +257,16 @@ a:hover {
   display: block;
   width: 100%;
   max-width: none;
+  background: #050708;
 }
 
 .vault-featured-release--arrival .vault-featured-release-img {
   width: 100%;
-  min-height: 360px;
-  max-height: 520px;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .vault-featured-release--arrival .vault-featured-release-badge {
