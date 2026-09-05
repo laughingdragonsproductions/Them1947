@@ -265,6 +265,19 @@ body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hot
   border-color: transparent;
   background: transparent;
   box-shadow: none;
+  outline: none;
+  opacity: 0;
+}
+
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:hover,
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:focus-visible,
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--view-all-logs:hover,
+body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--view-all-logs:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  opacity: 0;
 }
 
 body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
@@ -288,11 +301,10 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
 }
 
 .landing-overlay--developer-mode {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(3.54% 60.81%, 14.23% 57.85%, 15.96% 66.19%, 5.03% 68.72%);
+  left: 3.54%;
+  top: 57.85%;
+  width: 12.42%;
+  height: 10.87%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -351,10 +363,8 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--recovery:hover,
 .landing-hotspot--analysis:hover,
 .landing-hotspot--dashboard:hover,
-.landing-hotspot--intel-feed:hover,
 .landing-hotspot--intel-feed.is-hover-lit,
-.landing-hotspot--view-all-logs:hover,
-.landing-hotspot--logs:hover {
+.landing-hotspot--intel-feed.is-ready:hover {
   border: 1px solid rgba(126, 184, 212, 0.75);
   background: rgba(126, 184, 212, 0.24);
   box-shadow:
@@ -376,9 +386,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--recovery:focus-visible,
 .landing-hotspot--analysis:focus-visible,
 .landing-hotspot--dashboard:focus-visible,
-.landing-hotspot--intel-feed:focus-visible,
-.landing-hotspot--view-all-logs:focus-visible,
-.landing-hotspot--logs:focus-visible {
+.landing-hotspot--intel-feed.is-ready:focus-visible {
   background: rgba(126, 184, 212, 0.2);
   box-shadow:
     0 0 18px rgba(126, 184, 212, 0.45),

@@ -239,7 +239,7 @@
     }, INTEL_FEED_GLOW_DELAY_MS);
   }
 
-  function onViewAllLogsClick(event) {
+  function onLogsClick(event) {
     event.preventDefault();
 
     if (isDevModeUnlocked()) {
@@ -255,12 +255,10 @@
     unlockDevMode();
   }
 
-  function wireViewAllLogs() {
-    ["view-all-logs-btn", "logs"].forEach(function (id) {
-      const btn = document.getElementById(id);
-      if (!btn) return;
-      btn.addEventListener("click", onViewAllLogsClick);
-    });
+  function wireLogsUnlock() {
+    const logsBtn = document.getElementById("logs");
+    if (!logsBtn) return;
+    logsBtn.addEventListener("click", onLogsClick);
   }
 
   function wireIntelFeed() {
@@ -278,7 +276,7 @@
   }
 
   function wirePlaceholderButtons() {
-    ["recovery-btn", "analysis-btn"].forEach(function (id) {
+    ["recovery-btn", "analysis-btn", "view-all-logs-btn"].forEach(function (id) {
       const btn = document.getElementById(id);
       if (!btn) return;
       btn.addEventListener("click", function (event) {
@@ -340,7 +338,7 @@
 
     if (!isEditMode) {
       wireClickHandlers();
-      wireViewAllLogs();
+      wireLogsUnlock();
       wireIntelFeed();
       wirePlaceholderButtons();
       if (!intelFeedLocked) {
