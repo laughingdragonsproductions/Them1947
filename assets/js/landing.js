@@ -67,6 +67,13 @@
     if (intelFeedBtn) {
       intelFeedBtn.href = intelFeedUrl;
     }
+    const descenderBtn = document.getElementById("descender-btn");
+    if (descenderBtn) {
+      const slug = window.SITE_CONFIG?.featuredRelease?.pathSlug;
+      descenderBtn.href = slug
+        ? "/files/prints/" + slug + "/"
+        : "/files/prints/the-descender-them-1947-alien-greys-spaceship/";
+    }
     const commercialLink = document.getElementById("landing-commercial-link");
     if (commercialLink) {
       commercialLink.href = commercialUrl;

@@ -146,7 +146,7 @@ body {
     inset 0 0 28px rgba(180, 255, 60, 0.12);
 }
 
-/* CSS fallbacks if JS fails — keep in sync with hotspot-layouts/landing.json */
+/* CSS fallbacks if JS fails - keep in sync with hotspot-layouts/landing.json */
 
 .landing-hotspot--litprintz-cover {
   left: 45.17%;
@@ -213,6 +213,13 @@ body {
   width: 100%;
   height: 100%;
   clip-path: polygon(36.72% 80.46%, 58.15% 80.68%, 58.46% 86.28%, 35.91% 86.06%);
+}
+
+.landing-hotspot--descender {
+  left: 8%;
+  top: 12%;
+  width: 14%;
+  height: 10%;
 }
 
 .landing-hotspot--observation {
@@ -309,6 +316,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 
 .landing-hotspot--reports:hover,
 .landing-hotspot--archive:hover,
+.landing-hotspot--descender:hover,
 .landing-hotspot--observation:hover,
 .landing-hotspot--recovery:hover,
 .landing-hotspot--analysis:hover,
@@ -332,6 +340,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 
 .landing-hotspot--reports:focus-visible,
 .landing-hotspot--archive:focus-visible,
+.landing-hotspot--descender:focus-visible,
 .landing-hotspot--observation:focus-visible,
 .landing-hotspot--recovery:focus-visible,
 .landing-hotspot--analysis:focus-visible,
