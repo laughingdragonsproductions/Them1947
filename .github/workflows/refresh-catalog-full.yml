@@ -1,0 +1,27 @@
+name: Refresh MakerWorld catalog (full pull)
+
+on:
+  schedule:
+    - cron: "0 12 1 1,3,5,7,9,11 *" # Bi-monthly (odd months) ~8am Eastern
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python scripts/pull-makerworld-catalog.py
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/catalog-data.js assets/catalog/ files/prints/ sitemap.xml
+          git diff --staged --quiet && echo "No catalog changes" && exit 0
+          git commit -m "chore: refresh MakerWorld catalog (full pull)"
+          git push
