@@ -269,8 +269,6 @@ body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hot
   opacity: 0;
 }
 
-body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:hover,
-body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--logs:focus-visible,
 body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--view-all-logs:hover,
 body:not(.dev-mode-unlocked):not(.hotspot-edit):not(.hotspot-debug) .landing-hotspot--view-all-logs:focus-visible {
   border-color: transparent;
@@ -363,6 +361,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--recovery:hover,
 .landing-hotspot--analysis:hover,
 .landing-hotspot--dashboard:hover,
+.landing-hotspot--logs:hover,
 .landing-hotspot--intel-feed.is-hover-lit,
 .landing-hotspot--intel-feed.is-ready:hover {
   border: 1px solid rgba(126, 184, 212, 0.75);
@@ -386,6 +385,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--recovery:focus-visible,
 .landing-hotspot--analysis:focus-visible,
 .landing-hotspot--dashboard:focus-visible,
+.landing-hotspot--logs:focus-visible,
 .landing-hotspot--intel-feed.is-ready:focus-visible {
   background: rgba(126, 184, 212, 0.2);
   box-shadow:
