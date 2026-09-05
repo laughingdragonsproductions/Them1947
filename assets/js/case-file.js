@@ -232,17 +232,17 @@ function renderCommercialMembershipLink() {
   return `<a class="case-commercial-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener">Join Commercial Membership</a>`;
 }
 
-function isFeaturedCollabRelease(item) {
-  const featured = window.SITE_CONFIG?.featuredRelease;
-  if (!featured || !item) return false;
+function isLitPrintzCollabRelease(item) {
+  const collab = window.SITE_CONFIG?.litPrintzCollabRelease;
+  if (!collab || !item) return false;
   return (
-    item.makerWorldId === featured.makerWorldId ||
-    item.pathSlug === featured.pathSlug
+    item.makerWorldId === collab.makerWorldId ||
+    item.pathSlug === collab.pathSlug
   );
 }
 
 function renderLitPrintzCoozieLink(item) {
-  if (!isFeaturedCollabRelease(item)) return "";
+  if (!isLitPrintzCollabRelease(item)) return "";
   const url = window.SITE_CONFIG?.links?.litPrintzCoozie;
   if (!url) return "";
   return `<a class="case-litprintz-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener">Custom Alien Can Coozie on Lit Printz</a>`;
@@ -350,7 +350,7 @@ function renderAttachments(item, detail) {
     ? detail.attachments.slice()
     : [{ name: "Live listing dossier", label: "MakerWorld", sizeBytes: 0, url: item.makerWorldUrl }];
 
-  if (isFeaturedCollabRelease(item)) {
+  if (isLitPrintzCollabRelease(item)) {
     const coozieUrl = window.SITE_CONFIG?.links?.litPrintzCoozie;
     if (coozieUrl) {
       files.push({

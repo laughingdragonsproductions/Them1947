@@ -32,6 +32,11 @@ window.SITE_CONFIG = {
     eyebrow: "New arrival",
     tagline: "THE DESCENDER has entered the vault - THEM 1947 Alien Greys spaceship.",
   },
+  /** Lit Printz coozie companion - only shown on this case file. */
+  litPrintzCollabRelease: {
+    makerWorldId: 3200946,
+    pathSlug: "one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
+  },
   /** Fully redacted Lit Printz coozie case file (purchase link only). */
   featuredCoozie: {
     pathSlug: "them-1947-alien-coozie",
