@@ -307,6 +307,40 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
 .landing-overlay--developer-mode.is-active {
   opacity: 1;
   visibility: visible;
+  animation: dev-mode-banner-in 0.35s ease;
+}
+
+@keyframes dev-mode-banner-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body.is-dev-mode-flash::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+  background: radial-gradient(circle at 8% 62%, rgba(180, 255, 60, 0.22), transparent 55%);
+  animation: dev-mode-screen-flash 0.45s ease;
+}
+
+@keyframes dev-mode-screen-flash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .landing-overlay--developer-mode img {

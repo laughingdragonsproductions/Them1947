@@ -22,6 +22,8 @@ window.SITE_CONFIG = {
       "https://litprintz.com/products/them-1947-alien-coozie-free-stl",
     witnessFiles: "/files/declassified/",
     intelFeed: "https://theassociatedguess.com",
+    /** The Associated Guess (TAG) - unlocked via View all logs easter egg */
+    tagWebsite: "https://theassociatedguess.com",
   },
   /** Vault hub spotlight - full-width release banner on /files/ */
   featuredRelease: {

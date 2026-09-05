@@ -19,7 +19,9 @@
     window.SITE_CONFIG?.links?.witnessFiles || "/files/declassified/";
   const vaultUrl = "/files/";
   const intelFeedUrl =
-    window.SITE_CONFIG?.links?.intelFeed || "https://theassociatedguess.com";
+    window.SITE_CONFIG?.links?.tagWebsite ||
+    window.SITE_CONFIG?.links?.intelFeed ||
+    "https://theassociatedguess.com";
   const litPrintzSiteUrl =
     window.SITE_CONFIG?.links?.litPrintzSite || "https://litprintz.com";
   const litFlightRedirectBeforeEndSec =
@@ -75,7 +77,7 @@
     link.href = intelFeedUrl;
     link.target = "_blank";
     link.rel = "noopener";
-    link.setAttribute("aria-label", "Intel feed");
+    link.setAttribute("aria-label", "Intel feed - The Associated Guess");
     el.replaceWith(link);
     return link;
   }
@@ -210,8 +212,13 @@
     const banner = document.getElementById("developer-mode-banner");
     if (!banner) return;
 
+    document.body.classList.add("is-dev-mode-flash");
     banner.classList.add("is-active");
     banner.setAttribute("aria-hidden", "false");
+
+    window.setTimeout(function () {
+      document.body.classList.remove("is-dev-mode-flash");
+    }, 450);
 
     window.setTimeout(function () {
       banner.classList.remove("is-active");
@@ -219,10 +226,18 @@
     }, DEV_MODE_BANNER_MS);
   }
 
-  function onSettingsClick(event) {
+  function unlockDevMode() {
+    if (isDevModeUnlocked()) return;
+    sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
+    showDeveloperModeBanner();
+    enableIntelFeed({ withGlow: true });
+  }
+
+  function onViewAllLogsClick(event) {
     event.preventDefault();
 
-    if (sessionStorage.getItem(DEV_MODE_SESSION_KEY)) {
+    if (isDevModeUnlocked()) {
+      showDeveloperModeBanner();
       return;
     }
 
@@ -231,9 +246,15 @@
       return;
     }
 
-    sessionStorage.setItem(DEV_MODE_SESSION_KEY, "1");
-    enableIntelFeed({ withGlow: true });
-    showDeveloperModeBanner();
+    unlockDevMode();
+  }
+
+  function wireViewAllLogs() {
+    ["settings-btn", "view-all-logs-btn"].forEach(function (id) {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      btn.addEventListener("click", onViewAllLogsClick);
+    });
   }
 
   function wireIntelFeed() {
@@ -288,11 +309,6 @@
         playLitFlightTransition();
       });
     }
-
-    const settingsBtn = document.getElementById("settings-btn");
-    if (settingsBtn) {
-      settingsBtn.addEventListener("click", onSettingsClick);
-    }
   }
 
   function initLitFlightVideo() {
@@ -318,6 +334,7 @@
 
     if (!isEditMode) {
       wireClickHandlers();
+      wireViewAllLogs();
       wireIntelFeed();
       wirePlaceholderButtons();
     }
