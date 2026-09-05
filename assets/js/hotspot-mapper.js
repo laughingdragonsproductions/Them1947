@@ -522,10 +522,25 @@
       }
       if (!raw) return null;
       const parsed = JSON.parse(raw);
-      return parsed && typeof parsed === "object" ? parsed : null;
+      if (!parsed || typeof parsed !== "object") return null;
+      if (parsed["settings-btn"] && !parsed["view-all-logs-btn"]) {
+        parsed["view-all-logs-btn"] = parsed["settings-btn"];
+        delete parsed["settings-btn"];
+      }
+      return parsed;
     } catch (_error) {
       return null;
     }
+  };
+
+  HotspotMapper.prototype.downloadLayoutJson = function (json, filename) {
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename || this.pageId + ".json";
+    link.click();
+    URL.revokeObjectURL(url);
   };
 
   HotspotMapper.prototype.saveDraft = function (hotspots) {
@@ -1126,17 +1141,22 @@
       if (action.dataset.action === "save-draft") {
         const layout = self.getCurrentLayout();
         self.saveDraft(layout);
+        const json = self.toJson(layout);
+        self.downloadLayoutJson(json, self.pageId + ".json");
         output.textContent =
           (isLocalDevHost()
-            ? "Draft saved. Reload / locally to preview. Copy JSON to commit for production."
+            ? "Draft saved + downloaded. Paste into assets/js/hotspot-layouts/" +
+              self.pageId +
+              ".json to deploy."
             : "Draft saved to localStorage (editor only). Copy JSON to commit.") +
           "\n\n" +
-          self.toJson(layout);
+          json;
         return;
       }
 
       if (action.dataset.action === "copy-json") {
         const json = self.toJson(self.getCurrentLayout());
+        self.downloadLayoutJson(json, self.pageId + ".json");
         navigator.clipboard.writeText(json).then(
           function () {
             output.textContent = "JSON copied - commit to hotspot-layouts/.\n\n" + json;

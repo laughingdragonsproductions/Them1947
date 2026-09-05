@@ -15,7 +15,7 @@
     "analysis-btn": "landing-hotspot--analysis",
     "dashboard-btn": "landing-hotspot--dashboard",
     "intel-feed-btn": "landing-hotspot--intel-feed",
-    "settings-btn": "landing-hotspot--settings",
+    "view-all-logs-btn": "landing-hotspot--view-all-logs",
     "developer-mode-banner": "landing-overlay--developer-mode"
   },
   "hotspots": {
@@ -48,7 +48,7 @@
     "intel-feed-btn": {
       "points": [[41.13, 88.66], [46.29, 88.69], [46.05, 95.94], [40.73, 96.16]]
     },
-    "settings-btn": {
+    "view-all-logs-btn": {
       "points": [[53.52, 73.33], [59.08, 73.22], [59.33, 75.96], [53.64, 75.96]]
     },
     "developer-mode-banner": {

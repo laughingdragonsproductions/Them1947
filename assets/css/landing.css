@@ -281,7 +281,7 @@ body.dev-mode-unlocked .landing-hotspot--intel-feed.is-ready {
   cursor: pointer;
 }
 
-.landing-hotspot--settings {
+.landing-hotspot--view-all-logs {
   left: 0;
   top: 0;
   width: 100%;
@@ -374,7 +374,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--analysis:hover,
 .landing-hotspot--dashboard:hover,
 .landing-hotspot--intel-feed:hover,
-.landing-hotspot--settings:hover {
+.landing-hotspot--view-all-logs:hover {
   border: 1px solid rgba(126, 184, 212, 0.75);
   background: rgba(126, 184, 212, 0.24);
   box-shadow:
@@ -397,7 +397,7 @@ body.hotspot-debug .landing-overlay--developer-mode {
 .landing-hotspot--analysis:focus-visible,
 .landing-hotspot--dashboard:focus-visible,
 .landing-hotspot--intel-feed:focus-visible,
-.landing-hotspot--settings:focus-visible {
+.landing-hotspot--view-all-logs:focus-visible {
   background: rgba(126, 184, 212, 0.2);
   box-shadow:
     0 0 18px rgba(126, 184, 212, 0.45),

@@ -250,11 +250,9 @@
   }
 
   function wireViewAllLogs() {
-    ["settings-btn", "view-all-logs-btn"].forEach(function (id) {
-      const btn = document.getElementById(id);
-      if (!btn) return;
-      btn.addEventListener("click", onViewAllLogsClick);
-    });
+    const btn = document.getElementById("view-all-logs-btn");
+    if (!btn) return;
+    btn.addEventListener("click", onViewAllLogsClick);
   }
 
   function wireIntelFeed() {
