@@ -354,7 +354,7 @@
         pageId: "landing",
         stageSelector: ".landing-stage",
         rootSelector: "#landing-ui",
-        hotspotSelector: ".landing-hotspot",
+        hotspotSelector: ".landing-hotspot, .landing-overlay--developer-mode",
         hotspotClassPrefix: "landing-hotspot",
         hotspotBaseClass: "hotspot landing-hotspot",
         hotspotTag: "button",
