@@ -69,9 +69,9 @@ window.SITE_CONFIG = {
     passwordHash: "",
     maxFails: 3,
   },
-  /** Landing logs / intel feed - set intelFeedLocked true to restore easter egg. */
+  /** Landing logs / intel feed easter egg (5 view-logs clicks unlocks TAG). */
   landingDevMode: {
-    intelFeedLocked: false,
-    logsClicksRequired: 1,
+    intelFeedLocked: true,
+    logsClicksRequired: 5,
   },
 };

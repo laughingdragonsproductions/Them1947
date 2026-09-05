@@ -29,7 +29,7 @@
 
   const landingDevMode = window.SITE_CONFIG?.landingDevMode || {};
   const intelFeedLocked = landingDevMode.intelFeedLocked !== false;
-  const DEV_MODE_CLICKS = Math.max(1, Number(landingDevMode.logsClicksRequired) || 1);
+  const DEV_MODE_CLICKS = Math.max(1, Number(landingDevMode.logsClicksRequired) || 5);
   const DEV_MODE_BANNER_MS = 3000;
   const INTEL_FEED_GLOW_MS = 1000;
   const DEV_MODE_SESSION_KEY = "them1947-dev-mode-unlocked";
