@@ -1,7 +1,7 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-09-05T16:37:52Z",
+  "pulledAt": "2026-09-15T15:30:31Z",
   "summary": {
     "total": 28,
     "classified": 22,
@@ -20,10 +20,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/2498466-3-place-remote-control-holder-for-head-board",
       "stats": {
-        "likes": 7,
-        "boosts": 12,
-        "downloads": 8,
-        "prints": 3
+        "likes": 8,
+        "boosts": 11,
+        "downloads": 9,
+        "prints": 4
       },
       "buyHref": "https://makerworld.com/en/models/2498466-3-place-remote-control-holder-for-head-board"
     },
@@ -41,7 +41,7 @@ window.CATALOG_DATA = {
       "stats": {
         "likes": 4,
         "boosts": 8,
-        "downloads": 4,
+        "downloads": 5,
         "prints": 1
       },
       "buyHref": "https://makerworld.com/en/models/2913433-bobcat-portable-tire-inflator-storage-case"
@@ -77,10 +77,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2991422-them-1947-roswell-grey-disclosure-day-alien",
       "stats": {
-        "likes": 258,
-        "boosts": 557,
-        "downloads": 340,
-        "prints": 117
+        "likes": 275,
+        "boosts": 596,
+        "downloads": 347,
+        "prints": 123
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-roswell-grey-disclosure-day-alien/",
@@ -430,10 +430,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2995237-them-1947-disclosure-alien-grey-the-aggressor",
       "stats": {
-        "likes": 444,
-        "boosts": 1060,
-        "downloads": 1164,
-        "prints": 536
+        "likes": 459,
+        "boosts": 1086,
+        "downloads": 1192,
+        "prints": 560
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -954,7 +954,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 119
+        "commentCount": 122
       },
       "caseFile": "002",
       "specimenLabel": "DISCLOSURE ALIEN GREY - THE AGGRESSOR"
@@ -971,10 +971,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 1732,
-        "boosts": 4282,
-        "downloads": 2531,
-        "prints": 1079
+        "likes": 1805,
+        "boosts": 4483,
+        "downloads": 2613,
+        "prints": 1153
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -1480,7 +1480,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 206
+        "commentCount": 216
       },
       "caseFile": "003",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
@@ -1497,10 +1497,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004633-them-1947-disclosure-alien-greys-the-stalker",
       "stats": {
-        "likes": 370,
-        "boosts": 963,
-        "downloads": 591,
-        "prints": 244
+        "likes": 381,
+        "boosts": 1008,
+        "downloads": 606,
+        "prints": 255
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-stalker/",
@@ -1819,7 +1819,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 59
+        "commentCount": 61
       },
       "caseFile": "004",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THE STALKER"
@@ -1836,10 +1836,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 493,
-        "boosts": 1326,
-        "downloads": 643,
-        "prints": 340
+        "likes": 512,
+        "boosts": 1391,
+        "downloads": 666,
+        "prints": 368
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader-3009502/",
@@ -2300,7 +2300,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 97
+        "commentCount": 100
       },
       "caseFile": "005",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THEIR LEADER"
@@ -2317,10 +2317,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3012967-them-1947-disclosure-alien-greys-the-watcher",
       "stats": {
-        "likes": 477,
-        "boosts": 1126,
-        "downloads": 1153,
-        "prints": 541
+        "likes": 492,
+        "boosts": 1149,
+        "downloads": 1185,
+        "prints": 565
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2781,7 +2781,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 99
+        "commentCount": 101
       },
       "caseFile": "006",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER"
@@ -2798,10 +2798,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
-        "likes": 238,
-        "boosts": 588,
-        "downloads": 618,
-        "prints": 243
+        "likes": 251,
+        "boosts": 608,
+        "downloads": 644,
+        "prints": 251
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-night-crawler/",
@@ -3127,7 +3127,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 76
+        "commentCount": 80
       },
       "caseFile": "007",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE NIGHT CRAWLER"
@@ -3144,10 +3144,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019183-p1s-version-their-leader",
       "stats": {
-        "likes": 93,
-        "boosts": 154,
-        "downloads": 106,
-        "prints": 39
+        "likes": 95,
+        "boosts": 162,
+        "downloads": 111,
+        "prints": 44
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-their-leader/",
@@ -3464,10 +3464,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019267-p1s-version-the-observer",
       "stats": {
-        "likes": 107,
-        "boosts": 191,
-        "downloads": 152,
-        "prints": 87
+        "likes": 113,
+        "boosts": 199,
+        "downloads": 159,
+        "prints": 92
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-the-observer/",
@@ -3760,7 +3760,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 24
+        "commentCount": 26
       },
       "caseFile": "009",
       "specimenLabel": "P1S VERSION THE OBSERVER"
@@ -3777,10 +3777,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
-        "likes": 446,
-        "boosts": 1108,
-        "downloads": 576,
-        "prints": 150
+        "likes": 494,
+        "boosts": 1213,
+        "downloads": 619,
+        "prints": 167
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-k-a-r-l/",
@@ -4085,7 +4085,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 64
+        "commentCount": 70
       },
       "caseFile": "010",
       "specimenLabel": "DISCLOSURE ALIEN GREYS K.A.R.L."
@@ -4102,10 +4102,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 330,
-        "boosts": 792,
-        "downloads": 505,
-        "prints": 141
+        "likes": 365,
+        "boosts": 860,
+        "downloads": 529,
+        "prints": 156
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-experimenter/",
@@ -4672,7 +4672,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 42
+        "commentCount": 45
       },
       "caseFile": "011",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE EXPERIMENTER"
@@ -4689,10 +4689,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 2626,
-        "boosts": 6358,
-        "downloads": 3409,
-        "prints": 2460
+        "likes": 2903,
+        "boosts": 7070,
+        "downloads": 3752,
+        "prints": 2788
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -5616,7 +5616,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 804
+        "commentCount": 902
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -5633,10 +5633,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 425,
-        "boosts": 1047,
-        "downloads": 482,
-        "prints": 210
+        "likes": 445,
+        "boosts": 1098,
+        "downloads": 507,
+        "prints": 221
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-abductor/",
@@ -6032,7 +6032,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 34
+        "commentCount": 37
       },
       "caseFile": "013",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE ABDUCTOR"
@@ -6049,10 +6049,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
-        "likes": 270,
-        "boosts": 670,
-        "downloads": 480,
-        "prints": 336
+        "likes": 302,
+        "boosts": 727,
+        "downloads": 521,
+        "prints": 380
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
@@ -6666,7 +6666,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 108
+        "commentCount": 121
       },
       "caseFile": "014",
       "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS"
@@ -6683,10 +6683,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-alien-leader-them-1947-series",
       "stats": {
-        "likes": 1871,
-        "boosts": 4486,
-        "downloads": 2471,
-        "prints": 1656
+        "likes": 2106,
+        "boosts": 5120,
+        "downloads": 2795,
+        "prints": 1922
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-leader-them-1947-series/",
@@ -7067,7 +7067,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 454
+        "commentCount": 522
       },
       "caseFile": "015",
       "specimenLabel": "3 FOOT ALIEN LEADER"
@@ -7084,10 +7084,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
       "stats": {
-        "likes": 38,
-        "boosts": 65,
-        "downloads": 19,
-        "prints": 4
+        "likes": 41,
+        "boosts": 71,
+        "downloads": 20,
+        "prints": 5
       },
       "buyHref": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy"
     },
@@ -7103,10 +7103,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy",
       "stats": {
-        "likes": 25,
-        "boosts": 53,
+        "likes": 27,
+        "boosts": 56,
         "downloads": 19,
-        "prints": 15
+        "prints": 18
       },
       "buyHref": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy"
     },
@@ -7122,8 +7122,8 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
       "stats": {
-        "likes": 11,
-        "boosts": 18,
+        "likes": 14,
+        "boosts": 20,
         "downloads": 5,
         "prints": 1
       },
@@ -7141,10 +7141,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 643,
-        "boosts": 1622,
-        "downloads": 967,
-        "prints": 745
+        "likes": 721,
+        "boosts": 1810,
+        "downloads": 1100,
+        "prints": 887
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -7497,7 +7497,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 199
+        "commentCount": 228
       },
       "caseFile": "016",
       "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY"
@@ -7514,10 +7514,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 427,
-        "boosts": 931,
-        "downloads": 547,
-        "prints": 387
+        "likes": 467,
+        "boosts": 1028,
+        "downloads": 639,
+        "prints": 486
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -8158,7 +8158,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 181
+        "commentCount": 205
       },
       "caseFile": "017",
       "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES"
@@ -8175,10 +8175,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3166617-them-1947-alien-greys-sign",
       "stats": {
-        "likes": 33,
-        "boosts": 57,
-        "downloads": 7,
-        "prints": 2
+        "likes": 36,
+        "boosts": 66,
+        "downloads": 11,
+        "prints": 6
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-alien-greys-sign/",
@@ -8571,7 +8571,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 1
+        "commentCount": 2
       },
       "caseFile": "018",
       "specimenLabel": "ALIEN GREYS SIGN"
@@ -8588,10 +8588,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 174,
-        "boosts": 376,
-        "downloads": 241,
-        "prints": 85
+        "likes": 213,
+        "boosts": 457,
+        "downloads": 308,
+        "prints": 121
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
@@ -8869,7 +8869,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 43
+        "commentCount": 52
       },
       "caseFile": "019",
       "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
@@ -8886,10 +8886,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3195349-3-foot-night-crawler-them-1947-alien-greys",
       "stats": {
-        "likes": 138,
-        "boosts": 365,
-        "downloads": 197,
-        "prints": 143
+        "likes": 173,
+        "boosts": 446,
+        "downloads": 254,
+        "prints": 221
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
@@ -9369,7 +9369,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 30
+        "commentCount": 49
       },
       "caseFile": "020",
       "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS"
@@ -9386,10 +9386,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3200946-one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
       "stats": {
-        "likes": 122,
-        "boosts": 274,
-        "downloads": 114,
-        "prints": 90
+        "likes": 135,
+        "boosts": 314,
+        "downloads": 138,
+        "prints": 122
       },
       "buyHref": null,
       "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
@@ -9972,7 +9972,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 57
+        "commentCount": 67
       },
       "caseFile": "021",
       "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10"
@@ -9989,10 +9989,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259272-the-descender-them-1947-alien-greys-spaceship",
       "stats": {
-        "likes": 36,
-        "boosts": 69,
-        "downloads": 28,
-        "prints": 3
+        "likes": 170,
+        "boosts": 333,
+        "downloads": 133,
+        "prints": 25
       },
       "buyHref": null,
       "href": "/files/prints/the-descender-them-1947-alien-greys-spaceship/",
@@ -10443,7 +10443,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 13
+        "commentCount": 39
       },
       "caseFile": "022",
       "specimenLabel": "THE DESCENDER ALIEN GREYS SPACESHIP"
