@@ -30,6 +30,7 @@ def load_catalog() -> dict:
 
 def clean_text(value: str) -> str:
     text = EMOJI_RE.sub("", value or "")
+    text = text.replace("\u2014", "-").replace("\u2013", "-")
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -93,7 +94,7 @@ def build_brief(item: dict) -> str:
   <p class="print-back"><a href="/files/prints/">&larr; Classified vault</a></p>
   <p class="pillar-eyebrow">THEM 1947 case file</p>
   <h1>{name}</h1>
-  <p class="page-lead">Case file {case_no or "—"} — classified Grey specimen dossier with print-ready 3D model documentation from the THEM 1947 archive.</p>
+  <p class="page-lead">Case file {case_no or "-"} - classified Grey specimen dossier with print-ready 3D model documentation from the THEM 1947 archive.</p>
   <p>{html.escape(summary)}</p>
   {features_html}
   {profile_html}
