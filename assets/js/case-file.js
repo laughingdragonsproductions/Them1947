@@ -607,7 +607,7 @@ function renderRedactedCoozieCaseFile(coozie) {
     coozie.purchaseUrl || window.SITE_CONFIG?.links?.litPrintzCoozie || "";
 
   return `<article class="case-file case-file--redacted reveal">
-    <p class="print-back case-back"><a href="/files/">&larr; Vault</a></p>
+    <p class="print-back case-back"><a href="/">&larr; Vault</a></p>
     <div class="case-folder">
       <aside class="case-tab" aria-hidden="true">
         <span>CASE FILE ${escapeHtml(caseFile)}</span>
@@ -657,8 +657,8 @@ function initRedactedCoozieCaseFilePage() {
     initPage({
       title: "Case file not found",
       description: "Requested classified case file was not found in the archive.",
-      activePath: "/files/",
-      content: `<p class="print-back"><a href="/files/">&larr; Vault</a></p><p>Case file not found.</p>`,
+      activePath: "/",
+      content: `<p class="print-back"><a href="/">&larr; Vault</a></p><p>Case file not found.</p>`,
     });
     return;
   }

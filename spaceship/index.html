@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="THEM 1947 - Grey-series 3D prints and classified case files." />
+    <title>THEM 1947 - Command</title>
+    <link rel="icon" href="/assets/brand/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/hotspot-mapper.css?v=overlay-save3" />
+    <link rel="stylesheet" href="/assets/css/landing.css?v=overlay-save3" />
+    <link rel="canonical" href="https://them1947.com/spaceship/" />
+    <meta property="og:title" content="THEM 1947" />
+    <meta property="og:description" content="Grey-series 3D prints and classified case files." />
+    <meta property="og:url" content="https://them1947.com/spaceship/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://them1947.com/assets/brand/landing-dashboard.png" />
+  </head>
+  <body>
+    <main class="landing" aria-label="THEM 1947">
+      <video
+        id="intro-video"
+        class="landing-video is-dormant"
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        poster="/assets/brand/landing-dashboard.png"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
+        <source src="/assets/video/landing.mp4" type="video/mp4" />
+      </video>
+
+      <video
+        id="brief-video"
+        class="landing-video is-dormant"
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
+        <source src="/assets/video/classified-brief.mp4" type="video/mp4" />
+      </video>
+
+      <video
+        id="litflight-video"
+        class="landing-video is-dormant"
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
+        <source src="/assets/video/litflight.mp4" type="video/mp4" />
+      </video>
+
+      <div class="landing-stage hotspot-stage">
+        <img
+          id="landing-poster"
+          class="landing-poster is-visible"
+          src="/assets/brand/landing-dashboard.png"
+          alt="THEM 1947 command dashboard"
+          width="1672"
+          height="941"
+        />
+
+        <div id="landing-ui" class="landing-hotspots hotspot-layer is-visible is-unlocked" aria-label="Command console">
+          <button
+            id="litprintz-top-cover-btn"
+            class="hotspot landing-hotspot landing-hotspot--litprintz-cover"
+            type="button"
+            aria-label="Reserved placement"
+          ></button>
+          <button
+            id="terminal-access-btn"
+            class="hotspot landing-hotspot landing-hotspot--terminal"
+            type="button"
+            aria-label="Terminal access"
+          ></button>
+          <a
+            id="landing-commercial-btn"
+            class="hotspot landing-hotspot landing-hotspot--commercial"
+            href="https://makerworld.com/en/@user_935464230#commercial-membership-open"
+            target="_blank"
+            rel="noopener"
+            aria-label="Join Commercial Membership"
+          ></a>
+          <a
+            id="witness-files-btn"
+            class="hotspot landing-hotspot landing-hotspot--witness"
+            href="/files/declassified/"
+            aria-label="Witness files - declassified prints"
+          ></a>
+          <button
+            id="classified-folder"
+            class="hotspot landing-hotspot landing-hotspot--folder"
+            type="button"
+            aria-label="Open classified case files"
+          ></button>
+          <a
+            id="reports-btn"
+            class="hotspot landing-hotspot landing-hotspot--reports"
+            href="/files/prints/"
+            aria-label="Reports"
+          ></a>
+          <a
+            id="archive-btn"
+            class="hotspot landing-hotspot landing-hotspot--archive"
+            href="/"
+            aria-label="Archive"
+          ></a>
+          <button
+            id="litprintz-site-btn"
+            class="hotspot landing-hotspot landing-hotspot--litprintz"
+            type="button"
+            aria-label="Go to litprintz.com"
+          ></button>
+          <a
+            id="observation-btn"
+            class="hotspot landing-hotspot landing-hotspot--observation"
+            href="/files/prints/the-descender-them-1947-alien-greys-spaceship/"
+            aria-label="The Descender UFO case file"
+          ></a>
+          <button
+            id="recovery-btn"
+            class="hotspot landing-hotspot landing-hotspot--recovery"
+            type="button"
+            aria-label="Recovery"
+          ></button>
+          <button
+            id="analysis-btn"
+            class="hotspot landing-hotspot landing-hotspot--analysis"
+            type="button"
+            aria-label="Analysis"
+          ></button>
+          <a
+            id="dashboard-btn"
+            class="hotspot landing-hotspot landing-hotspot--dashboard"
+            href="/"
+            aria-label="Dashboard - vault access"
+          ></a>
+          <button
+            id="intel-feed-btn"
+            class="hotspot landing-hotspot landing-hotspot--intel-feed"
+            type="button"
+            aria-label="Intel feed"
+          ></button>
+          <button
+            id="view-all-logs-btn"
+            class="hotspot landing-hotspot landing-hotspot--view-all-logs"
+            type="button"
+            aria-label="View all logs"
+          ></button>
+          <button
+            id="logs"
+            class="hotspot landing-hotspot landing-hotspot--logs"
+            type="button"
+            aria-label="View all logs"
+          ></button>
+          <div
+            id="developer-mode-banner"
+            class="hotspot landing-hotspot landing-overlay landing-overlay--developer-mode"
+            aria-hidden="true"
+            aria-label="Developer mode banner"
+          >
+            <img src="/assets/brand/developer-mode-display.png?v=2" alt="" width="240" height="102" />
+          </div>
+
+          <!-- Future: community, top secret, support -->
+          <div class="landing-action-rows" aria-hidden="true" hidden>
+            <div class="landing-action-row landing-action-row--cases" data-slot="active-cases"></div>
+            <div class="landing-action-row landing-action-row--quick" data-slot="quick-access"></div>
+            <div class="landing-action-row landing-action-row--support" data-slot="support"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="landing-footer" class="landing-footer is-visible">
+        <a id="landing-commercial-link" href="https://makerworld.com/en/@user_935464230#commercial-membership-open" target="_blank" rel="noopener">Commercial Membership</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </footer>
+    </main>
+
+    <script src="/assets/js/config.js?v=overlay-save3"></script>
+    <script src="/assets/js/hotspot-mapper.js?v=overlay-save3"></script>
+    <script src="/assets/js/landing.js?v=overlay-save3"></script>
+  </body>
+</html>

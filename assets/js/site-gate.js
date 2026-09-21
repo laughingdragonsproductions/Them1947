@@ -243,7 +243,7 @@
       "</div>" +
       "</form>" +
       '<p id="preview-gate-status" class="preview-gate-status" aria-live="polite"></p>' +
-      '<p class="preview-gate-hint"><a href="/">Return to landing transmission</a></p>' +
+      '<p class="preview-gate-hint"><a href="/spaceship/">Return to command console</a></p>' +
       "</div>";
 
     document.body.appendChild(gate);

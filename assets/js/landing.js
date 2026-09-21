@@ -17,7 +17,7 @@
     "https://makerworld.com/en/@user_935464230#commercial-membership-open";
   const witnessFilesUrl =
     window.SITE_CONFIG?.links?.witnessFiles || "/files/declassified/";
-  const vaultUrl = "/files/";
+  const vaultUrl = "/";
   const intelFeedUrl =
     window.SITE_CONFIG?.links?.tagWebsite ||
     window.SITE_CONFIG?.links?.intelFeed ||

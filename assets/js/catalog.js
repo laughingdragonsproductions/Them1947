@@ -264,7 +264,7 @@ function renderFilesHub() {
 
 function renderCategoryPage({ vault, title, lede, extra = "" }) {
   const items = getCatalogItems(vault);
-  const back = `<p class="print-back"><a href="/files/">&larr; Vault</a></p>`;
+  const back = `<p class="print-back"><a href="/">&larr; Vault</a></p>`;
   const countLabel = `${items.length} listing${items.length === 1 ? "" : "s"}`;
   const featured = vault === "classified" ? renderFeaturedReleases() : "";
   return `${back}
@@ -341,7 +341,7 @@ function openPrintLightbox(item) {
   buttons.innerHTML = showMwLink
     ? `<a class="btn btn-primary" href="${mwUrl}" target="_blank" rel="noopener">Open on MakerWorld</a>
        <button type="button" class="btn btn-ghost print-lightbox-dismiss">Close</button>`
-    : `<a class="btn btn-ghost" href="/">Return to landing</a>
+    : `<a class="btn btn-ghost" href="/spaceship/">Return to command</a>
        <button type="button" class="btn btn-ghost print-lightbox-dismiss">Close</button>`;
 
   overlay.hidden = false;

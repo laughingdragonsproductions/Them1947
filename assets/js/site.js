@@ -1,5 +1,5 @@
 const NAV = [
-  { href: "/files/", label: "Archive" },
+  { href: "/", label: "Archive" },
   { href: "/files/prints/", label: "Classified" },
   { href: "/files/declassified/", label: "Declassified" },
   { href: "/about/", label: "About" },
@@ -10,7 +10,7 @@ function renderHeader(activePath) {
   const cfg = window.SITE_CONFIG || {};
   return `<header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" aria-label="${cfg.legalName || "THEM 1947"} home">
+      <a class="brand" href="/spaceship/" aria-label="${cfg.legalName || "THEM 1947"} command console">
         <img src="/assets/brand/logo.png" alt="${cfg.legalName || "THEM 1947"}" class="brand-logo" width="160" height="160" />
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -18,10 +18,9 @@ function renderHeader(activePath) {
         ${NAV.map((item) => {
           const active =
             activePath === item.href ||
-            (item.href === "/files/" && activePath === "/files/") ||
+            (item.href === "/" && (activePath === "/" || activePath === "/files/" || activePath === "/files/all/")) ||
             (item.href === "/files/prints/" && activePath && activePath.startsWith("/files/prints/")) ||
-            (item.href === "/files/declassified/" && activePath && activePath.startsWith("/files/declassified/")) ||
-            (item.href === "/files/" && activePath === "/files/all/");
+            (item.href === "/files/declassified/" && activePath && activePath.startsWith("/files/declassified/"));
           return `<a href="${item.href}" class="nav-link${active ? " active" : ""}">${item.label}</a>`;
         }).join("")}
       </nav>
@@ -131,7 +130,9 @@ const ADSENSE_BLOCK_SEGMENTS = ["coming-soon"];
 
 function isMonetizablePath(path) {
   const p = path || window.location.pathname || "";
-  if (p === "/" || p === "/index.html") return false;
+  // Cinematic command console stays ad-free; archive home may show ads.
+  if (p === "/spaceship/" || p === "/spaceship" || p.startsWith("/spaceship/")) return false;
+  if (p === "/" || p === "/index.html") return true;
   if (!ADSENSE_ALLOW_PREFIXES.some((prefix) => p.startsWith(prefix))) return false;
   if (ADSENSE_BLOCK_SEGMENTS.some((seg) => p.includes(seg))) return false;
   return true;
