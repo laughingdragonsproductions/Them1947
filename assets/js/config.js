@@ -58,9 +58,9 @@ window.SITE_CONFIG = {
   adsense: {
     publisherId: "ca-pub-7048606415692002",
     slots: {
-      header: "",
-      footer: "",
-      inContent: "",
+      header: "2936560577",
+      footer: "4852277474",
+      inContent: "7102817128",
     },
   },
   /** Owner preview gate - set enabled: true to require clearance on inner pages. */
