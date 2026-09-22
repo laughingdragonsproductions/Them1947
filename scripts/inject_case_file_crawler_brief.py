@@ -36,20 +36,26 @@ def clean_text(value: str) -> str:
 
 
 def expand_summary(item: dict, detail: dict, summary: str) -> str:
-    if len(summary.split()) >= 120:
-        return summary
     name = item.get("name") or "this specimen"
     printers = ", ".join((detail.get("printProfile") or {}).get("printers") or [])[:120]
-    return " ".join(
+    base = summary if len(summary.split()) >= 80 else " ".join(
         [
             summary,
             f"{name} is part of the THEM 1947 Disclosure Alien Greys print series from Laughing Dragons studio.",
             "Each case file documents pose intent, display use, and slicer-ready settings for a display-grade Grey alien figure.",
+        ]
+    )
+    return " ".join(
+        [
+            base,
             "These models are tuned for FDM and resin printing, with tree supports recommended on overhangs such as chin, hands, and feet.",
             "Typical settings use 0.16 to 0.20 mm layers, two to three walls, and ten to fifteen percent infill for display pieces.",
             f"Validated printer profiles include {printers or 'Bambu Lab P1S, P2S, and A1 series machines'}.",
             "Scale the model for desk collectibles or larger Halloween and UFO diorama props while keeping proportions intact.",
             "Download the source files on MakerWorld, print at home, then finish with primer, paint, and weathering for a classified-lab look.",
+            f"Collectors display {name} on lighted shelves, in glass cases, or beside retro radar props.",
+            "Sand layer lines lightly, prime with matte gray, then dry-brush silver and olive drab for a recovered-artifact finish.",
+            "Photograph prints under a single warm lamp to match the archive aesthetic on this page.",
         ]
     )
 

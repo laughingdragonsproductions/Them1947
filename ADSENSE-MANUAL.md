@@ -1,6 +1,10 @@
 # AdSense - manual steps for them1947.com
 
-**Do not add the site or request review until launch is explicitly approved.** Slot IDs stay empty in the local hub.
+**Authoritative matrix:** [../laughing-dragons-site/ADSENSE-REQUIREMENTS-MATRIX.md](../laughing-dragons-site/ADSENSE-REQUIREMENTS-MATRIX.md)
+
+**Sep 2026 rejection:** Low value content (same as LD hub and TAG). Fix archive page depth before resubmit.
+
+**Do not request review until content tier passes in the matrix.** Slot IDs stay empty in the local hub.
 
 ## Allowlist (wired in `assets/js/site.js`)
 
@@ -26,4 +30,5 @@ Ads may load **only** when all of the following are true:
 2. Create display units named for them1947.com (header / footer)
 3. Paste slot IDs into `assets/js/config.js`
 4. Confirm `/ads.txt` shows `pub-7048606415692002`
-5. EU CMP message for `them1947.com` linking to `/privacy/`
+5. ~~EU CMP message for `them1947.com` linking to `/privacy/`~~ **Done** (Sep 22, 2026)
+6. ~~Site logo uploaded in AdSense~~ **Done** — source: `Pictures/them1947-adsense.jpg` (≤148 KB)

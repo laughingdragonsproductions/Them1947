@@ -1378,7 +1378,7 @@
       if (action.dataset.action === "to-circle") {
         if (!selectedEl) return;
         if (isOverlayElement(selectedEl)) {
-          output.textContent = "Overlays stay as boxes — use the gold frame to move/resize.";
+          output.textContent = "Overlays stay as boxes - use the gold frame to move/resize.";
           return;
         }
         const current = self.readHotspot(selectedEl);
@@ -1399,7 +1399,7 @@
       if (action.dataset.action === "to-polygon") {
         if (!selectedEl) return;
         if (isOverlayElement(selectedEl)) {
-          output.textContent = "Overlays stay as boxes — use the gold frame to move/resize.";
+          output.textContent = "Overlays stay as boxes - use the gold frame to move/resize.";
           return;
         }
         const current = self.readHotspot(selectedEl);

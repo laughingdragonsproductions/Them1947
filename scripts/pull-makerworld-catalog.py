@@ -25,7 +25,10 @@ SITEMAP = ROOT / "sitemap.xml"
 PROFILE_URL = "https://makerworld.com/en/@user_935464230"
 SEARCH_API = "https://makerworld.com/api/v1/search-service/select/design2"
 DESIGN_API = "https://makerworld.com/api/v1/design-service/design"
-USER_AGENT = "Them1947-catalog-pull/1.0"
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
 
 KEYWORDS = [
     "Raceit17",
@@ -216,6 +219,22 @@ def collect_models() -> dict[int, dict]:
             print(f"warn: featured classified design {model_id} is not Raceit17")
             continue
         seen[model_id] = design_to_hit(detail)
+    if OUT_JS.exists():
+        try:
+            for item in load_catalog_payload().get("items") or []:
+                model_id = item.get("makerWorldId")
+                if not model_id or model_id in seen:
+                    continue
+                detail = fetch_design(model_id)
+                if not detail:
+                    print(f"warn: existing catalog design {model_id} unavailable")
+                    continue
+                creator = detail.get("designCreator") or {}
+                if creator.get("name") != "Raceit17":
+                    continue
+                seen[model_id] = design_to_hit(detail)
+        except Exception as exc:
+            print(f"warn: could not merge existing catalog ids: {exc}")
     return seen
 
 
@@ -797,9 +816,11 @@ def download_gallery(urls: list[str], slug_dir: Path, fallback_web_path: str | N
     return web_paths
 
 
-def enrich_classified_item(item: dict, detail: dict) -> None:
+def enrich_classified_item(item: dict, detail: dict, leader_detail: dict | None = None) -> None:
     instance = pick_instance(detail)
     summary_html = detail.get("summary") or ""
+    if item.get("makerWorldId") == 3004535 and leader_detail:
+        summary_html = leader_detail.get("summary") or summary_html
     ext = detail.get("designExtension") or {}
     slug_dir = CLASSIFIED_DIR / item["pathSlug"]
     gallery_urls = collect_gallery_urls(detail, instance)
@@ -1178,10 +1199,11 @@ def main() -> None:
 
     classified_items = [item for item in items if item["vault"] == "classified"]
     print(f"Fetching detail for {len(classified_items)} classified models…")
+    leader_detail = fetch_design(LEADER_CANONICAL_ID)
     for item in classified_items:
         detail = fetch_design(item["makerWorldId"])
         if detail:
-            enrich_classified_item(item, detail)
+            enrich_classified_item(item, detail, leader_detail)
 
     assign_case_files(items)
     emit_js(items)
