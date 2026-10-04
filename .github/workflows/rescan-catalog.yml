@@ -1,0 +1,75 @@
+name: Rescan MakerWorld catalog
+
+on:
+  schedule:
+    - cron: "0 10 * * 1,4" # Monday and Thursday ~6am Eastern (DST varies)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      exit_code: ${{ steps.rescan.outputs.exit_code }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          pip install curl_cffi
+
+      - name: Full catalog rescan
+        id: rescan
+        run: |
+          set +e
+          npm run rescan
+          ec=$?
+          echo "exit_code=$ec" >> "$GITHUB_OUTPUT"
+          if [ "$ec" -eq 2 ]; then
+            echo "MakerWorld blocked scan; PC fallback can retry later."
+            exit 0
+          fi
+          exit "$ec"
+
+      - name: Commit catalog changes
+        id: commit
+        if: steps.rescan.outputs.exit_code == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/catalog-data.js assets/catalog/ files/prints/ sitemap.xml _redirects
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog changes to publish"
+            exit 0
+          fi
+          git commit -m "chore: refresh MakerWorld catalog (scheduled rescan)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Big update alert
+        if: steps.rescan.outputs.exit_code == '0' && steps.commit.outputs.changed == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
+        run: node scripts/notify.js scan
+
+  deploy:
+    needs: scan
+    if: needs.scan.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy-cloudflare-pages.yml
+    secrets: inherit

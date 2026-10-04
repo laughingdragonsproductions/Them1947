@@ -1,11 +1,11 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-09-17T01:05:12Z",
+  "pulledAt": "2026-10-04T04:08:36Z",
   "summary": {
-    "total": 29,
-    "classified": 23,
-    "declassified": 6
+    "total": 35,
+    "classified": 27,
+    "declassified": 8
   },
   "items": [
     {
@@ -21,9 +21,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/2498466-3-place-remote-control-holder-for-head-board",
       "stats": {
         "likes": 8,
-        "boosts": 11,
-        "downloads": 9,
-        "prints": 4
+        "boosts": 12,
+        "downloads": 10,
+        "prints": 5
       },
       "buyHref": "https://makerworld.com/en/models/2498466-3-place-remote-control-holder-for-head-board"
     },
@@ -61,7 +61,7 @@ window.CATALOG_DATA = {
         "likes": 4,
         "boosts": 2,
         "downloads": 1,
-        "prints": 0
+        "prints": 1
       },
       "buyHref": "https://makerworld.com/en/models/2964630-wood-splitter-replacement-handle"
     },
@@ -77,10 +77,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2991422-them-1947-roswell-grey-disclosure-day-alien",
       "stats": {
-        "likes": 275,
-        "boosts": 597,
-        "downloads": 347,
-        "prints": 123
+        "likes": 293,
+        "boosts": 636,
+        "downloads": 365,
+        "prints": 128
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-roswell-grey-disclosure-day-alien/",
@@ -91,7 +91,7 @@ window.CATALOG_DATA = {
         "features": [
           "👽 Display pieces",
           "🎨 Painting and weathering",
-          "🛸 UFO and sci-fi dioramas",
+          "🛸 UFO and sci fi dioramas",
           "📸 Photography props",
           "🖨️ Resin or FDM printing",
           "Supports: Recommended (especially under the chin, hands, and feet)"
@@ -130,8 +130,8 @@ window.CATALOG_DATA = {
           "printTime": "7.2 h",
           "weight": "186 g",
           "difficulty": "4.3 / 5",
-          "downloadCount": 407,
-          "printCount": 123,
+          "downloadCount": 430,
+          "printCount": 128,
           "ratingCount": 10,
           "byPrinter": {
             "P2S": {
@@ -221,8 +221,8 @@ window.CATALOG_DATA = {
             "printTime": "7.2 h",
             "weight": "186 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 407,
-            "printCount": 123,
+            "downloadCount": 430,
+            "printCount": 128,
             "ratingCount": 10,
             "byPrinter": {
               "P2S": {
@@ -300,7 +300,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray(30107)"
             ],
-            "priceFrom": "$13.25",
+            "priceFrom": "$11.89",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=2991422"
           },
           {
@@ -310,7 +310,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray(30107)"
             ],
-            "priceFrom": "$10.91",
+            "priceFrom": "$9.79",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864293&modelId=2991422"
           },
           {
@@ -320,7 +320,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Ash Gray (11102)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=40489681813640&modelId=2991422"
           },
           {
@@ -370,7 +370,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$16.37",
+            "priceFrom": "$14.69",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=2991422"
           },
           {
@@ -380,7 +380,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$16.37",
+            "priceFrom": "$14.69",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=2991422"
           },
           {
@@ -390,7 +390,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2991422"
           },
           {
@@ -400,7 +400,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2991422"
           }
         ],
@@ -430,10 +430,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2995237-them-1947-disclosure-alien-grey-the-aggressor",
       "stats": {
-        "likes": 459,
-        "boosts": 1087,
-        "downloads": 1194,
-        "prints": 562
+        "likes": 482,
+        "boosts": 1122,
+        "downloads": 1246,
+        "prints": 588
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -482,9 +482,9 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "254 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 1117,
-          "printCount": 369,
-          "ratingCount": 32,
+          "downloadCount": 1164,
+          "printCount": 386,
+          "ratingCount": 34,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -573,9 +573,9 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "254 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 1117,
-            "printCount": 369,
-            "ratingCount": 32,
+            "downloadCount": 1164,
+            "printCount": 386,
+            "ratingCount": 34,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -667,10 +667,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "10.8 h",
             "weight": "268 g",
-            "difficulty": "4.1 / 5",
-            "downloadCount": 128,
-            "printCount": 55,
-            "ratingCount": 7,
+            "difficulty": "4.3 / 5",
+            "downloadCount": 134,
+            "printCount": 60,
+            "ratingCount": 9,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -777,150 +777,6 @@ window.CATALOG_DATA = {
                 "weight": "265 g"
               }
             }
-          },
-          {
-            "title": "单色打印，快速省料，优化支撑，提高打印效率",
-            "printers": [
-              "P2S",
-              "A2L",
-              "A1",
-              "H2S",
-              "H2C",
-              "H2D",
-              "X2D",
-              "H2D Pro",
-              "P1S",
-              "P1P",
-              "X1 Carbon",
-              "X1",
-              "X1E",
-              "A1 mini"
-            ],
-            "buildPlates": 1,
-            "layerHeight": "0.2",
-            "walls": "2",
-            "infill": "15%",
-            "supports": null,
-            "printTime": "2.4 h",
-            "weight": "41 g",
-            "difficulty": "3.7 / 5",
-            "downloadCount": 113,
-            "printCount": 58,
-            "ratingCount": 4,
-            "byPrinter": {
-              "P2S": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.1 h",
-                "weight": "41 g"
-              },
-              "A2L": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.2 h",
-                "weight": "41 g"
-              },
-              "A1": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.4 h",
-                "weight": "41 g"
-              },
-              "H2S": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "40 g"
-              },
-              "H2C": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "41 g"
-              },
-              "H2D": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "41 g"
-              },
-              "X2D": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "41 g"
-              },
-              "H2D Pro": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "41 g"
-              },
-              "P1S": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.0 h",
-                "weight": "41 g"
-              },
-              "P1P": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.3 h",
-                "weight": "41 g"
-              },
-              "X1 Carbon": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.1 h",
-                "weight": "41 g"
-              },
-              "X1": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.3 h",
-                "weight": "41 g"
-              },
-              "X1E": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.1 h",
-                "weight": "41 g"
-              },
-              "A1 mini": {
-                "buildPlates": 1,
-                "layerHeight": "0.2",
-                "walls": "2",
-                "infill": "15%",
-                "printTime": "2.3 h",
-                "weight": "41 g"
-              }
-            }
           }
         ],
         "bom": [
@@ -931,7 +787,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=2995237"
           },
           {
@@ -941,7 +797,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=2995237"
           }
         ],
@@ -954,7 +810,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 125
+        "commentCount": 131
       },
       "caseFile": "002",
       "specimenLabel": "DISCLOSURE ALIEN GREY - THE AGGRESSOR"
@@ -971,10 +827,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 1811,
-        "boosts": 4510,
-        "downloads": 2623,
-        "prints": 1163
+        "likes": 1912,
+        "boosts": 4737,
+        "downloads": 2775,
+        "prints": 1255
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -1015,9 +871,9 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 4208,
-          "printCount": 851,
-          "ratingCount": 62,
+          "downloadCount": 4520,
+          "printCount": 917,
+          "ratingCount": 70,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1106,9 +962,9 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 4208,
-            "printCount": 851,
-            "ratingCount": 62,
+            "downloadCount": 4520,
+            "printCount": 917,
+            "ratingCount": 70,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1200,10 +1056,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.4 h",
             "weight": "165 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 789,
-            "printCount": 304,
-            "ratingCount": 25,
+            "difficulty": "4.5 / 5",
+            "downloadCount": 846,
+            "printCount": 328,
+            "ratingCount": 28,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1337,8 +1193,8 @@ window.CATALOG_DATA = {
             "printTime": "0.5 h",
             "weight": "19 g",
             "difficulty": "3.9 / 5",
-            "downloadCount": 32,
-            "printCount": 8,
+            "downloadCount": 40,
+            "printCount": 10,
             "ratingCount": 5,
             "byPrinter": {
               "P2S": {
@@ -1464,7 +1320,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3004535"
           },
           {
@@ -1474,13 +1330,13 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3004535"
           }
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 220
+        "commentCount": 243
       },
       "caseFile": "003",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
@@ -1497,10 +1353,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004633-them-1947-disclosure-alien-greys-the-stalker",
       "stats": {
-        "likes": 382,
-        "boosts": 1016,
-        "downloads": 608,
-        "prints": 257
+        "likes": 402,
+        "boosts": 1050,
+        "downloads": 635,
+        "prints": 276
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-stalker/",
@@ -1547,10 +1403,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "8.7 h",
           "weight": "201 g",
-          "difficulty": "4.7 / 5",
-          "downloadCount": 1185,
-          "printCount": 257,
-          "ratingCount": 26,
+          "difficulty": "4.8 / 5",
+          "downloadCount": 1248,
+          "printCount": 276,
+          "ratingCount": 29,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1683,10 +1539,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "8.7 h",
             "weight": "201 g",
-            "difficulty": "4.7 / 5",
-            "downloadCount": 1185,
-            "printCount": 257,
-            "ratingCount": 26,
+            "difficulty": "4.8 / 5",
+            "downloadCount": 1248,
+            "printCount": 276,
+            "ratingCount": 29,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1803,7 +1659,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3004633"
           },
           {
@@ -1813,13 +1669,13 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3004633"
           }
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 61
+        "commentCount": 66
       },
       "caseFile": "004",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THE STALKER"
@@ -1836,10 +1692,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 514,
-        "boosts": 1402,
-        "downloads": 667,
-        "prints": 369
+        "likes": 539,
+        "boosts": 1478,
+        "downloads": 710,
+        "prints": 397
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader-3009502/",
@@ -1882,9 +1738,9 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 657,
-          "printCount": 296,
-          "ratingCount": 41,
+          "downloadCount": 703,
+          "printCount": 315,
+          "ratingCount": 43,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1973,9 +1829,9 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 657,
-            "printCount": 296,
-            "ratingCount": 41,
+            "downloadCount": 703,
+            "printCount": 315,
+            "ratingCount": 43,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2068,8 +1924,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "2.3 / 5",
-            "downloadCount": 170,
-            "printCount": 28,
+            "downloadCount": 181,
+            "printCount": 33,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -2197,10 +2053,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.7 h",
             "weight": "161 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 113,
-            "printCount": 48,
-            "ratingCount": 10,
+            "difficulty": "4.5 / 5",
+            "downloadCount": 121,
+            "printCount": 53,
+            "ratingCount": 11,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2277,7 +2133,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3009502"
           },
           {
@@ -2287,7 +2143,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3009502"
           }
         ],
@@ -2300,7 +2156,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 102
+        "commentCount": 105
       },
       "caseFile": "005",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THEIR LEADER"
@@ -2317,10 +2173,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3012967-them-1947-disclosure-alien-greys-the-watcher",
       "stats": {
-        "likes": 493,
-        "boosts": 1151,
-        "downloads": 1191,
-        "prints": 568
+        "likes": 514,
+        "boosts": 1207,
+        "downloads": 1254,
+        "prints": 600
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2363,8 +2219,8 @@ window.CATALOG_DATA = {
           "printTime": "6.7 h",
           "weight": "190 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1056,
-          "printCount": 363,
+          "downloadCount": 1113,
+          "printCount": 380,
           "ratingCount": 27,
           "byPrinter": {
             "P2S": {
@@ -2454,8 +2310,8 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "190 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1056,
-            "printCount": 363,
+            "downloadCount": 1113,
+            "printCount": 380,
             "ratingCount": 27,
             "byPrinter": {
               "P2S": {
@@ -2549,8 +2405,8 @@ window.CATALOG_DATA = {
             "printTime": "6.8 h",
             "weight": "157 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 166,
-            "printCount": 118,
+            "downloadCount": 176,
+            "printCount": 125,
             "ratingCount": 10,
             "byPrinter": {
               "P2S": {
@@ -2679,9 +2535,9 @@ window.CATALOG_DATA = {
             "printTime": "7.0 h",
             "weight": "179 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 210,
-            "printCount": 87,
-            "ratingCount": 11,
+            "downloadCount": 223,
+            "printCount": 94,
+            "ratingCount": 12,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2758,7 +2614,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3012967"
           },
           {
@@ -2768,7 +2624,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3012967"
           }
         ],
@@ -2781,7 +2637,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 101
+        "commentCount": 103
       },
       "caseFile": "006",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER"
@@ -2798,10 +2654,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
-        "likes": 254,
-        "boosts": 613,
-        "downloads": 651,
-        "prints": 251
+        "likes": 274,
+        "boosts": 656,
+        "downloads": 704,
+        "prints": 264
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-night-crawler/",
@@ -2849,9 +2705,9 @@ window.CATALOG_DATA = {
           "printTime": "8.2 h",
           "weight": "195 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 742,
-          "printCount": 242,
-          "ratingCount": 30,
+          "downloadCount": 803,
+          "printCount": 252,
+          "ratingCount": 31,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2985,9 +2841,9 @@ window.CATALOG_DATA = {
             "printTime": "8.2 h",
             "weight": "195 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 742,
-            "printCount": 242,
-            "ratingCount": 30,
+            "downloadCount": 803,
+            "printCount": 252,
+            "ratingCount": 31,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -3094,6 +2950,141 @@ window.CATALOG_DATA = {
                 "weight": "193 g"
               }
             }
+          },
+          {
+            "title": "New Orientationfor Cleaner Print",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": "Required",
+            "printTime": "7.5 h",
+            "weight": "193 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 13,
+            "printCount": 3,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.3 h",
+                "weight": "189 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.8 h",
+                "weight": "187 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.3 h",
+                "weight": "187 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.0 h",
+                "weight": "189 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.3 h",
+                "weight": "172 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.3 h",
+                "weight": "171 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.3 h",
+                "weight": "172 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.3 h",
+                "weight": "171 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.5 h",
+                "weight": "193 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.4 h",
+                "weight": "189 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.4 h",
+                "weight": "189 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.4 h",
+                "weight": "189 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.3 h",
+                "weight": "189 g"
+              }
+            }
           }
         ],
         "bom": [
@@ -3104,7 +3095,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3015809"
           },
           {
@@ -3114,7 +3105,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3015809"
           }
         ],
@@ -3127,7 +3118,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 82
+        "commentCount": 91
       },
       "caseFile": "007",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE NIGHT CRAWLER"
@@ -3144,10 +3135,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019183-p1s-version-their-leader",
       "stats": {
-        "likes": 95,
-        "boosts": 162,
-        "downloads": 112,
-        "prints": 45
+        "likes": 104,
+        "boosts": 176,
+        "downloads": 118,
+        "prints": 53
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-their-leader/",
@@ -3190,8 +3181,8 @@ window.CATALOG_DATA = {
           "printTime": "5.1 h",
           "weight": "130 g",
           "difficulty": "3.7 / 5",
-          "downloadCount": 159,
-          "printCount": 45,
+          "downloadCount": 179,
+          "printCount": 53,
           "ratingCount": 4,
           "byPrinter": {
             "P2S": {
@@ -3326,8 +3317,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 159,
-            "printCount": 45,
+            "downloadCount": 179,
+            "printCount": 53,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -3447,7 +3438,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 17
+        "commentCount": 18
       },
       "caseFile": "008",
       "specimenLabel": "P1S VERSION THEIR LEADER"
@@ -3464,10 +3455,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019267-p1s-version-the-observer",
       "stats": {
-        "likes": 113,
-        "boosts": 199,
-        "downloads": 159,
-        "prints": 95
+        "likes": 117,
+        "boosts": 211,
+        "downloads": 170,
+        "prints": 103
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-the-observer/",
@@ -3509,10 +3500,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "6.8 h",
           "weight": "157 g",
-          "difficulty": "4.3 / 5",
-          "downloadCount": 355,
-          "printCount": 95,
-          "ratingCount": 9,
+          "difficulty": "4.4 / 5",
+          "downloadCount": 385,
+          "printCount": 103,
+          "ratingCount": 11,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3645,10 +3636,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.8 h",
             "weight": "157 g",
-            "difficulty": "4.3 / 5",
-            "downloadCount": 355,
-            "printCount": 95,
-            "ratingCount": 9,
+            "difficulty": "4.4 / 5",
+            "downloadCount": 385,
+            "printCount": 103,
+            "ratingCount": 11,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -3760,7 +3751,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 26
+        "commentCount": 29
       },
       "caseFile": "009",
       "specimenLabel": "P1S VERSION THE OBSERVER"
@@ -3777,10 +3768,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
-        "likes": 498,
-        "boosts": 1221,
-        "downloads": 625,
-        "prints": 168
+        "likes": 543,
+        "boosts": 1335,
+        "downloads": 699,
+        "prints": 188
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-k-a-r-l/",
@@ -3827,10 +3818,10 @@ window.CATALOG_DATA = {
           "supports": "",
           "printTime": "8.3 h",
           "weight": "200 g",
-          "difficulty": "4.6 / 5",
-          "downloadCount": 756,
-          "printCount": 165,
-          "ratingCount": 18,
+          "difficulty": "4.7 / 5",
+          "downloadCount": 844,
+          "printCount": 185,
+          "ratingCount": 22,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3963,10 +3954,10 @@ window.CATALOG_DATA = {
             "supports": "",
             "printTime": "8.3 h",
             "weight": "200 g",
-            "difficulty": "4.6 / 5",
-            "downloadCount": 756,
-            "printCount": 165,
-            "ratingCount": 18,
+            "difficulty": "4.7 / 5",
+            "downloadCount": 844,
+            "printCount": 185,
+            "ratingCount": 22,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -4085,7 +4076,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 70
+        "commentCount": 80
       },
       "caseFile": "010",
       "specimenLabel": "DISCLOSURE ALIEN GREYS K.A.R.L."
@@ -4102,10 +4093,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 370,
-        "boosts": 871,
-        "downloads": 532,
-        "prints": 156
+        "likes": 416,
+        "boosts": 961,
+        "downloads": 586,
+        "prints": 168
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-experimenter/",
@@ -4153,9 +4144,9 @@ window.CATALOG_DATA = {
           "printTime": "10.1 h",
           "weight": "215 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 540,
-          "printCount": 141,
-          "ratingCount": 16,
+          "downloadCount": 595,
+          "printCount": 152,
+          "ratingCount": 17,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -4289,9 +4280,9 @@ window.CATALOG_DATA = {
             "printTime": "10.1 h",
             "weight": "215 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 540,
-            "printCount": 141,
-            "ratingCount": 16,
+            "downloadCount": 595,
+            "printCount": 152,
+            "ratingCount": 17,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -4423,10 +4414,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "10.1 h",
             "weight": "215 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 34,
-            "printCount": 12,
-            "ratingCount": 3,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 38,
+            "printCount": 13,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -4543,7 +4534,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3021877"
           },
           {
@@ -4553,7 +4544,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3021877"
           },
           {
@@ -4563,7 +4554,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3021877"
           },
           {
@@ -4623,7 +4614,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$16.37",
+            "priceFrom": "$14.69",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118798&modelId=3021877"
           },
           {
@@ -4633,7 +4624,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$16.37",
+            "priceFrom": "$14.69",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=656734648064118792&modelId=3021877"
           },
           {
@@ -4643,7 +4634,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (12104)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980080&modelId=3021877"
           },
           {
@@ -4653,7 +4644,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (12105)"
             ],
-            "priceFrom": "$18.71",
+            "priceFrom": "$16.79",
             "url": "https://us.store.bambulab.com/products/pla-tough-upgrade?skr=yes&id=624483921975980062&modelId=3021877"
           }
         ],
@@ -4672,7 +4663,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 45
+        "commentCount": 48
       },
       "caseFile": "011",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE EXPERIMENTER"
@@ -4689,10 +4680,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 2933,
-        "boosts": 7174,
-        "downloads": 3791,
-        "prints": 2811
+        "likes": 3368,
+        "boosts": 8350,
+        "downloads": 4323,
+        "prints": 3316
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -4703,7 +4694,7 @@ window.CATALOG_DATA = {
         "features": [
           "Approximately 3 feet (36\") tall when assembled",
           "7 build plates for the complete alien",
-          "Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high-traffic areas",
+          "Optional display stand: 4 additional build plates for extra stability if you plan to display him outdoors or in high traffic areas",
           "1122.29g of Grey Filament for the Alien",
           "29.83g of Black Filament for the Alien",
           "420.91g of Black Filament for the Base"
@@ -4714,11 +4705,11 @@ window.CATALOG_DATA = {
         "publishedAt": "2026-07-12",
         "gallery": [
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-01.png",
-          "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-02.png",
+          "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-02.jpg",
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-03.jpg",
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-04.jpg",
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-05.jpg",
-          "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-06.jpg",
+          "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-06.png",
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-07.jpg",
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-08.jpg"
         ],
@@ -4745,11 +4736,11 @@ window.CATALOG_DATA = {
           "infill": "4%",
           "supports": null,
           "printTime": "47.4 h",
-          "weight": "1847 g",
-          "difficulty": "4.5 / 5",
-          "downloadCount": 148,
-          "printCount": 86,
-          "ratingCount": 12,
+          "weight": "1846 g",
+          "difficulty": "4.6 / 5",
+          "downloadCount": 164,
+          "printCount": 97,
+          "ratingCount": 18,
           "byPrinter": {
             "P2S": {
               "buildPlates": 11,
@@ -4757,7 +4748,7 @@ window.CATALOG_DATA = {
               "walls": "3",
               "infill": "4%",
               "printTime": "47.4 h",
-              "weight": "1847 g"
+              "weight": "1846 g"
             },
             "A2L": {
               "buildPlates": 11,
@@ -4881,11 +4872,11 @@ window.CATALOG_DATA = {
             "infill": "4%",
             "supports": null,
             "printTime": "47.4 h",
-            "weight": "1847 g",
-            "difficulty": "4.5 / 5",
-            "downloadCount": 148,
-            "printCount": 86,
-            "ratingCount": 12,
+            "weight": "1846 g",
+            "difficulty": "4.6 / 5",
+            "downloadCount": 164,
+            "printCount": 97,
+            "ratingCount": 18,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 11,
@@ -4893,7 +4884,7 @@ window.CATALOG_DATA = {
                 "walls": "3",
                 "infill": "4%",
                 "printTime": "47.4 h",
-                "weight": "1847 g"
+                "weight": "1846 g"
               },
               "A2L": {
                 "buildPlates": 11,
@@ -5018,9 +5009,9 @@ window.CATALOG_DATA = {
             "printTime": "49.1 h",
             "weight": "1649 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 5019,
-            "printCount": 2603,
-            "ratingCount": 298,
+            "downloadCount": 5856,
+            "printCount": 3054,
+            "ratingCount": 355,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -5154,7 +5145,7 @@ window.CATALOG_DATA = {
             "printTime": "0.5 h",
             "weight": "8 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 31,
+            "downloadCount": 34,
             "printCount": 2,
             "ratingCount": 1,
             "byPrinter": {
@@ -5296,10 +5287,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "3.0 h",
             "weight": "105 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 36,
-            "printCount": 42,
-            "ratingCount": 9,
+            "difficulty": "4.6 / 5",
+            "downloadCount": 45,
+            "printCount": 56,
+            "ratingCount": 15,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -5429,19 +5420,19 @@ window.CATALOG_DATA = {
             "walls": "2",
             "infill": "15%",
             "supports": null,
-            "printTime": "49.8 h",
+            "printTime": "49.9 h",
             "weight": "1666 g",
-            "difficulty": "4.5 / 5",
-            "downloadCount": 263,
-            "printCount": 133,
-            "ratingCount": 12,
+            "difficulty": "4.7 / 5",
+            "downloadCount": 361,
+            "printCount": 176,
+            "ratingCount": 18,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "15%",
-                "printTime": "49.8 h",
+                "printTime": "49.9 h",
                 "weight": "1666 g"
               },
               "A2L": {
@@ -5551,7 +5542,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3043821"
           },
           {
@@ -5561,7 +5552,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3043821"
           },
           {
@@ -5571,7 +5562,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3043821"
           },
           {
@@ -5581,7 +5572,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3043821"
           },
           {
@@ -5591,7 +5582,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3043821"
           }
         ],
@@ -5616,7 +5607,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 911
+        "commentCount": 1076
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -5633,10 +5624,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 446,
-        "boosts": 1102,
-        "downloads": 509,
-        "prints": 221
+        "likes": 480,
+        "boosts": 1181,
+        "downloads": 556,
+        "prints": 244
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-abductor/",
@@ -5684,9 +5675,9 @@ window.CATALOG_DATA = {
           "printTime": "8.9 h",
           "weight": "232 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 627,
-          "printCount": 217,
-          "ratingCount": 19,
+          "downloadCount": 695,
+          "printCount": 240,
+          "ratingCount": 22,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -5820,9 +5811,9 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 627,
-            "printCount": 217,
-            "ratingCount": 19,
+            "downloadCount": 695,
+            "printCount": 240,
+            "ratingCount": 22,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -5929,6 +5920,141 @@ window.CATALOG_DATA = {
                 "weight": "228 g"
               }
             }
+          },
+          {
+            "title": "Improved Supports 0.16mm layer, 2 walls, 10% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "8.9 h",
+            "weight": "232 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 0,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "232 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "9.9 h",
+                "weight": "225 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "10.0 h",
+                "weight": "226 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.5 h",
+                "weight": "228 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.8 h",
+                "weight": "210 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.8 h",
+                "weight": "208 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.1 h",
+                "weight": "209 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.8 h",
+                "weight": "208 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "228 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "9.0 h",
+                "weight": "228 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "228 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "9.1 h",
+                "weight": "228 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "228 g"
+              }
+            }
           }
         ],
         "bom": [
@@ -5939,7 +6065,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3067591"
           },
           {
@@ -5949,7 +6075,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40988815556744&modelId=3067591"
           },
           {
@@ -5959,7 +6085,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Dark Gray (10105)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3067591"
           },
           {
@@ -5969,7 +6095,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3067591"
           },
           {
@@ -5979,7 +6105,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=40475106738312&modelId=3067591"
           },
           {
@@ -5989,7 +6115,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3067591"
           },
           {
@@ -6032,7 +6158,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 36
+        "commentCount": 40
       },
       "caseFile": "013",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE ABDUCTOR"
@@ -6049,17 +6175,17 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
-        "likes": 304,
-        "boosts": 734,
-        "downloads": 526,
-        "prints": 384
+        "likes": 339,
+        "boosts": 829,
+        "downloads": 604,
+        "prints": 459
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
       "detail": {
         "caseFile": "014",
         "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS",
-        "summaryText": "THEM 1947 Disclosure Alien Greys - THE INTIMIDATOR 👽 Meet The Intimidator (thank you Thomas H.), a menacing new addition to the THEM 1947 Disclosure Alien Greys collection. Crouched low with its long arms planted firmly on the ground, The Intimidator looks ready to crawl forward and strike without warning. Its oversized head, unsettling expression, exposed back structure, and stretched fingers create an aggressive display piece that appears to be watching-and waiting-for someone to make the wrong move. This model is perfect for alien collections, sci fi displays, creepy dioramas, Halloween decorations, or anyone fascinated by the mystery surrounding the classic Grey alien phenomenon. There is an Easter Egg with this alien. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 2 🌳 Supports: Hybrid tree supports are required ✨ Brim: Recommended for additional bed adhesion Because of the low crawling pose, extended fingers, arms, and detailed body structure, carefully removing the supports is recommended. Every download, print, rating, and Boost helps support the time, filament, and test prints required to keep expanding the THEM 1947 Disclosure Alien Greys collection. Boost the model to let me know you want to see more of THEM ! This file is for personal use only. Anyone interested in selling physical prints can join my Commercial License Membership here on MakerWorld. 3 FOOT INTIMIDATOR Assembly Sequence Each number represents the corresponding part/file number . When a range is shown, such as 8-9, it means those parts have already been joined together in the previous step. Join Part 8 + Part 9 Join Part 2 + Part 3 Join Part 5 + Part 6 Join Part 7 + assembled Parts 8-9 Join Part 1 + assembled Parts 2-3 + Part 4 Join assembled Parts 5-6 + assembled Parts 7-9 Final Assembly: Join assembled Parts 1-4 + assembled Parts 5-9 This leaves you with two main assembled sections before the final step: Parts 1-4 + Parts 5-9 = Complete Model",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - THE INTIMIDATOR 👽 Meet The Intimidator (thank you Thomas H.), a menacing new addition to the THEM 1947 Disclosure Alien Greys collection. Crouched low with its long arms planted firmly on the ground, The Intimidator looks ready to crawl forward and strike without warning. Its oversized head, unsettling expression, exposed back structure, and stretched fingers create an aggressive display piece that appears to be watching and waiting for someone to make the wrong move. This model is perfect for alien collections, sci fi displays, creepy dioramas, Halloween decorations, or anyone fascinated by the mystery surrounding the classic Grey alien phenomenon. There is an Easter Egg with this alien. Print Recommendations 🖨️ Material: PLA, PLA+, or PETG 📏 Layer Height: 0.16-0.20 mm 📦 Infill: 10-15% 🧱 Walls: 2 🌳 Supports: Hybrid tree supports are required ✨ Brim: Recommended for additional bed adhesion Because of the low crawling pose, extended fingers, arms, and detailed body structure, carefully removing the supports is recommended. Every download, print, rating, and Boost helps support the time, filament, and test prints required to keep expanding the THEM 1947 Disclosure Alien Greys collection. Boost the model to let me know you want to see more of THEM ! This file is for personal use only. Anyone interested in selling physical prints can join my Commercial License Membership here on MakerWorld. 3 FOOT INTIMIDATOR Assembly Sequence Each number represents the corresponding part/file number . When a range is shown, such as 8-9, it means those parts have already been joined together in the previous step. Join Part 8 + Part 9 Join Part 2 + Part 3 Join Part 5 + Part 6 Join Part 7 + assembled Parts 8-9 Join Part 1 + assembled Parts 2-3 + Part 4 Join assembled Parts 5-6 + assembled Parts 7-9 Final Assembly: Join assembled Parts 1-4 + assembled Parts 5-9 This leaves you with two main assembled sections before the final step: Parts 1-4 + Parts 5-9 = Complete Model",
         "features": [
           "Join Part 8 + Part 9",
           "Join Part 2 + Part 3",
@@ -6104,8 +6230,8 @@ window.CATALOG_DATA = {
           "printTime": "10.0 h",
           "weight": "207 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 722,
-          "printCount": 196,
+          "downloadCount": 754,
+          "printCount": 215,
           "ratingCount": 23,
           "byPrinter": {
             "P2S": {
@@ -6240,8 +6366,8 @@ window.CATALOG_DATA = {
             "printTime": "10.0 h",
             "weight": "207 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 722,
-            "printCount": 196,
+            "downloadCount": 754,
+            "printCount": 215,
             "ratingCount": 23,
             "byPrinter": {
               "P2S": {
@@ -6374,10 +6500,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "52.6 h",
             "weight": "1437 g",
-            "difficulty": "4.6 / 5",
-            "downloadCount": 364,
-            "printCount": 178,
-            "ratingCount": 17,
+            "difficulty": "4.7 / 5",
+            "downloadCount": 485,
+            "printCount": 223,
+            "ratingCount": 20,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -6456,8 +6582,8 @@ window.CATALOG_DATA = {
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "5%",
-                "printTime": "52.6 h",
-                "weight": "1437 g"
+                "printTime": "55.0 h",
+                "weight": "1431 g"
               },
               "X1 Carbon": {
                 "buildPlates": 9,
@@ -6509,10 +6635,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "44.2 h",
             "weight": "1316 g",
-            "difficulty": "2.1 / 5",
-            "downloadCount": 26,
-            "printCount": 10,
-            "ratingCount": 1,
+            "difficulty": "3.0 / 5",
+            "downloadCount": 46,
+            "printCount": 21,
+            "ratingCount": 2,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 10,
@@ -6629,7 +6755,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3073830"
           },
           {
@@ -6639,7 +6765,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3073830"
           },
           {
@@ -6659,13 +6785,13 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3073830"
           }
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 121
+        "commentCount": 131
       },
       "caseFile": "014",
       "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS"
@@ -6673,40 +6799,40 @@ window.CATALOG_DATA = {
     {
       "id": "mw-3090735",
       "makerWorldId": 3090735,
-      "name": "3 Foot Alien LEADER",
-      "slug": "3-foot-alien-leader-them-1947-series",
-      "pathSlug": "3-foot-alien-leader-them-1947-series",
-      "blurb": "3 Foot Alien LEADER. Grey-series 3D print. Download the files on MakerWorld.",
-      "image": "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-01.jpg",
+      "name": "3 Foot Series Alien LEADER Alien Greys",
+      "slug": "3-foot-series-alien-leader-them-1947-alien-greys",
+      "pathSlug": "3-foot-series-alien-leader-them-1947-alien-greys",
+      "blurb": "3 Foot Series Alien LEADER Alien Greys. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-01.jpg",
       "status": "classified",
       "vault": "classified",
-      "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-alien-leader-them-1947-series",
+      "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-series-alien-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 2132,
-        "boosts": 5195,
-        "downloads": 2844,
-        "prints": 1959
+        "likes": 2509,
+        "boosts": 6323,
+        "downloads": 3480,
+        "prints": 2458
       },
       "buyHref": null,
-      "href": "/files/prints/3-foot-alien-leader-them-1947-series/",
+      "href": "/files/prints/3-foot-series-alien-leader-them-1947-alien-greys/",
       "detail": {
         "caseFile": "015",
-        "specimenLabel": "3 FOOT ALIEN LEADER",
-        "summaryText": "THEM 1947 Disclosure Alien Greys - 3 Foot Alien Leader 👽 Meet the 3 Foot Alien Leader, a large scale display piece from the THEM 1947 Disclosure Alien Greys collection. This model brings the classic Grey alien look to a much larger and more intimidating size. With its oversized head, long limbs, eerie eyes, and commanding presence, this alien looks like the one giving the orders. Whether displayed in a room, shop, Halloween setup, UFO scene, or sci fi collection, the Alien Leader is designed to stand out and grab attention. The larger size gives the model a stronger presence than a standard tabletop print, making it perfect for anyone who wants a serious alien display piece. It has that silent, unsettling look that makes it feel like it is watching, waiting, and fully in control. This file is great for alien collectors, sci fi fans, Halloween props, UFO displays, MakerWorld collections, or anyone building out the THEM 1947 Disclosure Alien Greys lineup. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16-0.20 mm Infill: 10-15% Walls: 2 Supports: Tree Supports required for some of the plates, make sure they are on. Adaptive Layer Height: Recommended for smoother detail Because this is a large model, make sure your printer is dialed in before starting. Take your time removing supports around the face, fingers, toes, arms, and any thin detailed areas. Test fit the parts before adding glue. IMPORTANT: When adding the hands to the arms, there are two (2) special size dowel pins marked \"19\" and \"47\". Place those pins in the corresponding holes on the hands first. The hands have 19 & 47 next to the hole that they go in. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time, filament, testing, and failed prints go into creating these models. If you enjoy the THEM 1947 Disclosure Alien Greys collection and want to see more aliens added, a boost is greatly appreciated and helps keep future models coming. Another way you can support me is to order the filament through the BOM. Every little bit of help goes a long way. If you have an adaption you'd like to share, send me a PM.",
+        "specimenLabel": "3 FOOT SERIES ALIEN LEADER ALIEN GREYS",
+        "summaryText": "THEM 1947 Disclosure Alien Greys - 3 Foot Alien Leader 👽 Meet the 3 Foot Alien Leader, a large scale display piece from the THEM 1947 Disclosure Alien Greys collection. This model brings the classic Grey alien look to a much larger and more intimidating size. With its oversized head, long limbs, eerie eyes, and commanding presence, this alien looks like the one giving the orders. Whether displayed in a room, shop, Halloween setup, UFO scene, or sci fi collection, the Alien Leader is designed to stand out and grab attention. The larger size gives the model a stronger presence than a standard tabletop print, making it perfect for anyone who wants a serious alien display piece. It has that silent, unsettling look that makes it feel like it is watching, waiting, and fully in control. This file is great for alien collectors, sci fi fans, Halloween props, UFO displays, MakerWorld collections, or anyone building out the THEM 1947 Disclosure Alien Greys lineup. Print Recommendations Material: PLA, PLA+, or PETG Layer Height: 0.16-0.20 mm Infill: 10-15% Walls: 2 Supports: Tree Supports required for some of the plates, make sure they are on. Adaptive Layer Height: Recommended for smoother detail Because this is a large model, make sure your printer is dialed in before starting. Take your time removing supports around the face, fingers, toes, arms, and any thin detailed areas. Test fit the parts before adding glue. *IMPORTANT: When adding the hands to the arms, there are two (2) special size dowel pins marked \"19\" and \"47\". Place those pins in the corresponding holes on the hands first. The hands have 19 & 47 next to the hole that they go in. Commercial Use This file is for personal use unless you are part of my Commercial License Membership . If you would like to sell printed versions of this model, you can join the MEMBERSHIP to get commercial selling rights. Boosts Help Keep the Collection Growing A lot of time, filament, testing, and failed prints go into creating these models. If you enjoy the THEM 1947 Disclosure Alien Greys collection and want to see more aliens added, a boost is greatly appreciated and helps keep future models coming. Another way you can support me is to order the filament through the BOM. Every little bit of help goes a long way. If you have an adaption you'd like to share, send me a PM.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
         "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
         "publishedAt": "2026-07-24",
         "gallery": [
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-01.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-02.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-03.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-04.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-05.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-06.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-07.jpg",
-          "/assets/catalog/classified/3-foot-alien-leader-them-1947-series/gallery-08.jpg"
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-01.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-02.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-03.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-04.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-05.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-06.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-07.jpg",
+          "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-08.jpg"
         ],
         "printProfile": {
           "title": "0.2mm layer, 2 walls, 5% infill",
@@ -6725,19 +6851,19 @@ window.CATALOG_DATA = {
           "walls": "2",
           "infill": "15%",
           "supports": null,
-          "printTime": "36.6 h",
+          "printTime": "36.5 h",
           "weight": "1439 g",
           "difficulty": "5.0 / 5",
-          "downloadCount": 3270,
-          "printCount": 1290,
-          "ratingCount": 158,
+          "downloadCount": 4026,
+          "printCount": 1613,
+          "ratingCount": 190,
           "byPrinter": {
             "P2S": {
               "buildPlates": 12,
               "layerHeight": "0.2",
               "walls": "2",
               "infill": "15%",
-              "printTime": "36.6 h",
+              "printTime": "36.5 h",
               "weight": "1439 g"
             },
             "A2L": {
@@ -6816,19 +6942,19 @@ window.CATALOG_DATA = {
             "walls": "2",
             "infill": "15%",
             "supports": null,
-            "printTime": "36.6 h",
+            "printTime": "36.5 h",
             "weight": "1439 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 3270,
-            "printCount": 1290,
-            "ratingCount": 158,
+            "downloadCount": 4026,
+            "printCount": 1613,
+            "ratingCount": 190,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "15%",
-                "printTime": "36.6 h",
+                "printTime": "36.5 h",
                 "weight": "1439 g"
               },
               "A2L": {
@@ -6911,12 +7037,12 @@ window.CATALOG_DATA = {
             "walls": "2",
             "infill": "5%",
             "supports": null,
-            "printTime": "36.1 h",
+            "printTime": "36.2 h",
             "weight": "1410 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1000,
-            "printCount": 660,
-            "ratingCount": 78,
+            "downloadCount": 1216,
+            "printCount": 826,
+            "ratingCount": 92,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -6987,7 +7113,7 @@ window.CATALOG_DATA = {
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "5%",
-                "printTime": "36.1 h",
+                "printTime": "36.2 h",
                 "weight": "1410 g"
               },
               "P1P": {
@@ -7023,6 +7149,168 @@ window.CATALOG_DATA = {
                 "weight": "1409 g"
               }
             }
+          },
+          {
+            "title": "400mm Print Bed - Ender 5 Max",
+            "printers": [
+              "Creality CR-10 Max"
+            ],
+            "buildPlates": 3,
+            "layerHeight": "0.2",
+            "walls": "3",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "185.2 h",
+            "weight": "2377 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 9,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "Creality CR-10 Max": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "15%",
+                "printTime": "185.2 h",
+                "weight": "2377 g"
+              }
+            }
+          },
+          {
+            "title": "3 Foot Leader Flashforge AD5X",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 11,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "47.6 h",
+            "weight": "2267 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 22,
+            "printCount": 8,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "48.2 h",
+                "weight": "2264 g"
+              },
+              "A2L": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "55.5 h",
+                "weight": "2264 g"
+              },
+              "A1": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "58.3 h",
+                "weight": "2267 g"
+              },
+              "H2S": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.0 h",
+                "weight": "2266 g"
+              },
+              "H2C": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "48.3 h",
+                "weight": "2289 g"
+              },
+              "H2D": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "48.3 h",
+                "weight": "2264 g"
+              },
+              "X2D": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.8 h",
+                "weight": "2264 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "48.3 h",
+                "weight": "2265 g"
+              },
+              "P1S": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.6 h",
+                "weight": "2267 g"
+              },
+              "P1P": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "51.2 h",
+                "weight": "2267 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.8 h",
+                "weight": "2269 g"
+              },
+              "X1": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "51.4 h",
+                "weight": "2269 g"
+              },
+              "X1E": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.9 h",
+                "weight": "2269 g"
+              }
+            }
           }
         ],
         "bom": [
@@ -7033,7 +7321,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3090735"
           },
           {
@@ -7043,7 +7331,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3090735"
           },
           {
@@ -7066,10 +7354,10 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 531
+        "commentCount": 626
       },
       "caseFile": "015",
-      "specimenLabel": "3 FOOT ALIEN LEADER"
+      "specimenLabel": "3 FOOT SERIES ALIEN LEADER ALIEN GREYS"
     },
     {
       "id": "mw-3103043",
@@ -7083,10 +7371,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
       "stats": {
-        "likes": 41,
-        "boosts": 72,
-        "downloads": 20,
-        "prints": 5
+        "likes": 44,
+        "boosts": 79,
+        "downloads": 25,
+        "prints": 6
       },
       "buyHref": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy"
     },
@@ -7102,10 +7390,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy",
       "stats": {
-        "likes": 27,
-        "boosts": 57,
-        "downloads": 19,
-        "prints": 18
+        "likes": 30,
+        "boosts": 80,
+        "downloads": 22,
+        "prints": 22
       },
       "buyHref": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy"
     },
@@ -7121,9 +7409,9 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
       "stats": {
-        "likes": 14,
-        "boosts": 21,
-        "downloads": 5,
+        "likes": 15,
+        "boosts": 25,
+        "downloads": 6,
         "prints": 1
       },
       "buyHref": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj"
@@ -7140,10 +7428,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 730,
-        "boosts": 1828,
-        "downloads": 1114,
-        "prints": 909
+        "likes": 841,
+        "boosts": 2068,
+        "downloads": 1308,
+        "prints": 1129
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -7155,7 +7443,7 @@ window.CATALOG_DATA = {
           "Approximately 3 feet tall when fully assembled",
           "Detailed alien anatomy and facial features",
           "Dramatic experimenting and reaching pose",
-          "Designed as a large multi-part display model",
+          "Designed as a large multi part display model",
           "Part of the THEM 1947 Disclosure Alien Greys collection",
           "Excellent for custom lighting, painting, and themed displays"
         ],
@@ -7198,9 +7486,9 @@ window.CATALOG_DATA = {
           "printTime": "46.9 h",
           "weight": "1971 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 1772,
-          "printCount": 900,
-          "ratingCount": 86,
+          "downloadCount": 2031,
+          "printCount": 1064,
+          "ratingCount": 104,
           "byPrinter": {
             "P2S": {
               "buildPlates": 11,
@@ -7334,9 +7622,9 @@ window.CATALOG_DATA = {
             "printTime": "46.9 h",
             "weight": "1971 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1772,
-            "printCount": 900,
-            "ratingCount": 86,
+            "downloadCount": 2031,
+            "printCount": 1064,
+            "ratingCount": 104,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 11,
@@ -7468,10 +7756,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "39.8 h",
             "weight": "1848 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 13,
-            "printCount": 9,
-            "ratingCount": 0,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 83,
+            "printCount": 64,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7598,7 +7886,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3126566"
           },
           {
@@ -7608,7 +7896,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3126566"
           },
           {
@@ -7618,7 +7906,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3126566"
           }
         ],
@@ -7631,7 +7919,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 230
+        "commentCount": 279
       },
       "caseFile": "016",
       "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY"
@@ -7648,10 +7936,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 473,
-        "boosts": 1042,
-        "downloads": 651,
-        "prints": 492
+        "likes": 552,
+        "boosts": 1243,
+        "downloads": 771,
+        "prints": 615
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -7699,9 +7987,9 @@ window.CATALOG_DATA = {
           "printTime": "4.1 h",
           "weight": "112 g",
           "difficulty": "4.4 / 5",
-          "downloadCount": 164,
-          "printCount": 86,
-          "ratingCount": 10,
+          "downloadCount": 184,
+          "printCount": 99,
+          "ratingCount": 11,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -7835,9 +8123,9 @@ window.CATALOG_DATA = {
             "printTime": "4.1 h",
             "weight": "112 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 164,
-            "printCount": 86,
-            "ratingCount": 10,
+            "downloadCount": 184,
+            "printCount": 99,
+            "ratingCount": 11,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -7964,10 +8252,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "38.1 h",
             "weight": "1559 g",
-            "difficulty": "4.7 / 5",
-            "downloadCount": 588,
-            "printCount": 171,
-            "ratingCount": 20,
+            "difficulty": "4.8 / 5",
+            "downloadCount": 706,
+            "printCount": 218,
+            "ratingCount": 30,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -8054,10 +8342,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "52.3 h",
             "weight": "2251 g",
-            "difficulty": "4.7 / 5",
-            "downloadCount": 46,
-            "printCount": 71,
-            "ratingCount": 24,
+            "difficulty": "4.8 / 5",
+            "downloadCount": 51,
+            "printCount": 80,
+            "ratingCount": 31,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 6,
@@ -8149,10 +8437,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "45.2 h",
             "weight": "1621 g",
-            "difficulty": "4.6 / 5",
-            "downloadCount": 247,
-            "printCount": 164,
-            "ratingCount": 17,
+            "difficulty": "4.7 / 5",
+            "downloadCount": 309,
+            "printCount": 218,
+            "ratingCount": 27,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -8269,7 +8557,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3149588"
           },
           {
@@ -8279,7 +8567,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3149588"
           }
         ],
@@ -8292,7 +8580,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 209
+        "commentCount": 254
       },
       "caseFile": "017",
       "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES"
@@ -8310,9 +8598,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3166617-them-1947-alien-greys-sign",
       "stats": {
         "likes": 36,
-        "boosts": 67,
-        "downloads": 11,
-        "prints": 6
+        "boosts": 71,
+        "downloads": 12,
+        "prints": 8
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-alien-greys-sign/",
@@ -8321,7 +8609,7 @@ window.CATALOG_DATA = {
         "specimenLabel": "ALIEN GREYS SIGN",
         "summaryText": "THEM 1947 - Glow in the-Dark Hanging Alien Sign Bring a little Roswell mystery to your wall with the THEM 1947 Hanging Sign ! This round UFO-themed sign features the THEM 1947 design with flying saucer, stars, and bold lettering. The green portions were printed using Bambu Lab Glow Green filament, giving the sign an awesome radioactive style glow when the lights go out. The model includes 1.5 mm pre designed holes at the top for adding screw eyelets, making it easy to attach a chain, cord, or other hanger and display it in your workshop, game room, 3D printing area, garage, alien collection, or UFO-themed room. Colors used in the example: Bambu Lab Glow in the-Dark Green Bambu Lab Black Bambu Lab Matte Bone White Charge the glow filament under a bright light and watch THEM come alive in the dark! 👽 THEM 1947 - They were never supposed to be seen.",
         "features": [
-          "Bambu Lab Glow-in-the-Dark Green",
+          "Bambu Lab Glow in the-Dark Green",
           "Bambu Lab Black",
           "Bambu Lab Matte Bone White"
         ],
@@ -8361,8 +8649,8 @@ window.CATALOG_DATA = {
           "printTime": "7.4 h",
           "weight": "154 g",
           "difficulty": "2.1 / 5",
-          "downloadCount": 30,
-          "printCount": 6,
+          "downloadCount": 35,
+          "printCount": 8,
           "ratingCount": 1,
           "byPrinter": {
             "P2S": {
@@ -8497,8 +8785,8 @@ window.CATALOG_DATA = {
             "printTime": "7.4 h",
             "weight": "154 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 30,
-            "printCount": 6,
+            "downloadCount": 35,
+            "printCount": 8,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -8689,7 +8977,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3166617"
           },
           {
@@ -8699,7 +8987,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Bone White (11103)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-matte?skr=yes&id=43292383936648&modelId=3166617"
           }
         ],
@@ -8722,10 +9010,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 214,
-        "boosts": 467,
-        "downloads": 310,
-        "prints": 125
+        "likes": 284,
+        "boosts": 644,
+        "downloads": 432,
+        "prints": 191
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
@@ -8735,8 +9023,8 @@ window.CATALOG_DATA = {
         "summaryText": "THEM 1947 Alien Greys Series THE LEADER has arrived. Standing approximately 5 feet tall, THE LEADER is one of the most commanding members of the THEM 1947 Alien Greys Series . With his oversized Grey Alien head, large dark eyes, long slender body, and composed stance, this model was designed to look like the one the others answer to. His calm posture and hands held together give him a completely different personality from some of the more aggressive members of the series. He doesn't need to chase you. He doesn't need to hide. He simply watches. and the others follow. At five feet tall, THE LEADER makes an incredible life size display for a game room, man cave, garage, shop, convention booth, Halloween setup, UFO display, or anywhere you want people to stop and ask, \"Where did you get that?\" The model is divided into multiple printable sections so it can be produced on standard size 3D printers and assembled into the complete 5-foot figure. 👽 Model Features Approximately 5 feet tall when assembled Large life size Alien Grey display Multi part design for easier printing Designed for straightforward assembly Detailed head, facial features, hands, feet, and body Excellent centerpiece for alien and UFO-themed displays Part of the growing THEM 1947 Alien Greys Series THE LEADER looks especially impressive displayed alongside the other full size THEM 1947 Aliens, creating the appearance of an entire Grey Alien gathering. Print him. Assemble him. Put him somewhere unexpected. Just remember. Where THE LEADER goes, the others may not be far behind. 🛸 THE 5 FOOT LEADER 👽 THEM 1947 Alien Greys Series They were never just visitors.",
         "features": [
           "Approximately 5 feet tall when assembled",
-          "Large life-size Alien Grey display",
-          "Multi-part design for easier printing",
+          "Large life size Alien Grey display",
+          "Multi part design for easier printing",
           "Designed for straightforward assembly",
           "Detailed head, facial features, hands, feet, and body",
           "Excellent centerpiece for alien and UFO-themed displays"
@@ -8774,10 +9062,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "142.5 h",
           "weight": "4966 g",
-          "difficulty": "4.2 / 5",
-          "downloadCount": 301,
-          "printCount": 78,
-          "ratingCount": 7,
+          "difficulty": "4.3 / 5",
+          "downloadCount": 381,
+          "printCount": 101,
+          "ratingCount": 8,
           "byPrinter": {
             "P2S": {
               "buildPlates": 24,
@@ -8865,10 +9153,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "142.5 h",
             "weight": "4966 g",
-            "difficulty": "4.2 / 5",
-            "downloadCount": 301,
-            "printCount": 78,
-            "ratingCount": 7,
+            "difficulty": "4.3 / 5",
+            "downloadCount": 381,
+            "printCount": 101,
+            "ratingCount": 8,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 24,
@@ -8952,10 +9240,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "73.3 h",
             "weight": "3812 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 143,
-            "printCount": 45,
-            "ratingCount": 3,
+            "difficulty": "3.9 / 5",
+            "downloadCount": 186,
+            "printCount": 55,
+            "ratingCount": 5,
             "byPrinter": {
               "A2L": {
                 "buildPlates": 9,
@@ -8998,12 +9286,147 @@ window.CATALOG_DATA = {
                 "weight": "3812 g"
               }
             }
+          },
+          {
+            "title": "Optimized 14 plates (250 mm) fewer plates better supports",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 14,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "143.7 h",
+            "weight": "4715 g",
+            "difficulty": "3.5 / 5",
+            "downloadCount": 73,
+            "printCount": 32,
+            "ratingCount": 3,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "144.2 h",
+                "weight": "4712 g"
+              },
+              "A2L": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "160.3 h",
+                "weight": "4702 g"
+              },
+              "A1": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "162.3 h",
+                "weight": "4701 g"
+              },
+              "H2S": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "143.1 h",
+                "weight": "4716 g"
+              },
+              "H2C": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "138.9 h",
+                "weight": "4613 g"
+              },
+              "H2D": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "139.4 h",
+                "weight": "4578 g"
+              },
+              "X2D": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "143.7 h",
+                "weight": "4715 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "139.3 h",
+                "weight": "4578 g"
+              },
+              "P1S": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "128.9 h",
+                "weight": "4781 g"
+              },
+              "P1P": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "143.7 h",
+                "weight": "4715 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "129.5 h",
+                "weight": "4786 g"
+              },
+              "X1": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "131.5 h",
+                "weight": "4786 g"
+              },
+              "X1E": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "129.3 h",
+                "weight": "4786 g"
+              }
+            }
           }
         ],
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 52
+        "commentCount": 67
       },
       "caseFile": "019",
       "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
@@ -9020,17 +9443,17 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3195349-3-foot-night-crawler-them-1947-alien-greys",
       "stats": {
-        "likes": 179,
-        "boosts": 456,
-        "downloads": 259,
-        "prints": 224
+        "likes": 209,
+        "boosts": 546,
+        "downloads": 337,
+        "prints": 299
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
       "detail": {
         "caseFile": "020",
         "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS",
-        "summaryText": "THEM 1947 Alien Grey Website here @ https://them1947.com/ THE NIGHT CRAWLER - 3 FOOT SERIES VERSION | THEM 1947 Alien Greys Something is moving in the dark. Introducing THE NIGHT CRAWLER, scaled to match the other models in the THEM 1947 Alien Greys 3 Foot Series . THE NIGHT CRAWLER was designed to capture that unsettling moment when you realize something isn't just watching you-it's coming toward you . With its low, creeping stance, oversized alien features, and eerie presence, this version is made to display alongside the other large scale THEM 1947 Alien Greys. Because of his crawling pose, THE NIGHT CRAWLER is not 3 feet tall . Instead, he has been scaled proportionally to match the same scale used throughout the THEM 1947 3 Foot Series, making him a perfect companion piece for the rest of the collection. PRINT & ASSEMBLY INFORMATION This large scale version is divided across 8 build plates to make printing and assembly easier. IMPORTANT: There is a special assembly pin for the right arm . The right arm connection is slightly shorter than the others, so be sure to use the correct pin in that location during assembly. Using the wrong pin may prevent the arm from fitting together properly. 👽 Part of the THEM 1947 Alien Greys 3 Foot Series 📏 Scaled to match the other 3 Foot Series Aliens 🖨️ 8 Build Plates 🔩 Includes a special shorter pin for the right arm 🛸 Designed as a large scale display piece 🌌 Great for UFO, alien, sci fi, Halloween, and paranormal displays 🖨️ Created specifically with 3D printing and assembly in mind Whether you place him crawling out of a dark hallway, underneath a display, alongside your other THEM 1947 Aliens, or somewhere completely unexpected, THE NIGHT CRAWLER is definitely going to get attention. Print him. Build him. Then decide where you're brave enough to put him. More members of the THEM 1947 Alien Greys are on the way. THEM 1947 - They were never gone.",
+        "summaryText": "THEM 1947 Alien Grey Website here @ https://them1947.com/ THE NIGHT CRAWLER - 3 FOOT SERIES VERSION | THEM 1947 Alien Greys Something is moving in the dark. Introducing THE NIGHT CRAWLER, scaled to match the other models in the THEM 1947 Alien Greys 3 Foot Series . THE NIGHT CRAWLER was designed to capture that unsettling moment when you realize something isn't just watching you it's coming toward you . With its low, creeping stance, oversized alien features, and eerie presence, this version is made to display alongside the other large scale THEM 1947 Alien Greys. Because of his crawling pose, THE NIGHT CRAWLER is not 3 feet tall . Instead, he has been scaled proportionally to match the same scale used throughout the THEM 1947 3 Foot Series, making him a perfect companion piece for the rest of the collection. PRINT & ASSEMBLY INFORMATION This large scale version is divided across 8 build plates to make printing and assembly easier. IMPORTANT: There is a special assembly pin for the right arm . The right arm connection is slightly shorter than the others, so be sure to use the correct pin in that location during assembly. Using the wrong pin may prevent the arm from fitting together properly. 👽 Part of the THEM 1947 Alien Greys 3 Foot Series 📏 Scaled to match the other 3 Foot Series Aliens 🖨️ 8 Build Plates 🔩 Includes a special shorter pin for the right arm 🛸 Designed as a large scale display piece 🌌 Great for UFO, alien, sci fi, Halloween, and paranormal displays 🖨️ Created specifically with 3D printing and assembly in mind Whether you place him crawling out of a dark hallway, underneath a display, alongside your other THEM 1947 Aliens, or somewhere completely unexpected, THE NIGHT CRAWLER is definitely going to get attention. Print him. Build him. Then decide where you're brave enough to put him. More members of the THEM 1947 Alien Greys are on the way. THEM 1947 - They were never gone.",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -9066,10 +9489,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "53.3 h",
           "weight": "1676 g",
-          "difficulty": "4.6 / 5",
-          "downloadCount": 557,
-          "printCount": 206,
-          "ratingCount": 16,
+          "difficulty": "4.4 / 5",
+          "downloadCount": 714,
+          "printCount": 273,
+          "ratingCount": 22,
           "byPrinter": {
             "P2S": {
               "buildPlates": 8,
@@ -9202,10 +9625,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "53.3 h",
             "weight": "1676 g",
-            "difficulty": "4.6 / 5",
-            "downloadCount": 557,
-            "printCount": 206,
-            "ratingCount": 16,
+            "difficulty": "4.4 / 5",
+            "downloadCount": 714,
+            "printCount": 273,
+            "ratingCount": 22,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -9337,10 +9760,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "53.5 h",
             "weight": "1660 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 57,
-            "printCount": 18,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 69,
+            "printCount": 26,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -9467,7 +9890,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3195349"
           },
           {
@@ -9477,7 +9900,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Dark Gray (10105)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844629008520&modelId=3195349"
           },
           {
@@ -9487,7 +9910,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Light Gray (10104)"
             ],
-            "priceFrom": "$12.47",
+            "priceFrom": "$11.19",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3195349"
           },
           {
@@ -9497,13 +9920,13 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3195349"
           }
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 50
+        "commentCount": 59
       },
       "caseFile": "020",
       "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS"
@@ -9520,17 +9943,17 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3200946-one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
       "stats": {
-        "likes": 143,
-        "boosts": 336,
-        "downloads": 140,
-        "prints": 123
+        "likes": 221,
+        "boosts": 523,
+        "downloads": 240,
+        "prints": 205
       },
       "buyHref": null,
       "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
       "detail": {
         "caseFile": "021",
         "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10",
-        "summaryText": "THEM 1947 Alien Grey Meet THE ONE HIT WONDER, the newest character to join the THEM 1947 Alien Greys lineup! 👽💨 This laid back Grey is the result of a special collaboration between THEM 1947 and LitPrintz, bringing together two creators for one seriously out of this world release. With his relaxed seated pose, signature THEM 1947 Alien Grey appearance, and unmistakable attitude, THE ONE HIT WONDER is definitely going to stand out in your collection. Whether displayed alongside the rest of your THEM 1947 crew or sitting on his own, this guy looks like he has already discovered something on Earth that wasn't included in the original mission briefing. 😂 An empty spool gives him a great seat to sit on for the 3 foot version. 👽 THEM 1947 × LitPrintz Collaboration THEM 1947 Alien Coozie - Free STL Drop This model is only part of the collaboration! Be sure to head over to LitPrintz.com and check out the Custom Alien Can Coozie designed to go along with THE ONE HIT WONDER. If you haven't checked out LitPrintz yet, take a look around-they have some awesome custom designs and creations. ⚠️ VERY IMPORTANT ASSEMBLY NOTE for 3 Foot Version. DO NOT REMOVE THE CIG SUPPORT EARLY! When assembling THE ONE HIT WONDER, the small support attached to the cig is there to help protect the cig during handling and assembly. Glue the Alien's head securely to the rest of the body FIRST. Once the Alien is completely assembled and the head is firmly attached, remove the cig support LAST. The cig is a small, delicate feature, and removing that support too soon can make it much easier to accidentally damage or break it during assembly. HEAD ON → BODY ASSEMBLED → CIG SUPPORT REMOVED LAST! Also, there is ONE PIN SMALLER THAN the rest of them. It goes into his upper arm and is marked. 🛸 Stay Connected With THEM 1947 Want to keep up with new Alien Greys, upcoming releases, special collaborations, photos, and everything happening with the THEM 1947 universe? Visit: THEM1947.com And join the THEM 1947 Alien Greys Facebook Group: https://www.facebook.com/groups/1289863179891582 Share your prints, show off your Alien collection, and stay up to date on what's coming next. THE ONE HIT WONDER has landed. and apparently he's already found a way to relax on Earth. 👽💨 THEM 1947 × LitPrintz",
+        "summaryText": "THEM 1947 Alien Grey Meet THE ONE HIT WONDER, the newest character to join the THEM 1947 Alien Greys lineup! 👽💨 This laid back Grey is the result of a special collaboration between THEM 1947 and LitPrintz, bringing together two creators for one seriously out of this world release. With his relaxed seated pose, signature THEM 1947 Alien Grey appearance, and unmistakable attitude, THE ONE HIT WONDER is definitely going to stand out in your collection. Whether displayed alongside the rest of your THEM 1947 crew or sitting on his own, this guy looks like he has already discovered something on Earth that wasn't included in the original mission briefing. 😂 An empty spool gives him a great seat to sit on for the 3 foot version. 👽 THEM 1947 × LitPrintz Collaboration THEM 1947 Alien Coozie - Free STL Drop This model is only part of the collaboration! Be sure to head over to LitPrintz.com and check out the Custom Alien Can Coozie designed to go along with THE ONE HIT WONDER. If you haven't checked out LitPrintz yet, take a look around they have some awesome custom designs and creations. ⚠️ VERY IMPORTANT ASSEMBLY NOTE for 3 Foot Version. DO NOT REMOVE THE CIG SUPPORT EARLY! When assembling THE ONE HIT WONDER, the small support attached to the cig is there to help protect the cig during handling and assembly. Glue the Alien's head securely to the rest of the body FIRST. Once the Alien is completely assembled and the head is firmly attached, remove the cig support LAST. The cig is a small, delicate feature, and removing that support too soon can make it much easier to accidentally damage or break it during assembly. HEAD ON → BODY ASSEMBLED → CIG SUPPORT REMOVED LAST! Also, there is ONE PIN SMALLER THAN the rest of them. It goes into his upper arm and is marked. 🛸 Stay Connected With THEM 1947 Want to keep up with new Alien Greys, upcoming releases, special collaborations, photos, and everything happening with the THEM 1947 universe? Visit: THEM1947.com And join the THEM 1947 Alien Greys Facebook Group: https://www.facebook.com/groups/1289863179891582 Share your prints, show off your Alien collection, and stay up to date on what's coming next. THE ONE HIT WONDER has landed. and apparently he's already found a way to relax on Earth. 👽💨 THEM 1947 × LitPrintz",
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
@@ -9538,7 +9961,7 @@ window.CATALOG_DATA = {
         "publishedAt": "2026-08-21",
         "gallery": [
           "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-01.png",
-          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-02.png",
+          "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-02.jpg",
           "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-03.jpg",
           "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-04.jpg",
           "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-05.jpg",
@@ -9570,10 +9993,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "43.4 h",
           "weight": "1365 g",
-          "difficulty": "4.3 / 5",
-          "downloadCount": 250,
-          "printCount": 91,
-          "ratingCount": 8,
+          "difficulty": "4.6 / 5",
+          "downloadCount": 465,
+          "printCount": 157,
+          "ratingCount": 15,
           "byPrinter": {
             "P2S": {
               "buildPlates": 5,
@@ -9706,10 +10129,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "43.4 h",
             "weight": "1365 g",
-            "difficulty": "4.3 / 5",
-            "downloadCount": 250,
-            "printCount": 91,
-            "ratingCount": 8,
+            "difficulty": "4.6 / 5",
+            "downloadCount": 465,
+            "printCount": 157,
+            "ratingCount": 15,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 5,
@@ -9836,10 +10259,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "8.5 h",
             "weight": "226 g",
-            "difficulty": "3.9 / 5",
-            "downloadCount": 95,
-            "printCount": 31,
-            "ratingCount": 5,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 139,
+            "printCount": 47,
+            "ratingCount": 7,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -9933,7 +10356,7 @@ window.CATALOG_DATA = {
             "printTime": "0.8 h",
             "weight": "18 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 10,
+            "downloadCount": 21,
             "printCount": 1,
             "ratingCount": 2,
             "byPrinter": {
@@ -10080,7 +10503,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray(30107)"
             ],
-            "priceFrom": "$13.25",
+            "priceFrom": "$11.89",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=3200946"
           },
           {
@@ -10090,7 +10513,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "White(30106)"
             ],
-            "priceFrom": "$13.25",
+            "priceFrom": "$11.89",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864287&modelId=3200946"
           },
           {
@@ -10100,13 +10523,13 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black(30105)"
             ],
-            "priceFrom": "$13.25",
+            "priceFrom": "$11.89",
             "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864275&modelId=3200946"
           }
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 67
+        "commentCount": 93
       },
       "caseFile": "021",
       "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10"
@@ -10123,10 +10546,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259272-the-descender-them-1947-alien-greys-spaceship",
       "stats": {
-        "likes": 182,
-        "boosts": 368,
-        "downloads": 146,
-        "prints": 29
+        "likes": 265,
+        "boosts": 584,
+        "downloads": 240,
+        "prints": 58
       },
       "buyHref": null,
       "href": "/files/prints/the-descender-them-1947-alien-greys-spaceship/",
@@ -10135,7 +10558,7 @@ window.CATALOG_DATA = {
         "specimenLabel": "THE DESCENDER ALIEN GREYS SPACESHIP",
         "summaryText": "THEM 1947 UFO Introducing THE DESCENDER, the newest addition to the THEM 1947 universe. Designed to pair perfectly with the THEM 1947 Alien Greys, THE DESCENDER brings a classic flying saucer look to the collection with a detailed outer hull, raised cockpit, landing gear, and an open boarding ramp that makes it look like the crew has just arrived. This model was created as a display piece that feels right at home beside the larger THEM 1947 Alien Grey figures, while still looking great as a standalone UFO. Whether you display it as a mysterious craft that just touched down, stage it with your Alien Greys, or build an entire extraterrestrial scene around it, THE DESCENDER was made to be a centerpiece. Features Classic flying saucer design Detailed exterior paneling Raised cockpit with window section Landing gear Open boarding ramp Designed to complement the THEM 1947 Alien Grey Series Great for displays, dioramas, and UFO-themed collections Optional Glow in the dark navigation lights The idea behind THE DESCENDER was simple: create the kind of ship you would expect to see carrying the THEM 1947 Alien Greys on their arrival to Earth. And judging by the open ramp. they may already be here. Important Official THEM 1947 files are available on MakerWorld by maker Raceit17 . Links to the other official MakerWorld releases can also be found at: THEM1947.com If you print THE DESCENDER, I would love to see how you display it with your Alien Greys. Be sure to post your photos and share your build with the community. THE DESCENDER They didn't come alone. 🛸👽",
         "features": [
-          "Classic flying-saucer design",
+          "Classic flying saucer design",
           "Detailed exterior paneling",
           "Raised cockpit with window section",
           "Landing gear",
@@ -10175,10 +10598,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "44.8 h",
           "weight": "893 g",
-          "difficulty": "0.0 / 5",
-          "downloadCount": 138,
-          "printCount": 6,
-          "ratingCount": 0,
+          "difficulty": "3.0 / 5",
+          "downloadCount": 168,
+          "printCount": 9,
+          "ratingCount": 2,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -10266,10 +10689,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "44.8 h",
             "weight": "893 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 138,
-            "printCount": 6,
-            "ratingCount": 0,
+            "difficulty": "3.0 / 5",
+            "downloadCount": 168,
+            "printCount": 9,
+            "ratingCount": 2,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -10361,10 +10784,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "27.4 h",
             "weight": "669 g",
-            "difficulty": "3.0 / 5",
-            "downloadCount": 67,
-            "printCount": 16,
-            "ratingCount": 2,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 168,
+            "printCount": 31,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -10489,8 +10912,8 @@ window.CATALOG_DATA = {
             "printTime": "34.2 h",
             "weight": "1039 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 33,
-            "printCount": 4,
+            "downloadCount": 40,
+            "printCount": 6,
             "ratingCount": 0,
             "byPrinter": {
               "A2L": {
@@ -10559,10 +10982,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "196.9 h",
             "weight": "10368 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 27,
-            "printCount": 3,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 62,
+            "printCount": 11,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 24,
@@ -10679,7 +11102,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3259272"
           },
           {
@@ -10689,7 +11112,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3259272"
           },
           {
@@ -10712,10 +11135,1223 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 39
+        "commentCount": 47
       },
       "caseFile": "022",
       "specimenLabel": "THE DESCENDER ALIEN GREYS SPACESHIP"
+    },
+    {
+      "id": "mw-3259500",
+      "makerWorldId": 3259500,
+      "name": "4500 Style Carburetor Dust Cover Compat Dominator",
+      "slug": "4500-style-carburetor-dust-cover-compat-dominator",
+      "pathSlug": "4500-style-carburetor-dust-cover-compat-dominator",
+      "blurb": "4500 Style Carburetor Dust Cover Compat Dominator. Everyday 3D print. Download free on MakerWorld.",
+      "image": "/assets/catalog/declassified/4500-style-carburetor-dust-cover-compat-dominator.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3259500-4500-style-carburetor-dust-cover-compat-dominator",
+      "stats": {
+        "likes": 6,
+        "boosts": 11,
+        "downloads": 6,
+        "prints": 4
+      },
+      "buyHref": "https://makerworld.com/en/models/3259500-4500-style-carburetor-dust-cover-compat-dominator"
+    },
+    {
+      "id": "mw-3288211",
+      "makerWorldId": 3288211,
+      "name": "Baby Roz Alien Greys",
+      "slug": "baby-roz-them-1947-alien-greys",
+      "pathSlug": "baby-roz-them-1947-alien-greys",
+      "blurb": "Baby Roz Alien Greys. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-01.png",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3288211-baby-roz-them-1947-alien-greys",
+      "stats": {
+        "likes": 78,
+        "boosts": 204,
+        "downloads": 101,
+        "prints": 84
+      },
+      "buyHref": null,
+      "href": "/files/prints/baby-roz-them-1947-alien-greys/",
+      "detail": {
+        "caseFile": "023",
+        "specimenLabel": "BABY ROZ ALIEN GREYS",
+        "summaryText": "THEM 1947 Alien Greys 3 Foot Series . Designed to go along with: 5 Foot Series 3 Foot Series 10 Inch Desktop Series Fresh from the \"stork\" at KC's 3D printer in Roswell, New Mexico, Roz isn't quite like the other Greys. Smaller, younger, and strangely familiar, this little alien has already started raising questions. The biggest one of all: Is Roz completely extraterrestrial… or is there a little human DNA mixed in? With oversized black eyes, a curled up newborn pose, and an almost innocent expression, Roz looks like they have only just arrived in our world. But appearances can be deceiving. Somewhere in Roswell, there may be a human parent wondering exactly what happened during one very strange night. Was Roz the result of an experiment? A secret hybrid program? An unexpected connection between two worlds? Or is the truth even stranger than that? That part of the story is up to you. Roz was designed to fit alongside the other models in the THEM 1947 Alien Greys 3 Foot Series, making them a unique addition for anyone building their own extraterrestrial display, Roswell scene, or THEM 1947 collection. Welcome to Earth, Roz. We have a feeling you've got some explaining to do. Official links to the rest of the THEM 1947 Alien Greys and the HIDDEN collection on MakerWorld can be found easier at THEM1947.com .",
+        "features": [
+          "5 Foot Series",
+          "3 Foot Series",
+          "10 Inch Desktop Series"
+        ],
+        "category": "Art > Sculptures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-09-10",
+        "gallery": [
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-01.png",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-02.jpg",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-03.png",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-04.png",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-05.png",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-06.jpg",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-07.jpg",
+          "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "3 Foot Series Baby Alien",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E",
+            "A1 mini"
+          ],
+          "buildPlates": 1,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "15%",
+          "supports": null,
+          "printTime": "8.6 h",
+          "weight": "249 g",
+          "difficulty": "4.2 / 5",
+          "downloadCount": 175,
+          "printCount": 80,
+          "ratingCount": 7,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.1 h",
+              "weight": "253 g"
+            },
+            "A2L": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.5 h",
+              "weight": "242 g"
+            },
+            "A1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "9.3 h",
+              "weight": "242 g"
+            },
+            "H2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "7.8 h",
+              "weight": "248 g"
+            },
+            "H2C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "4.8 h",
+              "weight": "189 g"
+            },
+            "H2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "4.8 h",
+              "weight": "186 g"
+            },
+            "X2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "5.1 h",
+              "weight": "197 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
+            },
+            "P1S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
+            },
+            "P1P": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.7 h",
+              "weight": "249 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
+            },
+            "X1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
+            },
+            "X1E": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
+            },
+            "A1 mini": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "9.5 h",
+              "weight": "242 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "3 Foot Series Baby Alien",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E",
+              "A1 mini"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "8.6 h",
+            "weight": "249 g",
+            "difficulty": "4.2 / 5",
+            "downloadCount": 175,
+            "printCount": 80,
+            "ratingCount": 7,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.1 h",
+                "weight": "253 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.5 h",
+                "weight": "242 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "9.3 h",
+                "weight": "242 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.8 h",
+                "weight": "248 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "4.8 h",
+                "weight": "189 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "4.8 h",
+                "weight": "186 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "197 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.7 h",
+                "weight": "249 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
+              },
+              "A1 mini": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "9.5 h",
+                "weight": "242 g"
+              }
+            }
+          },
+          {
+            "title": "10 inch Desktop Version",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E",
+              "A1 mini"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "1.6 h",
+            "weight": "29 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 6,
+            "printCount": 2,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.5 h",
+                "weight": "26 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "0.6 h",
+                "weight": "11 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "0.6 h",
+                "weight": "11 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.7 h",
+                "weight": "28 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.7 h",
+                "weight": "28 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
+              },
+              "A1 mini": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.9 h",
+                "weight": "26 g"
+              }
+            }
+          },
+          {
+            "title": "5 Foot Alien Baby",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "20.6 h",
+            "weight": "755 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 4,
+            "printCount": 2,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "19.7 h",
+                "weight": "746 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "21.4 h",
+                "weight": "737 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "21.9 h",
+                "weight": "737 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "18.9 h",
+                "weight": "746 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.3 h",
+                "weight": "668 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.3 h",
+                "weight": "661 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.8 h",
+                "weight": "662 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.3 h",
+                "weight": "661 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.6 h",
+                "weight": "755 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.5 h",
+                "weight": "747 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.3 h",
+                "weight": "747 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.4 h",
+                "weight": "747 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.2 h",
+                "weight": "747 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3288211"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "Baby Alien.stl",
+            "label": "Model file",
+            "sizeBytes": 706877484,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 16
+      },
+      "caseFile": "023",
+      "specimenLabel": "BABY ROZ ALIEN GREYS"
+    },
+    {
+      "id": "mw-3309255",
+      "makerWorldId": 3309255,
+      "name": "Inflight UFO Alien Greys Flying Saucer",
+      "slug": "inflight-ufo-them-1947-alien-greys-flying-saucer",
+      "pathSlug": "inflight-ufo-them-1947-alien-greys-flying-saucer",
+      "blurb": "Inflight UFO Alien Greys Flying Saucer. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3309255-inflight-ufo-them-1947-alien-greys-flying-saucer",
+      "stats": {
+        "likes": 81,
+        "boosts": 190,
+        "downloads": 59,
+        "prints": 15
+      },
+      "buyHref": null,
+      "href": "/files/prints/inflight-ufo-them-1947-alien-greys-flying-saucer/",
+      "detail": {
+        "caseFile": "024",
+        "specimenLabel": "INFLIGHT UFO ALIEN GREYS FLYING SAUCER",
+        "summaryText": "THEM 1947 - INFLIGHT UFO The THEM 1947 Alien Greys are taking to the skies! Introducing the INFLIGHT UFO, a flying version of the THEM 1947 spacecraft designed specifically for display and for creating your own alien encounter scenes. This version features the spacecraft in its fully closed flight configuration, with the landing gear retracted and the entry door closed, giving it a clean, streamlined appearance as it travels through the skies. I wanted this model to have the feel of a classic flying saucer while still fitting naturally into the growing THEM 1947 universe . The detailed exterior, dark cockpit windows, panel lines, and underside features give the ship plenty of character without losing that unmistakable UFO silhouette. The INFLIGHT UFO is perfect for hanging displays, dioramas, photography, alien scenes, or simply displaying alongside your THEM 1947 Alien Greys. Print it, suspend it from above, and make it look like the invasion has already begun. This model pairs especially well with the THEM 1947 Alien Greys 3 Foot Series and the other THEM 1947 spacecraft and characters available through my MakerWorld collection. Welcome to THEM 1947 The story continues to grow with new Aliens, UFOs, characters, props, and other strange things from the world of THEM 1947 . Designed by Raceit17 Available exclusively for download through MakerWorld by user Raceit17. You can find links to all of my THEM 1947 MakerWorld files at: THEM1947.com If you print the INFLIGHT UFO, be sure to share your photos and show everyone where your UFO has been spotted! They aren't coming anymore. they're already here. Be sure to follow us on FACEBOOK",
+        "features": [],
+        "category": "Miniatures > Other Miniatures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-09-15",
+        "gallery": [
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-01.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-02.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-03.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-04.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-05.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-06.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-07.jpg",
+          "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "0.2mm layer, 2 walls, 15% infill",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 1,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "15%",
+          "supports": "",
+          "printTime": "24.8 h",
+          "weight": "782 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 144,
+          "printCount": 14,
+          "ratingCount": 0,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "22.9 h",
+              "weight": "768 g"
+            },
+            "A2L": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "25.1 h",
+              "weight": "755 g"
+            },
+            "A1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "25.7 h",
+              "weight": "755 g"
+            },
+            "H2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "22.2 h",
+              "weight": "767 g"
+            },
+            "H2C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "13.9 h",
+              "weight": "657 g"
+            },
+            "H2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "14.1 h",
+              "weight": "651 g"
+            },
+            "X2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "15.6 h",
+              "weight": "654 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "14.1 h",
+              "weight": "651 g"
+            },
+            "P1S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.8 h",
+              "weight": "782 g"
+            },
+            "P1P": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.5 h",
+              "weight": "771 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.4 h",
+              "weight": "771 g"
+            },
+            "X1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.5 h",
+              "weight": "771 g"
+            },
+            "X1E": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.2 h",
+              "weight": "771 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 15% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": "",
+            "printTime": "24.8 h",
+            "weight": "782 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 144,
+            "printCount": 14,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "22.9 h",
+                "weight": "768 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "25.1 h",
+                "weight": "755 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "25.7 h",
+                "weight": "755 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "22.2 h",
+                "weight": "767 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "13.9 h",
+                "weight": "657 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.1 h",
+                "weight": "651 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "15.6 h",
+                "weight": "654 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "14.1 h",
+                "weight": "651 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.8 h",
+                "weight": "782 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.5 h",
+                "weight": "771 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.4 h",
+                "weight": "771 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.5 h",
+                "weight": "771 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.2 h",
+                "weight": "771 g"
+              }
+            }
+          },
+          {
+            "title": "GLOW LIGHTS - H2 Series Print Bed size",
+            "printers": [
+              "A2L",
+              "H2S",
+              "H2C",
+              "H2D",
+              "H2D Pro"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "2%",
+            "supports": null,
+            "printTime": "35.2 h",
+            "weight": "846 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 12,
+            "printCount": 1,
+            "ratingCount": 0,
+            "byPrinter": {
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "2%",
+                "printTime": "53.4 h",
+                "weight": "921 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "2%",
+                "printTime": "51.4 h",
+                "weight": "1055 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "2%",
+                "printTime": "26.0 h",
+                "weight": "675 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "2%",
+                "printTime": "35.2 h",
+                "weight": "846 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "2%",
+                "printTime": "33.2 h",
+                "weight": "840 g"
+              }
+            }
+          },
+          {
+            "title": "GLOW LIGHTS - PS series Build Plate size",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "45.5 h",
+            "weight": "793 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 6,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "41.2 h",
+                "weight": "772 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "41.7 h",
+                "weight": "737 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.1 h",
+                "weight": "737 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "39.6 h",
+                "weight": "759 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "20.2 h",
+                "weight": "517 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "26.8 h",
+                "weight": "637 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.5 h",
+                "weight": "793 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "26.0 h",
+                "weight": "653 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.5 h",
+                "weight": "793 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.1 h",
+                "weight": "780 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.1 h",
+                "weight": "780 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.1 h",
+                "weight": "780 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "44.4 h",
+                "weight": "780 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3309255"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3309255"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/62abf450b2a743a88c4108f520d44a23/697ef5c2066bf49f4df46a227b1a93c1_f2cca2e1-43ba-4d4d-b20c-832cfa099659.png",
+            "colorOptions": [
+              "Glow Blue (15600)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487826568&modelId=3309255"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3309255"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 11
+      },
+      "caseFile": "024",
+      "specimenLabel": "INFLIGHT UFO ALIEN GREYS FLYING SAUCER"
     },
     {
       "id": "mw-3315805",
@@ -10729,23 +12365,23 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3315805-3-foot-series-the-abductor-1947-them-alien-greys",
       "stats": {
-        "likes": 19,
-        "boosts": 34,
-        "downloads": 6,
-        "prints": 0
+        "likes": 97,
+        "boosts": 213,
+        "downloads": 125,
+        "prints": 42
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-the-abductor-1947-them-alien-greys/",
       "detail": {
-        "caseFile": "023",
+        "caseFile": "025",
         "specimenLabel": "3 FOOT SERIES - THE ABDUCTOR 1947 THEM ALIEN GREYS",
         "summaryText": "THEM 1947 Alien Greys. THE ABDUCTOR looks like he has just stepped out of the darkness and is reaching for his next unwilling passenger. Designed to display alongside the other aliens in the THEM 1947 3 Foot Series, this model makes an incredible conversation piece for a game room, workshop, Halloween display, sci fi collection, or full alien themed setup. The forward reaching hand gives the model a lot of depth and personality, especially when displayed where people can walk up to it. THE ABDUCTOR THEM 1947 Alien Greys - 3 Foot Series The model features: Highly detailed alien anatomy and muscle definition Large classic Grey style head and eyes Dramatic reaching/abduction pose Designed to coordinate with the other THEM 1947 3 Foot Series models Excellent large format display piece Great candidate for custom painting, weathering, lighting, or themed dioramas For the best appearance, take your time during assembly and carefully align the connection points before gluing the sections together. THE ABDUCTOR is exclusively available on MakerWorld from creator Raceit17. 👽 Want to find the rest of the THEM 1947 Alien Greys? Links to all of my THEM 1947 models available on MakerWorld can be found at: THEM1947.com Something is out there… THEY ARE HERE.",
         "features": [
           "Highly detailed alien anatomy and muscle definition",
-          "Large classic Grey-style head and eyes",
+          "Large classic Grey style head and eyes",
           "Dramatic reaching/abduction pose",
           "Designed to coordinate with the other THEM 1947 3 Foot Series models",
-          "Excellent large-format display piece",
+          "Excellent large format display piece",
           "Great candidate for custom painting, weathering, lighting, or themed dioramas"
         ],
         "category": "Art > Sculptures",
@@ -10786,10 +12422,10 @@ window.CATALOG_DATA = {
           "supports": "Tree Auto",
           "printTime": "93.2 h",
           "weight": "2936 g",
-          "difficulty": "0.0 / 5",
-          "downloadCount": 16,
-          "printCount": 0,
-          "ratingCount": 0,
+          "difficulty": "2.1 / 5",
+          "downloadCount": 172,
+          "printCount": 41,
+          "ratingCount": 1,
           "byPrinter": {
             "P2S": {
               "buildPlates": 18,
@@ -10922,10 +12558,10 @@ window.CATALOG_DATA = {
             "supports": "Tree Auto",
             "printTime": "93.2 h",
             "weight": "2936 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 16,
-            "printCount": 0,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 172,
+            "printCount": 41,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 18,
@@ -11032,6 +12668,150 @@ window.CATALOG_DATA = {
                 "weight": "2935 g"
               }
             }
+          },
+          {
+            "title": "Heel Support  instead of Base Plate",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E",
+              "A1 mini"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "5%",
+            "supports": null,
+            "printTime": "0.8 h",
+            "weight": "23 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 8,
+            "printCount": 1,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "1.0 h",
+                "weight": "23 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "1.0 h",
+                "weight": "23 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "1.0 h",
+                "weight": "23 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "1.0 h",
+                "weight": "23 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
+              },
+              "A1 mini": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "1.0 h",
+                "weight": "23 g"
+              }
+            }
           }
         ],
         "bom": [
@@ -11042,7 +12822,7 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Gray (10103)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3315805"
           },
           {
@@ -11052,16 +12832,1121 @@ window.CATALOG_DATA = {
             "colorOptions": [
               "Black (10101)"
             ],
-            "priceFrom": "$14.81",
+            "priceFrom": "$13.29",
             "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3315805"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 7
+      },
+      "caseFile": "025",
+      "specimenLabel": "3 FOOT SERIES - THE ABDUCTOR 1947 THEM ALIEN GREYS"
+    },
+    {
+      "id": "mw-3322032",
+      "makerWorldId": 3322032,
+      "name": "THE TRACKER ALIEN GREYS Multiple Sizes",
+      "slug": "the-tracker-them-1947-alien-greys-multiple-sizes",
+      "pathSlug": "the-tracker-them-1947-alien-greys-multiple-sizes",
+      "blurb": "THE TRACKER ALIEN GREYS Multiple Sizes. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3322032-the-tracker-them-1947-alien-greys-multiple-sizes",
+      "stats": {
+        "likes": 167,
+        "boosts": 389,
+        "downloads": 217,
+        "prints": 118
+      },
+      "buyHref": null,
+      "href": "/files/prints/the-tracker-them-1947-alien-greys-multiple-sizes/",
+      "detail": {
+        "caseFile": "026",
+        "specimenLabel": "THE TRACKER ALIEN GREYS MULTIPLE SIZES",
+        "summaryText": "THEM 1947 Alien Greys | Multiple Sizes Every abduction starts with someone finding the next subject. Meet THE TRACKER, the newest addition to the THEM 1947 Alien Greys collection! Out scouting ahead of the crew, The Tracker searches for the next unsuspecting subject and reports his findings back to the ship. Once that finger points your way, the pickup crew won't be far behind. And those low quality aliens wandering into his territory? He's been known to give a few of them a nice dirt nap. Apparently, some boots weren't made for walking away. 👽 With his low, kneeling stance, outstretched pointing arm, and intense expression, The Tracker brings a little attitude and plenty of character to your alien collection. Display him on his own or position him alongside your other THEM 1947 Alien Greys as he directs the next abduction. Available in multiple sizes, so you can choose the version that best fits your display. If you print him, share a photo in the comments! I'd love to see where your Tracker ends up and what he's pointing at. Exclusive Model: Available only on MakerWorld by Raceit17 . Easy links to all of Raceit17's files hosted on MakerWorld can be found at THEM1947.com . He finds them. The ship takes care of the rest.",
+        "features": [],
+        "category": "Miniatures > Creatures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-09-18",
+        "gallery": [
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-01.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-02.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-03.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-04.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-05.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-06.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-07.jpg",
+          "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "10 Inch Scale Destop Model",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 1,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "10%",
+          "supports": null,
+          "printTime": "8.0 h",
+          "weight": "180 g",
+          "difficulty": "3.5 / 5",
+          "downloadCount": 122,
+          "printCount": 32,
+          "ratingCount": 3,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.0 h",
+              "weight": "180 g"
+            },
+            "A2L": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.7 h",
+              "weight": "173 g"
+            },
+            "A1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "9.2 h",
+              "weight": "173 g"
+            },
+            "H2S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "7.6 h",
+              "weight": "176 g"
+            },
+            "H2C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "6.8 h",
+              "weight": "158 g"
+            },
+            "H2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "6.8 h",
+              "weight": "157 g"
+            },
+            "X2D": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "6.8 h",
+              "weight": "157 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "6.8 h",
+              "weight": "157 g"
+            },
+            "P1S": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.0 h",
+              "weight": "177 g"
+            },
+            "P1P": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.2 h",
+              "weight": "177 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.1 h",
+              "weight": "177 g"
+            },
+            "X1": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.0 h",
+              "weight": "180 g"
+            },
+            "X1E": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.0 h",
+              "weight": "177 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "10 Inch Scale Destop Model",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 1,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "10%",
+            "supports": null,
+            "printTime": "8.0 h",
+            "weight": "180 g",
+            "difficulty": "3.5 / 5",
+            "downloadCount": 122,
+            "printCount": 32,
+            "ratingCount": 3,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.0 h",
+                "weight": "180 g"
+              },
+              "A2L": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.7 h",
+                "weight": "173 g"
+              },
+              "A1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "9.2 h",
+                "weight": "173 g"
+              },
+              "H2S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "7.6 h",
+                "weight": "176 g"
+              },
+              "H2C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "6.8 h",
+                "weight": "158 g"
+              },
+              "H2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "6.8 h",
+                "weight": "157 g"
+              },
+              "X2D": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "6.8 h",
+                "weight": "157 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "6.8 h",
+                "weight": "157 g"
+              },
+              "P1S": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.0 h",
+                "weight": "177 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.2 h",
+                "weight": "177 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.1 h",
+                "weight": "177 g"
+              },
+              "X1": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.0 h",
+                "weight": "180 g"
+              },
+              "X1E": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.0 h",
+                "weight": "177 g"
+              }
+            }
+          },
+          {
+            "title": "3 Foot THE TRACKER Ver1.2",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 12,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "15%",
+            "supports": null,
+            "printTime": "63.0 h",
+            "weight": "2056 g",
+            "difficulty": "3.5 / 5",
+            "downloadCount": 207,
+            "printCount": 84,
+            "ratingCount": 3,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "62.1 h",
+                "weight": "2043 g"
+              },
+              "A2L": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "73.1 h",
+                "weight": "2026 g"
+              },
+              "A1": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "77.0 h",
+                "weight": "2027 g"
+              },
+              "H2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "60.2 h",
+                "weight": "2044 g"
+              },
+              "H2C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "54.1 h",
+                "weight": "1934 g"
+              },
+              "H2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "54.3 h",
+                "weight": "1916 g"
+              },
+              "X2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "63.0 h",
+                "weight": "2056 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "54.3 h",
+                "weight": "1916 g"
+              },
+              "P1S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "63.0 h",
+                "weight": "2056 g"
+              },
+              "P1P": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "66.6 h",
+                "weight": "2046 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "62.9 h",
+                "weight": "2047 g"
+              },
+              "X1": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "66.8 h",
+                "weight": "2047 g"
+              },
+              "X1E": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "62.6 h",
+                "weight": "2047 g"
+              }
+            }
+          },
+          {
+            "title": "3 Foot Tracker 220x220 Build Plate - JC",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 12,
+            "layerHeight": "0.16",
+            "walls": "3",
+            "infill": "8%",
+            "supports": null,
+            "printTime": "109.8 h",
+            "weight": "2478 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 3,
+            "printCount": 1,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "94.5 h",
+                "weight": "2509 g"
+              },
+              "A2L": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "108.7 h",
+                "weight": "2492 g"
+              },
+              "A1": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "127.1 h",
+                "weight": "2435 g"
+              },
+              "H2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "93.0 h",
+                "weight": "2509 g"
+              },
+              "H2C": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "109.8 h",
+                "weight": "2478 g"
+              },
+              "H2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "85.1 h",
+                "weight": "2349 g"
+              },
+              "X2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "86.4 h",
+                "weight": "2349 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "85.1 h",
+                "weight": "2349 g"
+              },
+              "P1S": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "109.8 h",
+                "weight": "2478 g"
+              },
+              "P1P": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "109.8 h",
+                "weight": "2478 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "110.1 h",
+                "weight": "2482 g"
+              },
+              "X1": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "110.1 h",
+                "weight": "2482 g"
+              },
+              "X1E": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "109.7 h",
+                "weight": "2482 g"
+              }
+            }
+          },
+          {
+            "title": "5 Foot TRACKER 250x250x250 build plate",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 24,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "3%",
+            "supports": null,
+            "printTime": "131.4 h",
+            "weight": "5753 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 8,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.2 h",
+                "weight": "5737 g"
+              },
+              "A2L": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.4 h",
+                "weight": "5753 g"
+              },
+              "A1": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "160.7 h",
+                "weight": "5723 g"
+              },
+              "H2S": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "128.0 h",
+                "weight": "5741 g"
+              },
+              "H2C": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "123.3 h",
+                "weight": "5668 g"
+              },
+              "H2D": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "123.5 h",
+                "weight": "5611 g"
+              },
+              "X2D": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.4 h",
+                "weight": "5753 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.4 h",
+                "weight": "5753 g"
+              },
+              "P1S": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.4 h",
+                "weight": "5753 g"
+              },
+              "P1P": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "136.0 h",
+                "weight": "5742 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.3 h",
+                "weight": "5749 g"
+              },
+              "X1": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "136.4 h",
+                "weight": "5749 g"
+              },
+              "X1E": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.2 h",
+                "weight": "5749 g"
+              }
+            }
+          }
+        ],
+        "bom": [],
+        "attachments": [
+          {
+            "name": "Sound the Alarm ztl.stl",
+            "label": "Model file",
+            "sizeBytes": 141316884,
+            "url": ""
+          }
+        ],
+        "shareCount": 0,
+        "commentCount": 28
+      },
+      "caseFile": "026",
+      "specimenLabel": "THE TRACKER ALIEN GREYS MULTIPLE SIZES"
+    },
+    {
+      "id": "mw-3360109",
+      "makerWorldId": 3360109,
+      "name": "Desktop Light Wall Mount Light LED",
+      "slug": "them-1947-desktop-light-wall-mount-light-led",
+      "pathSlug": "them-1947-desktop-light-wall-mount-light-led",
+      "blurb": "Desktop Light Wall Mount Light LED. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3360109-them-1947-desktop-light-wall-mount-light-led",
+      "stats": {
+        "likes": 11,
+        "boosts": 12,
+        "downloads": 5,
+        "prints": 1
+      },
+      "buyHref": null,
+      "href": "/files/prints/them-1947-desktop-light-wall-mount-light-led/",
+      "detail": {
+        "caseFile": "027",
+        "specimenLabel": "DESKTOP LIGHT WALL MOUNT LIGHT LED",
+        "summaryText": "THEM 1947 - 3D LED Sign Bring a little extraterrestrial glow to your desk, shelf, game room, workshop, or 3D printing setup with the THEM 1947 3D LED Sign . This sign was designed around the classic THEM 1947 logo and built to look great both during the day and when illuminated. The raised lettering, UFO, stars, and outer border really come alive once the lighting is turned on, giving it that perfect retro sci fi / Area 51 feel. The sign includes a freestanding base so it can sit comfortably on a desk, workbench, display shelf, or beside your 3D printers. Print it in the traditional THEM 1947 colors or customize the filament colors to match your own setup. This is a fun display piece for alien fans, UFO enthusiasts, sci fi collectors, makers, and anyone following the THEM 1947 Alien Greys series. Features Designed specifically as a 3D printed LED display Freestanding desktop design UFO and star details incorporated into the face Great for multi color printing Looks great illuminated or unlit Ideal for workshops, desks, shelves, game rooms, man caves, and collection displays LIGHT KIT: https://www.amazon.com/dp/B0F4XKRRNH?ref=fed_asin_title&th=1 THEM 1947 Collection This model is an exclusive MakerWorld release by Raceit17 . All of my THEM 1947 models and direct links to their official MakerWorld downloads can be found at: THEM1947.com Commercial Use The digital files are not permitted to be redistributed, shared, uploaded, modified for redistribution, or sold as digital files. Please support the original creator and download the official files only through MakerWorld . Original design by Raceit17 - THEM 1947 Alien Greys Collection.",
+        "features": [
+          "Designed specifically as a 3D printed LED display",
+          "Freestanding desktop design",
+          "UFO and star details incorporated into the face",
+          "Great for multi color printing",
+          "Looks great illuminated or unlit",
+          "Ideal for workshops, desks, shelves, game rooms, man caves, and collection displays"
+        ],
+        "category": "Art > Signs & Logos",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-09-26",
+        "gallery": [
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-01.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-02.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-03.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-04.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-05.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-06.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-07.jpg",
+          "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "0.2mm layer, 2 walls, 20% infill",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 3,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "20%",
+          "supports": null,
+          "printTime": "6.7 h",
+          "weight": "261 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 7,
+          "printCount": 1,
+          "ratingCount": 0,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.0 h",
+              "weight": "260 g"
+            },
+            "A2L": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.4 h",
+              "weight": "260 g"
+            },
+            "A1": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.6 h",
+              "weight": "260 g"
+            },
+            "H2S": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.9 h",
+              "weight": "260 g"
+            },
+            "H2C": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.9 h",
+              "weight": "261 g"
+            },
+            "H2D": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.0 h",
+              "weight": "259 g"
+            },
+            "X2D": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.2 h",
+              "weight": "259 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "7.0 h",
+              "weight": "259 g"
+            },
+            "P1S": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "261 g"
+            },
+            "P1P": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "260 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "262 g"
+            },
+            "X1": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "262 g"
+            },
+            "X1E": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "262 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 20% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 3,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "20%",
+            "supports": null,
+            "printTime": "6.7 h",
+            "weight": "261 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 7,
+            "printCount": 1,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.0 h",
+                "weight": "260 g"
+              },
+              "A2L": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.4 h",
+                "weight": "260 g"
+              },
+              "A1": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.6 h",
+                "weight": "260 g"
+              },
+              "H2S": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.9 h",
+                "weight": "260 g"
+              },
+              "H2C": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.9 h",
+                "weight": "261 g"
+              },
+              "H2D": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.0 h",
+                "weight": "259 g"
+              },
+              "X2D": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.2 h",
+                "weight": "259 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "7.0 h",
+                "weight": "259 g"
+              },
+              "P1S": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "261 g"
+              },
+              "P1P": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "260 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "262 g"
+              },
+              "X1": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "262 g"
+              },
+              "X1E": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "262 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+            "colorOptions": [
+              "Light Gray (10104)"
+            ],
+            "priceFrom": "$11.19",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=42844628975752&modelId=3360109"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3360109"
+          },
+          {
+            "name": "PLA Glow",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/3ae3b1c1bd254058bf08b79f3ee815b3/PLA_Glow.jpg",
+            "colorOptions": [
+              "Glow Green (15500)"
+            ],
+            "priceFrom": "$24.99 USD",
+            "url": "https://us.store.bambulab.com/products/pla-glow?skr=yes&id=41558487859336&modelId=3360109"
           }
         ],
         "attachments": [],
         "shareCount": 0,
         "commentCount": 0
       },
-      "caseFile": "023",
-      "specimenLabel": "3 FOOT SERIES - THE ABDUCTOR 1947 THEM ALIEN GREYS"
+      "caseFile": "027",
+      "specimenLabel": "DESKTOP LIGHT WALL MOUNT LIGHT LED"
+    },
+    {
+      "id": "mw-3368540",
+      "makerWorldId": 3368540,
+      "name": "Case Knife Stand",
+      "slug": "case-knife-stand",
+      "pathSlug": "case-knife-stand",
+      "blurb": "Case Knife Stand. Everyday 3D print. Download free on MakerWorld.",
+      "image": "/assets/catalog/declassified/case-knife-stand.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3368540-case-knife-stand",
+      "stats": {
+        "likes": 4,
+        "boosts": 3,
+        "downloads": 1,
+        "prints": 1
+      },
+      "buyHref": "https://makerworld.com/en/models/3368540-case-knife-stand"
     }
   ]
 };

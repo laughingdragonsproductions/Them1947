@@ -8,12 +8,20 @@ import json
 import re
 import shutil
 import ssl
+import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+try:
+    from curl_cffi import requests as cffi_requests
+
+    HAS_CURL_CFFI = True
+except ImportError:
+    HAS_CURL_CFFI = False
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_JS = ROOT / "assets" / "js" / "catalog-data.js"
@@ -25,6 +33,13 @@ SITEMAP = ROOT / "sitemap.xml"
 PROFILE_URL = "https://makerworld.com/en/@user_935464230"
 SEARCH_API = "https://makerworld.com/api/v1/search-service/select/design2"
 DESIGN_API = "https://makerworld.com/api/v1/design-service/design"
+PUBLISHED_API = (
+    "https://makerworld.com/api/v1/design-service/published/935464230/design"
+)
+CREATOR_HANDLE = "@user_935464230"
+SCAN_REPORT = ROOT / ".scan-report.json"
+REDIRECTS = ROOT / "_redirects"
+CF_CHALLENGE_MARKERS = ("Just a moment", "cf-chl", "Enable JavaScript and cookies")
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
@@ -152,16 +167,57 @@ PROMO_BULLET_RE = re.compile(
     re.I,
 )
 SUMMARY_MAX = 3500
+REQUEST_GAP_SEC = 0.35
+MAX_FETCH_ATTEMPTS = 4
 
 
-def fetch_json(url: str, timeout: int = 30) -> dict | list:
-    req = urllib.request.Request(
-        url,
-        headers={"Accept": "application/json", "User-Agent": USER_AGENT},
-    )
-    ctx = ssl.create_default_context()
-    with urllib.request.urlopen(req, context=ctx, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+def is_cloudflare_challenge(body: str) -> bool:
+    if not body:
+        return True
+    sample = body[:800]
+    if sample.lstrip().startswith("<!DOCTYPE") or sample.lstrip().startswith("<html"):
+        return any(marker in sample for marker in CF_CHALLENGE_MARKERS)
+    return False
+
+
+def fetch_raw(url: str, timeout: int = 45) -> bytes:
+    last_error: Exception | None = None
+    for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+        try:
+            if HAS_CURL_CFFI:
+                resp = cffi_requests.get(
+                    url,
+                    headers={"Accept": "application/json", "User-Agent": USER_AGENT},
+                    timeout=timeout,
+                    impersonate="chrome131",
+                )
+                body = resp.content
+                if resp.status_code >= 400:
+                    raise urllib.error.HTTPError(url, resp.status_code, "HTTP error", None, None)
+            else:
+                req = urllib.request.Request(
+                    url,
+                    headers={"Accept": "application/json", "User-Agent": USER_AGENT},
+                )
+                ctx = ssl.create_default_context()
+                with urllib.request.urlopen(req, context=ctx, timeout=timeout) as resp:
+                    body = resp.read()
+            text = body.decode("utf-8", errors="replace")
+            if is_cloudflare_challenge(text):
+                raise RuntimeError("MakerWorld blocked request (Cloudflare challenge)")
+            return body
+        except Exception as exc:
+            last_error = exc
+            wait = min(2**attempt, 12)
+            print(f"warn: fetch attempt {attempt}/{MAX_FETCH_ATTEMPTS} {url}: {exc}")
+            time.sleep(wait)
+        finally:
+            time.sleep(REQUEST_GAP_SEC)
+    raise RuntimeError(f"fetch failed after {MAX_FETCH_ATTEMPTS} attempts: {last_error}")
+
+
+def fetch_json(url: str, timeout: int = 45) -> dict | list:
+    return json.loads(fetch_raw(url, timeout=timeout).decode("utf-8"))
 
 
 def fetch_search(keyword: str, offset: int = 0, limit: int = 48) -> list[dict]:
@@ -179,8 +235,235 @@ def fetch_design(model_id: int) -> dict | None:
         return None
 
 
-def collect_models() -> dict[int, dict]:
+def fetch_published_designs() -> tuple[list[dict], bool]:
+    """Return Raceit17 published listing hits. Second value is False if entirely blocked."""
+    hits: list[dict] = []
+    blocked = False
+    offset = 0
+    limit = 48
+    while True:
+        params = urllib.parse.urlencode(
+            {"handle": CREATOR_HANDLE, "limit": limit, "offset": offset}
+        )
+        url = f"{PUBLISHED_API}?{params}"
+        try:
+            data = fetch_json(url, timeout=60)
+        except Exception as exc:
+            print(f"warn: published listing offset {offset}: {exc}")
+            blocked = True
+            break
+        batch = data.get("hits") or []
+        if not batch:
+            break
+        for hit in batch:
+            creator = hit.get("designCreator") or {}
+            if creator.get("name") != "Raceit17":
+                continue
+            hits.append(hit)
+        total = int(data.get("total") or 0)
+        offset += limit
+        if offset >= total:
+            break
+    return hits, blocked and not hits
+
+
+def merge_item_from_previous(item: dict, previous: dict) -> None:
+    """Keep rich detail when a live detail fetch fails."""
+    for key in ("detail", "image", "href", "pathSlug", "caseFile", "specimenLabel"):
+        if key in previous and previous.get(key) is not None:
+            if key == "detail" and item.get("detail"):
+                continue
+            item[key] = previous[key]
+    if previous.get("stats") and item.get("stats"):
+        item["stats"] = {**previous["stats"], **item["stats"]}
+
+
+def catalog_asset_paths(items: list[dict]) -> set[str]:
+    refs: set[str] = set()
+    for item in items:
+        for key in ("image",):
+            path = (item.get(key) or "").replace("\\", "/")
+            if path.startswith("/assets/catalog/"):
+                refs.add(path.lstrip("/"))
+        detail = item.get("detail") or {}
+        for gallery_path in detail.get("gallery") or []:
+            path = (gallery_path or "").replace("\\", "/")
+            if path.startswith("/assets/catalog/"):
+                refs.add(path.lstrip("/"))
+    return refs
+
+
+def prune_orphan_catalog_assets(items: list[dict]) -> list[str]:
+    """Remove catalog image files/dirs not referenced by the payload."""
+    refs = catalog_asset_paths(items)
+    removed: list[str] = []
+    for base in (CLASSIFIED_DIR, DECLASSIFIED_DIR):
+        if not base.exists():
+            continue
+        for entry in list(base.iterdir()):
+            rel = entry.relative_to(ROOT).as_posix()
+            if entry.is_file():
+                if rel not in refs:
+                    entry.unlink(missing_ok=True)
+                    removed.append(rel)
+                continue
+            keep_dir = False
+            for child in entry.rglob("*"):
+                if child.is_file():
+                    child_rel = child.relative_to(ROOT).as_posix()
+                    if child_rel in refs:
+                        keep_dir = True
+                        break
+            if not keep_dir:
+                shutil.rmtree(entry, ignore_errors=True)
+                removed.append(rel + "/")
+    return removed
+
+
+def read_redirect_lines() -> list[str]:
+    if not REDIRECTS.exists():
+        return []
+    return [
+        line.strip()
+        for line in REDIRECTS.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.strip().startswith("#")
+    ]
+
+
+def append_slug_redirects(
+    previous_by_id: dict[int, dict], items: list[dict]
+) -> list[str]:
+    added: list[str] = []
+    existing = set(read_redirect_lines())
+    lines = read_redirect_lines()
+    for item in items:
+        if item.get("vault") != "classified":
+            continue
+        model_id = item.get("makerWorldId")
+        prev = previous_by_id.get(model_id or 0)
+        if not prev:
+            continue
+        old_slug = prev.get("pathSlug")
+        new_slug = item.get("pathSlug")
+        if not old_slug or not new_slug or old_slug == new_slug:
+            continue
+        for old_path in (
+            f"/files/prints/{old_slug}",
+            f"/files/prints/{old_slug}/",
+        ):
+            new_path = f"/files/prints/{new_slug}/"
+            rule = f"{old_path} {new_path} 301"
+            if rule in existing:
+                continue
+            lines.append(rule)
+            existing.add(rule)
+            added.append(rule)
+    if lines:
+        REDIRECTS.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return added
+
+
+def write_scan_report(report: dict) -> None:
+    SCAN_REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def build_scan_report(
+    *,
+    blocked: bool,
+    previous_items: list[dict],
+    items: list[dict],
+    detail_failures: int,
+    classified_detail_total: int,
+    pruned: list[str],
+    redirects_added: list[str],
+) -> dict:
+    prev_by_id = {i.get("makerWorldId"): i for i in previous_items if i.get("makerWorldId")}
+    new_by_id = {i.get("makerWorldId"): i for i in items if i.get("makerWorldId")}
+    added = [
+        {"id": i.get("makerWorldId"), "name": i.get("name")}
+        for mid, i in sorted(new_by_id.items())
+        if mid not in prev_by_id
+    ]
+    removed = [
+        {"id": i.get("makerWorldId"), "name": i.get("name")}
+        for mid, i in sorted(prev_by_id.items())
+        if mid not in new_by_id
+    ]
+    renamed = []
+    stat_changes = []
+    for mid, item in new_by_id.items():
+        prev = prev_by_id.get(mid)
+        if not prev:
+            continue
+        if prev.get("pathSlug") and item.get("pathSlug") and prev.get("pathSlug") != item.get("pathSlug"):
+            renamed.append(
+                {
+                    "id": mid,
+                    "name": item.get("name"),
+                    "from": prev.get("pathSlug"),
+                    "to": item.get("pathSlug"),
+                }
+            )
+        prev_stats = prev.get("stats") or {}
+        new_stats = item.get("stats") or {}
+        delta = {}
+        for key in ("likes", "boosts", "downloads", "prints"):
+            if prev_stats.get(key, 0) != new_stats.get(key, 0):
+                delta[key] = {"from": prev_stats.get(key, 0), "to": new_stats.get(key, 0)}
+        if delta:
+            stat_changes.append({"id": mid, "name": item.get("name"), "delta": delta})
+    stat_changes.sort(
+        key=lambda row: abs((row["delta"].get("boosts") or {}).get("to", 0) - (row["delta"].get("boosts") or {}).get("from", 0)),
+        reverse=True,
+    )
+    prev_classified = sum(1 for i in previous_items if i.get("vault") == "classified")
+    classified = sum(1 for i in items if i.get("vault") == "classified")
+    failure_rate = (
+        detail_failures / classified_detail_total if classified_detail_total else 0.0
+    )
+    big_update = bool(
+        blocked
+        or added
+        or removed
+        or renamed
+        or failure_rate > 0.2
+        or (prev_classified and classified < prev_classified)
+    )
+    return {
+        "blocked": blocked,
+        "pulledAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "added": added,
+        "removed": removed,
+        "renamed": renamed,
+        "statChangesTop": stat_changes[:8],
+        "classifiedCount": classified,
+        "previousClassifiedCount": prev_classified,
+        "detailFailures": detail_failures,
+        "detailFailureRate": round(failure_rate, 4),
+        "prunedAssets": pruned,
+        "redirectsAdded": redirects_added,
+        "bigUpdate": big_update,
+    }
+
+
+def inject_case_briefs() -> None:
+    script = ROOT / "scripts" / "inject_case_file_crawler_brief.py"
+    if not script.exists():
+        print("warn: missing inject_case_file_crawler_brief.py")
+        return
+    import runpy
+
+    runpy.run_path(str(script), run_name="__main__")
+
+
+def collect_models() -> tuple[dict[int, dict], bool]:
     seen: dict[int, dict] = {}
+    published_blocked = False
+    published_hits, published_blocked = fetch_published_designs()
+    for hit in published_hits:
+        seen[hit["id"]] = hit
+    if published_hits:
+        print(f"Published listing: {len(published_hits)} Raceit17 model(s)")
     for keyword in KEYWORDS:
         for offset in (0, 48):
             try:
@@ -235,7 +518,8 @@ def collect_models() -> dict[int, dict]:
                 seen[model_id] = design_to_hit(detail)
         except Exception as exc:
             print(f"warn: could not merge existing catalog ids: {exc}")
-    return seen
+    blocked = published_blocked and not seen
+    return seen, blocked
 
 
 def design_to_hit(detail: dict) -> dict:
@@ -341,7 +625,7 @@ def normalize_markdown(text: str) -> str:
 
 
 def normalize_dashes(text: str) -> str:
-    return text.translate(str.maketrans({"-": "-", "-": "-"}))
+    return text.translate(str.maketrans({"\u2013": "-", "\u2014": "-", "\u2212": "-"}))
 
 
 def polish_public_text(text: str) -> str:
@@ -368,7 +652,7 @@ def item_blurb(title: str, vault: str) -> str:
 
 def polish_catalog_item(item: dict) -> None:
     model_id = item.get("makerWorldId") or 0
-    title = display_title(model_id, item.get("name") or "")
+    title = normalize_dashes(display_title(model_id, item.get("name") or ""))
     item["name"] = title
     item["blurb"] = item_blurb(title, item.get("vault") or "declassified")
     detail = item.get("detail")
@@ -962,6 +1246,7 @@ def generate_case_pages(items: list[dict]) -> set[str]:
 
 STATIC_SITEMAP_URLS = [
     "https://them1947.com/",
+    "https://them1947.com/spaceship/",
     "https://them1947.com/files/",
     "https://them1947.com/files/prints/",
     "https://them1947.com/files/declassified/",
@@ -1189,7 +1474,33 @@ def main() -> None:
     DECLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)
     PRINTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    models = collect_models()
+    previous_items: list[dict] = []
+    if OUT_JS.exists():
+        try:
+            previous_items = load_catalog_payload().get("items") or []
+        except Exception as exc:
+            print(f"warn: could not load previous catalog: {exc}")
+    previous_by_id = {
+        item.get("makerWorldId"): item
+        for item in previous_items
+        if item.get("makerWorldId")
+    }
+
+    models, discovery_blocked = collect_models()
+    if discovery_blocked and not models:
+        report = build_scan_report(
+            blocked=True,
+            previous_items=previous_items,
+            items=previous_items,
+            detail_failures=0,
+            classified_detail_total=0,
+            pruned=[],
+            redirects_added=[],
+        )
+        write_scan_report(report)
+        print("MakerWorld discovery blocked; no catalog changes written.")
+        sys.exit(2)
+
     used_slugs: set[str] = set()
     items = []
     for hit in sorted(models.values(), key=lambda h: h["id"]):
@@ -1200,15 +1511,69 @@ def main() -> None:
     classified_items = [item for item in items if item["vault"] == "classified"]
     print(f"Fetching detail for {len(classified_items)} classified models…")
     leader_detail = fetch_design(LEADER_CANONICAL_ID)
+    detail_failures = 0
     for item in classified_items:
         detail = fetch_design(item["makerWorldId"])
         if detail:
             enrich_classified_item(item, detail, leader_detail)
+        else:
+            detail_failures += 1
+            prev = previous_by_id.get(item["makerWorldId"])
+            if prev:
+                merge_item_from_previous(item, prev)
+                print(f"warn: kept previous detail for {item.get('name')}")
 
+    prev_classified = sum(1 for i in previous_items if i.get("vault") == "classified")
+    new_classified = len(classified_items)
+    failure_rate = detail_failures / len(classified_items) if classified_items else 0.0
+    if previous_items and new_classified < prev_classified:
+        report = build_scan_report(
+            blocked=True,
+            previous_items=previous_items,
+            items=items,
+            detail_failures=detail_failures,
+            classified_detail_total=len(classified_items),
+            pruned=[],
+            redirects_added=[],
+        )
+        write_scan_report(report)
+        print(
+            f"Safety stop: classified count dropped {prev_classified} -> {new_classified}"
+        )
+        sys.exit(2)
+    if classified_items and failure_rate > 0.2:
+        report = build_scan_report(
+            blocked=True,
+            previous_items=previous_items,
+            items=items,
+            detail_failures=detail_failures,
+            classified_detail_total=len(classified_items),
+            pruned=[],
+            redirects_added=[],
+        )
+        write_scan_report(report)
+        print(f"Safety stop: detail failure rate {failure_rate:.0%}")
+        sys.exit(2)
+
+    polish_catalog_items(items)
+    redirects_added = append_slug_redirects(previous_by_id, items)
     assign_case_files(items)
+    pruned = prune_orphan_catalog_assets(items)
     emit_js(items)
     generate_case_pages(items)
+    inject_case_briefs()
     update_sitemap(items)
+
+    report = build_scan_report(
+        blocked=False,
+        previous_items=previous_items,
+        items=items,
+        detail_failures=detail_failures,
+        classified_detail_total=len(classified_items),
+        pruned=pruned,
+        redirects_added=redirects_added,
+    )
+    write_scan_report(report)
 
     summary = {"total": len(items), "classified": 0, "declassified": 0}
     for item in items:
@@ -1218,6 +1583,8 @@ def main() -> None:
         f"({summary['classified']} classified, {summary['declassified']} declassified); "
         f"{summary['classified']} case-file pages"
     )
+    if pruned:
+        print(f"Pruned {len(pruned)} orphaned catalog asset(s)")
 
 
 if __name__ == "__main__":

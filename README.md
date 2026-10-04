@@ -41,22 +41,31 @@ Generates [`assets/js/catalog-data.js`](assets/js/catalog-data.js), downloads th
 - **Classified** - THEM 1947 / alien models (stamped previews, full dossier pages with MakerWorld stats, print profiles, BOM, and gallery)
 - **Declassified** - non-alien public releases with MakerWorld links
 
-### Catalog automation (GitHub Actions)
+### Catalog automation (GitHub Actions + PC fallback)
 
-Two workflows mirror the Chittinn Chattin RSS refresh pattern (copy-only from that repo - ChC files are never edited):
+| Workflow / task | Schedule | What it updates |
+|-----------------|----------|-----------------|
+| **Rescan MakerWorld catalog** (`rescan-catalog.yml`) | Monday & Thursday ~6am Eastern | Full pull: stats, new models, images, case pages, sitemap, crawler briefs |
+| **Jarvis-Them1947-Rescan** (PC task) | Mon/Thu 10am Eastern if GitHub scan did not succeed | Same `npm run rescan` from a bot worktree, then push |
 
-| Workflow | Schedule | What it updates |
-|----------|----------|-----------------|
-| **Refresh MakerWorld catalog stats** | Bi-weekly (1st & 15th) | Likes, boosts, downloads, prints |
-| **Refresh MakerWorld catalog (full pull)** | Bi-monthly (odd months) | New models, images, galleries, case pages, sitemap |
+If GitHub is blocked by MakerWorld, the PC fallback retries from your home IP. Either path that commits to `main` deploys via **Deploy Cloudflare Worker** (direct `workflow_call` from the rescan workflow, or push-triggered deploy).
 
-Manual run: GitHub → **Actions** → pick workflow → **Run workflow**. A push to `main` triggers the existing Cloudflare deploy workflow.
+Telegram and Pushover alerts (Jarvis bot credentials in GitHub secrets): every deploy, plus **big** catalog changes (new/removed/renamed models or scan failure).
+
+Manual run: GitHub → **Actions** → **Rescan MakerWorld catalog** → **Run workflow**.
+
+One-time PC setup:
+
+```powershell
+.\scripts\install-rescan-fallback-task.ps1
+.\scripts\set-github-deploy-secrets.ps1 -ApiToken "YOUR_CF_TOKEN"  # also sets Telegram/Pushover secrets
+```
 
 Local push helper (after a manual pull):
 
 ```powershell
-.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog stats"
-.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog (full pull)" -Full
+npm run rescan
+.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog (rescan)"
 ```
 
 ## Owner preview gate

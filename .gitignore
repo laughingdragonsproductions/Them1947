@@ -4,6 +4,7 @@ desktop.ini
 *.bak
 .wrangler/
 .worker-dist/
+.scan-report.json
 node_modules/
 _archive/
 _mw_detail_sample.json

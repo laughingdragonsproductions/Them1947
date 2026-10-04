@@ -159,27 +159,29 @@ Push to `main`, then confirm the live site updated (see **Quick deploy** above i
 
 ### MakerWorld catalog automation
 
-GitHub Actions refresh MakerWorld data on a schedule (pattern copied from Chittinn Chattin RSS - ChC repo is never modified):
+| Workflow / task | Schedule | Command |
+|-----------------|----------|---------|
+| `.github/workflows/rescan-catalog.yml` | Mon & Thu, 10:00 UTC | `npm run rescan` |
+| `Jarvis-Them1947-Rescan` scheduled task | Mon & Thu, 10:00 ET (PC) | `scripts/rescan-fallback.ps1` |
 
-| Workflow file | Schedule | Command |
-|---------------|----------|---------|
-| `.github/workflows/refresh-catalog-stats.yml` | Bi-weekly (1st & 15th, 11:00 UTC) | `--stats-only` |
-| `.github/workflows/refresh-catalog-full.yml` | Bi-monthly (odd months, 12:00 UTC) | full pull |
+`npm run rescan` runs the MakerWorld pull, site checks, and deploy bundle checks. On success the GitHub workflow commits catalog assets and calls **Deploy Cloudflare Worker** via `workflow_call` (bot pushes do not re-fire workflows on their own).
 
-When either workflow commits to `main`, the existing **Deploy Cloudflare Worker** workflow redeploys automatically.
+Exit code `2` from the pull script means MakerWorld blocked the scan; nothing is written. The PC fallback runs later the same day.
+
+**Alerts:** `scripts/notify.js` sends Telegram and Pushover on every deploy (manual, push, or rescan) and on big catalog updates. GitHub secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `PUSHOVER_USER_KEY`, `PUSHOVER_APP_TOKEN` (set via `scripts/set-github-deploy-secrets.ps1` from Jarvis env files).
 
 **Manual refresh locally:**
 
 ```powershell
-npm run catalog:stats          # stats only
-npm run catalog:pull           # full pull
-.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog stats"
-.\scripts\push-catalog-update.ps1 "chore: refresh MakerWorld catalog (full pull)" -Full
+npm run rescan
+git add assets/js/catalog-data.js assets/catalog files/prints sitemap.xml _redirects
+git commit -m "chore: refresh MakerWorld catalog (rescan)"
+git push origin main
 ```
 
-**Manual run on GitHub:** Actions → pick workflow → **Run workflow**
+**Manual run on GitHub:** Actions → **Rescan MakerWorld catalog** → **Run workflow**
 
-Estimated Actions usage: ~20-25 min/month (well within GitHub Free tier for private repos; unlimited on public repos).
+Install PC fallback once: `.\scripts\install-rescan-fallback-task.ps1`
 
 ## Troubleshooting
 

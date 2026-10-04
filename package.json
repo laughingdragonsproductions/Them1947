@@ -5,10 +5,11 @@
     "dev": "npx --yes serve . --listen 3456 --no-port-switching",
     "catalog:stats": "python scripts/pull-makerworld-catalog.py --stats-only",
     "catalog:pull": "python scripts/pull-makerworld-catalog.py",
+    "rescan": "python scripts/pull-makerworld-catalog.py && npm run check && npm run build && npm run check:dist",
     "build": "node scripts/prepare-worker-deploy.js",
     "check": "node scripts/check-site.js",
     "check:dist": "node scripts/check-site.js --dist",
-    "deploy": "npm run check && npm run build && npm run check:dist && wrangler deploy"
+    "deploy": "npm run check && npm run build && npm run check:dist && wrangler deploy && node scripts/notify.js deploy --source local --success"
   },
   "devDependencies": {
     "wrangler": "^4.123.0"

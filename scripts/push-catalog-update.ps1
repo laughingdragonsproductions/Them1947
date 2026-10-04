@@ -1,17 +1,18 @@
 param(
   [Parameter(Mandatory = $true, Position = 0)]
   [string]$Message,
-  [switch]$Full
+  [switch]$StatsOnly
 )
 
 Set-Location (Split-Path $PSScriptRoot -Parent)
 
-if ($Full) {
-  python scripts/pull-makerworld-catalog.py
-  git add assets/js/catalog-data.js assets/catalog/ files/prints/ sitemap.xml
-} else {
+if ($StatsOnly) {
   python scripts/pull-makerworld-catalog.py --stats-only
   git add assets/js/catalog-data.js
+} else {
+  npm run rescan
+  if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+  git add assets/js/catalog-data.js assets/catalog/ files/prints/ sitemap.xml _redirects
 }
 
 git status
