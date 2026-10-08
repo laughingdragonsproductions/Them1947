@@ -1,7 +1,7 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-10-08T00:55:42Z",
+  "pulledAt": "2026-10-08T14:03:15Z",
   "summary": {
     "total": 36,
     "classified": 28,
@@ -98,7 +98,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Miniatures > People",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-06-29",
         "gallery": [
           "/assets/catalog/classified/them-1947-roswell-grey-disclosure-day-alien/gallery-01.jpg",
@@ -432,8 +432,8 @@ window.CATALOG_DATA = {
       "stats": {
         "likes": 483,
         "boosts": 1134,
-        "downloads": 1256,
-        "prints": 593
+        "downloads": 1258,
+        "prints": 594
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -450,7 +450,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Miniatures > Creatures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-06-30",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-grey-the-aggressor/gallery-01.jpg",
@@ -482,7 +482,7 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "254 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 1173,
+          "downloadCount": 1174,
           "printCount": 391,
           "ratingCount": 34,
           "byPrinter": {
@@ -573,7 +573,7 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "254 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 1173,
+            "downloadCount": 1174,
             "printCount": 391,
             "ratingCount": 34,
             "byPrinter": {
@@ -668,8 +668,8 @@ window.CATALOG_DATA = {
             "printTime": "10.8 h",
             "weight": "268 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 138,
-            "printCount": 60,
+            "downloadCount": 139,
+            "printCount": 61,
             "ratingCount": 9,
             "byPrinter": {
               "P2S": {
@@ -828,9 +828,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
         "likes": 1931,
-        "boosts": 4773,
-        "downloads": 2815,
-        "prints": 1276
+        "boosts": 4779,
+        "downloads": 2817,
+        "prints": 1278
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -841,7 +841,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-02",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-their-leader/gallery-01.jpg",
@@ -871,8 +871,8 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 4585,
-          "printCount": 926,
+          "downloadCount": 4590,
+          "printCount": 928,
           "ratingCount": 70,
           "byPrinter": {
             "P2S": {
@@ -962,8 +962,8 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 4585,
-            "printCount": 926,
+            "downloadCount": 4590,
+            "printCount": 928,
             "ratingCount": 70,
             "byPrinter": {
               "P2S": {
@@ -1355,7 +1355,7 @@ window.CATALOG_DATA = {
       "stats": {
         "likes": 405,
         "boosts": 1067,
-        "downloads": 646,
+        "downloads": 648,
         "prints": 280
       },
       "buyHref": null,
@@ -1367,7 +1367,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-02",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-stalker/gallery-01.jpg",
@@ -1404,7 +1404,7 @@ window.CATALOG_DATA = {
           "printTime": "8.7 h",
           "weight": "201 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1267,
+          "downloadCount": 1270,
           "printCount": 280,
           "ratingCount": 29,
           "byPrinter": {
@@ -1540,7 +1540,7 @@ window.CATALOG_DATA = {
             "printTime": "8.7 h",
             "weight": "201 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1267,
+            "downloadCount": 1270,
             "printCount": 280,
             "ratingCount": 29,
             "byPrinter": {
@@ -1693,7 +1693,7 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
         "likes": 545,
-        "boosts": 1507,
+        "boosts": 1513,
         "downloads": 726,
         "prints": 402
       },
@@ -1706,7 +1706,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-04",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-their-leader-3009502/gallery-01.jpg",
@@ -1738,7 +1738,7 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 714,
+          "downloadCount": 715,
           "printCount": 319,
           "ratingCount": 43,
           "byPrinter": {
@@ -1829,7 +1829,7 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 714,
+            "downloadCount": 715,
             "printCount": 319,
             "ratingCount": 43,
             "byPrinter": {
@@ -2176,7 +2176,7 @@ window.CATALOG_DATA = {
         "likes": 516,
         "boosts": 1218,
         "downloads": 1264,
-        "prints": 608
+        "prints": 609
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2187,7 +2187,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-05",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-watcher/gallery-01.jpg",
@@ -2219,9 +2219,9 @@ window.CATALOG_DATA = {
           "printTime": "6.7 h",
           "weight": "190 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1124,
+          "downloadCount": 1125,
           "printCount": 386,
-          "ratingCount": 28,
+          "ratingCount": 29,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2310,9 +2310,9 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "190 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1124,
+            "downloadCount": 1125,
             "printCount": 386,
-            "ratingCount": 28,
+            "ratingCount": 29,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2406,7 +2406,7 @@ window.CATALOG_DATA = {
             "weight": "157 g",
             "difficulty": "4.4 / 5",
             "downloadCount": 179,
-            "printCount": 125,
+            "printCount": 126,
             "ratingCount": 11,
             "byPrinter": {
               "P2S": {
@@ -2535,7 +2535,7 @@ window.CATALOG_DATA = {
             "printTime": "7.0 h",
             "weight": "179 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 226,
+            "downloadCount": 227,
             "printCount": 96,
             "ratingCount": 13,
             "byPrinter": {
@@ -2637,7 +2637,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 107
+        "commentCount": 108
       },
       "caseFile": "006",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER"
@@ -2655,8 +2655,8 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
         "likes": 274,
-        "boosts": 664,
-        "downloads": 714,
+        "boosts": 665,
+        "downloads": 715,
         "prints": 271
       },
       "buyHref": null,
@@ -2668,7 +2668,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-05",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-night-crawler/gallery-01.png",
@@ -2705,7 +2705,7 @@ window.CATALOG_DATA = {
           "printTime": "8.2 h",
           "weight": "195 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 811,
+          "downloadCount": 813,
           "printCount": 255,
           "ratingCount": 32,
           "byPrinter": {
@@ -2841,7 +2841,7 @@ window.CATALOG_DATA = {
             "printTime": "8.2 h",
             "weight": "195 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 811,
+            "downloadCount": 813,
             "printCount": 255,
             "ratingCount": 32,
             "byPrinter": {
@@ -3149,7 +3149,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-06",
         "gallery": [
           "/assets/catalog/classified/p1s-version-their-leader/gallery-01.jpg",
@@ -3469,7 +3469,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-06",
         "gallery": [
           "/assets/catalog/classified/p1s-version-the-observer/gallery-01.jpg",
@@ -3768,10 +3768,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
-        "likes": 551,
-        "boosts": 1369,
-        "downloads": 717,
-        "prints": 197
+        "likes": 552,
+        "boosts": 1374,
+        "downloads": 719,
+        "prints": 198
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-k-a-r-l/",
@@ -3782,7 +3782,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-06",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-k-a-r-l/gallery-01.jpg",
@@ -3819,8 +3819,8 @@ window.CATALOG_DATA = {
           "printTime": "8.3 h",
           "weight": "200 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 873,
-          "printCount": 194,
+          "downloadCount": 877,
+          "printCount": 195,
           "ratingCount": 23,
           "byPrinter": {
             "P2S": {
@@ -3955,8 +3955,8 @@ window.CATALOG_DATA = {
             "printTime": "8.3 h",
             "weight": "200 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 873,
-            "printCount": 194,
+            "downloadCount": 877,
+            "printCount": 195,
             "ratingCount": 23,
             "byPrinter": {
               "P2S": {
@@ -4093,10 +4093,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 419,
-        "boosts": 982,
+        "likes": 420,
+        "boosts": 984,
         "downloads": 598,
-        "prints": 173
+        "prints": 174
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-experimenter/",
@@ -4107,7 +4107,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-07",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-experimenter/gallery-01.jpg",
@@ -4145,7 +4145,7 @@ window.CATALOG_DATA = {
           "weight": "215 g",
           "difficulty": "4.6 / 5",
           "downloadCount": 611,
-          "printCount": 157,
+          "printCount": 158,
           "ratingCount": 17,
           "byPrinter": {
             "P2S": {
@@ -4281,7 +4281,7 @@ window.CATALOG_DATA = {
             "weight": "215 g",
             "difficulty": "4.6 / 5",
             "downloadCount": 611,
-            "printCount": 157,
+            "printCount": 158,
             "ratingCount": 17,
             "byPrinter": {
               "P2S": {
@@ -4680,10 +4680,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 3454,
-        "boosts": 8567,
-        "downloads": 4450,
-        "prints": 3430
+        "likes": 3464,
+        "boosts": 8589,
+        "downloads": 4462,
+        "prints": 3445
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -4701,7 +4701,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-12",
         "gallery": [
           "/assets/catalog/classified/3-foot-alien-observer-them-1947/gallery-01.png",
@@ -5009,9 +5009,9 @@ window.CATALOG_DATA = {
             "printTime": "49.2 h",
             "weight": "1649 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 6022,
-            "printCount": 3157,
-            "ratingCount": 365,
+            "downloadCount": 6039,
+            "printCount": 3171,
+            "ratingCount": 367,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -5423,8 +5423,8 @@ window.CATALOG_DATA = {
             "printTime": "49.8 h",
             "weight": "1666 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 376,
-            "printCount": 186,
+            "downloadCount": 377,
+            "printCount": 187,
             "ratingCount": 18,
             "byPrinter": {
               "P2S": {
@@ -5607,7 +5607,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 1100
+        "commentCount": 1103
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -5624,10 +5624,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 487,
-        "boosts": 1195,
-        "downloads": 566,
-        "prints": 256
+        "likes": 488,
+        "boosts": 1198,
+        "downloads": 568,
+        "prints": 258
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-abductor/",
@@ -5638,7 +5638,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-19",
         "gallery": [
           "/assets/catalog/classified/them-1947-disclosure-alien-greys-the-abductor/gallery-01.jpg",
@@ -5675,8 +5675,8 @@ window.CATALOG_DATA = {
           "printTime": "8.9 h",
           "weight": "232 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 708,
-          "printCount": 249,
+          "downloadCount": 709,
+          "printCount": 250,
           "ratingCount": 23,
           "byPrinter": {
             "P2S": {
@@ -5811,8 +5811,8 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 708,
-            "printCount": 249,
+            "downloadCount": 709,
+            "printCount": 250,
             "ratingCount": 23,
             "byPrinter": {
               "P2S": {
@@ -5946,8 +5946,8 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 4,
-            "printCount": 3,
+            "downloadCount": 5,
+            "printCount": 4,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -6176,9 +6176,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
         "likes": 343,
-        "boosts": 843,
-        "downloads": 617,
-        "prints": 472
+        "boosts": 844,
+        "downloads": 619,
+        "prints": 474
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
@@ -6196,7 +6196,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-20",
         "gallery": [
           "/assets/catalog/classified/the-intimidator-them-1947-disclosure-alien-greys/gallery-01.png",
@@ -6230,7 +6230,7 @@ window.CATALOG_DATA = {
           "printTime": "10.0 h",
           "weight": "207 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 761,
+          "downloadCount": 762,
           "printCount": 218,
           "ratingCount": 24,
           "byPrinter": {
@@ -6366,7 +6366,7 @@ window.CATALOG_DATA = {
             "printTime": "10.0 h",
             "weight": "207 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 761,
+            "downloadCount": 762,
             "printCount": 218,
             "ratingCount": 24,
             "byPrinter": {
@@ -6501,8 +6501,8 @@ window.CATALOG_DATA = {
             "printTime": "52.6 h",
             "weight": "1437 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 505,
-            "printCount": 231,
+            "downloadCount": 506,
+            "printCount": 233,
             "ratingCount": 21,
             "byPrinter": {
               "P2S": {
@@ -6808,10 +6808,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-series-alien-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 2601,
-        "boosts": 6588,
-        "downloads": 3636,
-        "prints": 2584
+        "likes": 2608,
+        "boosts": 6615,
+        "downloads": 3652,
+        "prints": 2592
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-alien-leader-them-1947-alien-greys/",
@@ -6822,7 +6822,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-07-24",
         "gallery": [
           "/assets/catalog/classified/3-foot-series-alien-leader-them-1947-alien-greys/gallery-01.jpg",
@@ -6854,9 +6854,9 @@ window.CATALOG_DATA = {
           "printTime": "36.5 h",
           "weight": "1439 g",
           "difficulty": "5.0 / 5",
-          "downloadCount": 4191,
-          "printCount": 1693,
-          "ratingCount": 197,
+          "downloadCount": 4209,
+          "printCount": 1698,
+          "ratingCount": 199,
           "byPrinter": {
             "P2S": {
               "buildPlates": 12,
@@ -6945,9 +6945,9 @@ window.CATALOG_DATA = {
             "printTime": "36.5 h",
             "weight": "1439 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 4191,
-            "printCount": 1693,
-            "ratingCount": 197,
+            "downloadCount": 4209,
+            "printCount": 1698,
+            "ratingCount": 199,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7040,9 +7040,9 @@ window.CATALOG_DATA = {
             "printTime": "36.2 h",
             "weight": "1410 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1254,
-            "printCount": 867,
-            "ratingCount": 96,
+            "downloadCount": 1260,
+            "printCount": 870,
+            "ratingCount": 97,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7354,7 +7354,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 644
+        "commentCount": 650
       },
       "caseFile": "015",
       "specimenLabel": "3 FOOT SERIES ALIEN LEADER ALIEN GREYS"
@@ -7428,10 +7428,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 860,
-        "boosts": 2114,
-        "downloads": 1349,
-        "prints": 1175
+        "likes": 864,
+        "boosts": 2118,
+        "downloads": 1354,
+        "prints": 1180
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -7449,7 +7449,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-02",
         "gallery": [
           "/assets/catalog/classified/medical-scientist-3-foot-experimenting-alien-grey/gallery-01.png",
@@ -7486,8 +7486,8 @@ window.CATALOG_DATA = {
           "printTime": "46.9 h",
           "weight": "1971 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 2085,
-          "printCount": 1098,
+          "downloadCount": 2088,
+          "printCount": 1101,
           "ratingCount": 107,
           "byPrinter": {
             "P2S": {
@@ -7622,8 +7622,8 @@ window.CATALOG_DATA = {
             "printTime": "46.9 h",
             "weight": "1971 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 2085,
-            "printCount": 1098,
+            "downloadCount": 2088,
+            "printCount": 1101,
             "ratingCount": 107,
             "byPrinter": {
               "P2S": {
@@ -7757,8 +7757,8 @@ window.CATALOG_DATA = {
             "printTime": "39.8 h",
             "weight": "1848 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 93,
-            "printCount": 76,
+            "downloadCount": 94,
+            "printCount": 78,
             "ratingCount": 10,
             "byPrinter": {
               "P2S": {
@@ -7919,7 +7919,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 290
+        "commentCount": 291
       },
       "caseFile": "016",
       "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY"
@@ -7936,10 +7936,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 562,
-        "boosts": 1274,
-        "downloads": 804,
-        "prints": 643
+        "likes": 564,
+        "boosts": 1275,
+        "downloads": 805,
+        "prints": 645
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -7950,7 +7950,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-08",
         "gallery": [
           "/assets/catalog/classified/the-traveler-them-1947-alien-greys-multi-sizes/gallery-01.png",
@@ -8253,7 +8253,7 @@ window.CATALOG_DATA = {
             "printTime": "38.1 h",
             "weight": "1559 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 731,
+            "downloadCount": 732,
             "printCount": 229,
             "ratingCount": 31,
             "byPrinter": {
@@ -8344,8 +8344,8 @@ window.CATALOG_DATA = {
             "weight": "2251 g",
             "difficulty": "4.8 / 5",
             "downloadCount": 53,
-            "printCount": 82,
-            "ratingCount": 32,
+            "printCount": 83,
+            "ratingCount": 33,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 6,
@@ -8439,7 +8439,7 @@ window.CATALOG_DATA = {
             "weight": "1621 g",
             "difficulty": "4.8 / 5",
             "downloadCount": 328,
-            "printCount": 231,
+            "printCount": 232,
             "ratingCount": 31,
             "byPrinter": {
               "P2S": {
@@ -8580,7 +8580,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 269
+        "commentCount": 270
       },
       "caseFile": "017",
       "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES"
@@ -8615,7 +8615,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Signs & Logos",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-13",
         "gallery": [
           "/assets/catalog/classified/them-1947-alien-greys-sign/gallery-01.jpg",
@@ -9010,10 +9010,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 292,
-        "boosts": 672,
-        "downloads": 458,
-        "prints": 210
+        "likes": 297,
+        "boosts": 675,
+        "downloads": 459,
+        "prints": 211
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
@@ -9031,7 +9031,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-16",
         "gallery": [
           "/assets/catalog/classified/5-foot-leader-them-1947-alien-greys/gallery-01.jpg",
@@ -9063,8 +9063,8 @@ window.CATALOG_DATA = {
           "printTime": "142.5 h",
           "weight": "4966 g",
           "difficulty": "4.4 / 5",
-          "downloadCount": 403,
-          "printCount": 110,
+          "downloadCount": 405,
+          "printCount": 111,
           "ratingCount": 9,
           "byPrinter": {
             "P2S": {
@@ -9154,8 +9154,8 @@ window.CATALOG_DATA = {
             "printTime": "142.5 h",
             "weight": "4966 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 403,
-            "printCount": 110,
+            "downloadCount": 405,
+            "printCount": 111,
             "ratingCount": 9,
             "byPrinter": {
               "P2S": {
@@ -9241,7 +9241,7 @@ window.CATALOG_DATA = {
             "printTime": "73.3 h",
             "weight": "3812 g",
             "difficulty": "3.9 / 5",
-            "downloadCount": 193,
+            "downloadCount": 194,
             "printCount": 58,
             "ratingCount": 5,
             "byPrinter": {
@@ -9312,7 +9312,7 @@ window.CATALOG_DATA = {
             "printTime": "143.7 h",
             "weight": "4715 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 89,
+            "downloadCount": 90,
             "printCount": 39,
             "ratingCount": 4,
             "byPrinter": {
@@ -9426,7 +9426,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 72
+        "commentCount": 76
       },
       "caseFile": "019",
       "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
@@ -9446,7 +9446,7 @@ window.CATALOG_DATA = {
         "likes": 214,
         "boosts": 567,
         "downloads": 352,
-        "prints": 318
+        "prints": 320
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
@@ -9457,7 +9457,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-20",
         "gallery": [
           "/assets/catalog/classified/3-foot-night-crawler-them-1947-alien-greys/gallery-01.jpg",
@@ -9490,8 +9490,8 @@ window.CATALOG_DATA = {
           "printTime": "53.3 h",
           "weight": "1676 g",
           "difficulty": "4.4 / 5",
-          "downloadCount": 740,
-          "printCount": 290,
+          "downloadCount": 741,
+          "printCount": 292,
           "ratingCount": 24,
           "byPrinter": {
             "P2S": {
@@ -9626,8 +9626,8 @@ window.CATALOG_DATA = {
             "printTime": "53.3 h",
             "weight": "1676 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 740,
-            "printCount": 290,
+            "downloadCount": 741,
+            "printCount": 292,
             "ratingCount": 24,
             "byPrinter": {
               "P2S": {
@@ -9761,7 +9761,7 @@ window.CATALOG_DATA = {
             "printTime": "53.5 h",
             "weight": "1660 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 71,
+            "downloadCount": 72,
             "printCount": 28,
             "ratingCount": 1,
             "byPrinter": {
@@ -9945,8 +9945,8 @@ window.CATALOG_DATA = {
       "stats": {
         "likes": 235,
         "boosts": 549,
-        "downloads": 270,
-        "prints": 225
+        "downloads": 271,
+        "prints": 228
       },
       "buyHref": null,
       "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
@@ -9957,7 +9957,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-08-21",
         "gallery": [
           "/assets/catalog/classified/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/gallery-01.png",
@@ -9994,8 +9994,8 @@ window.CATALOG_DATA = {
           "printTime": "43.4 h",
           "weight": "1365 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 502,
-          "printCount": 174,
+          "downloadCount": 503,
+          "printCount": 176,
           "ratingCount": 17,
           "byPrinter": {
             "P2S": {
@@ -10130,8 +10130,8 @@ window.CATALOG_DATA = {
             "printTime": "43.4 h",
             "weight": "1365 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 502,
-            "printCount": 174,
+            "downloadCount": 503,
+            "printCount": 176,
             "ratingCount": 17,
             "byPrinter": {
               "P2S": {
@@ -10261,7 +10261,7 @@ window.CATALOG_DATA = {
             "weight": "226 g",
             "difficulty": "4.1 / 5",
             "downloadCount": 150,
-            "printCount": 50,
+            "printCount": 51,
             "ratingCount": 7,
             "byPrinter": {
               "P2S": {
@@ -10546,10 +10546,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259272-the-descender-them-1947-alien-greys-spaceship",
       "stats": {
-        "likes": 279,
-        "boosts": 627,
-        "downloads": 267,
-        "prints": 64
+        "likes": 280,
+        "boosts": 632,
+        "downloads": 271,
+        "prints": 69
       },
       "buyHref": null,
       "href": "/files/prints/the-descender-them-1947-alien-greys-spaceship/",
@@ -10567,7 +10567,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-04",
         "gallery": [
           "/assets/catalog/classified/the-descender-them-1947-alien-greys-spaceship/gallery-01.png",
@@ -10599,7 +10599,7 @@ window.CATALOG_DATA = {
           "printTime": "44.8 h",
           "weight": "893 g",
           "difficulty": "3.5 / 5",
-          "downloadCount": 176,
+          "downloadCount": 177,
           "printCount": 9,
           "ratingCount": 3,
           "byPrinter": {
@@ -10690,7 +10690,7 @@ window.CATALOG_DATA = {
             "printTime": "44.8 h",
             "weight": "893 g",
             "difficulty": "3.5 / 5",
-            "downloadCount": 176,
+            "downloadCount": 177,
             "printCount": 9,
             "ratingCount": 3,
             "byPrinter": {
@@ -10785,8 +10785,8 @@ window.CATALOG_DATA = {
             "printTime": "27.4 h",
             "weight": "669 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 185,
-            "printCount": 35,
+            "downloadCount": 187,
+            "printCount": 39,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -10912,7 +10912,7 @@ window.CATALOG_DATA = {
             "printTime": "34.2 h",
             "weight": "1039 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 44,
+            "downloadCount": 45,
             "printCount": 6,
             "ratingCount": 0,
             "byPrinter": {
@@ -10983,8 +10983,8 @@ window.CATALOG_DATA = {
             "printTime": "196.9 h",
             "weight": "10368 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 75,
-            "printCount": 13,
+            "downloadCount": 76,
+            "printCount": 14,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -11171,10 +11171,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3288211-baby-roz-them-1947-alien-greys",
       "stats": {
-        "likes": 85,
-        "boosts": 211,
-        "downloads": 112,
-        "prints": 98
+        "likes": 86,
+        "boosts": 214,
+        "downloads": 113,
+        "prints": 99
       },
       "buyHref": null,
       "href": "/files/prints/baby-roz-them-1947-alien-greys/",
@@ -11189,7 +11189,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-10",
         "gallery": [
           "/assets/catalog/classified/baby-roz-them-1947-alien-greys/gallery-01.png",
@@ -11227,8 +11227,8 @@ window.CATALOG_DATA = {
           "printTime": "8.6 h",
           "weight": "249 g",
           "difficulty": "4.3 / 5",
-          "downloadCount": 191,
-          "printCount": 90,
+          "downloadCount": 192,
+          "printCount": 91,
           "ratingCount": 8,
           "byPrinter": {
             "P2S": {
@@ -11372,8 +11372,8 @@ window.CATALOG_DATA = {
             "printTime": "8.6 h",
             "weight": "249 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 191,
-            "printCount": 90,
+            "downloadCount": 192,
+            "printCount": 91,
             "ratingCount": 8,
             "byPrinter": {
               "P2S": {
@@ -11808,10 +11808,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3309255-inflight-ufo-them-1947-alien-greys-flying-saucer",
       "stats": {
-        "likes": 85,
-        "boosts": 209,
+        "likes": 86,
+        "boosts": 210,
         "downloads": 75,
-        "prints": 19
+        "prints": 21
       },
       "buyHref": null,
       "href": "/files/prints/inflight-ufo-them-1947-alien-greys-flying-saucer/",
@@ -11822,7 +11822,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Miniatures > Other Miniatures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-15",
         "gallery": [
           "/assets/catalog/classified/inflight-ufo-them-1947-alien-greys-flying-saucer/gallery-01.jpg",
@@ -11860,7 +11860,7 @@ window.CATALOG_DATA = {
           "weight": "782 g",
           "difficulty": "0.0 / 5",
           "downloadCount": 168,
-          "printCount": 17,
+          "printCount": 19,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -11996,7 +11996,7 @@ window.CATALOG_DATA = {
             "weight": "782 g",
             "difficulty": "0.0 / 5",
             "downloadCount": 168,
-            "printCount": 17,
+            "printCount": 19,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -12365,10 +12365,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3315805-3-foot-series-the-abductor-1947-them-alien-greys",
       "stats": {
-        "likes": 104,
-        "boosts": 224,
-        "downloads": 135,
-        "prints": 51
+        "likes": 105,
+        "boosts": 227,
+        "downloads": 136,
+        "prints": 53
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-the-abductor-1947-them-alien-greys/",
@@ -12386,7 +12386,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-16",
         "gallery": [
           "/assets/catalog/classified/3-foot-series-the-abductor-1947-them-alien-greys/gallery-01.png",
@@ -12423,8 +12423,8 @@ window.CATALOG_DATA = {
           "printTime": "93.2 h",
           "weight": "2936 g",
           "difficulty": "2.1 / 5",
-          "downloadCount": 189,
-          "printCount": 50,
+          "downloadCount": 191,
+          "printCount": 52,
           "ratingCount": 1,
           "byPrinter": {
             "P2S": {
@@ -12559,8 +12559,8 @@ window.CATALOG_DATA = {
             "printTime": "93.2 h",
             "weight": "2936 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 189,
-            "printCount": 50,
+            "downloadCount": 191,
+            "printCount": 52,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -12855,10 +12855,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3322032-the-tracker-them-1947-alien-greys-multiple-sizes",
       "stats": {
-        "likes": 184,
-        "boosts": 451,
-        "downloads": 264,
-        "prints": 145
+        "likes": 186,
+        "boosts": 454,
+        "downloads": 268,
+        "prints": 149
       },
       "buyHref": null,
       "href": "/files/prints/the-tracker-them-1947-alien-greys-multiple-sizes/",
@@ -12869,7 +12869,7 @@ window.CATALOG_DATA = {
         "features": [],
         "category": "Miniatures > Creatures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-18",
         "gallery": [
           "/assets/catalog/classified/the-tracker-them-1947-alien-greys-multiple-sizes/gallery-01.jpg",
@@ -12907,7 +12907,7 @@ window.CATALOG_DATA = {
           "weight": "180 g",
           "difficulty": "3.7 / 5",
           "downloadCount": 138,
-          "printCount": 38,
+          "printCount": 40,
           "ratingCount": 4,
           "byPrinter": {
             "P2S": {
@@ -13043,7 +13043,7 @@ window.CATALOG_DATA = {
             "weight": "180 g",
             "difficulty": "3.7 / 5",
             "downloadCount": 138,
-            "printCount": 38,
+            "printCount": 40,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -13176,10 +13176,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "63.0 h",
             "weight": "2056 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 235,
-            "printCount": 102,
-            "ratingCount": 3,
+            "difficulty": "3.6 / 5",
+            "downloadCount": 238,
+            "printCount": 104,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -13568,7 +13568,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 29
+        "commentCount": 30
       },
       "caseFile": "026",
       "specimenLabel": "THE TRACKER ALIEN GREYS MULTIPLE SIZES"
@@ -13585,8 +13585,8 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3360109-them-1947-desktop-light-wall-mount-light-led",
       "stats": {
-        "likes": 11,
-        "boosts": 14,
+        "likes": 12,
+        "boosts": 15,
         "downloads": 5,
         "prints": 2
       },
@@ -13606,7 +13606,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Signs & Logos",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-09-26",
         "gallery": [
           "/assets/catalog/classified/them-1947-desktop-light-wall-mount-light-led/gallery-01.jpg",
@@ -13936,7 +13936,7 @@ window.CATALOG_DATA = {
       "slug": "case-knife-stand",
       "pathSlug": "case-knife-stand",
       "blurb": "Case Knife Stand. Everyday 3D print. Download free on MakerWorld.",
-      "image": "/assets/catalog/declassified/case-knife-stand.png",
+      "image": "/assets/catalog/declassified/case-knife-stand.jpg",
       "status": "declassified",
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3368540-case-knife-stand",
@@ -13960,10 +13960,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3396796-3-foot-series-the-aggressor-them-1947-alien-greys",
       "stats": {
-        "likes": 31,
-        "boosts": 55,
-        "downloads": 30,
-        "prints": 4
+        "likes": 35,
+        "boosts": 63,
+        "downloads": 32,
+        "prints": 5
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-the-aggressor-them-1947-alien-greys/",
@@ -13981,7 +13981,7 @@ window.CATALOG_DATA = {
         ],
         "category": "Art > Sculptures",
         "designer": "Raceit17",
-        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
         "publishedAt": "2026-10-05",
         "gallery": [
           "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-01.jpg",
@@ -14018,8 +14018,8 @@ window.CATALOG_DATA = {
           "printTime": "81.2 h",
           "weight": "2071 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 46,
-          "printCount": 4,
+          "downloadCount": 51,
+          "printCount": 5,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -14154,8 +14154,8 @@ window.CATALOG_DATA = {
             "printTime": "81.2 h",
             "weight": "2071 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 46,
-            "printCount": 4,
+            "downloadCount": 51,
+            "printCount": 5,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
