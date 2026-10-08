@@ -1,10 +1,10 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-10-04T04:08:36Z",
+  "pulledAt": "2026-10-08T00:55:42Z",
   "summary": {
-    "total": 35,
-    "classified": 27,
+    "total": 36,
+    "classified": 28,
     "declassified": 8
   },
   "items": [
@@ -77,10 +77,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2991422-them-1947-roswell-grey-disclosure-day-alien",
       "stats": {
-        "likes": 293,
-        "boosts": 636,
-        "downloads": 365,
-        "prints": 128
+        "likes": 295,
+        "boosts": 647,
+        "downloads": 369,
+        "prints": 129
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-roswell-grey-disclosure-day-alien/",
@@ -130,8 +130,8 @@ window.CATALOG_DATA = {
           "printTime": "7.2 h",
           "weight": "186 g",
           "difficulty": "4.3 / 5",
-          "downloadCount": 430,
-          "printCount": 128,
+          "downloadCount": 436,
+          "printCount": 129,
           "ratingCount": 10,
           "byPrinter": {
             "P2S": {
@@ -221,8 +221,8 @@ window.CATALOG_DATA = {
             "printTime": "7.2 h",
             "weight": "186 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 430,
-            "printCount": 128,
+            "downloadCount": 436,
+            "printCount": 129,
             "ratingCount": 10,
             "byPrinter": {
               "P2S": {
@@ -430,10 +430,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2995237-them-1947-disclosure-alien-grey-the-aggressor",
       "stats": {
-        "likes": 482,
-        "boosts": 1122,
-        "downloads": 1246,
-        "prints": 588
+        "likes": 483,
+        "boosts": 1134,
+        "downloads": 1256,
+        "prints": 593
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -482,8 +482,8 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "254 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 1164,
-          "printCount": 386,
+          "downloadCount": 1173,
+          "printCount": 391,
           "ratingCount": 34,
           "byPrinter": {
             "P2S": {
@@ -573,8 +573,8 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "254 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 1164,
-            "printCount": 386,
+            "downloadCount": 1173,
+            "printCount": 391,
             "ratingCount": 34,
             "byPrinter": {
               "P2S": {
@@ -668,7 +668,7 @@ window.CATALOG_DATA = {
             "printTime": "10.8 h",
             "weight": "268 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 134,
+            "downloadCount": 138,
             "printCount": 60,
             "ratingCount": 9,
             "byPrinter": {
@@ -827,10 +827,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 1912,
-        "boosts": 4737,
-        "downloads": 2775,
-        "prints": 1255
+        "likes": 1931,
+        "boosts": 4773,
+        "downloads": 2815,
+        "prints": 1276
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -871,8 +871,8 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 4520,
-          "printCount": 917,
+          "downloadCount": 4585,
+          "printCount": 926,
           "ratingCount": 70,
           "byPrinter": {
             "P2S": {
@@ -962,8 +962,8 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 4520,
-            "printCount": 917,
+            "downloadCount": 4585,
+            "printCount": 926,
             "ratingCount": 70,
             "byPrinter": {
               "P2S": {
@@ -1057,9 +1057,9 @@ window.CATALOG_DATA = {
             "printTime": "6.4 h",
             "weight": "165 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 846,
-            "printCount": 328,
-            "ratingCount": 28,
+            "downloadCount": 859,
+            "printCount": 339,
+            "ratingCount": 30,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1194,7 +1194,7 @@ window.CATALOG_DATA = {
             "weight": "19 g",
             "difficulty": "3.9 / 5",
             "downloadCount": 40,
-            "printCount": 10,
+            "printCount": 11,
             "ratingCount": 5,
             "byPrinter": {
               "P2S": {
@@ -1336,7 +1336,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 243
+        "commentCount": 245
       },
       "caseFile": "003",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
@@ -1353,10 +1353,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004633-them-1947-disclosure-alien-greys-the-stalker",
       "stats": {
-        "likes": 402,
-        "boosts": 1050,
-        "downloads": 635,
-        "prints": 276
+        "likes": 405,
+        "boosts": 1067,
+        "downloads": 646,
+        "prints": 280
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-stalker/",
@@ -1404,8 +1404,8 @@ window.CATALOG_DATA = {
           "printTime": "8.7 h",
           "weight": "201 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1248,
-          "printCount": 276,
+          "downloadCount": 1267,
+          "printCount": 280,
           "ratingCount": 29,
           "byPrinter": {
             "P2S": {
@@ -1540,8 +1540,8 @@ window.CATALOG_DATA = {
             "printTime": "8.7 h",
             "weight": "201 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1248,
-            "printCount": 276,
+            "downloadCount": 1267,
+            "printCount": 280,
             "ratingCount": 29,
             "byPrinter": {
               "P2S": {
@@ -1692,10 +1692,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 539,
-        "boosts": 1478,
-        "downloads": 710,
-        "prints": 397
+        "likes": 545,
+        "boosts": 1507,
+        "downloads": 726,
+        "prints": 402
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader-3009502/",
@@ -1738,8 +1738,8 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 703,
-          "printCount": 315,
+          "downloadCount": 714,
+          "printCount": 319,
           "ratingCount": 43,
           "byPrinter": {
             "P2S": {
@@ -1829,8 +1829,8 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 703,
-            "printCount": 315,
+            "downloadCount": 714,
+            "printCount": 319,
             "ratingCount": 43,
             "byPrinter": {
               "P2S": {
@@ -1924,8 +1924,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "2.3 / 5",
-            "downloadCount": 181,
-            "printCount": 33,
+            "downloadCount": 189,
+            "printCount": 34,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -2054,9 +2054,9 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "161 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 121,
+            "downloadCount": 122,
             "printCount": 53,
-            "ratingCount": 11,
+            "ratingCount": 12,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2156,7 +2156,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 105
+        "commentCount": 106
       },
       "caseFile": "005",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THEIR LEADER"
@@ -2173,10 +2173,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3012967-them-1947-disclosure-alien-greys-the-watcher",
       "stats": {
-        "likes": 514,
-        "boosts": 1207,
-        "downloads": 1254,
-        "prints": 600
+        "likes": 516,
+        "boosts": 1218,
+        "downloads": 1264,
+        "prints": 608
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2219,9 +2219,9 @@ window.CATALOG_DATA = {
           "printTime": "6.7 h",
           "weight": "190 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1113,
-          "printCount": 380,
-          "ratingCount": 27,
+          "downloadCount": 1124,
+          "printCount": 386,
+          "ratingCount": 28,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2310,9 +2310,9 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "190 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1113,
-            "printCount": 380,
-            "ratingCount": 27,
+            "downloadCount": 1124,
+            "printCount": 386,
+            "ratingCount": 28,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2405,9 +2405,9 @@ window.CATALOG_DATA = {
             "printTime": "6.8 h",
             "weight": "157 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 176,
+            "downloadCount": 179,
             "printCount": 125,
-            "ratingCount": 10,
+            "ratingCount": 11,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2534,10 +2534,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "7.0 h",
             "weight": "179 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 223,
-            "printCount": 94,
-            "ratingCount": 12,
+            "difficulty": "4.5 / 5",
+            "downloadCount": 226,
+            "printCount": 96,
+            "ratingCount": 13,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2637,7 +2637,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 103
+        "commentCount": 107
       },
       "caseFile": "006",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE WATCHER"
@@ -2655,9 +2655,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
         "likes": 274,
-        "boosts": 656,
-        "downloads": 704,
-        "prints": 264
+        "boosts": 664,
+        "downloads": 714,
+        "prints": 271
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-night-crawler/",
@@ -2705,9 +2705,9 @@ window.CATALOG_DATA = {
           "printTime": "8.2 h",
           "weight": "195 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 803,
-          "printCount": 252,
-          "ratingCount": 31,
+          "downloadCount": 811,
+          "printCount": 255,
+          "ratingCount": 32,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -2841,9 +2841,9 @@ window.CATALOG_DATA = {
             "printTime": "8.2 h",
             "weight": "195 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 803,
-            "printCount": 252,
-            "ratingCount": 31,
+            "downloadCount": 811,
+            "printCount": 255,
+            "ratingCount": 32,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -2976,8 +2976,8 @@ window.CATALOG_DATA = {
             "printTime": "7.5 h",
             "weight": "193 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 13,
-            "printCount": 3,
+            "downloadCount": 21,
+            "printCount": 7,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -3118,7 +3118,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 91
+        "commentCount": 92
       },
       "caseFile": "007",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE NIGHT CRAWLER"
@@ -3136,9 +3136,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3019183-p1s-version-their-leader",
       "stats": {
         "likes": 104,
-        "boosts": 176,
-        "downloads": 118,
-        "prints": 53
+        "boosts": 181,
+        "downloads": 119,
+        "prints": 55
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-their-leader/",
@@ -3181,8 +3181,8 @@ window.CATALOG_DATA = {
           "printTime": "5.1 h",
           "weight": "130 g",
           "difficulty": "3.7 / 5",
-          "downloadCount": 179,
-          "printCount": 53,
+          "downloadCount": 187,
+          "printCount": 55,
           "ratingCount": 4,
           "byPrinter": {
             "P2S": {
@@ -3317,8 +3317,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 179,
-            "printCount": 53,
+            "downloadCount": 187,
+            "printCount": 55,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -3455,10 +3455,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019267-p1s-version-the-observer",
       "stats": {
-        "likes": 117,
-        "boosts": 211,
-        "downloads": 170,
-        "prints": 103
+        "likes": 119,
+        "boosts": 215,
+        "downloads": 174,
+        "prints": 105
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-the-observer/",
@@ -3500,10 +3500,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "6.8 h",
           "weight": "157 g",
-          "difficulty": "4.4 / 5",
-          "downloadCount": 385,
-          "printCount": 103,
-          "ratingCount": 11,
+          "difficulty": "4.5 / 5",
+          "downloadCount": 395,
+          "printCount": 105,
+          "ratingCount": 12,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3636,10 +3636,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "6.8 h",
             "weight": "157 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 385,
-            "printCount": 103,
-            "ratingCount": 11,
+            "difficulty": "4.5 / 5",
+            "downloadCount": 395,
+            "printCount": 105,
+            "ratingCount": 12,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -3751,7 +3751,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 29
+        "commentCount": 31
       },
       "caseFile": "009",
       "specimenLabel": "P1S VERSION THE OBSERVER"
@@ -3768,10 +3768,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
-        "likes": 543,
-        "boosts": 1335,
-        "downloads": 699,
-        "prints": 188
+        "likes": 551,
+        "boosts": 1369,
+        "downloads": 717,
+        "prints": 197
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-k-a-r-l/",
@@ -3819,9 +3819,9 @@ window.CATALOG_DATA = {
           "printTime": "8.3 h",
           "weight": "200 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 844,
-          "printCount": 185,
-          "ratingCount": 22,
+          "downloadCount": 873,
+          "printCount": 194,
+          "ratingCount": 23,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -3955,9 +3955,9 @@ window.CATALOG_DATA = {
             "printTime": "8.3 h",
             "weight": "200 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 844,
-            "printCount": 185,
-            "ratingCount": 22,
+            "downloadCount": 873,
+            "printCount": 194,
+            "ratingCount": 23,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -4076,7 +4076,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 80
+        "commentCount": 81
       },
       "caseFile": "010",
       "specimenLabel": "DISCLOSURE ALIEN GREYS K.A.R.L."
@@ -4093,10 +4093,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 416,
-        "boosts": 961,
-        "downloads": 586,
-        "prints": 168
+        "likes": 419,
+        "boosts": 982,
+        "downloads": 598,
+        "prints": 173
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-experimenter/",
@@ -4144,8 +4144,8 @@ window.CATALOG_DATA = {
           "printTime": "10.1 h",
           "weight": "215 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 595,
-          "printCount": 152,
+          "downloadCount": 611,
+          "printCount": 157,
           "ratingCount": 17,
           "byPrinter": {
             "P2S": {
@@ -4280,8 +4280,8 @@ window.CATALOG_DATA = {
             "printTime": "10.1 h",
             "weight": "215 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 595,
-            "printCount": 152,
+            "downloadCount": 611,
+            "printCount": 157,
             "ratingCount": 17,
             "byPrinter": {
               "P2S": {
@@ -4415,7 +4415,7 @@ window.CATALOG_DATA = {
             "printTime": "10.1 h",
             "weight": "215 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 38,
+            "downloadCount": 39,
             "printCount": 13,
             "ratingCount": 4,
             "byPrinter": {
@@ -4680,10 +4680,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 3368,
-        "boosts": 8350,
-        "downloads": 4323,
-        "prints": 3316
+        "likes": 3454,
+        "boosts": 8567,
+        "downloads": 4450,
+        "prints": 3430
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -4737,10 +4737,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "47.4 h",
           "weight": "1846 g",
-          "difficulty": "4.6 / 5",
-          "downloadCount": 164,
+          "difficulty": "4.7 / 5",
+          "downloadCount": 166,
           "printCount": 97,
-          "ratingCount": 18,
+          "ratingCount": 20,
           "byPrinter": {
             "P2S": {
               "buildPlates": 11,
@@ -4873,10 +4873,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "47.4 h",
             "weight": "1846 g",
-            "difficulty": "4.6 / 5",
-            "downloadCount": 164,
+            "difficulty": "4.7 / 5",
+            "downloadCount": 166,
             "printCount": 97,
-            "ratingCount": 18,
+            "ratingCount": 20,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 11,
@@ -5006,19 +5006,19 @@ window.CATALOG_DATA = {
             "walls": "2",
             "infill": "15%",
             "supports": null,
-            "printTime": "49.1 h",
+            "printTime": "49.2 h",
             "weight": "1649 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 5856,
-            "printCount": 3054,
-            "ratingCount": 355,
+            "downloadCount": 6022,
+            "printCount": 3157,
+            "ratingCount": 365,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "15%",
-                "printTime": "49.1 h",
+                "printTime": "49.2 h",
                 "weight": "1649 g"
               },
               "A2L": {
@@ -5288,8 +5288,8 @@ window.CATALOG_DATA = {
             "printTime": "3.0 h",
             "weight": "105 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 45,
-            "printCount": 56,
+            "downloadCount": 47,
+            "printCount": 58,
             "ratingCount": 15,
             "byPrinter": {
               "P2S": {
@@ -5420,11 +5420,11 @@ window.CATALOG_DATA = {
             "walls": "2",
             "infill": "15%",
             "supports": null,
-            "printTime": "49.9 h",
+            "printTime": "49.8 h",
             "weight": "1666 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 361,
-            "printCount": 176,
+            "downloadCount": 376,
+            "printCount": 186,
             "ratingCount": 18,
             "byPrinter": {
               "P2S": {
@@ -5432,7 +5432,7 @@ window.CATALOG_DATA = {
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "15%",
-                "printTime": "49.9 h",
+                "printTime": "49.8 h",
                 "weight": "1666 g"
               },
               "A2L": {
@@ -5607,7 +5607,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 1076
+        "commentCount": 1100
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -5624,10 +5624,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 480,
-        "boosts": 1181,
-        "downloads": 556,
-        "prints": 244
+        "likes": 487,
+        "boosts": 1195,
+        "downloads": 566,
+        "prints": 256
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-abductor/",
@@ -5675,9 +5675,9 @@ window.CATALOG_DATA = {
           "printTime": "8.9 h",
           "weight": "232 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 695,
-          "printCount": 240,
-          "ratingCount": 22,
+          "downloadCount": 708,
+          "printCount": 249,
+          "ratingCount": 23,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -5811,9 +5811,9 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 695,
-            "printCount": 240,
-            "ratingCount": 22,
+            "downloadCount": 708,
+            "printCount": 249,
+            "ratingCount": 23,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -5945,10 +5945,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "8.9 h",
             "weight": "232 g",
-            "difficulty": "0.0 / 5",
-            "downloadCount": 0,
-            "printCount": 0,
-            "ratingCount": 0,
+            "difficulty": "2.1 / 5",
+            "downloadCount": 4,
+            "printCount": 3,
+            "ratingCount": 1,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -6158,7 +6158,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 40
+        "commentCount": 42
       },
       "caseFile": "013",
       "specimenLabel": "DISCLOSURE ALIEN GREYS THE ABDUCTOR"
@@ -6175,10 +6175,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
-        "likes": 339,
-        "boosts": 829,
-        "downloads": 604,
-        "prints": 459
+        "likes": 343,
+        "boosts": 843,
+        "downloads": 617,
+        "prints": 472
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
@@ -6230,9 +6230,9 @@ window.CATALOG_DATA = {
           "printTime": "10.0 h",
           "weight": "207 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 754,
-          "printCount": 215,
-          "ratingCount": 23,
+          "downloadCount": 761,
+          "printCount": 218,
+          "ratingCount": 24,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -6366,9 +6366,9 @@ window.CATALOG_DATA = {
             "printTime": "10.0 h",
             "weight": "207 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 754,
-            "printCount": 215,
-            "ratingCount": 23,
+            "downloadCount": 761,
+            "printCount": 218,
+            "ratingCount": 24,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -6501,9 +6501,9 @@ window.CATALOG_DATA = {
             "printTime": "52.6 h",
             "weight": "1437 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 485,
-            "printCount": 223,
-            "ratingCount": 20,
+            "downloadCount": 505,
+            "printCount": 231,
+            "ratingCount": 21,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -6636,8 +6636,8 @@ window.CATALOG_DATA = {
             "printTime": "44.2 h",
             "weight": "1316 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 46,
-            "printCount": 21,
+            "downloadCount": 48,
+            "printCount": 23,
             "ratingCount": 2,
             "byPrinter": {
               "P2S": {
@@ -6791,7 +6791,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 131
+        "commentCount": 136
       },
       "caseFile": "014",
       "specimenLabel": "THE INTIMIDATOR DISCLOSURE ALIEN GREYS"
@@ -6808,10 +6808,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-series-alien-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 2509,
-        "boosts": 6323,
-        "downloads": 3480,
-        "prints": 2458
+        "likes": 2601,
+        "boosts": 6588,
+        "downloads": 3636,
+        "prints": 2584
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-alien-leader-them-1947-alien-greys/",
@@ -6854,9 +6854,9 @@ window.CATALOG_DATA = {
           "printTime": "36.5 h",
           "weight": "1439 g",
           "difficulty": "5.0 / 5",
-          "downloadCount": 4026,
-          "printCount": 1613,
-          "ratingCount": 190,
+          "downloadCount": 4191,
+          "printCount": 1693,
+          "ratingCount": 197,
           "byPrinter": {
             "P2S": {
               "buildPlates": 12,
@@ -6945,9 +6945,9 @@ window.CATALOG_DATA = {
             "printTime": "36.5 h",
             "weight": "1439 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 4026,
-            "printCount": 1613,
-            "ratingCount": 190,
+            "downloadCount": 4191,
+            "printCount": 1693,
+            "ratingCount": 197,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7040,9 +7040,9 @@ window.CATALOG_DATA = {
             "printTime": "36.2 h",
             "weight": "1410 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1216,
-            "printCount": 826,
-            "ratingCount": 92,
+            "downloadCount": 1254,
+            "printCount": 867,
+            "ratingCount": 96,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7163,7 +7163,7 @@ window.CATALOG_DATA = {
             "printTime": "185.2 h",
             "weight": "2377 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 9,
+            "downloadCount": 13,
             "printCount": 0,
             "ratingCount": 0,
             "byPrinter": {
@@ -7202,8 +7202,8 @@ window.CATALOG_DATA = {
             "printTime": "47.6 h",
             "weight": "2267 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 22,
-            "printCount": 8,
+            "downloadCount": 28,
+            "printCount": 11,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -7354,7 +7354,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 626
+        "commentCount": 644
       },
       "caseFile": "015",
       "specimenLabel": "3 FOOT SERIES ALIEN LEADER ALIEN GREYS"
@@ -7372,7 +7372,7 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
       "stats": {
         "likes": 44,
-        "boosts": 79,
+        "boosts": 80,
         "downloads": 25,
         "prints": 6
       },
@@ -7391,9 +7391,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy",
       "stats": {
         "likes": 30,
-        "boosts": 80,
+        "boosts": 81,
         "downloads": 22,
-        "prints": 22
+        "prints": 24
       },
       "buyHref": "https://makerworld.com/en/models/3105620-shotgon-bucky-bullet-buddy"
     },
@@ -7410,8 +7410,8 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
       "stats": {
         "likes": 15,
-        "boosts": 25,
-        "downloads": 6,
+        "boosts": 26,
+        "downloads": 7,
         "prints": 1
       },
       "buyHref": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj"
@@ -7428,10 +7428,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 841,
-        "boosts": 2068,
-        "downloads": 1308,
-        "prints": 1129
+        "likes": 860,
+        "boosts": 2114,
+        "downloads": 1349,
+        "prints": 1175
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -7486,9 +7486,9 @@ window.CATALOG_DATA = {
           "printTime": "46.9 h",
           "weight": "1971 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 2031,
-          "printCount": 1064,
-          "ratingCount": 104,
+          "downloadCount": 2085,
+          "printCount": 1098,
+          "ratingCount": 107,
           "byPrinter": {
             "P2S": {
               "buildPlates": 11,
@@ -7622,9 +7622,9 @@ window.CATALOG_DATA = {
             "printTime": "46.9 h",
             "weight": "1971 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 2031,
-            "printCount": 1064,
-            "ratingCount": 104,
+            "downloadCount": 2085,
+            "printCount": 1098,
+            "ratingCount": 107,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 11,
@@ -7756,10 +7756,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "39.8 h",
             "weight": "1848 g",
-            "difficulty": "3.7 / 5",
-            "downloadCount": 83,
-            "printCount": 64,
-            "ratingCount": 4,
+            "difficulty": "4.4 / 5",
+            "downloadCount": 93,
+            "printCount": 76,
+            "ratingCount": 10,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7919,7 +7919,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 279
+        "commentCount": 290
       },
       "caseFile": "016",
       "specimenLabel": "MEDICAL SCIENTIST 3 FOOT EXPERIMENTING ALIEN GREY"
@@ -7936,10 +7936,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 552,
-        "boosts": 1243,
-        "downloads": 771,
-        "prints": 615
+        "likes": 562,
+        "boosts": 1274,
+        "downloads": 804,
+        "prints": 643
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -7986,10 +7986,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "4.1 h",
           "weight": "112 g",
-          "difficulty": "4.4 / 5",
-          "downloadCount": 184,
-          "printCount": 99,
-          "ratingCount": 11,
+          "difficulty": "4.5 / 5",
+          "downloadCount": 187,
+          "printCount": 101,
+          "ratingCount": 13,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -8122,10 +8122,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "4.1 h",
             "weight": "112 g",
-            "difficulty": "4.4 / 5",
-            "downloadCount": 184,
-            "printCount": 99,
-            "ratingCount": 11,
+            "difficulty": "4.5 / 5",
+            "downloadCount": 187,
+            "printCount": 101,
+            "ratingCount": 13,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -8253,9 +8253,9 @@ window.CATALOG_DATA = {
             "printTime": "38.1 h",
             "weight": "1559 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 706,
-            "printCount": 218,
-            "ratingCount": 30,
+            "downloadCount": 731,
+            "printCount": 229,
+            "ratingCount": 31,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -8343,9 +8343,9 @@ window.CATALOG_DATA = {
             "printTime": "52.3 h",
             "weight": "2251 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 51,
-            "printCount": 80,
-            "ratingCount": 31,
+            "downloadCount": 53,
+            "printCount": 82,
+            "ratingCount": 32,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 6,
@@ -8437,10 +8437,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "45.2 h",
             "weight": "1621 g",
-            "difficulty": "4.7 / 5",
-            "downloadCount": 309,
-            "printCount": 218,
-            "ratingCount": 27,
+            "difficulty": "4.8 / 5",
+            "downloadCount": 328,
+            "printCount": 231,
+            "ratingCount": 31,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 9,
@@ -8580,7 +8580,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 254
+        "commentCount": 269
       },
       "caseFile": "017",
       "specimenLabel": "THE TRAVELER ALIEN GREYS MULTI SIZES"
@@ -8597,8 +8597,8 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3166617-them-1947-alien-greys-sign",
       "stats": {
-        "likes": 36,
-        "boosts": 71,
+        "likes": 37,
+        "boosts": 73,
         "downloads": 12,
         "prints": 8
       },
@@ -9010,10 +9010,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 284,
-        "boosts": 644,
-        "downloads": 432,
-        "prints": 191
+        "likes": 292,
+        "boosts": 672,
+        "downloads": 458,
+        "prints": 210
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
@@ -9062,10 +9062,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "142.5 h",
           "weight": "4966 g",
-          "difficulty": "4.3 / 5",
-          "downloadCount": 381,
-          "printCount": 101,
-          "ratingCount": 8,
+          "difficulty": "4.4 / 5",
+          "downloadCount": 403,
+          "printCount": 110,
+          "ratingCount": 9,
           "byPrinter": {
             "P2S": {
               "buildPlates": 24,
@@ -9153,10 +9153,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "142.5 h",
             "weight": "4966 g",
-            "difficulty": "4.3 / 5",
-            "downloadCount": 381,
-            "printCount": 101,
-            "ratingCount": 8,
+            "difficulty": "4.4 / 5",
+            "downloadCount": 403,
+            "printCount": 110,
+            "ratingCount": 9,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 24,
@@ -9241,8 +9241,8 @@ window.CATALOG_DATA = {
             "printTime": "73.3 h",
             "weight": "3812 g",
             "difficulty": "3.9 / 5",
-            "downloadCount": 186,
-            "printCount": 55,
+            "downloadCount": 193,
+            "printCount": 58,
             "ratingCount": 5,
             "byPrinter": {
               "A2L": {
@@ -9311,10 +9311,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "143.7 h",
             "weight": "4715 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 73,
-            "printCount": 32,
-            "ratingCount": 3,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 89,
+            "printCount": 39,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 14,
@@ -9426,7 +9426,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 67
+        "commentCount": 72
       },
       "caseFile": "019",
       "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
@@ -9443,10 +9443,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3195349-3-foot-night-crawler-them-1947-alien-greys",
       "stats": {
-        "likes": 209,
-        "boosts": 546,
-        "downloads": 337,
-        "prints": 299
+        "likes": 214,
+        "boosts": 567,
+        "downloads": 352,
+        "prints": 318
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
@@ -9490,9 +9490,9 @@ window.CATALOG_DATA = {
           "printTime": "53.3 h",
           "weight": "1676 g",
           "difficulty": "4.4 / 5",
-          "downloadCount": 714,
-          "printCount": 273,
-          "ratingCount": 22,
+          "downloadCount": 740,
+          "printCount": 290,
+          "ratingCount": 24,
           "byPrinter": {
             "P2S": {
               "buildPlates": 8,
@@ -9626,9 +9626,9 @@ window.CATALOG_DATA = {
             "printTime": "53.3 h",
             "weight": "1676 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 714,
-            "printCount": 273,
-            "ratingCount": 22,
+            "downloadCount": 740,
+            "printCount": 290,
+            "ratingCount": 24,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 8,
@@ -9761,8 +9761,8 @@ window.CATALOG_DATA = {
             "printTime": "53.5 h",
             "weight": "1660 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 69,
-            "printCount": 26,
+            "downloadCount": 71,
+            "printCount": 28,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -9926,7 +9926,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 59
+        "commentCount": 62
       },
       "caseFile": "020",
       "specimenLabel": "3 FOOT NIGHT CRAWLER ALIEN GREYS"
@@ -9943,10 +9943,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3200946-one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
       "stats": {
-        "likes": 221,
-        "boosts": 523,
-        "downloads": 240,
-        "prints": 205
+        "likes": 235,
+        "boosts": 549,
+        "downloads": 270,
+        "prints": 225
       },
       "buyHref": null,
       "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
@@ -9994,9 +9994,9 @@ window.CATALOG_DATA = {
           "printTime": "43.4 h",
           "weight": "1365 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 465,
-          "printCount": 157,
-          "ratingCount": 15,
+          "downloadCount": 502,
+          "printCount": 174,
+          "ratingCount": 17,
           "byPrinter": {
             "P2S": {
               "buildPlates": 5,
@@ -10130,9 +10130,9 @@ window.CATALOG_DATA = {
             "printTime": "43.4 h",
             "weight": "1365 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 465,
-            "printCount": 157,
-            "ratingCount": 15,
+            "downloadCount": 502,
+            "printCount": 174,
+            "ratingCount": 17,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 5,
@@ -10260,8 +10260,8 @@ window.CATALOG_DATA = {
             "printTime": "8.5 h",
             "weight": "226 g",
             "difficulty": "4.1 / 5",
-            "downloadCount": 139,
-            "printCount": 47,
+            "downloadCount": 150,
+            "printCount": 50,
             "ratingCount": 7,
             "byPrinter": {
               "P2S": {
@@ -10356,7 +10356,7 @@ window.CATALOG_DATA = {
             "printTime": "0.8 h",
             "weight": "18 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 21,
+            "downloadCount": 22,
             "printCount": 1,
             "ratingCount": 2,
             "byPrinter": {
@@ -10529,7 +10529,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 93
+        "commentCount": 96
       },
       "caseFile": "021",
       "specimenLabel": "ONE HIT WONDER ALIEN GREYS 3 FOOT AND 10"
@@ -10546,10 +10546,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259272-the-descender-them-1947-alien-greys-spaceship",
       "stats": {
-        "likes": 265,
-        "boosts": 584,
-        "downloads": 240,
-        "prints": 58
+        "likes": 279,
+        "boosts": 627,
+        "downloads": 267,
+        "prints": 64
       },
       "buyHref": null,
       "href": "/files/prints/the-descender-them-1947-alien-greys-spaceship/",
@@ -10598,10 +10598,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "44.8 h",
           "weight": "893 g",
-          "difficulty": "3.0 / 5",
-          "downloadCount": 168,
+          "difficulty": "3.5 / 5",
+          "downloadCount": 176,
           "printCount": 9,
-          "ratingCount": 2,
+          "ratingCount": 3,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -10689,10 +10689,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "44.8 h",
             "weight": "893 g",
-            "difficulty": "3.0 / 5",
-            "downloadCount": 168,
+            "difficulty": "3.5 / 5",
+            "downloadCount": 176,
             "printCount": 9,
-            "ratingCount": 2,
+            "ratingCount": 3,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -10785,8 +10785,8 @@ window.CATALOG_DATA = {
             "printTime": "27.4 h",
             "weight": "669 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 168,
-            "printCount": 31,
+            "downloadCount": 185,
+            "printCount": 35,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -10912,7 +10912,7 @@ window.CATALOG_DATA = {
             "printTime": "34.2 h",
             "weight": "1039 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 40,
+            "downloadCount": 44,
             "printCount": 6,
             "ratingCount": 0,
             "byPrinter": {
@@ -10983,8 +10983,8 @@ window.CATALOG_DATA = {
             "printTime": "196.9 h",
             "weight": "10368 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 62,
-            "printCount": 11,
+            "downloadCount": 75,
+            "printCount": 13,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -11135,7 +11135,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 47
+        "commentCount": 48
       },
       "caseFile": "022",
       "specimenLabel": "THE DESCENDER ALIEN GREYS SPACESHIP"
@@ -11153,7 +11153,7 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3259500-4500-style-carburetor-dust-cover-compat-dominator",
       "stats": {
         "likes": 6,
-        "boosts": 11,
+        "boosts": 13,
         "downloads": 6,
         "prints": 4
       },
@@ -11171,10 +11171,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3288211-baby-roz-them-1947-alien-greys",
       "stats": {
-        "likes": 78,
-        "boosts": 204,
-        "downloads": 101,
-        "prints": 84
+        "likes": 85,
+        "boosts": 211,
+        "downloads": 112,
+        "prints": 98
       },
       "buyHref": null,
       "href": "/files/prints/baby-roz-them-1947-alien-greys/",
@@ -11226,10 +11226,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "8.6 h",
           "weight": "249 g",
-          "difficulty": "4.2 / 5",
-          "downloadCount": 175,
-          "printCount": 80,
-          "ratingCount": 7,
+          "difficulty": "4.3 / 5",
+          "downloadCount": 191,
+          "printCount": 90,
+          "ratingCount": 8,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -11371,10 +11371,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "8.6 h",
             "weight": "249 g",
-            "difficulty": "4.2 / 5",
-            "downloadCount": 175,
-            "printCount": 80,
-            "ratingCount": 7,
+            "difficulty": "4.3 / 5",
+            "downloadCount": 191,
+            "printCount": 90,
+            "ratingCount": 8,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -11516,8 +11516,8 @@ window.CATALOG_DATA = {
             "printTime": "1.6 h",
             "weight": "29 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 6,
-            "printCount": 2,
+            "downloadCount": 8,
+            "printCount": 4,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -11557,8 +11557,8 @@ window.CATALOG_DATA = {
                 "layerHeight": "0.2",
                 "walls": "2",
                 "infill": "15%",
-                "printTime": "1.6 h",
-                "weight": "29 g"
+                "printTime": "0.6 h",
+                "weight": "11 g"
               },
               "H2D": {
                 "buildPlates": 1,
@@ -11659,8 +11659,8 @@ window.CATALOG_DATA = {
             "printTime": "20.6 h",
             "weight": "755 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 4,
-            "printCount": 2,
+            "downloadCount": 6,
+            "printCount": 4,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -11791,7 +11791,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 16
+        "commentCount": 17
       },
       "caseFile": "023",
       "specimenLabel": "BABY ROZ ALIEN GREYS"
@@ -11808,10 +11808,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3309255-inflight-ufo-them-1947-alien-greys-flying-saucer",
       "stats": {
-        "likes": 81,
-        "boosts": 190,
-        "downloads": 59,
-        "prints": 15
+        "likes": 85,
+        "boosts": 209,
+        "downloads": 75,
+        "prints": 19
       },
       "buyHref": null,
       "href": "/files/prints/inflight-ufo-them-1947-alien-greys-flying-saucer/",
@@ -11859,8 +11859,8 @@ window.CATALOG_DATA = {
           "printTime": "24.8 h",
           "weight": "782 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 144,
-          "printCount": 14,
+          "downloadCount": 168,
+          "printCount": 17,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -11995,8 +11995,8 @@ window.CATALOG_DATA = {
             "printTime": "24.8 h",
             "weight": "782 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 144,
-            "printCount": 14,
+            "downloadCount": 168,
+            "printCount": 17,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -12122,8 +12122,8 @@ window.CATALOG_DATA = {
             "printTime": "35.2 h",
             "weight": "846 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 12,
-            "printCount": 1,
+            "downloadCount": 16,
+            "printCount": 2,
             "ratingCount": 0,
             "byPrinter": {
               "A2L": {
@@ -12193,7 +12193,7 @@ window.CATALOG_DATA = {
             "printTime": "45.5 h",
             "weight": "793 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 6,
+            "downloadCount": 17,
             "printCount": 0,
             "ratingCount": 0,
             "byPrinter": {
@@ -12365,10 +12365,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3315805-3-foot-series-the-abductor-1947-them-alien-greys",
       "stats": {
-        "likes": 97,
-        "boosts": 213,
-        "downloads": 125,
-        "prints": 42
+        "likes": 104,
+        "boosts": 224,
+        "downloads": 135,
+        "prints": 51
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-the-abductor-1947-them-alien-greys/",
@@ -12423,8 +12423,8 @@ window.CATALOG_DATA = {
           "printTime": "93.2 h",
           "weight": "2936 g",
           "difficulty": "2.1 / 5",
-          "downloadCount": 172,
-          "printCount": 41,
+          "downloadCount": 189,
+          "printCount": 50,
           "ratingCount": 1,
           "byPrinter": {
             "P2S": {
@@ -12559,8 +12559,8 @@ window.CATALOG_DATA = {
             "printTime": "93.2 h",
             "weight": "2936 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 172,
-            "printCount": 41,
+            "downloadCount": 189,
+            "printCount": 50,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -12838,7 +12838,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 7
+        "commentCount": 10
       },
       "caseFile": "025",
       "specimenLabel": "3 FOOT SERIES - THE ABDUCTOR 1947 THEM ALIEN GREYS"
@@ -12855,10 +12855,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3322032-the-tracker-them-1947-alien-greys-multiple-sizes",
       "stats": {
-        "likes": 167,
-        "boosts": 389,
-        "downloads": 217,
-        "prints": 118
+        "likes": 184,
+        "boosts": 451,
+        "downloads": 264,
+        "prints": 145
       },
       "buyHref": null,
       "href": "/files/prints/the-tracker-them-1947-alien-greys-multiple-sizes/",
@@ -12905,10 +12905,10 @@ window.CATALOG_DATA = {
           "supports": null,
           "printTime": "8.0 h",
           "weight": "180 g",
-          "difficulty": "3.5 / 5",
-          "downloadCount": 122,
-          "printCount": 32,
-          "ratingCount": 3,
+          "difficulty": "3.7 / 5",
+          "downloadCount": 138,
+          "printCount": 38,
+          "ratingCount": 4,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -13041,10 +13041,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "8.0 h",
             "weight": "180 g",
-            "difficulty": "3.5 / 5",
-            "downloadCount": 122,
-            "printCount": 32,
-            "ratingCount": 3,
+            "difficulty": "3.7 / 5",
+            "downloadCount": 138,
+            "printCount": 38,
+            "ratingCount": 4,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -13177,8 +13177,8 @@ window.CATALOG_DATA = {
             "printTime": "63.0 h",
             "weight": "2056 g",
             "difficulty": "3.5 / 5",
-            "downloadCount": 207,
-            "printCount": 84,
+            "downloadCount": 235,
+            "printCount": 102,
             "ratingCount": 3,
             "byPrinter": {
               "P2S": {
@@ -13447,8 +13447,8 @@ window.CATALOG_DATA = {
             "printTime": "131.4 h",
             "weight": "5753 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 8,
-            "printCount": 0,
+            "downloadCount": 14,
+            "printCount": 2,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -13568,7 +13568,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 28
+        "commentCount": 29
       },
       "caseFile": "026",
       "specimenLabel": "THE TRACKER ALIEN GREYS MULTIPLE SIZES"
@@ -13586,9 +13586,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3360109-them-1947-desktop-light-wall-mount-light-led",
       "stats": {
         "likes": 11,
-        "boosts": 12,
+        "boosts": 14,
         "downloads": 5,
-        "prints": 1
+        "prints": 2
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-desktop-light-wall-mount-light-led/",
@@ -13644,7 +13644,7 @@ window.CATALOG_DATA = {
           "weight": "261 g",
           "difficulty": "0.0 / 5",
           "downloadCount": 7,
-          "printCount": 1,
+          "printCount": 2,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -13780,7 +13780,7 @@ window.CATALOG_DATA = {
             "weight": "261 g",
             "difficulty": "0.0 / 5",
             "downloadCount": 7,
-            "printCount": 1,
+            "printCount": 2,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -13942,11 +13942,377 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3368540-case-knife-stand",
       "stats": {
         "likes": 4,
-        "boosts": 3,
-        "downloads": 1,
-        "prints": 1
+        "boosts": 4,
+        "downloads": 3,
+        "prints": 2
       },
       "buyHref": "https://makerworld.com/en/models/3368540-case-knife-stand"
+    },
+    {
+      "id": "mw-3396796",
+      "makerWorldId": 3396796,
+      "name": "3 Foot Series THE AGGRESSOR Alien Greys",
+      "slug": "3-foot-series-the-aggressor-them-1947-alien-greys",
+      "pathSlug": "3-foot-series-the-aggressor-them-1947-alien-greys",
+      "blurb": "3 Foot Series THE AGGRESSOR Alien Greys. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-01.jpg",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3396796-3-foot-series-the-aggressor-them-1947-alien-greys",
+      "stats": {
+        "likes": 31,
+        "boosts": 55,
+        "downloads": 30,
+        "prints": 4
+      },
+      "buyHref": null,
+      "href": "/files/prints/3-foot-series-the-aggressor-them-1947-alien-greys/",
+      "detail": {
+        "caseFile": "028",
+        "specimenLabel": "3 FOOT SERIES THE AGGRESSOR ALIEN GREYS",
+        "summaryText": "THEM 1947 Alien Greys | 3 FOOT SERIES Click here for the entire THEM 1947 Alien Greys collection . Some aliens come to observe. Some come to study. THE AGGRESSOR came looking for a fight. The newest addition to the THEM 1947 Alien Greys 3 FOOT SERIES, THE AGGRESSOR is one of the most intense characters in the collection. With his aggressive stance, screaming expression, oversized reaching hand, and battle scarred appearance, this Grey looks like he's already had a rough night in rural America and apparently somebody's shotgun wasn't enough to convince him to leave. Designed as a full size display piece, THE AGGRESSOR makes an incredible conversation starter for a game room, garage, shop, Halloween display, UFO collection, or anywhere that could use a three foot alien invasion . Features include: Highly detailed THEM 1947 Alien Grey design Dynamic, aggressive action pose Battle worn details that add character and tell a story Large display presence without needing a life size 5-foot model Designed for multi part 3D printing and assembly Part of the expanding THEM 1947 Alien Greys collection Whether he's escaping Area 51, terrorizing a farmhouse, or just having a really bad night in Indiana, THE AGGRESSOR doesn't exactly come in peace. 👽 Exclusive Model - Only Available on MakerWorld by user Raceit17 🌐 THEM1947.com Easy links to THE AGGRESSOR and the entire THEM 1947 Alien Greys collection on MakerWorld. Print it. Build it. Put it somewhere unexpected. Then wait for somebody to notice it. 👽🛸 Be sure to find the best Alien related 3D models from many different creators on our Facebook Page: https://www.facebook.com/groups/1289863179891582",
+        "features": [
+          "Highly detailed THEM 1947 Alien Grey design",
+          "Dynamic, aggressive action pose",
+          "Battle worn details that add character and tell a story",
+          "Large display presence without needing a life size 5-foot model",
+          "Designed for multi part 3D printing and assembly",
+          "Part of the expanding THEM 1947 Alien Greys collection"
+        ],
+        "category": "Art > Sculptures",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20260303/935464230/dcfccab3a72ea2c0.jpg",
+        "publishedAt": "2026-10-05",
+        "gallery": [
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-01.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-02.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-03.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-04.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-05.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-06.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-07.jpg",
+          "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "3 FOOT Series 0.2mm layer, 2 walls, 5% infill",
+          "printers": [
+            "P2S",
+            "A2L",
+            "A1",
+            "H2S",
+            "H2C",
+            "H2D",
+            "X2D",
+            "H2D Pro",
+            "P1S",
+            "P1P",
+            "X1 Carbon",
+            "X1",
+            "X1E"
+          ],
+          "buildPlates": 12,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "5%",
+          "supports": null,
+          "printTime": "81.2 h",
+          "weight": "2071 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 46,
+          "printCount": 4,
+          "ratingCount": 0,
+          "byPrinter": {
+            "P2S": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.4 h",
+              "weight": "2067 g"
+            },
+            "A2L": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "93.9 h",
+              "weight": "2037 g"
+            },
+            "A1": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "94.7 h",
+              "weight": "2038 g"
+            },
+            "H2S": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "80.4 h",
+              "weight": "2069 g"
+            },
+            "H2C": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "75.6 h",
+              "weight": "1995 g"
+            },
+            "H2D": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "75.9 h",
+              "weight": "1963 g"
+            },
+            "X2D": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.2 h",
+              "weight": "2071 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "76.0 h",
+              "weight": "1963 g"
+            },
+            "P1S": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.2 h",
+              "weight": "2071 g"
+            },
+            "P1P": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.2 h",
+              "weight": "2071 g"
+            },
+            "X1 Carbon": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.8 h",
+              "weight": "2082 g"
+            },
+            "X1": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.8 h",
+              "weight": "2082 g"
+            },
+            "X1E": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.6 h",
+              "weight": "2082 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "3 FOOT Series 0.2mm layer, 2 walls, 5% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "P1S",
+              "P1P",
+              "X1 Carbon",
+              "X1",
+              "X1E"
+            ],
+            "buildPlates": 12,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "5%",
+            "supports": null,
+            "printTime": "81.2 h",
+            "weight": "2071 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 46,
+            "printCount": 4,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.4 h",
+                "weight": "2067 g"
+              },
+              "A2L": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "93.9 h",
+                "weight": "2037 g"
+              },
+              "A1": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "94.7 h",
+                "weight": "2038 g"
+              },
+              "H2S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "80.4 h",
+                "weight": "2069 g"
+              },
+              "H2C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "75.6 h",
+                "weight": "1995 g"
+              },
+              "H2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "75.9 h",
+                "weight": "1963 g"
+              },
+              "X2D": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.2 h",
+                "weight": "2071 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "76.0 h",
+                "weight": "1963 g"
+              },
+              "P1S": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.2 h",
+                "weight": "2071 g"
+              },
+              "P1P": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.2 h",
+                "weight": "2071 g"
+              },
+              "X1 Carbon": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.8 h",
+                "weight": "2082 g"
+              },
+              "X1": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.8 h",
+                "weight": "2082 g"
+              },
+              "X1E": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.6 h",
+                "weight": "2082 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+            "colorOptions": [
+              "Gray (10103)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41211562819720&modelId=3396796"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$13.29",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3396796"
+          },
+          {
+            "name": "PETG Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/9c0843dc40074977a1243d7d9bb9099f/GRAY.png",
+            "colorOptions": [
+              "Gray(30107)"
+            ],
+            "priceFrom": "$11.89",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864299&modelId=3396796"
+          },
+          {
+            "name": "PETG Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/07333e2d8fdc4ffeb69193e6e0d68244/Black.png",
+            "colorOptions": [
+              "Black(30105)"
+            ],
+            "priceFrom": "$11.89",
+            "url": "https://us.store.bambulab.com/products/petg-basic?skr=yes&id=703099511296864275&modelId=3396796"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 2
+      },
+      "caseFile": "028",
+      "specimenLabel": "3 FOOT SERIES THE AGGRESSOR ALIEN GREYS"
     }
   ]
 };

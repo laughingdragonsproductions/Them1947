@@ -82,6 +82,12 @@ KEYWORDS = [
     "Descender",
     "spaceship",
     "3259272",
+    "3396796",
+    "3 Foot Series THE AGGRESSOR",
+    "Baby Roz",
+    "3288211",
+    "3309255",
+    "3322032",
 ]
 
 DECLASSIFIED_IDS = {
@@ -96,6 +102,10 @@ DECLASSIFIED_IDS = {
 FEATURED_CLASSIFIED_IDS = {
     3200946,
     3259272,
+    3288211,
+    3309255,
+    3322032,
+    3396796,
 }
 
 DISPLAY_TITLE_OVERRIDES = {

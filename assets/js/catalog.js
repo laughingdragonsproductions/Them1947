@@ -99,15 +99,26 @@ function renderCatalogGrid(vault) {
   return `<div class="mw-grid" role="list">${items.map(renderMwCard).join("")}</div>`;
 }
 
-function getFeaturedReleaseItem() {
+function getFeaturedReleaseConfigs() {
+  const list = window.SITE_CONFIG?.featuredReleases;
+  if (Array.isArray(list) && list.length) return list;
   const featured = window.SITE_CONFIG?.featuredRelease;
-  if (!featured) return null;
+  return featured ? [featured] : [];
+}
+
+function findCatalogItemForFeatured(config) {
   const items = window.CATALOG_DATA?.items || [];
   return (
-    items.find((item) => item.makerWorldId === featured.makerWorldId) ||
-    items.find((item) => item.pathSlug === featured.pathSlug) ||
+    items.find((item) => item.makerWorldId === config.makerWorldId) ||
+    items.find((item) => item.pathSlug === config.pathSlug) ||
     null
   );
+}
+
+function getFeaturedReleaseItem() {
+  const configs = getFeaturedReleaseConfigs();
+  if (!configs.length) return null;
+  return findCatalogItemForFeatured(configs[0]);
 }
 
 function renderFeaturedReleaseCard({
@@ -150,32 +161,31 @@ function renderFeaturedReleaseCard({
   </section>`;
 }
 
-function renderFeaturedRelease() {
-  const featured = window.SITE_CONFIG?.featuredRelease;
-  const item = getFeaturedReleaseItem();
-  if (!featured || !item?.href) return "";
+function renderFeaturedReleaseFromConfig(config, item) {
+  if (!config || !item?.href) return "";
 
   const displayName = cleanCaseName(item.name);
-  const poster = featured.poster || item.image;
-  const eyebrow = featured.eyebrow || "New release";
-  const tagline = featured.tagline || item.blurb || "";
+  const poster = config.poster || item.image;
+  const eyebrow = config.eyebrow || "New release";
+  const tagline = config.tagline || item.blurb || "";
   const caseLabel = item.caseFile ? `Case file ${item.caseFile}` : "Classified file";
   const mwUrl = itemMakerWorldUrl(item);
   const secondaryLink = mwUrl
     ? `<a class="btn btn-ghost" href="${mwUrl}" target="_blank" rel="noopener">View on MakerWorld</a>`
     : "";
+  const modifier = config.layout === "arrival" ? "arrival" : "";
 
   return renderFeaturedReleaseCard({
     href: item.href,
     poster,
-    posterWidth: 1200,
-    posterHeight: 675,
+    posterWidth: modifier === "arrival" ? 1200 : 800,
+    posterHeight: modifier === "arrival" ? 675 : 800,
     eyebrow,
     caseLabel,
     title: displayName,
     tagline,
     secondaryLink,
-    modifier: "arrival",
+    modifier,
   });
 }
 
@@ -204,9 +214,28 @@ function renderFeaturedCoozieRelease() {
 }
 
 function renderFeaturedReleases() {
-  const primary = renderFeaturedRelease();
-  if (!primary) return "";
-  return `<div class="vault-featured-releases vault-featured-releases--arrival reveal">${primary}</div>`;
+  const configs = getFeaturedReleaseConfigs();
+  if (!configs.length) return "";
+
+  const cards = [];
+  for (const config of configs) {
+    const item = findCatalogItemForFeatured(config);
+    const card = renderFeaturedReleaseFromConfig(config, item);
+    if (card) cards.push(card);
+  }
+  if (!cards.length) return "";
+
+  const primaryArrival = configs[0]?.layout === "arrival";
+  const wrapperClass = primaryArrival && cards.length === 1
+    ? "vault-featured-releases vault-featured-releases--arrival reveal"
+    : "vault-featured-releases reveal";
+
+  if (primaryArrival && cards.length > 1) {
+    return `<div class="vault-featured-releases vault-featured-releases--arrival reveal">${cards[0]}</div>
+    <div class="vault-featured-releases reveal">${cards.slice(1).join("")}</div>`;
+  }
+
+  return `<div class="${wrapperClass}">${cards.join("")}</div>`;
 }
 
 function renderFilesHub() {

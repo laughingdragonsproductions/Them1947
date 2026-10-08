@@ -59,10 +59,12 @@
   }
 
   function descenderCaseUrl() {
-    const slug = window.SITE_CONFIG?.featuredRelease?.pathSlug;
+    const slug =
+      window.SITE_CONFIG?.featuredRelease?.pathSlug ||
+      window.SITE_CONFIG?.featuredReleases?.[0]?.pathSlug;
     return slug
       ? "/files/prints/" + slug + "/"
-      : "/files/prints/the-descender-them-1947-alien-greys-spaceship/";
+      : "/files/prints/3-foot-series-the-aggressor-them-1947-alien-greys/";
   }
 
   function isDevModeUnlocked() {

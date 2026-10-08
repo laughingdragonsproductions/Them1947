@@ -25,14 +25,54 @@ window.SITE_CONFIG = {
     /** The Associated Guess (TAG) - unlocked via View all logs easter egg */
     tagWebsite: "https://theassociatedguess.com",
   },
-  /** Vault hub spotlight - full-width release banner on /files/ */
+  /** Vault hub spotlights on /files/ and /files/prints/ (newest first). */
+  featuredReleases: [
+    {
+      makerWorldId: 3396796,
+      pathSlug: "3-foot-series-the-aggressor-them-1947-alien-greys",
+      poster:
+        "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/featured-release.jpg",
+      eyebrow: "New arrival",
+      tagline:
+        "3 Foot Series THE AGGRESSOR - battle-worn Grey display piece, scaled for the P1S-friendly 3-foot line.",
+      layout: "arrival",
+    },
+    {
+      makerWorldId: 3288211,
+      pathSlug: "baby-roz-them-1947-alien-greys",
+      eyebrow: "New specimen",
+      tagline: "Baby Roz - compact Grey for shelves, glass cases, and abduction dioramas.",
+    },
+    {
+      makerWorldId: 3322032,
+      pathSlug: "the-tracker-them-1947-alien-greys-multiple-sizes",
+      eyebrow: "New specimen",
+      tagline: "THE TRACKER - kneeling scout pose, multiple sizes on MakerWorld.",
+    },
+    {
+      makerWorldId: 3259272,
+      pathSlug: "the-descender-them-1947-alien-greys-spaceship",
+      poster:
+        "/assets/catalog/classified/the-descender-them-1947-alien-greys-spaceship/featured-release.png",
+      eyebrow: "UFO arrival",
+      tagline: "THE DESCENDER flying saucer - open ramp, landing gear, Greys-scale companion.",
+    },
+    {
+      makerWorldId: 3309255,
+      pathSlug: "inflight-ufo-them-1947-alien-greys-flying-saucer",
+      eyebrow: "New craft",
+      tagline: "INFLIGHT UFO - closed flight configuration for hang displays and encounter scenes.",
+    },
+  ],
+  /** Primary spotlight (first entry in featuredReleases). */
   featuredRelease: {
-    makerWorldId: 3259272,
-    pathSlug: "the-descender-them-1947-alien-greys-spaceship",
+    makerWorldId: 3396796,
+    pathSlug: "3-foot-series-the-aggressor-them-1947-alien-greys",
     poster:
-      "/assets/catalog/classified/the-descender-them-1947-alien-greys-spaceship/featured-release.png",
+      "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/featured-release.jpg",
     eyebrow: "New arrival",
-    tagline: "THE DESCENDER has entered the vault - THEM 1947 Alien Greys spaceship.",
+    tagline:
+      "3 Foot Series THE AGGRESSOR - battle-worn Grey display piece, scaled for the P1S-friendly 3-foot line.",
   },
   /** Lit Printz coozie companion - only shown on this case file. */
   litPrintzCollabRelease: {
