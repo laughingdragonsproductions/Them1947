@@ -53,14 +53,23 @@ Write-Log "No successful GitHub rescan today; running local fallback in $Worktre
 $root = Split-Path $PSScriptRoot -Parent
 if (-not (Test-Path $Worktree)) {
   Write-Log "Creating bot worktree at $Worktree"
-  git -C $root worktree add $Worktree main
+  # main is checked out in $root, and git refuses the same branch in two worktrees.
+  $ErrorActionPreference = "Continue"
+  git -C $root fetch origin main 2>&1 | Out-Null
+  git -C $root worktree add --detach $Worktree origin/main 2>&1 | ForEach-Object { Write-Log "  $_" }
+  $gitExit = $LASTEXITCODE
+  $ErrorActionPreference = "Stop"
+  if ($gitExit -ne 0 -or -not (Test-Path $Worktree)) {
+    Write-Log "ERROR: could not create worktree (git exit $gitExit)"
+    Send-Notify scan -Failure
+    exit 1
+  }
 }
 
 Push-Location $Worktree
 try {
   git fetch origin main
-  git checkout main
-  git pull --ff-only origin main
+  git checkout --detach origin/main
 
   npm ci
   pip install curl_cffi 2>$null
@@ -88,7 +97,7 @@ try {
   git config user.name "Brandon Sparks"
   git config user.email "laughingdragonsproductions@gmail.com"
   git commit -m "chore: refresh MakerWorld catalog (PC fallback rescan)"
-  git push origin main
+  git push origin HEAD:main
   Write-Log "Pushed catalog refresh from PC fallback."
 
   Send-Notify scan

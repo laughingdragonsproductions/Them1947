@@ -5,6 +5,19 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_call:
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      CLOUDFLARE_ACCOUNT_ID:
+        required: true
+      TELEGRAM_BOT_TOKEN:
+        required: false
+      TELEGRAM_CHAT_ID:
+        required: false
+      PUSHOVER_USER_KEY:
+        required: false
+      PUSHOVER_APP_TOKEN:
+        required: false
 
 concurrency:
   group: cloudflare-them1947
