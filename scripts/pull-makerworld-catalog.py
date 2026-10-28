@@ -88,6 +88,10 @@ KEYWORDS = [
     "3288211",
     "3309255",
     "3322032",
+    "3446108",
+    "3 Foot Roswell",
+    "3450569",
+    "5 Foot THE OBSERVER",
 ]
 
 DECLASSIFIED_IDS = {
@@ -106,6 +110,8 @@ FEATURED_CLASSIFIED_IDS = {
     3309255,
     3322032,
     3396796,
+    3446108,
+    3450569,
 }
 
 DISPLAY_TITLE_OVERRIDES = {

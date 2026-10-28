@@ -64,7 +64,7 @@
       window.SITE_CONFIG?.featuredReleases?.[0]?.pathSlug;
     return slug
       ? "/files/prints/" + slug + "/"
-      : "/files/prints/3-foot-series-the-aggressor-them-1947-alien-greys/";
+      : "/files/prints/5-foot-the-observer-them-1947-alien-greys/";
   }
 
   function isDevModeUnlocked() {

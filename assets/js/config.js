@@ -28,14 +28,29 @@ window.SITE_CONFIG = {
   /** Vault hub spotlights on /files/ and /files/prints/ (newest first). */
   featuredReleases: [
     {
+      makerWorldId: 3450569,
+      pathSlug: "5-foot-the-observer-them-1947-alien-greys",
+      poster:
+        "/assets/catalog/classified/5-foot-the-observer-them-1947-alien-greys/featured-release.png",
+      eyebrow: "New arrival",
+      tagline:
+        "5 Foot THE OBSERVER - life-size Grey sentinel for displays, Halloween setups, and the THEM 1947 line.",
+      layout: "arrival",
+    },
+    {
+      makerWorldId: 3446108,
+      pathSlug: "3-foot-roswell-them-1947-alien-greys",
+      eyebrow: "New specimen",
+      tagline: "3 Foot Roswell - classic crash-site Grey scaled for the 3-foot THEM 1947 series.",
+    },
+    {
       makerWorldId: 3396796,
       pathSlug: "3-foot-series-the-aggressor-them-1947-alien-greys",
       poster:
         "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/featured-release.jpg",
-      eyebrow: "New arrival",
+      eyebrow: "New specimen",
       tagline:
         "3 Foot Series THE AGGRESSOR - battle-worn Grey display piece, scaled for the P1S-friendly 3-foot line.",
-      layout: "arrival",
     },
     {
       makerWorldId: 3288211,
@@ -66,13 +81,13 @@ window.SITE_CONFIG = {
   ],
   /** Primary spotlight (first entry in featuredReleases). */
   featuredRelease: {
-    makerWorldId: 3396796,
-    pathSlug: "3-foot-series-the-aggressor-them-1947-alien-greys",
+    makerWorldId: 3450569,
+    pathSlug: "5-foot-the-observer-them-1947-alien-greys",
     poster:
-      "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/featured-release.jpg",
+      "/assets/catalog/classified/5-foot-the-observer-them-1947-alien-greys/featured-release.png",
     eyebrow: "New arrival",
     tagline:
-      "3 Foot Series THE AGGRESSOR - battle-worn Grey display piece, scaled for the P1S-friendly 3-foot line.",
+      "5 Foot THE OBSERVER - life-size Grey sentinel for displays, Halloween setups, and the THEM 1947 line.",
   },
   /** Lit Printz coozie companion - only shown on this case file. */
   litPrintzCollabRelease: {
