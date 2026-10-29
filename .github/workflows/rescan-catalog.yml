@@ -71,5 +71,8 @@ jobs:
   deploy:
     needs: scan
     if: needs.scan.outputs.changed == 'true'
+    permissions:
+      contents: read
+      deployments: write
     uses: ./.github/workflows/deploy-cloudflare-pages.yml
     secrets: inherit

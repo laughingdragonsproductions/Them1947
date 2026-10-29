@@ -7,9 +7,9 @@ on:
   workflow_call:
     secrets:
       CLOUDFLARE_API_TOKEN:
-        required: true
+        required: false
       CLOUDFLARE_ACCOUNT_ID:
-        required: true
+        required: false
       TELEGRAM_BOT_TOKEN:
         required: false
       TELEGRAM_CHAT_ID:
@@ -45,8 +45,22 @@ jobs:
       - name: Verify deploy bundle
         run: npm run check:dist
 
+      - name: Cloudflare credentials
+        id: cf
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping wrangler deploy: set CLOUDFLARE_API_TOKEN (see scripts/set-github-deploy-secrets.ps1)."
+          fi
+
       - name: Deploy to Cloudflare Workers
         id: deploy
+        if: steps.cf.outputs.ready == 'true'
         uses: cloudflare/wrangler-action@v3
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -57,7 +71,7 @@ jobs:
           command: deploy
 
       - name: Deployment alert
-        if: always()
+        if: always() && steps.cf.outputs.ready == 'true'
         env:
           GITHUB_JOB_STATUS: ${{ job.status }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

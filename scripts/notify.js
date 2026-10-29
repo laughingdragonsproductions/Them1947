@@ -5,6 +5,48 @@ const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
 const SCAN_REPORT = path.join(ROOT, ".scan-report.json");
+const DEDUPE_HOURS = 24;
+
+function dedupeStatePath() {
+  const home = process.env.USERPROFILE || process.env.HOME || "";
+  return path.join(home, ".openclaw", "business", "jarvis", "state", "them1947-notify-dedupe.json");
+}
+
+function shouldSkipDuplicateAlert(alertKey) {
+  const statePath = dedupeStatePath();
+  let state = {};
+  if (fs.existsSync(statePath)) {
+    try {
+      state = JSON.parse(fs.readFileSync(statePath, "utf8"));
+    } catch {
+      state = {};
+    }
+  }
+  const last = state[alertKey];
+  if (!last) return false;
+  const then = Date.parse(last);
+  if (Number.isNaN(then)) return false;
+  return Date.now() - then < DEDUPE_HOURS * 60 * 60 * 1000;
+}
+
+function markAlertSent(alertKey) {
+  const statePath = dedupeStatePath();
+  let state = {};
+  if (fs.existsSync(statePath)) {
+    try {
+      state = JSON.parse(fs.readFileSync(statePath, "utf8"));
+    } catch {
+      state = {};
+    }
+  }
+  state[alertKey] = new Date().toISOString();
+  try {
+    fs.mkdirSync(path.dirname(statePath), { recursive: true });
+    fs.writeFileSync(statePath, JSON.stringify(state, null, 2));
+  } catch {
+    /* best effort */
+  }
+}
 
 function parseEnvFile(filePath) {
   if (!fs.existsSync(filePath)) return {};
@@ -92,7 +134,11 @@ async function sendPushover(userKey, appToken, title, message) {
   }
 }
 
-async function notify(title, message) {
+async function notify(title, message, dedupeKey) {
+  if (dedupeKey && shouldSkipDuplicateAlert(dedupeKey)) {
+    console.log(`Skipping duplicate alert (${dedupeKey}).`);
+    return;
+  }
   const secrets = loadSecrets();
   const errors = [];
   if (secrets.telegramToken && secrets.telegramChat) {
@@ -115,6 +161,8 @@ async function notify(title, message) {
   }
   if (errors.length) {
     console.warn("notify warnings:", errors.join("; "));
+  } else if (dedupeKey) {
+    markAlertSent(dedupeKey);
   }
 }
 
@@ -153,9 +201,6 @@ function formatScanMessage(report) {
 
 async function main() {
   const mode = process.argv[2] || "deploy";
-  const sourceFlag = process.argv.indexOf("--source");
-  const source =
-    sourceFlag !== -1 ? process.argv[sourceFlag + 1] || "local" : process.env.NOTIFY_SOURCE || "github";
 
   if (mode === "scan") {
     const report = readScanReport();
@@ -166,21 +211,31 @@ async function main() {
     const title = report.blocked
       ? "THEM1947 catalog rescan blocked"
       : "THEM1947 catalog big update";
-    await notify(title, formatScanMessage(report));
+    await notify(title, formatScanMessage(report), `scan:${report.blocked ? "blocked" : "big"}`);
     return;
   }
+
+  const sourceFlag = process.argv.indexOf("--source");
+  const notifySource =
+    sourceFlag !== -1 ? process.argv[sourceFlag + 1] || "local" : process.env.NOTIFY_SOURCE || "github";
 
   const ok = process.env.GITHUB_JOB_STATUS
     ? String(process.env.GITHUB_JOB_STATUS).toLowerCase() === "success"
     : process.argv.includes("--success") || !process.argv.includes("--failure");
   const sha = (process.env.GITHUB_SHA || "").slice(0, 7);
   const actor = process.env.GITHUB_ACTOR || "local";
-  const event = process.env.GITHUB_EVENT_NAME || source;
+  const event = process.env.GITHUB_EVENT_NAME || notifySource;
   const runUrl =
     process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
       : "";
+  if (notifySource === "local" && process.env.THEM1947_NOTIFY_DEPLOY !== "1") {
+    console.log("Local deploy notify skipped (set THEM1947_NOTIFY_DEPLOY=1 to enable).");
+    return;
+  }
+
   const title = ok ? "THEM1947 deployed" : "THEM1947 deploy FAILED";
+  const dedupeKey = ok ? "deploy:success" : "deploy:failure";
   const lines = [
     ok ? "Live: https://them1947.com" : "Deploy did not complete successfully.",
     `Trigger: ${event}`,
@@ -188,7 +243,7 @@ async function main() {
   ];
   if (sha) lines.push(`Commit: ${sha}`);
   if (runUrl) lines.push(`Run: ${runUrl}`);
-  await notify(title, lines.join("\n"));
+  await notify(title, lines.join("\n"), dedupeKey);
 }
 
 main().catch((err) => {
