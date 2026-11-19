@@ -28,19 +28,36 @@ window.SITE_CONFIG = {
   /** Vault hub spotlights on /files/ and /files/prints/ (newest first). */
   featuredReleases: [
     {
+      makerWorldId: 3646125,
+      pathSlug: "them-1947-alien-greys-christmas-orniement-ufo",
+      poster:
+        "/assets/catalog/classified/them-1947-alien-greys-christmas-orniement-ufo/gallery-01.png",
+      eyebrow: "Holiday drop",
+      tagline:
+        "Christmas UFO ornament - Greys meet the tree with a glowing saucer for shelves, workshops, and collectors.",
+      layout: "arrival",
+    },
+    {
+      makerWorldId: 3538408,
+      pathSlug: "them-1947-alien-greys-cup",
+      poster: "/assets/catalog/classified/them-1947-alien-greys-cup/gallery-01.png",
+      eyebrow: "New arrival",
+      tagline:
+        "THE ALIEN CUP - oversized Grey head mug with built-in handle for desks, kitchens, and UFO breaks.",
+    },
+    {
       makerWorldId: 3450569,
       pathSlug: "5-foot-the-observer-them-1947-alien-greys",
       poster:
         "/assets/catalog/classified/5-foot-the-observer-them-1947-alien-greys/featured-release.png",
-      eyebrow: "New arrival",
+      eyebrow: "5 foot series",
       tagline:
         "5 Foot THE OBSERVER - life-size Grey sentinel for displays, Halloween setups, and the THEM 1947 line.",
-      layout: "arrival",
     },
     {
       makerWorldId: 3446108,
       pathSlug: "3-foot-roswell-them-1947-alien-greys",
-      eyebrow: "New specimen",
+      eyebrow: "3 foot series",
       tagline: "3 Foot Roswell - classic crash-site Grey scaled for the 3-foot THEM 1947 series.",
     },
     {
@@ -48,46 +65,28 @@ window.SITE_CONFIG = {
       pathSlug: "3-foot-series-the-aggressor-them-1947-alien-greys",
       poster:
         "/assets/catalog/classified/3-foot-series-the-aggressor-them-1947-alien-greys/featured-release.jpg",
-      eyebrow: "New specimen",
+      eyebrow: "3 foot series",
       tagline:
         "3 Foot Series THE AGGRESSOR - battle-worn Grey display piece, scaled for the P1S-friendly 3-foot line.",
-    },
-    {
-      makerWorldId: 3288211,
-      pathSlug: "baby-roz-them-1947-alien-greys",
-      eyebrow: "New specimen",
-      tagline: "Baby Roz - compact Grey for shelves, glass cases, and abduction dioramas.",
-    },
-    {
-      makerWorldId: 3322032,
-      pathSlug: "the-tracker-them-1947-alien-greys-multiple-sizes",
-      eyebrow: "New specimen",
-      tagline: "THE TRACKER - kneeling scout pose, multiple sizes on MakerWorld.",
     },
     {
       makerWorldId: 3259272,
       pathSlug: "the-descender-them-1947-alien-greys-spaceship",
       poster:
         "/assets/catalog/classified/the-descender-them-1947-alien-greys-spaceship/featured-release.png",
-      eyebrow: "UFO arrival",
+      eyebrow: "UFO craft",
       tagline: "THE DESCENDER flying saucer - open ramp, landing gear, Greys-scale companion.",
-    },
-    {
-      makerWorldId: 3309255,
-      pathSlug: "inflight-ufo-them-1947-alien-greys-flying-saucer",
-      eyebrow: "New craft",
-      tagline: "INFLIGHT UFO - closed flight configuration for hang displays and encounter scenes.",
     },
   ],
   /** Primary spotlight (first entry in featuredReleases). */
   featuredRelease: {
-    makerWorldId: 3450569,
-    pathSlug: "5-foot-the-observer-them-1947-alien-greys",
+    makerWorldId: 3646125,
+    pathSlug: "them-1947-alien-greys-christmas-orniement-ufo",
     poster:
-      "/assets/catalog/classified/5-foot-the-observer-them-1947-alien-greys/featured-release.png",
-    eyebrow: "New arrival",
+      "/assets/catalog/classified/them-1947-alien-greys-christmas-orniement-ufo/gallery-01.png",
+    eyebrow: "Holiday drop",
     tagline:
-      "5 Foot THE OBSERVER - life-size Grey sentinel for displays, Halloween setups, and the THEM 1947 line.",
+      "Christmas UFO ornament - Greys meet the tree with a glowing saucer for shelves, workshops, and collectors.",
   },
   /** Lit Printz coozie companion - only shown on this case file. */
   litPrintzCollabRelease: {

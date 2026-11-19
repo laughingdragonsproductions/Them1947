@@ -1,7 +1,7 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-11-19T18:56:00Z",
+  "pulledAt": "2026-11-19T18:58:22Z",
   "summary": {
     "total": 46,
     "classified": 33,
