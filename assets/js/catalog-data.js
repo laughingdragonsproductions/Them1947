@@ -1,11 +1,11 @@
 window.CATALOG_DATA = {
   "classifiedImage": "/assets/brand/classified-placeholder.png",
   "makerWorld": "https://makerworld.com/en/@user_935464230",
-  "pulledAt": "2026-11-23T21:57:09Z",
+  "pulledAt": "2026-11-26T00:00:41Z",
   "summary": {
-    "total": 49,
-    "classified": 36,
-    "declassified": 13
+    "total": 51,
+    "classified": 37,
+    "declassified": 14
   },
   "items": [
     {
@@ -77,9 +77,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2991422-them-1947-roswell-grey-disclosure-day-alien",
       "stats": {
-        "likes": 314,
-        "boosts": 704,
-        "downloads": 408,
+        "likes": 315,
+        "boosts": 706,
+        "downloads": 409,
         "prints": 141
       },
       "buyHref": null,
@@ -121,7 +121,8 @@ window.CATALOG_DATA = {
             "H2D",
             "X2D",
             "H2D Pro",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -206,6 +207,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "4.1 h",
               "weight": "138 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "7.2 h",
+              "weight": "186 g"
             }
           }
         },
@@ -221,7 +230,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -306,6 +316,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "4.1 h",
                 "weight": "138 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.2 h",
+                "weight": "186 g"
               }
             }
           }
@@ -448,10 +466,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/2995237-them-1947-disclosure-alien-grey-the-aggressor",
       "stats": {
-        "likes": 507,
-        "boosts": 1202,
-        "downloads": 1373,
-        "prints": 647
+        "likes": 509,
+        "boosts": 1204,
+        "downloads": 1380,
+        "prints": 648
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-grey-the-aggressor/",
@@ -492,7 +510,8 @@ window.CATALOG_DATA = {
             "X2D",
             "H2D Pro",
             "P1S",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -502,8 +521,8 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "254 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 1257,
-          "printCount": 433,
+          "downloadCount": 1262,
+          "printCount": 434,
           "ratingCount": 39,
           "byPrinter": {
             "P2S": {
@@ -585,6 +604,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "7.7 h",
               "weight": "220 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "10.3 h",
+              "weight": "254 g"
             }
           }
         },
@@ -601,7 +628,8 @@ window.CATALOG_DATA = {
               "X2D",
               "H2D Pro",
               "P1S",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -611,8 +639,8 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "254 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 1257,
-            "printCount": 433,
+            "downloadCount": 1262,
+            "printCount": 434,
             "ratingCount": 39,
             "byPrinter": {
               "P2S": {
@@ -694,6 +722,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "7.7 h",
                 "weight": "220 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "10.3 h",
+                "weight": "254 g"
               }
             }
           },
@@ -713,7 +749,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -838,6 +875,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "8.0 h",
                 "weight": "236 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "15%",
+                "printTime": "10.8 h",
+                "weight": "268 g"
               }
             }
           }
@@ -890,10 +935,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004535-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 2076,
-        "boosts": 5195,
-        "downloads": 3346,
-        "prints": 1455
+        "likes": 2077,
+        "boosts": 5214,
+        "downloads": 3362,
+        "prints": 1457
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader/",
@@ -925,7 +970,8 @@ window.CATALOG_DATA = {
             "H2D",
             "X2D",
             "H2D Pro",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -935,9 +981,9 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 5051,
-          "printCount": 1055,
-          "ratingCount": 88,
+          "downloadCount": 5063,
+          "printCount": 1056,
+          "ratingCount": 90,
           "byPrinter": {
             "P2S": {
               "buildPlates": 1,
@@ -1010,6 +1056,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "6.5 h",
               "weight": "171 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "6.5 h",
+              "weight": "171 g"
             }
           }
         },
@@ -1025,7 +1079,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -1035,9 +1090,9 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 5051,
-            "printCount": 1055,
-            "ratingCount": 88,
+            "downloadCount": 5063,
+            "printCount": 1056,
+            "ratingCount": 90,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 1,
@@ -1110,6 +1165,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.5 h",
                 "weight": "171 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.5 h",
+                "weight": "171 g"
               }
             }
           },
@@ -1129,7 +1192,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -1139,8 +1203,8 @@ window.CATALOG_DATA = {
             "printTime": "6.4 h",
             "weight": "165 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 951,
-            "printCount": 387,
+            "downloadCount": 955,
+            "printCount": 388,
             "ratingCount": 36,
             "byPrinter": {
               "P2S": {
@@ -1254,6 +1318,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.4 h",
                 "weight": "165 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.4 h",
+                "weight": "165 g"
               }
             }
           },
@@ -1274,7 +1346,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -1407,6 +1480,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "0.5 h",
                 "weight": "19 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "0.5 h",
+                "weight": "19 g"
               }
             }
           }
@@ -1435,7 +1516,7 @@ window.CATALOG_DATA = {
         ],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 277
+        "commentCount": 279
       },
       "caseFile": "003",
       "specimenLabel": "DISCLOSURE ALIEN GREYS - THEIR LEADER"
@@ -1452,9 +1533,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3004633-them-1947-disclosure-alien-greys-the-stalker",
       "stats": {
-        "likes": 430,
-        "boosts": 1145,
-        "downloads": 722,
+        "likes": 431,
+        "boosts": 1147,
+        "downloads": 723,
         "prints": 298
       },
       "buyHref": null,
@@ -1494,7 +1575,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -1504,7 +1586,7 @@ window.CATALOG_DATA = {
           "printTime": "8.7 h",
           "weight": "201 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1346,
+          "downloadCount": 1347,
           "printCount": 298,
           "ratingCount": 32,
           "byPrinter": {
@@ -1619,6 +1701,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "8.7 h",
               "weight": "201 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.7 h",
+              "weight": "201 g"
             }
           }
         },
@@ -1639,7 +1729,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -1649,7 +1740,7 @@ window.CATALOG_DATA = {
             "printTime": "8.7 h",
             "weight": "201 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1346,
+            "downloadCount": 1347,
             "printCount": 298,
             "ratingCount": 32,
             "byPrinter": {
@@ -1764,6 +1855,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "8.7 h",
                 "weight": "201 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.7 h",
+                "weight": "201 g"
               }
             }
           }
@@ -1809,10 +1908,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3009502-them-1947-disclosure-alien-greys-their-leader",
       "stats": {
-        "likes": 608,
-        "boosts": 1711,
-        "downloads": 889,
-        "prints": 460
+        "likes": 613,
+        "boosts": 1721,
+        "downloads": 896,
+        "prints": 464
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-their-leader-3009502/",
@@ -1846,7 +1945,8 @@ window.CATALOG_DATA = {
             "H2D",
             "X2D",
             "H2D Pro",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -1856,8 +1956,8 @@ window.CATALOG_DATA = {
           "printTime": "6.5 h",
           "weight": "171 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 826,
-          "printCount": 363,
+          "downloadCount": 832,
+          "printCount": 367,
           "ratingCount": 46,
           "byPrinter": {
             "P2S": {
@@ -1931,6 +2031,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "4.6 h",
               "weight": "139 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "6.5 h",
+              "weight": "171 g"
             }
           }
         },
@@ -1946,7 +2054,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -1956,8 +2065,8 @@ window.CATALOG_DATA = {
             "printTime": "6.5 h",
             "weight": "171 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 826,
-            "printCount": 363,
+            "downloadCount": 832,
+            "printCount": 367,
             "ratingCount": 46,
             "byPrinter": {
               "P2S": {
@@ -2031,6 +2140,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "4.6 h",
                 "weight": "139 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.5 h",
+                "weight": "171 g"
               }
             }
           },
@@ -2050,7 +2167,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -2060,7 +2178,7 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "2.3 / 5",
-            "downloadCount": 216,
+            "downloadCount": 217,
             "printCount": 41,
             "ratingCount": 4,
             "byPrinter": {
@@ -2175,6 +2293,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "3.1 h",
                 "weight": "96 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "130 g"
               }
             }
           },
@@ -2189,7 +2315,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -2274,6 +2401,14 @@ window.CATALOG_DATA = {
                 "infill": "10%",
                 "printTime": "4.9 h",
                 "weight": "129 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "6.7 h",
+                "weight": "161 g"
               }
             }
           }
@@ -2326,10 +2461,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3012967-them-1947-disclosure-alien-greys-the-watcher",
       "stats": {
-        "likes": 539,
-        "boosts": 1287,
-        "downloads": 1386,
-        "prints": 657
+        "likes": 540,
+        "boosts": 1289,
+        "downloads": 1393,
+        "prints": 658
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-watcher/",
@@ -2363,7 +2498,8 @@ window.CATALOG_DATA = {
             "H2D",
             "X2D",
             "H2D Pro",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -2373,7 +2509,7 @@ window.CATALOG_DATA = {
           "printTime": "6.7 h",
           "weight": "190 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 1205,
+          "downloadCount": 1209,
           "printCount": 422,
           "ratingCount": 31,
           "byPrinter": {
@@ -2448,6 +2584,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "5.0 h",
               "weight": "166 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "6.7 h",
+              "weight": "190 g"
             }
           }
         },
@@ -2463,7 +2607,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -2473,7 +2618,7 @@ window.CATALOG_DATA = {
             "printTime": "6.7 h",
             "weight": "190 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 1205,
+            "downloadCount": 1209,
             "printCount": 422,
             "ratingCount": 31,
             "byPrinter": {
@@ -2548,6 +2693,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "5.0 h",
                 "weight": "166 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.7 h",
+                "weight": "190 g"
               }
             }
           },
@@ -2567,7 +2720,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -2578,7 +2732,7 @@ window.CATALOG_DATA = {
             "weight": "157 g",
             "difficulty": "4.4 / 5",
             "downloadCount": 190,
-            "printCount": 134,
+            "printCount": 135,
             "ratingCount": 11,
             "byPrinter": {
               "P2S": {
@@ -2692,6 +2846,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "5.4 h",
                 "weight": "134 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.8 h",
+                "weight": "157 g"
               }
             }
           },
@@ -2706,7 +2868,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -2716,7 +2879,7 @@ window.CATALOG_DATA = {
             "printTime": "7.0 h",
             "weight": "179 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 247,
+            "downloadCount": 248,
             "printCount": 104,
             "ratingCount": 15,
             "byPrinter": {
@@ -2791,6 +2954,14 @@ window.CATALOG_DATA = {
                 "infill": "10%",
                 "printTime": "5.4 h",
                 "weight": "153 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "7.0 h",
+                "weight": "179 g"
               }
             }
           }
@@ -2843,10 +3014,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3015809-them-1947-disclosure-alien-greys-the-night-crawler",
       "stats": {
-        "likes": 287,
-        "boosts": 722,
-        "downloads": 805,
-        "prints": 312
+        "likes": 288,
+        "boosts": 723,
+        "downloads": 807,
+        "prints": 314
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-disclosure-alien-greys-the-night-crawler/",
@@ -2885,7 +3056,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -2895,7 +3067,7 @@ window.CATALOG_DATA = {
           "printTime": "8.2 h",
           "weight": "195 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 847,
+          "downloadCount": 848,
           "printCount": 269,
           "ratingCount": 41,
           "byPrinter": {
@@ -3010,6 +3182,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "6.2 h",
               "weight": "167 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.2 h",
+              "weight": "195 g"
             }
           }
         },
@@ -3030,7 +3210,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -3040,7 +3221,7 @@ window.CATALOG_DATA = {
             "printTime": "8.2 h",
             "weight": "195 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 847,
+            "downloadCount": 848,
             "printCount": 269,
             "ratingCount": 41,
             "byPrinter": {
@@ -3155,6 +3336,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.2 h",
                 "weight": "167 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.2 h",
+                "weight": "195 g"
               }
             }
           },
@@ -3174,7 +3363,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -3184,8 +3374,8 @@ window.CATALOG_DATA = {
             "printTime": "7.5 h",
             "weight": "193 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 53,
-            "printCount": 29,
+            "downloadCount": 54,
+            "printCount": 31,
             "ratingCount": 2,
             "byPrinter": {
               "P2S": {
@@ -3299,6 +3489,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "5.6 h",
                 "weight": "168 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.5 h",
+                "weight": "193 g"
               }
             }
           }
@@ -3351,10 +3549,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019183-p1s-version-their-leader",
       "stats": {
-        "likes": 119,
+        "likes": 120,
         "boosts": 205,
-        "downloads": 148,
-        "prints": 62
+        "downloads": 150,
+        "prints": 63
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-their-leader/",
@@ -3388,7 +3586,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -3398,8 +3597,8 @@ window.CATALOG_DATA = {
           "printTime": "5.1 h",
           "weight": "130 g",
           "difficulty": "3.7 / 5",
-          "downloadCount": 214,
-          "printCount": 62,
+          "downloadCount": 216,
+          "printCount": 63,
           "ratingCount": 4,
           "byPrinter": {
             "P2S": {
@@ -3513,6 +3712,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "5.1 h",
               "weight": "130 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "5.1 h",
+              "weight": "130 g"
             }
           }
         },
@@ -3533,7 +3740,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -3543,8 +3751,8 @@ window.CATALOG_DATA = {
             "printTime": "5.1 h",
             "weight": "130 g",
             "difficulty": "3.7 / 5",
-            "downloadCount": 214,
-            "printCount": 62,
+            "downloadCount": 216,
+            "printCount": 63,
             "ratingCount": 4,
             "byPrinter": {
               "P2S": {
@@ -3658,6 +3866,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "5.1 h",
                 "weight": "130 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "5.1 h",
+                "weight": "130 g"
               }
             }
           }
@@ -3689,10 +3905,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3019267-p1s-version-the-observer",
       "stats": {
-        "likes": 136,
-        "boosts": 244,
-        "downloads": 218,
-        "prints": 127
+        "likes": 137,
+        "boosts": 245,
+        "downloads": 219,
+        "prints": 128
       },
       "buyHref": null,
       "href": "/files/prints/p1s-version-the-observer/",
@@ -3726,7 +3942,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -3736,8 +3953,8 @@ window.CATALOG_DATA = {
           "printTime": "6.8 h",
           "weight": "157 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 441,
-          "printCount": 127,
+          "downloadCount": 442,
+          "printCount": 128,
           "ratingCount": 18,
           "byPrinter": {
             "P2S": {
@@ -3851,6 +4068,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "6.8 h",
               "weight": "157 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "6.8 h",
+              "weight": "157 g"
             }
           }
         },
@@ -3871,7 +4096,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -3881,8 +4107,8 @@ window.CATALOG_DATA = {
             "printTime": "6.8 h",
             "weight": "157 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 441,
-            "printCount": 127,
+            "downloadCount": 442,
+            "printCount": 128,
             "ratingCount": 18,
             "byPrinter": {
               "P2S": {
@@ -3996,6 +4222,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.8 h",
                 "weight": "157 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "6.8 h",
+                "weight": "157 g"
               }
             }
           }
@@ -4021,8 +4255,8 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3019900-them-1947-disclosure-alien-greys-k-a-r-l",
       "stats": {
         "likes": 606,
-        "boosts": 1544,
-        "downloads": 868,
+        "boosts": 1547,
+        "downloads": 872,
         "prints": 222
       },
       "buyHref": null,
@@ -4062,7 +4296,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -4072,7 +4307,7 @@ window.CATALOG_DATA = {
           "printTime": "8.3 h",
           "weight": "200 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 1011,
+          "downloadCount": 1012,
           "printCount": 217,
           "ratingCount": 26,
           "byPrinter": {
@@ -4187,6 +4422,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "4.8 h",
               "weight": "143 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.3 h",
+              "weight": "200 g"
             }
           }
         },
@@ -4207,7 +4450,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -4217,7 +4461,7 @@ window.CATALOG_DATA = {
             "printTime": "8.3 h",
             "weight": "200 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 1011,
+            "downloadCount": 1012,
             "printCount": 217,
             "ratingCount": 26,
             "byPrinter": {
@@ -4332,6 +4576,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "4.8 h",
                 "weight": "143 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.3 h",
+                "weight": "200 g"
               }
             }
           }
@@ -4363,9 +4615,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3021877-them-1947-disclosure-alien-greys-the-experimenter",
       "stats": {
-        "likes": 468,
-        "boosts": 1108,
-        "downloads": 678,
+        "likes": 469,
+        "boosts": 1110,
+        "downloads": 680,
         "prints": 201
       },
       "buyHref": null,
@@ -4405,7 +4657,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -4530,6 +4783,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "7.2 h",
               "weight": "179 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "10.1 h",
+              "weight": "215 g"
             }
           }
         },
@@ -4550,7 +4811,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -4675,6 +4937,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "7.2 h",
                 "weight": "179 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "10.1 h",
+                "weight": "215 g"
               }
             }
           },
@@ -4694,7 +4964,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -4819,6 +5090,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "7.2 h",
                 "weight": "179 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "10.1 h",
+                "weight": "215 g"
               }
             }
           }
@@ -4977,10 +5256,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3043821-3-foot-alien-observer-them-1947",
       "stats": {
-        "likes": 3951,
-        "boosts": 10051,
-        "downloads": 5507,
-        "prints": 4024
+        "likes": 3957,
+        "boosts": 10074,
+        "downloads": 5527,
+        "prints": 4029
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-alien-observer-them-1947/",
@@ -5026,7 +5305,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 11,
           "layerHeight": "0.2",
@@ -5036,7 +5316,7 @@ window.CATALOG_DATA = {
           "printTime": "47.4 h",
           "weight": "1846 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 192,
+          "downloadCount": 193,
           "printCount": 113,
           "ratingCount": 22,
           "byPrinter": {
@@ -5151,6 +5431,14 @@ window.CATALOG_DATA = {
               "infill": "4%",
               "printTime": "44.6 h",
               "weight": "1763 g"
+            },
+            "P3C": {
+              "buildPlates": 11,
+              "layerHeight": "0.2",
+              "walls": "3",
+              "infill": "4%",
+              "printTime": "47.4 h",
+              "weight": "1846 g"
             }
           }
         },
@@ -5171,7 +5459,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 11,
             "layerHeight": "0.2",
@@ -5181,7 +5470,7 @@ window.CATALOG_DATA = {
             "printTime": "47.4 h",
             "weight": "1846 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 192,
+            "downloadCount": 193,
             "printCount": 113,
             "ratingCount": 22,
             "byPrinter": {
@@ -5296,6 +5585,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "44.6 h",
                 "weight": "1763 g"
+              },
+              "P3C": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "47.4 h",
+                "weight": "1846 g"
               }
             }
           },
@@ -5315,7 +5612,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -5325,9 +5623,9 @@ window.CATALOG_DATA = {
             "printTime": "49.2 h",
             "weight": "1649 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 6918,
-            "printCount": 3688,
-            "ratingCount": 430,
+            "downloadCount": 6930,
+            "printCount": 3692,
+            "ratingCount": 432,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -5440,6 +5738,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "38.1 h",
                 "weight": "1536 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "49.2 h",
+                "weight": "1649 g"
               }
             }
           },
@@ -5460,7 +5766,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -5593,6 +5900,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "0.5 h",
                 "weight": "8 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "0.5 h",
+                "weight": "8 g"
               }
             }
           },
@@ -5612,7 +5927,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -5622,7 +5938,7 @@ window.CATALOG_DATA = {
             "printTime": "3.0 h",
             "weight": "105 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 60,
+            "downloadCount": 61,
             "printCount": 74,
             "ratingCount": 18,
             "byPrinter": {
@@ -5737,6 +6053,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "3.0 h",
                 "weight": "105 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "3.0 h",
+                "weight": "105 g"
               }
             }
           },
@@ -5756,7 +6080,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -5766,7 +6091,7 @@ window.CATALOG_DATA = {
             "printTime": "49.8 h",
             "weight": "1666 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 471,
+            "downloadCount": 472,
             "printCount": 239,
             "ratingCount": 21,
             "byPrinter": {
@@ -5881,6 +6206,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "40.2 h",
                 "weight": "1570 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "49.8 h",
+                "weight": "1666 g"
               }
             }
           },
@@ -5900,7 +6233,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -5910,8 +6244,8 @@ window.CATALOG_DATA = {
             "printTime": "48.7 h",
             "weight": "1627 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 8,
-            "printCount": 7,
+            "downloadCount": 9,
+            "printCount": 8,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -6025,6 +6359,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "48.7 h",
                 "weight": "1627 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "48.7 h",
+                "weight": "1627 g"
               }
             }
           }
@@ -6102,7 +6444,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 1378
+        "commentCount": 1382
       },
       "caseFile": "012",
       "specimenLabel": "3 FOOT ALIEN OBSERVER"
@@ -6119,9 +6461,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3067591-them-1947-disclosure-alien-greys-the-abductor",
       "stats": {
-        "likes": 536,
+        "likes": 537,
         "boosts": 1333,
-        "downloads": 669,
+        "downloads": 672,
         "prints": 305
       },
       "buyHref": null,
@@ -6161,7 +6503,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -6171,7 +6514,7 @@ window.CATALOG_DATA = {
           "printTime": "8.9 h",
           "weight": "232 g",
           "difficulty": "4.8 / 5",
-          "downloadCount": 782,
+          "downloadCount": 783,
           "printCount": 287,
           "ratingCount": 30,
           "byPrinter": {
@@ -6286,6 +6629,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "6.9 h",
               "weight": "205 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.9 h",
+              "weight": "232 g"
             }
           }
         },
@@ -6306,7 +6657,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -6316,7 +6668,7 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 782,
+            "downloadCount": 783,
             "printCount": 287,
             "ratingCount": 30,
             "byPrinter": {
@@ -6431,6 +6783,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.9 h",
                 "weight": "205 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "232 g"
               }
             }
           },
@@ -6450,7 +6810,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -6460,7 +6821,7 @@ window.CATALOG_DATA = {
             "printTime": "8.9 h",
             "weight": "232 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 42,
+            "downloadCount": 44,
             "printCount": 18,
             "ratingCount": 1,
             "byPrinter": {
@@ -6575,6 +6936,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "6.9 h",
                 "weight": "205 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.9 h",
+                "weight": "232 g"
               }
             }
           }
@@ -6697,10 +7066,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3073830-the-intimidator-them-1947-disclosure-alien-greys",
       "stats": {
-        "likes": 395,
-        "boosts": 956,
-        "downloads": 768,
-        "prints": 547
+        "likes": 396,
+        "boosts": 957,
+        "downloads": 769,
+        "prints": 549
       },
       "buyHref": null,
       "href": "/files/prints/the-intimidator-them-1947-disclosure-alien-greys/",
@@ -6743,7 +7112,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -6754,7 +7124,7 @@ window.CATALOG_DATA = {
           "weight": "207 g",
           "difficulty": "4.7 / 5",
           "downloadCount": 807,
-          "printCount": 240,
+          "printCount": 241,
           "ratingCount": 32,
           "byPrinter": {
             "P2S": {
@@ -6868,6 +7238,14 @@ window.CATALOG_DATA = {
               "infill": "12%",
               "printTime": "10.0 h",
               "weight": "207 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "12%",
+              "printTime": "10.0 h",
+              "weight": "207 g"
             }
           }
         },
@@ -6888,7 +7266,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -6899,7 +7278,7 @@ window.CATALOG_DATA = {
             "weight": "207 g",
             "difficulty": "4.7 / 5",
             "downloadCount": 807,
-            "printCount": 240,
+            "printCount": 241,
             "ratingCount": 32,
             "byPrinter": {
               "P2S": {
@@ -7013,6 +7392,14 @@ window.CATALOG_DATA = {
                 "infill": "12%",
                 "printTime": "10.0 h",
                 "weight": "207 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "12%",
+                "printTime": "10.0 h",
+                "weight": "207 g"
               }
             }
           },
@@ -7032,7 +7419,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 9,
             "layerHeight": "0.2",
@@ -7042,8 +7430,8 @@ window.CATALOG_DATA = {
             "printTime": "52.6 h",
             "weight": "1437 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 605,
-            "printCount": 271,
+            "downloadCount": 606,
+            "printCount": 272,
             "ratingCount": 27,
             "byPrinter": {
               "P2S": {
@@ -7157,6 +7545,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "52.6 h",
                 "weight": "1437 g"
+              },
+              "P3C": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "52.6 h",
+                "weight": "1437 g"
               }
             }
           },
@@ -7176,7 +7572,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 10,
             "layerHeight": "0.2",
@@ -7301,6 +7698,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "44.2 h",
                 "weight": "1316 g"
+              },
+              "P3C": {
+                "buildPlates": 10,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "44.2 h",
+                "weight": "1316 g"
               }
             }
           }
@@ -7366,10 +7771,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3090735-3-foot-series-alien-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 3100,
-        "boosts": 7939,
-        "downloads": 4998,
-        "prints": 3209
+        "likes": 3113,
+        "boosts": 7972,
+        "downloads": 5017,
+        "prints": 3219
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-series-alien-leader-them-1947-alien-greys/",
@@ -7403,7 +7808,8 @@ window.CATALOG_DATA = {
             "H2D",
             "X2D",
             "H2D Pro",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 12,
           "layerHeight": "0.2",
@@ -7413,9 +7819,9 @@ window.CATALOG_DATA = {
           "printTime": "36.5 h",
           "weight": "1439 g",
           "difficulty": "5.0 / 5",
-          "downloadCount": 5115,
-          "printCount": 2083,
-          "ratingCount": 251,
+          "downloadCount": 5129,
+          "printCount": 2092,
+          "ratingCount": 252,
           "byPrinter": {
             "P2S": {
               "buildPlates": 12,
@@ -7488,6 +7894,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "36.6 h",
               "weight": "1377 g"
+            },
+            "P3C": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "36.5 h",
+              "weight": "1439 g"
             }
           }
         },
@@ -7503,7 +7917,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -7513,9 +7928,9 @@ window.CATALOG_DATA = {
             "printTime": "36.5 h",
             "weight": "1439 g",
             "difficulty": "5.0 / 5",
-            "downloadCount": 5115,
-            "printCount": 2083,
-            "ratingCount": 251,
+            "downloadCount": 5129,
+            "printCount": 2092,
+            "ratingCount": 252,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 12,
@@ -7588,6 +8003,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "36.6 h",
                 "weight": "1377 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "36.5 h",
+                "weight": "1439 g"
               }
             }
           },
@@ -7607,7 +8030,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -7617,8 +8041,8 @@ window.CATALOG_DATA = {
             "printTime": "36.2 h",
             "weight": "1410 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 1493,
-            "printCount": 1055,
+            "downloadCount": 1494,
+            "printCount": 1056,
             "ratingCount": 125,
             "byPrinter": {
               "P2S": {
@@ -7732,6 +8156,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "35.9 h",
                 "weight": "1354 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "36.2 h",
+                "weight": "1410 g"
               }
             }
           },
@@ -7748,7 +8180,7 @@ window.CATALOG_DATA = {
             "printTime": "185.2 h",
             "weight": "2377 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 25,
+            "downloadCount": 26,
             "printCount": 0,
             "ratingCount": 0,
             "byPrinter": {
@@ -7778,7 +8210,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 11,
             "layerHeight": "0.2",
@@ -7903,6 +8336,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "47.6 h",
                 "weight": "2267 g"
+              },
+              "P3C": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "47.6 h",
+                "weight": "2267 g"
               }
             }
           },
@@ -8020,7 +8461,7 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 768
+        "commentCount": 769
       },
       "caseFile": "015",
       "specimenLabel": "3 FOOT SERIES ALIEN LEADER ALIEN GREYS"
@@ -8037,8 +8478,8 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3103043-shotgun-slugo-bullet-buddy",
       "stats": {
-        "likes": 56,
-        "boosts": 104,
+        "likes": 57,
+        "boosts": 105,
         "downloads": 40,
         "prints": 13
       },
@@ -8076,7 +8517,7 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3109917-a-c-pete-bullet-buddy-fmj",
       "stats": {
         "likes": 18,
-        "boosts": 36,
+        "boosts": 35,
         "downloads": 15,
         "prints": 4
       },
@@ -8094,10 +8535,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3126566-medical-scientist-3-foot-experimenting-alien-grey",
       "stats": {
-        "likes": 1010,
-        "boosts": 2563,
-        "downloads": 1814,
-        "prints": 1438
+        "likes": 1012,
+        "boosts": 2574,
+        "downloads": 1825,
+        "prints": 1439
       },
       "buyHref": null,
       "href": "/files/prints/medical-scientist-3-foot-experimenting-alien-grey/",
@@ -8143,7 +8584,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 11,
           "layerHeight": "0.2",
@@ -8153,8 +8595,8 @@ window.CATALOG_DATA = {
           "printTime": "46.9 h",
           "weight": "1971 g",
           "difficulty": "4.9 / 5",
-          "downloadCount": 2426,
-          "printCount": 1291,
+          "downloadCount": 2434,
+          "printCount": 1292,
           "ratingCount": 132,
           "byPrinter": {
             "P2S": {
@@ -8268,6 +8710,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "46.1 h",
               "weight": "1886 g"
+            },
+            "P3C": {
+              "buildPlates": 11,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "46.9 h",
+              "weight": "1971 g"
             }
           }
         },
@@ -8288,7 +8738,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 11,
             "layerHeight": "0.2",
@@ -8298,8 +8749,8 @@ window.CATALOG_DATA = {
             "printTime": "46.9 h",
             "weight": "1971 g",
             "difficulty": "4.9 / 5",
-            "downloadCount": 2426,
-            "printCount": 1291,
+            "downloadCount": 2434,
+            "printCount": 1292,
             "ratingCount": 132,
             "byPrinter": {
               "P2S": {
@@ -8413,6 +8864,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "46.1 h",
                 "weight": "1886 g"
+              },
+              "P3C": {
+                "buildPlates": 11,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "46.9 h",
+                "weight": "1971 g"
               }
             }
           },
@@ -8432,7 +8891,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -8442,7 +8902,7 @@ window.CATALOG_DATA = {
             "printTime": "39.8 h",
             "weight": "1848 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 174,
+            "downloadCount": 175,
             "printCount": 146,
             "ratingCount": 20,
             "byPrinter": {
@@ -8557,6 +9017,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "44.8 h",
                 "weight": "1848 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "39.8 h",
+                "weight": "1848 g"
               }
             }
           }
@@ -8629,10 +9097,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3149588-the-traveler-them-1947-alien-greys-multi-sizes",
       "stats": {
-        "likes": 626,
-        "boosts": 1440,
-        "downloads": 1022,
-        "prints": 761
+        "likes": 627,
+        "boosts": 1445,
+        "downloads": 1026,
+        "prints": 766
       },
       "buyHref": null,
       "href": "/files/prints/the-traveler-them-1947-alien-greys-multi-sizes/",
@@ -8671,7 +9139,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -8681,8 +9150,8 @@ window.CATALOG_DATA = {
           "printTime": "4.1 h",
           "weight": "112 g",
           "difficulty": "4.6 / 5",
-          "downloadCount": 218,
-          "printCount": 119,
+          "downloadCount": 219,
+          "printCount": 121,
           "ratingCount": 18,
           "byPrinter": {
             "P2S": {
@@ -8796,6 +9265,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "4.1 h",
               "weight": "112 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "4.1 h",
+              "weight": "112 g"
             }
           }
         },
@@ -8816,7 +9293,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -8826,8 +9304,8 @@ window.CATALOG_DATA = {
             "printTime": "4.1 h",
             "weight": "112 g",
             "difficulty": "4.6 / 5",
-            "downloadCount": 218,
-            "printCount": 119,
+            "downloadCount": 219,
+            "printCount": 121,
             "ratingCount": 18,
             "byPrinter": {
               "P2S": {
@@ -8941,6 +9419,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "4.1 h",
                 "weight": "112 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "4.1 h",
+                "weight": "112 g"
               }
             }
           },
@@ -8959,7 +9445,8 @@ window.CATALOG_DATA = {
               "P1P",
               "X1 Carbon",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 8,
             "layerHeight": "0.2",
@@ -8969,8 +9456,8 @@ window.CATALOG_DATA = {
             "printTime": "38.1 h",
             "weight": "1559 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 830,
-            "printCount": 264,
+            "downloadCount": 831,
+            "printCount": 265,
             "ratingCount": 41,
             "byPrinter": {
               "P2S": {
@@ -9076,6 +9563,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "38.1 h",
                 "weight": "1559 g"
+              },
+              "P3C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "38.1 h",
+                "weight": "1559 g"
               }
             }
           },
@@ -9091,7 +9586,8 @@ window.CATALOG_DATA = {
               "X2D",
               "H2D Pro",
               "P1S",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 6,
             "layerHeight": "0.2",
@@ -9101,8 +9597,8 @@ window.CATALOG_DATA = {
             "printTime": "52.3 h",
             "weight": "2251 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 67,
-            "printCount": 99,
+            "downloadCount": 68,
+            "printCount": 100,
             "ratingCount": 41,
             "byPrinter": {
               "P2S": {
@@ -9184,6 +9680,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "50.8 h",
                 "weight": "2149 g"
+              },
+              "P3C": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "52.3 h",
+                "weight": "2251 g"
               }
             }
           },
@@ -9203,7 +9707,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 9,
             "layerHeight": "0.2",
@@ -9213,8 +9718,8 @@ window.CATALOG_DATA = {
             "printTime": "45.2 h",
             "weight": "1621 g",
             "difficulty": "4.8 / 5",
-            "downloadCount": 390,
-            "printCount": 279,
+            "downloadCount": 391,
+            "printCount": 280,
             "ratingCount": 41,
             "byPrinter": {
               "P2S": {
@@ -9328,6 +9833,230 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "42.6 h",
                 "weight": "1547 g"
+              },
+              "P3C": {
+                "buildPlates": 9,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "45.2 h",
+                "weight": "1621 g"
+              }
+            }
+          },
+          {
+            "title": "PETG file 1 of 2 5 foot 0.2mm layer, 3 walls, 4% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "H3C",
+              "P3C"
+            ],
+            "buildPlates": 8,
+            "layerHeight": "0.2",
+            "walls": "3",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "50.1 h",
+            "weight": "1792 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 0,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "50.1 h",
+                "weight": "1792 g"
+              },
+              "A2L": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "59.5 h",
+                "weight": "1774 g"
+              },
+              "A1": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "57.6 h",
+                "weight": "1774 g"
+              },
+              "H2S": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "49.6 h",
+                "weight": "1793 g"
+              },
+              "H2C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "51.2 h",
+                "weight": "1830 g"
+              },
+              "H2D": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "51.2 h",
+                "weight": "1792 g"
+              },
+              "X2D": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "49.8 h",
+                "weight": "1792 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "51.2 h",
+                "weight": "1792 g"
+              },
+              "H3C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "44.5 h",
+                "weight": "1792 g"
+              },
+              "P3C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "44.4 h",
+                "weight": "1792 g"
+              }
+            }
+          },
+          {
+            "title": "PETG file 2 of 2  5 foot  0.2mm layer, 3 walls, 4% infill",
+            "printers": [
+              "P2S",
+              "A2L",
+              "A1",
+              "H2S",
+              "H2C",
+              "H2D",
+              "X2D",
+              "H2D Pro",
+              "H3C",
+              "P3C"
+            ],
+            "buildPlates": 6,
+            "layerHeight": "0.2",
+            "walls": "3",
+            "infill": "4%",
+            "supports": null,
+            "printTime": "67.7 h",
+            "weight": "2549 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 0,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "P2S": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "67.7 h",
+                "weight": "2549 g"
+              },
+              "A2L": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "79.6 h",
+                "weight": "2517 g"
+              },
+              "A1": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "78.3 h",
+                "weight": "2512 g"
+              },
+              "H2S": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "66.7 h",
+                "weight": "2550 g"
+              },
+              "H2C": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "64.5 h",
+                "weight": "2516 g"
+              },
+              "H2D": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "64.6 h",
+                "weight": "2464 g"
+              },
+              "X2D": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "67.7 h",
+                "weight": "2549 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "64.8 h",
+                "weight": "2475 g"
+              },
+              "H3C": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "55.0 h",
+                "weight": "2464 g"
+              },
+              "P3C": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "4%",
+                "printTime": "55.2 h",
+                "weight": "2458 g"
               }
             }
           }
@@ -9423,7 +10152,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -9548,6 +10278,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "7.4 h",
               "weight": "154 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "7.4 h",
+              "weight": "154 g"
             }
           }
         },
@@ -9568,7 +10306,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -9693,6 +10432,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "7.4 h",
                 "weight": "154 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "7.4 h",
+                "weight": "154 g"
               }
             }
           },
@@ -9811,10 +10558,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3180528-5-foot-leader-them-1947-alien-greys",
       "stats": {
-        "likes": 352,
-        "boosts": 830,
-        "downloads": 673,
-        "prints": 286
+        "likes": 353,
+        "boosts": 837,
+        "downloads": 675,
+        "prints": 287
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-leader-them-1947-alien-greys/",
@@ -9857,7 +10604,8 @@ window.CATALOG_DATA = {
             "H2D Pro",
             "P1S",
             "X1 Carbon",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 24,
           "layerHeight": "0.2",
@@ -9958,6 +10706,14 @@ window.CATALOG_DATA = {
               "infill": "4%",
               "printTime": "113.7 h",
               "weight": "4791 g"
+            },
+            "P3C": {
+              "buildPlates": 24,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "142.5 h",
+              "weight": "4966 g"
             }
           }
         },
@@ -9975,7 +10731,8 @@ window.CATALOG_DATA = {
               "H2D Pro",
               "P1S",
               "X1 Carbon",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 24,
             "layerHeight": "0.2",
@@ -10076,6 +10833,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "113.7 h",
                 "weight": "4791 g"
+              },
+              "P3C": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "142.5 h",
+                "weight": "4966 g"
               }
             }
           },
@@ -10098,7 +10863,7 @@ window.CATALOG_DATA = {
             "weight": "3812 g",
             "difficulty": "4.5 / 5",
             "downloadCount": 247,
-            "printCount": 83,
+            "printCount": 84,
             "ratingCount": 12,
             "byPrinter": {
               "A2L": {
@@ -10167,7 +10932,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 14,
             "layerHeight": "0.2",
@@ -10176,10 +10942,10 @@ window.CATALOG_DATA = {
             "supports": null,
             "printTime": "143.7 h",
             "weight": "4715 g",
-            "difficulty": "3.9 / 5",
-            "downloadCount": 170,
+            "difficulty": "4.1 / 5",
+            "downloadCount": 172,
             "printCount": 73,
-            "ratingCount": 5,
+            "ratingCount": 6,
             "byPrinter": {
               "P2S": {
                 "buildPlates": 14,
@@ -10292,6 +11058,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "124.4 h",
                 "weight": "4564 g"
+              },
+              "P3C": {
+                "buildPlates": 14,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "143.7 h",
+                "weight": "4715 g"
               }
             }
           },
@@ -10371,7 +11145,7 @@ window.CATALOG_DATA = {
         "bom": [],
         "attachments": [],
         "shareCount": 0,
-        "commentCount": 109
+        "commentCount": 110
       },
       "caseFile": "019",
       "specimenLabel": "5 FOOT LEADER ALIEN GREYS"
@@ -10388,10 +11162,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3195349-3-foot-night-crawler-them-1947-alien-greys",
       "stats": {
-        "likes": 249,
-        "boosts": 658,
-        "downloads": 500,
-        "prints": 395
+        "likes": 250,
+        "boosts": 660,
+        "downloads": 502,
+        "prints": 398
       },
       "buyHref": null,
       "href": "/files/prints/3-foot-night-crawler-them-1947-alien-greys/",
@@ -10426,7 +11200,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 8,
           "layerHeight": "0.2",
@@ -10436,8 +11211,8 @@ window.CATALOG_DATA = {
           "printTime": "53.3 h",
           "weight": "1676 g",
           "difficulty": "4.5 / 5",
-          "downloadCount": 882,
-          "printCount": 362,
+          "downloadCount": 884,
+          "printCount": 365,
           "ratingCount": 31,
           "byPrinter": {
             "P2S": {
@@ -10551,6 +11326,14 @@ window.CATALOG_DATA = {
               "infill": "4%",
               "printTime": "53.3 h",
               "weight": "1676 g"
+            },
+            "P3C": {
+              "buildPlates": 8,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "4%",
+              "printTime": "53.3 h",
+              "weight": "1676 g"
             }
           }
         },
@@ -10571,7 +11354,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 8,
             "layerHeight": "0.2",
@@ -10581,8 +11365,8 @@ window.CATALOG_DATA = {
             "printTime": "53.3 h",
             "weight": "1676 g",
             "difficulty": "4.5 / 5",
-            "downloadCount": 882,
-            "printCount": 362,
+            "downloadCount": 884,
+            "printCount": 365,
             "ratingCount": 31,
             "byPrinter": {
               "P2S": {
@@ -10696,6 +11480,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "53.3 h",
                 "weight": "1676 g"
+              },
+              "P3C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "53.3 h",
+                "weight": "1676 g"
               }
             }
           },
@@ -10715,7 +11507,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 8,
             "layerHeight": "0.2",
@@ -10840,6 +11633,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "53.5 h",
                 "weight": "1660 g"
+              },
+              "P3C": {
+                "buildPlates": 8,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "53.5 h",
+                "weight": "1660 g"
               }
             }
           }
@@ -10915,10 +11716,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3200946-one-hit-wonder-them-1947-alien-greys-3-foot-and-10",
       "stats": {
-        "likes": 271,
-        "boosts": 637,
-        "downloads": 417,
-        "prints": 308
+        "likes": 272,
+        "boosts": 640,
+        "downloads": 421,
+        "prints": 309
       },
       "buyHref": null,
       "href": "/files/prints/one-hit-wonder-them-1947-alien-greys-3-foot-and-10/",
@@ -10957,7 +11758,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 5,
           "layerHeight": "0.2",
@@ -10967,8 +11769,8 @@ window.CATALOG_DATA = {
           "printTime": "43.4 h",
           "weight": "1365 g",
           "difficulty": "4.7 / 5",
-          "downloadCount": 617,
-          "printCount": 234,
+          "downloadCount": 619,
+          "printCount": 235,
           "ratingCount": 23,
           "byPrinter": {
             "P2S": {
@@ -11082,6 +11884,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "43.4 h",
               "weight": "1365 g"
+            },
+            "P3C": {
+              "buildPlates": 5,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "43.4 h",
+              "weight": "1365 g"
             }
           }
         },
@@ -11102,7 +11912,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 5,
             "layerHeight": "0.2",
@@ -11112,8 +11923,8 @@ window.CATALOG_DATA = {
             "printTime": "43.4 h",
             "weight": "1365 g",
             "difficulty": "4.7 / 5",
-            "downloadCount": 617,
-            "printCount": 234,
+            "downloadCount": 619,
+            "printCount": 235,
             "ratingCount": 23,
             "byPrinter": {
               "P2S": {
@@ -11227,6 +12038,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "43.4 h",
                 "weight": "1365 g"
+              },
+              "P3C": {
+                "buildPlates": 5,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "43.4 h",
+                "weight": "1365 g"
               }
             }
           },
@@ -11241,7 +12060,8 @@ window.CATALOG_DATA = {
               "H2D",
               "X2D",
               "H2D Pro",
-              "P1S"
+              "P1S",
+              "P1P"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -11251,7 +12071,7 @@ window.CATALOG_DATA = {
             "printTime": "8.5 h",
             "weight": "226 g",
             "difficulty": "4.3 / 5",
-            "downloadCount": 183,
+            "downloadCount": 185,
             "printCount": 73,
             "ratingCount": 9,
             "byPrinter": {
@@ -11326,6 +12146,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "12.1 h",
                 "weight": "255 g"
+              },
+              "P1P": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "12.2 h",
+                "weight": "255 g"
               }
             }
           },
@@ -11346,7 +12174,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -11479,6 +12308,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "0.8 h",
                 "weight": "18 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "18 g"
               }
             }
           }
@@ -11554,10 +12391,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259272-the-descender-them-1947-alien-greys-spaceship",
       "stats": {
-        "likes": 417,
-        "boosts": 988,
-        "downloads": 494,
-        "prints": 126
+        "likes": 422,
+        "boosts": 997,
+        "downloads": 501,
+        "prints": 128
       },
       "buyHref": null,
       "href": "/files/prints/the-descender-them-1947-alien-greys-spaceship/",
@@ -11598,7 +12435,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -11683,6 +12521,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "44.8 h",
               "weight": "893 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "44.8 h",
+              "weight": "893 g"
             }
           }
         },
@@ -11698,7 +12544,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -11783,6 +12630,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "44.8 h",
                 "weight": "893 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "44.8 h",
+                "weight": "893 g"
               }
             }
           },
@@ -11802,7 +12657,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -11812,7 +12668,7 @@ window.CATALOG_DATA = {
             "printTime": "27.4 h",
             "weight": "669 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 325,
+            "downloadCount": 327,
             "printCount": 75,
             "ratingCount": 9,
             "byPrinter": {
@@ -11927,6 +12783,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "12.2 h",
                 "weight": "473 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "27.4 h",
+                "weight": "669 g"
               }
             }
           },
@@ -11948,8 +12812,8 @@ window.CATALOG_DATA = {
             "printTime": "34.2 h",
             "weight": "1039 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 55,
-            "printCount": 11,
+            "downloadCount": 56,
+            "printCount": 12,
             "ratingCount": 0,
             "byPrinter": {
               "A2L": {
@@ -12018,7 +12882,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 24,
             "layerHeight": "0.2",
@@ -12028,8 +12893,8 @@ window.CATALOG_DATA = {
             "printTime": "196.9 h",
             "weight": "10368 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 120,
-            "printCount": 23,
+            "downloadCount": 122,
+            "printCount": 24,
             "ratingCount": 3,
             "byPrinter": {
               "P2S": {
@@ -12143,6 +13008,14 @@ window.CATALOG_DATA = {
                 "infill": "3%",
                 "printTime": "196.9 h",
                 "weight": "10368 g"
+              },
+              "P3C": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "196.9 h",
+                "weight": "10368 g"
               }
             }
           }
@@ -12205,10 +13078,10 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3259500-4500-style-carburetor-dust-cover-compat-dominator",
       "stats": {
-        "likes": 9,
+        "likes": 10,
         "boosts": 24,
-        "downloads": 21,
-        "prints": 14
+        "downloads": 23,
+        "prints": 16
       },
       "buyHref": "https://makerworld.com/en/models/3259500-4500-style-carburetor-dust-cover-compat-dominator"
     },
@@ -12224,8 +13097,8 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3288211-baby-roz-them-1947-alien-greys",
       "stats": {
-        "likes": 126,
-        "boosts": 297,
+        "likes": 127,
+        "boosts": 301,
         "downloads": 192,
         "prints": 147
       },
@@ -12271,7 +13144,8 @@ window.CATALOG_DATA = {
             "X1",
             "X1E",
             "A1 mini",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -12404,6 +13278,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "8.6 h",
               "weight": "249 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "8.6 h",
+              "weight": "249 g"
             }
           }
         },
@@ -12425,7 +13307,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -12558,6 +13441,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "8.6 h",
                 "weight": "249 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "8.6 h",
+                "weight": "249 g"
               }
             }
           },
@@ -12578,7 +13469,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -12711,6 +13603,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "1.6 h",
                 "weight": "29 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "1.6 h",
+                "weight": "29 g"
               }
             }
           },
@@ -12730,7 +13630,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -12855,6 +13756,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "20.6 h",
                 "weight": "755 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "20.6 h",
+                "weight": "755 g"
               }
             }
           }
@@ -12897,10 +13806,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3309255-inflight-ufo-them-1947-alien-greys-flying-saucer",
       "stats": {
-        "likes": 156,
-        "boosts": 396,
-        "downloads": 223,
-        "prints": 45
+        "likes": 159,
+        "boosts": 401,
+        "downloads": 224,
+        "prints": 47
       },
       "buyHref": null,
       "href": "/files/prints/inflight-ufo-them-1947-alien-greys-flying-saucer/",
@@ -12939,7 +13848,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -12949,8 +13859,8 @@ window.CATALOG_DATA = {
           "printTime": "24.8 h",
           "weight": "782 g",
           "difficulty": "3.0 / 5",
-          "downloadCount": 276,
-          "printCount": 33,
+          "downloadCount": 277,
+          "printCount": 34,
           "ratingCount": 2,
           "byPrinter": {
             "P2S": {
@@ -13064,6 +13974,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "24.8 h",
               "weight": "782 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "24.8 h",
+              "weight": "782 g"
             }
           }
         },
@@ -13084,7 +14002,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -13094,8 +14013,8 @@ window.CATALOG_DATA = {
             "printTime": "24.8 h",
             "weight": "782 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 276,
-            "printCount": 33,
+            "downloadCount": 277,
+            "printCount": 34,
             "ratingCount": 2,
             "byPrinter": {
               "P2S": {
@@ -13209,6 +14128,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "24.8 h",
                 "weight": "782 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "24.8 h",
+                "weight": "782 g"
               }
             }
           },
@@ -13230,7 +14157,7 @@ window.CATALOG_DATA = {
             "weight": "846 g",
             "difficulty": "2.1 / 5",
             "downloadCount": 40,
-            "printCount": 10,
+            "printCount": 11,
             "ratingCount": 1,
             "byPrinter": {
               "A2L": {
@@ -13291,7 +14218,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -13416,6 +14344,14 @@ window.CATALOG_DATA = {
                 "infill": "4%",
                 "printTime": "45.5 h",
                 "weight": "793 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "4%",
+                "printTime": "45.5 h",
+                "weight": "793 g"
               }
             }
           }
@@ -13481,8 +14417,8 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3315805-3-foot-series-the-abductor-1947-them-alien-greys",
       "stats": {
-        "likes": 145,
-        "boosts": 324,
+        "likes": 146,
+        "boosts": 325,
         "downloads": 224,
         "prints": 83
       },
@@ -13530,7 +14466,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 18,
           "layerHeight": "0.2",
@@ -13655,6 +14592,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "76.8 h",
               "weight": "2837 g"
+            },
+            "P3C": {
+              "buildPlates": 18,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "93.2 h",
+              "weight": "2936 g"
             }
           }
         },
@@ -13675,7 +14620,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 18,
             "layerHeight": "0.2",
@@ -13800,6 +14746,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "76.8 h",
                 "weight": "2837 g"
+              },
+              "P3C": {
+                "buildPlates": 18,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "93.2 h",
+                "weight": "2936 g"
               }
             }
           },
@@ -13820,7 +14774,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -13953,6 +14908,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "0.8 h",
                 "weight": "23 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "0.8 h",
+                "weight": "23 g"
               }
             }
           }
@@ -13998,9 +14961,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3322032-the-tracker-them-1947-alien-greys-multiple-sizes",
       "stats": {
-        "likes": 331,
-        "boosts": 861,
-        "downloads": 576,
+        "likes": 334,
+        "boosts": 870,
+        "downloads": 581,
         "prints": 304
       },
       "buyHref": null,
@@ -14040,7 +15003,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -14165,6 +15129,14 @@ window.CATALOG_DATA = {
               "infill": "10%",
               "printTime": "5.6 h",
               "weight": "147 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "10%",
+              "printTime": "8.0 h",
+              "weight": "180 g"
             }
           }
         },
@@ -14185,7 +15157,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -14310,6 +15283,14 @@ window.CATALOG_DATA = {
                 "infill": "10%",
                 "printTime": "5.6 h",
                 "weight": "147 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "10%",
+                "printTime": "8.0 h",
+                "weight": "180 g"
               }
             }
           },
@@ -14329,7 +15310,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -14339,7 +15321,7 @@ window.CATALOG_DATA = {
             "printTime": "63.0 h",
             "weight": "2056 g",
             "difficulty": "4.4 / 5",
-            "downloadCount": 370,
+            "downloadCount": 374,
             "printCount": 189,
             "ratingCount": 11,
             "byPrinter": {
@@ -14454,6 +15436,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "52.0 h",
                 "weight": "1896 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "63.0 h",
+                "weight": "2056 g"
               }
             }
           },
@@ -14473,7 +15463,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.16",
@@ -14598,6 +15589,14 @@ window.CATALOG_DATA = {
                 "infill": "8%",
                 "printTime": "89.5 h",
                 "weight": "2343 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.16",
+                "walls": "3",
+                "infill": "8%",
+                "printTime": "109.8 h",
+                "weight": "2478 g"
               }
             }
           },
@@ -14617,7 +15616,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 24,
             "layerHeight": "0.2",
@@ -14742,6 +15742,14 @@ window.CATALOG_DATA = {
                 "infill": "3%",
                 "printTime": "123.3 h",
                 "weight": "5577 g"
+              },
+              "P3C": {
+                "buildPlates": 24,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "3%",
+                "printTime": "131.4 h",
+                "weight": "5753 g"
               }
             }
           }
@@ -14822,7 +15830,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 3,
           "layerHeight": "0.2",
@@ -14947,6 +15956,14 @@ window.CATALOG_DATA = {
               "infill": "20%",
               "printTime": "6.7 h",
               "weight": "261 g"
+            },
+            "P3C": {
+              "buildPlates": 3,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "261 g"
             }
           }
         },
@@ -14967,7 +15984,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 3,
             "layerHeight": "0.2",
@@ -15092,6 +16110,14 @@ window.CATALOG_DATA = {
                 "infill": "20%",
                 "printTime": "6.7 h",
                 "weight": "261 g"
+              },
+              "P3C": {
+                "buildPlates": 3,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "261 g"
               }
             }
           }
@@ -15149,7 +16175,7 @@ window.CATALOG_DATA = {
       "stats": {
         "likes": 7,
         "boosts": 17,
-        "downloads": 9,
+        "downloads": 10,
         "prints": 8
       },
       "buyHref": "https://makerworld.com/en/models/3368540-case-knife-stand"
@@ -15166,9 +16192,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3396796-3-foot-series-the-aggressor-them-1947-alien-greys",
       "stats": {
-        "likes": 87,
-        "boosts": 191,
-        "downloads": 115,
+        "likes": 88,
+        "boosts": 195,
+        "downloads": 116,
         "prints": 39
       },
       "buyHref": null,
@@ -15215,7 +16241,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 12,
           "layerHeight": "0.2",
@@ -15225,7 +16252,7 @@ window.CATALOG_DATA = {
           "printTime": "81.2 h",
           "weight": "2071 g",
           "difficulty": "3.0 / 5",
-          "downloadCount": 148,
+          "downloadCount": 149,
           "printCount": 39,
           "ratingCount": 2,
           "byPrinter": {
@@ -15340,6 +16367,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "81.2 h",
               "weight": "2071 g"
+            },
+            "P3C": {
+              "buildPlates": 12,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "5%",
+              "printTime": "81.2 h",
+              "weight": "2071 g"
             }
           }
         },
@@ -15360,7 +16395,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 12,
             "layerHeight": "0.2",
@@ -15370,7 +16406,7 @@ window.CATALOG_DATA = {
             "printTime": "81.2 h",
             "weight": "2071 g",
             "difficulty": "3.0 / 5",
-            "downloadCount": 148,
+            "downloadCount": 149,
             "printCount": 39,
             "ratingCount": 2,
             "byPrinter": {
@@ -15485,6 +16521,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "81.2 h",
                 "weight": "2071 g"
+              },
+              "P3C": {
+                "buildPlates": 12,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "5%",
+                "printTime": "81.2 h",
+                "weight": "2071 g"
               }
             }
           }
@@ -15551,7 +16595,7 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3441530-a-c-pierce-45-acp-hollow-point-bullet-buddy",
       "stats": {
         "likes": 12,
-        "boosts": 39,
+        "boosts": 41,
         "downloads": 14,
         "prints": 8
       },
@@ -15569,8 +16613,8 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3445910-dust-cover-to-fit-dewalt-20v-power-tools",
       "stats": {
-        "likes": 7,
-        "boosts": 20,
+        "likes": 8,
+        "boosts": 21,
         "downloads": 9,
         "prints": 6
       },
@@ -15588,9 +16632,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3446108-3-foot-roswell-them-1947-alien-greys",
       "stats": {
-        "likes": 161,
-        "boosts": 371,
-        "downloads": 223,
+        "likes": 163,
+        "boosts": 381,
+        "downloads": 227,
         "prints": 51
       },
       "buyHref": null,
@@ -15627,7 +16671,8 @@ window.CATALOG_DATA = {
             "H2D Pro",
             "P1S",
             "X1 Carbon",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 6,
           "layerHeight": "0.2",
@@ -15637,7 +16682,7 @@ window.CATALOG_DATA = {
           "printTime": "44.9 h",
           "weight": "1637 g",
           "difficulty": "4.1 / 5",
-          "downloadCount": 192,
+          "downloadCount": 196,
           "printCount": 51,
           "ratingCount": 6,
           "byPrinter": {
@@ -15728,6 +16773,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "44.9 h",
               "weight": "1637 g"
+            },
+            "P3C": {
+              "buildPlates": 6,
+              "layerHeight": "0.2",
+              "walls": "3",
+              "infill": "5%",
+              "printTime": "44.9 h",
+              "weight": "1637 g"
             }
           }
         },
@@ -15745,7 +16798,8 @@ window.CATALOG_DATA = {
               "H2D Pro",
               "P1S",
               "X1 Carbon",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 6,
             "layerHeight": "0.2",
@@ -15755,7 +16809,7 @@ window.CATALOG_DATA = {
             "printTime": "44.9 h",
             "weight": "1637 g",
             "difficulty": "4.1 / 5",
-            "downloadCount": 192,
+            "downloadCount": 196,
             "printCount": 51,
             "ratingCount": 6,
             "byPrinter": {
@@ -15846,6 +16900,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "44.9 h",
                 "weight": "1637 g"
+              },
+              "P3C": {
+                "buildPlates": 6,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "5%",
+                "printTime": "44.9 h",
+                "weight": "1637 g"
               }
             }
           }
@@ -15898,10 +16960,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3450569-5-foot-the-observer-them-1947-alien-greys",
       "stats": {
-        "likes": 128,
-        "boosts": 314,
-        "downloads": 206,
-        "prints": 47
+        "likes": 131,
+        "boosts": 321,
+        "downloads": 211,
+        "prints": 50
       },
       "buyHref": null,
       "href": "/files/prints/5-foot-the-observer-them-1947-alien-greys/",
@@ -15947,7 +17009,8 @@ window.CATALOG_DATA = {
             "X1 Carbon",
             "X1",
             "X1E",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 15,
           "layerHeight": "0.2",
@@ -15957,8 +17020,8 @@ window.CATALOG_DATA = {
           "printTime": "127.3 h",
           "weight": "4837 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 136,
-          "printCount": 38,
+          "downloadCount": 138,
+          "printCount": 40,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -16072,6 +17135,14 @@ window.CATALOG_DATA = {
               "infill": "5%",
               "printTime": "127.3 h",
               "weight": "4837 g"
+            },
+            "P3C": {
+              "buildPlates": 15,
+              "layerHeight": "0.2",
+              "walls": "3",
+              "infill": "5%",
+              "printTime": "127.3 h",
+              "weight": "4837 g"
             }
           }
         },
@@ -16092,7 +17163,8 @@ window.CATALOG_DATA = {
               "X1 Carbon",
               "X1",
               "X1E",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 15,
             "layerHeight": "0.2",
@@ -16102,8 +17174,8 @@ window.CATALOG_DATA = {
             "printTime": "127.3 h",
             "weight": "4837 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 136,
-            "printCount": 38,
+            "downloadCount": 138,
+            "printCount": 40,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -16217,6 +17289,14 @@ window.CATALOG_DATA = {
                 "infill": "5%",
                 "printTime": "127.3 h",
                 "weight": "4837 g"
+              },
+              "P3C": {
+                "buildPlates": 15,
+                "layerHeight": "0.2",
+                "walls": "3",
+                "infill": "5%",
+                "printTime": "127.3 h",
+                "weight": "4837 g"
               }
             }
           },
@@ -16238,8 +17318,8 @@ window.CATALOG_DATA = {
             "printTime": "60.7 h",
             "weight": "5015 g",
             "difficulty": "2.1 / 5",
-            "downloadCount": 70,
-            "printCount": 9,
+            "downloadCount": 73,
+            "printCount": 10,
             "ratingCount": 1,
             "byPrinter": {
               "A2L": {
@@ -16335,9 +17415,9 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3538408-them-1947-alien-greys-cup",
       "stats": {
         "likes": 46,
-        "boosts": 94,
+        "boosts": 100,
         "downloads": 28,
-        "prints": 8
+        "prints": 9
       },
       "buyHref": null,
       "href": "/files/prints/them-1947-alien-greys-cup/",
@@ -16393,7 +17473,7 @@ window.CATALOG_DATA = {
           "weight": "266 g",
           "difficulty": "2.1 / 5",
           "downloadCount": 28,
-          "printCount": 8,
+          "printCount": 9,
           "ratingCount": 1,
           "byPrinter": {
             "P2S": {
@@ -16538,7 +17618,7 @@ window.CATALOG_DATA = {
             "weight": "266 g",
             "difficulty": "2.1 / 5",
             "downloadCount": 28,
-            "printCount": 8,
+            "printCount": 9,
             "ratingCount": 1,
             "byPrinter": {
               "P2S": {
@@ -16716,9 +17796,9 @@ window.CATALOG_DATA = {
       "vault": "declassified",
       "makerWorldUrl": "https://makerworld.com/en/models/3574984-coleman-lantern-led-wall-light",
       "stats": {
-        "likes": 5,
+        "likes": 6,
         "boosts": 3,
-        "downloads": 2,
+        "downloads": 3,
         "prints": 0
       },
       "buyHref": "https://makerworld.com/en/models/3574984-coleman-lantern-led-wall-light"
@@ -16953,9 +18033,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3646279-them-1947-alien-greys-christmas-ornament-ufo",
       "stats": {
-        "likes": 48,
-        "boosts": 115,
-        "downloads": 41,
+        "likes": 55,
+        "boosts": 129,
+        "downloads": 50,
         "prints": 7
       },
       "buyHref": null,
@@ -16996,7 +18076,8 @@ window.CATALOG_DATA = {
             "X1",
             "X1E",
             "A1 mini",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -17006,7 +18087,7 @@ window.CATALOG_DATA = {
           "printTime": "10.3 h",
           "weight": "213 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 41,
+          "downloadCount": 50,
           "printCount": 7,
           "ratingCount": 0,
           "byPrinter": {
@@ -17129,6 +18210,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "2.7 h",
               "weight": "80 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "10.3 h",
+              "weight": "213 g"
             }
           }
         },
@@ -17150,7 +18239,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -17160,7 +18250,7 @@ window.CATALOG_DATA = {
             "printTime": "10.3 h",
             "weight": "213 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 41,
+            "downloadCount": 50,
             "printCount": 7,
             "ratingCount": 0,
             "byPrinter": {
@@ -17283,6 +18373,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "2.7 h",
                 "weight": "80 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "10.3 h",
+                "weight": "213 g"
               }
             }
           }
@@ -17366,8 +18464,8 @@ window.CATALOG_DATA = {
       "makerWorldUrl": "https://makerworld.com/en/models/3659422-santa-s-little-grey-stocking-them-1947-alien-greys",
       "stats": {
         "likes": 9,
-        "boosts": 10,
-        "downloads": 5,
+        "boosts": 16,
+        "downloads": 9,
         "prints": 1
       },
       "buyHref": null,
@@ -17418,7 +18516,7 @@ window.CATALOG_DATA = {
           "printTime": "3.7 h",
           "weight": "117 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 5,
+          "downloadCount": 9,
           "printCount": 1,
           "ratingCount": 0,
           "byPrinter": {
@@ -17572,7 +18670,7 @@ window.CATALOG_DATA = {
             "printTime": "3.7 h",
             "weight": "117 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 5,
+            "downloadCount": 9,
             "printCount": 1,
             "ratingCount": 0,
             "byPrinter": {
@@ -17767,10 +18865,10 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3659699-frosty-and-the-little-grey-christmas-ornament-them",
       "stats": {
-        "likes": 9,
-        "boosts": 21,
-        "downloads": 6,
-        "prints": 0
+        "likes": 15,
+        "boosts": 34,
+        "downloads": 10,
+        "prints": 1
       },
       "buyHref": null,
       "href": "/files/prints/frosty-and-the-little-grey-christmas-ornament-them/",
@@ -17810,7 +18908,8 @@ window.CATALOG_DATA = {
             "X1",
             "X1E",
             "A1 mini",
-            "H3C"
+            "H3C",
+            "P3C"
           ],
           "buildPlates": 1,
           "layerHeight": "0.2",
@@ -17820,8 +18919,8 @@ window.CATALOG_DATA = {
           "printTime": "31.3 h",
           "weight": "502 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 6,
-          "printCount": 0,
+          "downloadCount": 10,
+          "printCount": 1,
           "ratingCount": 0,
           "byPrinter": {
             "P2S": {
@@ -17943,6 +19042,14 @@ window.CATALOG_DATA = {
               "infill": "15%",
               "printTime": "5.1 h",
               "weight": "153 g"
+            },
+            "P3C": {
+              "buildPlates": 1,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "15%",
+              "printTime": "31.3 h",
+              "weight": "502 g"
             }
           }
         },
@@ -17964,7 +19071,8 @@ window.CATALOG_DATA = {
               "X1",
               "X1E",
               "A1 mini",
-              "H3C"
+              "H3C",
+              "P3C"
             ],
             "buildPlates": 1,
             "layerHeight": "0.2",
@@ -17974,8 +19082,8 @@ window.CATALOG_DATA = {
             "printTime": "31.3 h",
             "weight": "502 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 6,
-            "printCount": 0,
+            "downloadCount": 10,
+            "printCount": 1,
             "ratingCount": 0,
             "byPrinter": {
               "P2S": {
@@ -18097,6 +19205,14 @@ window.CATALOG_DATA = {
                 "infill": "15%",
                 "printTime": "5.1 h",
                 "weight": "153 g"
+              },
+              "P3C": {
+                "buildPlates": 1,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "15%",
+                "printTime": "31.3 h",
+                "weight": "502 g"
               }
             }
           }
@@ -18179,9 +19295,9 @@ window.CATALOG_DATA = {
       "vault": "classified",
       "makerWorldUrl": "https://makerworld.com/en/models/3664423-santa-s-little-helper-christmas-ornament-alien",
       "stats": {
-        "likes": 5,
-        "boosts": 14,
-        "downloads": 4,
+        "likes": 10,
+        "boosts": 23,
+        "downloads": 8,
         "prints": 0
       },
       "buyHref": null,
@@ -18231,7 +19347,7 @@ window.CATALOG_DATA = {
           "printTime": "4.6 h",
           "weight": "130 g",
           "difficulty": "0.0 / 5",
-          "downloadCount": 4,
+          "downloadCount": 8,
           "printCount": 0,
           "ratingCount": 0,
           "byPrinter": {
@@ -18376,7 +19492,7 @@ window.CATALOG_DATA = {
             "printTime": "4.6 h",
             "weight": "130 g",
             "difficulty": "0.0 / 5",
-            "downloadCount": 4,
+            "downloadCount": 8,
             "printCount": 0,
             "ratingCount": 0,
             "byPrinter": {
@@ -18556,10 +19672,252 @@ window.CATALOG_DATA = {
           }
         ],
         "shareCount": 0,
-        "commentCount": 2
+        "commentCount": 3
       },
       "caseFile": "036",
       "specimenLabel": "SANTA'S LITTLE HELPER CHRISTMAS ORNAMENT ALIEN"
+    },
+    {
+      "id": "mw-3680691",
+      "makerWorldId": 3680691,
+      "name": "IU LED Light Sign - 256 × 256 Build Plate Version",
+      "slug": "iu-led-light-sign-256-x-256-build-plate-version",
+      "pathSlug": "iu-led-light-sign-256-x-256-build-plate-version",
+      "blurb": "IU LED Light Sign - 256 × 256 Build Plate Version. Grey-series 3D print. Download the files on MakerWorld.",
+      "image": "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-01.png",
+      "status": "classified",
+      "vault": "classified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3680691-iu-led-light-sign-256-x-256-build-plate-version",
+      "stats": {
+        "likes": 0,
+        "boosts": 1,
+        "downloads": 0,
+        "prints": 0
+      },
+      "buyHref": null,
+      "href": "/files/prints/iu-led-light-sign-256-x-256-build-plate-version/",
+      "detail": {
+        "caseFile": "037",
+        "specimenLabel": "IU LED LIGHT SIGN - 256 × 256 BUILD PLATE VERSION",
+        "summaryText": "IU LED Light - 256 × 256 Build Plate Version Show your Hoosier pride with this IU LED light, designed for printing on a 256 × 256 mm build plate . It can be displayed on a desk or mounted on a wall. You'll need an LED strip, available through MakerWorld or Amazon. Use a strip that's at least 6.56 feet long . A 3.28-foot strip is too short. You'll need to trim the longer strip to fit the light. To keep the strip from falling inside the light, secure it with hot glue or superglue about every inch. CA glue works very well. Follow the adhesive manufacturer's instructions and take care not to get glue on the visible front of the light.",
+        "features": [],
+        "category": "Art > Signs & Logos",
+        "designer": "Raceit17",
+        "designerAvatar": "https://makerworld.bblmw.com/makerworld/user/20261008/935464230/9a9e18f3173c04f5.png",
+        "publishedAt": "2026-11-25",
+        "gallery": [
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-01.png",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-02.jpg",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-03.jpg",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-04.jpg",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-05.png",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-06.jpg",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-07.jpg",
+          "/assets/catalog/classified/iu-led-light-sign-256-x-256-build-plate-version/gallery-08.jpg"
+        ],
+        "printProfile": {
+          "title": "0.2mm layer, 2 walls, 20% infill",
+          "printers": [
+            "A2L",
+            "H2S",
+            "H2C",
+            "H2D",
+            "H2D Pro",
+            "H3C"
+          ],
+          "buildPlates": 2,
+          "layerHeight": "0.2",
+          "walls": "2",
+          "infill": "20%",
+          "supports": null,
+          "printTime": "5.4 h",
+          "weight": "256 g",
+          "difficulty": "0.0 / 5",
+          "downloadCount": 0,
+          "printCount": 0,
+          "ratingCount": 0,
+          "byPrinter": {
+            "A2L": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.7 h",
+              "weight": "261 g"
+            },
+            "H2S": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "5.6 h",
+              "weight": "262 g"
+            },
+            "H2C": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.1 h",
+              "weight": "260 g"
+            },
+            "H2D": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.2 h",
+              "weight": "258 g"
+            },
+            "H2D Pro": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "6.2 h",
+              "weight": "258 g"
+            },
+            "H3C": {
+              "buildPlates": 2,
+              "layerHeight": "0.2",
+              "walls": "2",
+              "infill": "20%",
+              "printTime": "5.4 h",
+              "weight": "256 g"
+            }
+          }
+        },
+        "printProfiles": [
+          {
+            "title": "0.2mm layer, 2 walls, 20% infill",
+            "printers": [
+              "A2L",
+              "H2S",
+              "H2C",
+              "H2D",
+              "H2D Pro",
+              "H3C"
+            ],
+            "buildPlates": 2,
+            "layerHeight": "0.2",
+            "walls": "2",
+            "infill": "20%",
+            "supports": null,
+            "printTime": "5.4 h",
+            "weight": "256 g",
+            "difficulty": "0.0 / 5",
+            "downloadCount": 0,
+            "printCount": 0,
+            "ratingCount": 0,
+            "byPrinter": {
+              "A2L": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.7 h",
+                "weight": "261 g"
+              },
+              "H2S": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "5.6 h",
+                "weight": "262 g"
+              },
+              "H2C": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.1 h",
+                "weight": "260 g"
+              },
+              "H2D": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.2 h",
+                "weight": "258 g"
+              },
+              "H2D Pro": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "6.2 h",
+                "weight": "258 g"
+              },
+              "H3C": {
+                "buildPlates": 2,
+                "layerHeight": "0.2",
+                "walls": "2",
+                "infill": "20%",
+                "printTime": "5.4 h",
+                "weight": "256 g"
+              }
+            }
+          }
+        ],
+        "bom": [
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+            "colorOptions": [
+              "Black (10101)"
+            ],
+            "priceFrom": "$11.69",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274654344&modelId=3680691"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/18de47bcc5d9405596014400afd8a661/PLA_Basic_White.jpg",
+            "colorOptions": [
+              "Jade White (10100)"
+            ],
+            "priceFrom": "$11.69",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274687112&modelId=3680691"
+          },
+          {
+            "name": "PLA Basic",
+            "quantity": 1,
+            "image": "https://store.bblcdn.com/s7/default/c93d0a825f094387a61ba3d5ae0499c7/Red.jpg",
+            "colorOptions": [
+              "Red (10200)"
+            ],
+            "priceFrom": "$11.69",
+            "url": "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes&id=41078274621576&modelId=3680691"
+          }
+        ],
+        "attachments": [],
+        "shareCount": 0,
+        "commentCount": 0
+      },
+      "caseFile": "037",
+      "specimenLabel": "IU LED LIGHT SIGN - 256 × 256 BUILD PLATE VERSION"
+    },
+    {
+      "id": "mw-3680753",
+      "makerWorldId": 3680753,
+      "name": "IU LED Light - 300 × 300 Build Plate Version",
+      "slug": "iu-led-light-300-x-300-build-plate-version",
+      "pathSlug": "iu-led-light-300-x-300-build-plate-version",
+      "blurb": "IU LED Light - 300 × 300 Build Plate Version. Everyday 3D print. Download free on MakerWorld.",
+      "image": "/assets/catalog/declassified/iu-led-light-300-x-300-build-plate-version.png",
+      "status": "declassified",
+      "vault": "declassified",
+      "makerWorldUrl": "https://makerworld.com/en/models/3680753-iu-led-light-300-x-300-build-plate-version",
+      "stats": {
+        "likes": 0,
+        "boosts": 1,
+        "downloads": 0,
+        "prints": 0
+      },
+      "buyHref": "https://makerworld.com/en/models/3680753-iu-led-light-300-x-300-build-plate-version"
     }
   ]
 };
