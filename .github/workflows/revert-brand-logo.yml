@@ -1,0 +1,37 @@
+name: Revert temporary brand logo
+
+on:
+  schedule:
+  - cron: "5 0 3 12 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  revert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Clear promo logo config
+        run: node scripts/revert-temporary-brand-logo.js
+
+      - name: Verify site
+        run: npm run check
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/config.js
+          if git diff --cached --quiet; then
+            echo "Already reverted"
+            exit 0
+          fi
+          git commit -m "chore: revert temporary Electronic Warfare brand logo"
+          git push

@@ -231,7 +231,11 @@
 
     gate.innerHTML =
       '<div class="preview-gate-inner">' +
-      '<img class="preview-gate-logo" src="/assets/brand/logo.png" alt="THEM 1947" width="120" height="120" />' +
+      '<img class="preview-gate-logo" src="' +
+      (typeof getBrandLogoUrl === "function"
+        ? getBrandLogoUrl()
+        : "/assets/brand/logo.png") +
+      '" alt="THEM 1947" width="120" height="120" />' +
       '<p class="preview-gate-eyebrow">Restricted access</p>' +
       '<h1 class="preview-gate-title">Clearance required</h1>' +
       '<p class="preview-gate-lede">This archive is in owner preview. The dossier is on the table - read the code phrase, then enter it below.</p>' +

@@ -6,12 +6,19 @@ const NAV = [
   { href: "/contact/", label: "Contact" },
 ];
 
+function brandLogoUrl() {
+  return typeof getBrandLogoUrl === "function"
+    ? getBrandLogoUrl()
+    : (window.SITE_CONFIG?.brand?.defaultLogo || "/assets/brand/logo.png");
+}
+
 function renderHeader(activePath) {
   const cfg = window.SITE_CONFIG || {};
+  const logoUrl = brandLogoUrl();
   return `<header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/spaceship/" aria-label="${cfg.legalName || "THEM 1947"} command console">
-        <img src="/assets/brand/logo.png" alt="${cfg.legalName || "THEM 1947"}" class="brand-logo" width="160" height="160" />
+        <img src="${logoUrl}" alt="${cfg.legalName || "THEM 1947"}" class="brand-logo" width="160" height="160" />
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
@@ -68,11 +75,12 @@ function renderSupportLinks() {
 
 function renderFooter() {
   const cfg = window.SITE_CONFIG || {};
+  const logoUrl = brandLogoUrl();
   const year = new Date().getFullYear();
   return `<footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="/assets/brand/logo.png" alt="" class="footer-logo" width="120" height="120" loading="lazy" />
+        <img src="${logoUrl}" alt="" class="footer-logo" width="120" height="120" loading="lazy" />
         <p class="footer-tagline">${cfg.tagline || ""}</p>
         ${renderSupportLinks()}
       </div>
@@ -189,6 +197,7 @@ function initPage({ title, description, activePath, content, adSlots = true }) {
 
   loadAdSenseScript();
   if (adSlots && hasConfiguredAdSlots()) pushAds();
+  if (typeof applyBrandFavicon === "function") applyBrandFavicon();
   bindNav();
   bindReveal();
   bindContactForm();

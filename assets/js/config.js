@@ -117,6 +117,12 @@ window.SITE_CONFIG = {
       inContent: "7102817128",
     },
   },
+  /** One-week promo logo — auto-reverts after temporaryUntil; Jarvis: scripts/revert-temporary-brand-logo.ps1 */
+  brand: {
+    defaultLogo: "/assets/brand/logo.png",
+    temporaryLogo: "/assets/brand/logo-promo-electronic-warfare.png",
+    temporaryUntil: "2026-12-03T00:03:00.000Z",
+  },
   /** Owner preview gate - set enabled: true to require clearance on inner pages. */
   previewGate: {
     enabled: false,

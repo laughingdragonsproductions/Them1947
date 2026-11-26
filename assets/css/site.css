@@ -77,6 +77,12 @@ a:hover {
   height: auto;
 }
 
+html.brand-logo-promo .brand-logo,
+html.brand-logo-promo .footer-logo,
+html.brand-logo-promo .preview-gate-logo {
+  object-fit: contain;
+}
+
 .nav-toggle {
   display: none;
   background: transparent;

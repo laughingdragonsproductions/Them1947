@@ -19,7 +19,8 @@ Open `http://localhost:8080/` then `http://localhost:8080/files/`
 
 | File | Use |
 |------|-----|
-| `assets/brand/logo.png` | Header, favicon |
+| `assets/brand/logo.png` | Default header, favicon |
+| `assets/brand/logo-promo-electronic-warfare.png` | Optional one-week promo (see `config.js` → `brand`; auto-reverts or `scripts/revert-temporary-brand-logo.ps1`) |
 | `assets/brand/classified-placeholder.png` | Classified tile image (logo stamp) |
 | `assets/brand/logo-dark.jpg` | Secondary badge (digital category card) |
 | `assets/brand/ufo-night.png` | Archive hero still (classified / UFO night scene) |

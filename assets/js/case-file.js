@@ -400,7 +400,7 @@ function renderCaseFile(item) {
       </aside>
       <header class="case-header">
         <div class="case-header-brand">
-          <img src="/assets/brand/logo.png" alt="THEM 1947" width="72" height="72" />
+          <img src="${typeof getBrandLogoUrl === "function" ? getBrandLogoUrl() : "/assets/brand/logo.png"}" alt="THEM 1947" width="72" height="72" />
           <div>
             <p class="case-brand-url">THEM1947.COM</p>
             <p class="case-label">Archive specimen file</p>
@@ -615,7 +615,7 @@ function renderRedactedCoozieCaseFile(coozie) {
       </aside>
       <header class="case-header">
         <div class="case-header-brand">
-          <img src="/assets/brand/logo.png" alt="THEM 1947" width="72" height="72" />
+          <img src="${typeof getBrandLogoUrl === "function" ? getBrandLogoUrl() : "/assets/brand/logo.png"}" alt="THEM 1947" width="72" height="72" />
           <div>
             <p class="case-brand-url">THEM1947.COM</p>
             <p class="case-label">Archive specimen file</p>

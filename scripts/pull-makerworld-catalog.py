@@ -1220,6 +1220,7 @@ CASE_FILE_HTML = """<!DOCTYPE html>
   <body>
     <div id="app"></div>
     <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/brand.js"></script>
     <script src="/assets/js/site-gate.js"></script>
     <script src="/assets/js/site.js"></script>
     <script src="/assets/js/catalog-data.js"></script>
